@@ -1858,16 +1858,12 @@
 </div>
 
 <p>The <code>Replicate</code> tool, which was introduced in Stage 1A exercise 5, is a very powerful tool for duplicating parts in assemblies. <code>Replicate</code> works by creating a copy of the selected parts, and duplicates the selected mate onto the selected geometry. Note that the selected geometry must exactly match the origin mate geometry, eg: the hole diameter must be the same for replicate to copy a rivet. In your assembly, you use the select the face for replicate to apply to. What this does is identify all geometry that matches the original mate and then copy the selected components and mate to those matching locations on the selected face. If you want to replicate onto only specific holes, you can change the drop-down menu to "Match Individual Edges".</p>
-<details>
+<details class="video">
 <summary>Match Individual Edges for Replicate</summary>
-<center>
-  <video width="1920" controls>
-    <source src="/img/design-guide/stage1c/replicateExample.mp4" type="video/mp4">
-  </video>
-</center>
-<center> Using "Match Individual Edges" allows us to select specific holes to replicate to instead of every hole on the face of the gusset. </center>
+<p><video width="1920" controls>
+  <source src="/img/design-guide/stage1c/replicateExample.mp4" type="video/mp4">
+</video></p>
 </details>
-
 <p><strong>Adding More Components</strong></p>
 <p>When you model more parts in the part studio, you can insert them into the assembly in a similar to fashion to before. Hit insert and immediately click on the green checkmark. Then, edit the initial <code>Group</code> you made and add the part to the group. By doing this, you ensure that added parts will always stay in the same place it was modeled in the part studio.</p>
 <p>Let's add a <abbr title="Reinforcement plate, usually made of aluminum, used to strengthen connections between two tubes.">gusset</abbr> to connect the 2"x2" tube to the 2"x1" tube.</p>
@@ -2070,7 +2066,7 @@ function showSlides(n, no) {
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 8, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2024</span>
   </span>
 
     

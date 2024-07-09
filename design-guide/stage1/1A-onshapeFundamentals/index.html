@@ -1851,12 +1851,12 @@
 <p>The <a href="https://learn.onshape.com/courses/fundamentals-onshape-assemblies">Onshape Assemblies</a> course introduces assemblies, mating parts together, and other useful assembly concepts.</p>
 <p>As was introduced in the Onshape learning tutorials, when parts are inserted into an assembly, they free float. We can utilize a number of different assembly tools to constrain the motion of all the parts:</p>
 <ul>
-<li><strong><code>Group</code></strong>: Restricts the relative motion between a group of parts.</li>
-<li><strong><code>Fix</code></strong>: Locks a part in place within the assembly. (Not recommended as it's not <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr>.)</li>
+<li><strong><code>Group</code></strong>: Restricts the relative motion between a group of parts</li>
+<li><strong><code>Fix</code></strong>: Locks a part in place within the assembly (not recommended as it's not <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr>)</li>
 <li><strong><code>Mates</code></strong>: Tools to constrain the degrees of freedom between parts using "mate connectors." These connectors are automatically generated or manually created coordinate systems on parts. You can align the axes and apply offsets in any direction or rotation. Different mates constrain different degrees of freedom. Here are three commonly used mates:<ul>
-<li><code>Fasten</code>: Prevents any movement between two mate connectors, such as a bolt in a hole.</li>
-<li><code>Revolute</code>: Allows rotational movement about the z-axis between two mate connectors, like an arm pivot (e.g. an arm pivot).</li>
-<li><code>Slider</code>: Enables linear movement along the z-axis between two mate connectors (e.g. an elevator).</li>
+<li><code>Fasten</code>: Prevents any movement between two mate connectors, such as a bolt in a hole</li>
+<li><code>Revolute</code>: Allows rotational movement about the z-axis between two mate connectors (e.g. an arm pivot)</li>
+<li><code>Slider</code>: Enables linear movement along the z-axis between two mate connectors (e.g. an elevator)</li>
 </ul>
 </li>
 </ul>
@@ -1865,7 +1865,7 @@
 <p><center><a class="glightbox" href="\img\design-guide\stage1a\1a-fasten.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1a\1a-fasten.gif"width="90%"></a></center>
 <center> <em>Example of a fasten mate.</em> </center></p>
 </div>
-<p>The best practices for constraining an assembly, along with other assembly tools like replicate, pattern, and standard content, will be learned through projects and described in more detail in later stages. They are also outlined <a href="../../../best-practices/assembly-setup/">here</a>.</p>
+<p>The best practices for constraining an assembly, along with other assembly tools like replicate, pattern, and standard content, will be learned through projects and described in more detail in later stages. They are also outlined in the <a href="../../../best-practices/assembly-setup/">assembly best practices</a> page.</p>
 <h3 id="exercise-3-box-tube-frame">Exercise 3: Box Tube Frame</h3>
 <p>For this exercise, you will create a simple frame and two gussets. Then, you will create an assembly and mate together all the components.</p>
 <p>You will utilize the <code>Extrude Individual</code>, <code>Tube Converter</code>, and <code>Gusset</code> Featurescripts for this exercise.</p>
@@ -2140,7 +2140,7 @@ function showSlides(n, no) {
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 8, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2024</span>
   </span>
 
     
