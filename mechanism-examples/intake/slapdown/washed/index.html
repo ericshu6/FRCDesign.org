@@ -88,8 +88,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        
+        <link rel="stylesheet" href="../../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -2181,19 +2181,19 @@
 <h3 id="simplicity">Simplicity</h3>
 <p>This intake features a classic "Beavertail" design that was popularized in 2012, and has stuck around as a niche way to intake small-medium sized balls through a bumper cutout without sacrificing on acquisition zone.</p>
 <figure>
-<a class="glightbox" href="../../../../img/mechanism-examples/intake/slapdown/washed/powerdelivery.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="" height="60%" src="../../../../img/mechanism-examples/intake/slapdown/washed/powerdelivery.webp" width="60%" /></a>
+<a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="" height="60%" src="../../../../img/mechanism-examples/intake/slapdown/washed/powerdelivery.webp" width="60%" /></a>
 <figcaption>This intake utilizes the spinning section of a NEO Vortex, and MAX90 Gearbox to achieve really simple packaging</figcaption>
 </figure>
 <h3 id="serviceability">Serviceability</h3>
 <p>Even though this intake is built like a tank, anything extending outside of your robots's frame perimeter needs to be designed for serviceability. The Washed Beavertail Intake achieves this by using an intermediary plate between the 1x1 tubing arms and the pivot sprocket. If you build a second identical intake you can quickly swap them even with the tightest match schedule.</p>
 <figure>
-<a class="glightbox" href="../../../../img/mechanism-examples/intake/slapdown/washed/detachmentpoint.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="" height="60%" src="../../../../img/mechanism-examples/intake/slapdown/washed/detachmentpoint.webp" width="60%" /></a>
+<a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="" height="60%" src="../../../../img/mechanism-examples/intake/slapdown/washed/detachmentpoint.webp" width="60%" /></a>
 <figcaption>By having a middleplate the entire intake can be taken off with 6 easy to access bolts.</figcaption>
 </figure>
 <h3 id="robustness">Robustness</h3>
 <p>This intake uses a 7/8" Aluminum Tube with a bushing to achieve smooth strong movement on the pivot. 7/8" Bushings are great because the common offerings have a 1.125" OD making them compatible with most <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> sprockets. The 7/8" tube extends into the frame tube to take load off the <abbr title="Also known as a &quot;Star Nut&quot;, these provide an easy way to put a thread in end of a hollow tube allowing you to bolt the tube to another part.">Tube-Nut</abbr> at the end of the tube.</p>
 <figure>
-<a class="glightbox" href="../../../../img/mechanism-examples/intake/slapdown/washed/bushing.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="" height="60%" src="../../../../img/mechanism-examples/intake/slapdown/washed/bushing.webp" width="60%" /></a>
+<a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="" height="60%" src="../../../../img/mechanism-examples/intake/slapdown/washed/bushing.webp" width="60%" /></a>
 </figure>
 <p><br></p>
 
@@ -2248,7 +2248,7 @@
       
         <a href="https://github.com/Groose876" class="md-author" title="@Groose876">
           
-          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Groose876">
+          <img src="../../../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Groose876">
         </a>
       
       
@@ -2370,7 +2370,19 @@
       <script src="../../../../assets/javascripts/bundle.d249fdc4.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>

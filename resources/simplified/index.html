@@ -88,8 +88,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -1419,7 +1419,7 @@
       
         <a href="https://github.com/Groose876" class="md-author" title="@Groose876">
           
-          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Groose876">
+          <img src="../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Groose876">
         </a>
       
       
@@ -1541,7 +1541,19 @@
       <script src="../../assets/javascripts/bundle.d249fdc4.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>

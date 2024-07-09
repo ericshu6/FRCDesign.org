@@ -88,8 +88,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -1316,8 +1316,9 @@ Using an alternate platform or forking on Github?:
 <li>Open the repository in VS Code (doesn't matter which branch)</li>
 <li>Toggle the bottom panel on if there isn't one with the shortcut <code>Ctrl + J</code></li>
 <li>Click the dropdown next to the + on the top righthand side of the bottom panel and click "Git Bash"</li>
-<li>Run the command <code>py -m venv venv</code> to create a virtual environment</li>
-<li>Run the command <code>./runlocal.sh</code> to install all needed python packages and start the server</li>
+<li>Run the command <code>py -m venv venv</code> to create a virtual environment (FIRST TIME)</li>
+<li>Run the command ```./installdependencies.sh to install all needed python packages (FIRST TIME)</li>
+<li>Run the command <code>./runlocal.sh</code> to start the server</li>
 <li>If everything went smoothly it should say its "Serving on" something like <code>http://127.0.0.1:8000</code></li>
 </ol>
 <p>Make sure to run <code>./runlocal.sh</code> in Git Bash every time you open VS Code to edit.</p>
@@ -1351,7 +1352,7 @@ Using an alternate platform or forking on Github?:
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 30, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2024</span>
   </span>
 
     
@@ -1381,7 +1382,7 @@ Using an alternate platform or forking on Github?:
       
         <a href="https://github.com/Groose876" class="md-author" title="@Groose876">
           
-          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Groose876">
+          <img src="../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Groose876">
         </a>
       
       
@@ -1503,7 +1504,19 @@ Using an alternate platform or forking on Github?:
       <script src="../../assets/javascripts/bundle.d249fdc4.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>
