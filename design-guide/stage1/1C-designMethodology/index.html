@@ -1614,11 +1614,10 @@
   margin: auto;
 }
 
+/* Hide the images by default */
 .mySlides {
-
-    display:none;
+  display: none;
 }
-
 #slide1 {display:block}
 
 /* Next & previous buttons */
@@ -1704,19 +1703,22 @@
 <li>Create a top-level assembly and insert a pre-modeled mechanism (1678's 2023 elevator and manipulator) </li>
 </ol>
 <p>Even if you've already CADed a drivetrain the past, this guide serves as an excellent introduction to the <strong>top-down master sketch</strong> design methodology.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\FullAssy.png" style="width:100%"></a></center>
+<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\FullAssy.webp" style="width:100%"></a></center>
 <center><em>Swerve drivebase with pre-modeled mechanism</em></center></p>
 <p>As with previous exercises, the finished project is available for reference <a href="https://cad.onshape.com/documents/6c6044229091a87cf359270b/w/ed9648f0c04c639a2561615a/e/67a7ed0c6038787281325a51">here</a>. If you need help, please feel free to ask on the Discord!</p>
 <h2 id="master-sketch-methodology">Master Sketch Methodology</h2>
 <p>When designing a model in CAD, there are two high level strategies that can be employed: top-down and bottom-up. Top-down design employs high level, low detail sketches to dictate the design, and then refining details and components within that framework. Conversely, bottom-up design involves creating individual components or parts separately and then assembling them to form the final product. </p>
 <p>Top-down design offers a holistic approach, allowing for better system integration, consistency, and is more <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr>. Bottom-up design offers flexibility and independence in designing individual parts. In FRC robot design, top-down approach is favored as system integration is often the most challenging aspect. Top-down ensures that the robot architecture dictates part design.</p>
 <p>To achieve this, a <strong><em>master sketch</em></strong> is utilized. A master sketch is a series of sketches that capture the major dimensions of each mechanism, field element interactions, and robot size constraints. Then, the master sketch(es) are inserted into each mechanism's part studio and the individual components are then modeled around the imported layout sketch. More information on master sketches can be found on the <a href="/best-practices/mastersketch-setup/">Master Sketch Best Practices</a> page.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\exampleMasterSketch.webp" style="width:60%"></a></center>
 <center><em>Example of robot master sketches. Each mechanism has a number of layout sketches that capture the important details.</em></center></p>
+</div>
 <h2 id="swerve-drivebase">Swerve Drivebase</h2>
 <p>A drivebase is the mobile platform on which all our other mechanisms are designed around and attached to. With the advent of <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> swerve, designing a swerve drivebase has been made significantly easier and has become the most commonly used competitive drivetrain in FRC. </p>
 <p>A swerve drivebase is composed of four <em>swerve modules</em>. Each module has 2 motors: 1 for spinning the wheel and one for steering it. This enables the robot to translate in any direction independent of the rotation of the robot. There are many other <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> options available, each with their own advantages and tradeoffs. In this project, we'll be using <a href="https://www.swervedrivespecialties.com/products/mk4i-swerve-module">SDS MK4i modules</a>. You can learn more about drivetrains on the <a href="/design-fundamentals/mechanisms/drivebase/">Design Fundamentals</a> page.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\SwerveBase\DriveAssy.png" style="width:100%"></a></center>
+<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\SwerveBase\DriveAssy.webp" style="width:100%"></a></center>
 <center><em>Stage 1C swerve drivebase project.</em></center></p>
 <p>As was introduced in Stage 1A, robot structures are typically constructed out of aluminum box tubing. The drivebase is no exception to this. Most teams will opt to design their box tubing with a standard 0.5" spacing pattern of 0.196" diameter holes. This enables modularity and allows for easy integration of many <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> components like gussets.</p>
 <p>Box tubing extrusions can be purchased at most metal suppliers, but many FRC vendors including <a href="https://wcproducts.com/collections/systems-structure/products/punched-tubing"><abbr title="West Coast Products">WCP</abbr></a>, <a href="https://www.thethriftybot.com/products/thrifty-box-extrusion"><abbr title="The Thrifty Bot">TTB</abbr></a>, and <a href="https://www.revrobotics.com/MAXTube/"><abbr title="REV Robotics">REV</abbr></a> sell box tubing with pre-cut hole patterns which can significantly reduce manufacturing time and equipment requirements.</p>
@@ -1758,14 +1760,20 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtTopLayout1.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtTopLayout1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>4. Create the top layout sketch by using the bottom mate connector on the vertical line of the side layout. Utilizing auto-generated mate connectors for sketch planes is a very useful tool to have. Press the “Top” button on the view cube to get a top view.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtTopLayout2.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtTopLayout2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>5. Sketch the top outline of the drive base. Make the rectangle a square and set the side length equal to the length of the side layout tube. This ensures that the size of the top layout always matches the side layout, which makes the design parametric. Notice that the sketch is fully defined despite having no sketch dimensions.</figcaption>
     </figure>
   </div>
@@ -1786,7 +1794,10 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtTopLayout5.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtTopLayout5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>8. To apply the cutout for all four tubes, we use the <code>Circular Pattern</code> sketch tool to copy the lines to all four corners. For a  <code>Circular Pattern</code> we first define the number of instances and then the axis of rotation.</figcaption>
     </figure>
   </div>
@@ -1846,14 +1857,20 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts4.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtParts4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>4. Use the <code>Fillet</code> sketch tool to add a 1" radius sketch fillet on the two internal corners of the cutout. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts5.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtParts5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>5. Next, use the <code>Circular Pattern </code> sketch tool to pattern the other three corners. Extrude the bellypan to be 1/8" thick.</figcaption>
     </figure>
   </div>
@@ -1874,21 +1891,30 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts8.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtParts8.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>8. Next, use the <code>Linear Pattern</code> sketch tool to pattern the holes along the edge.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts9.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtParts9.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>9. Use the <code>Circular Pattern</code> sketch tool to pattern the holes about the origin onto all four edges.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts10.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtParts10.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>10. Use the <code>Linear Pattern</code> sketch tool to pattern the holes for the 2"x2" tube.</figcaption>
     </figure>
   </div>
@@ -1935,7 +1961,10 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAssy1.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtAssy1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>1. Insert the parts into the assembly, <code>Group</code> them, then fasten the origin cube to the origin of the assembly.</figcaption>
     </figure>
   </div>
@@ -1952,7 +1981,10 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAssy3.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtAssy3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>3. Use the <code>Circular Pattern</code> assembly tool to finish assembling the modules. </figcaption>
     </figure>
   </div>
@@ -1969,7 +2001,10 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAssy5.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtAssy5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>5. Use the <code>Replicate </code> assembly tool to replicate the rivet and rivet mate onto all matching geometry on the bottom face of the bellypan</figcaption>
     </figure>
   </div>
@@ -1994,7 +2029,7 @@
 <details class="video">
 <summary>Match Individual Edges for Replicate</summary>
 <p><video width="1920" controls>
-  <source src="/img/design-guide/stage1c/replicateExample.mp4" type="video/mp4">
+  <source src="/img/design-guide/stage1c/replicateExample.webm" type="video/mp4">
 </video></p>
 </details>
 <p><strong>Adding More Components</strong></p>
@@ -2021,7 +2056,10 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd2.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtAdd2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>2. Insert the gusset into the assembly and add it to the <code>Group</code>.</figcaption>
     </figure>
   </div>
@@ -2035,7 +2073,10 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd4.gif" style="width:100%"></a>
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1c/SwerveBase/dtAdd4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>4. Edit the replicate feature to add rivets to the gusset. </figcaption>
     </figure>
   </div>
@@ -2078,7 +2119,7 @@
   <div class="mySlides fade">
     <figure>
       <video width="1920" controls>
-        <source src="/img/design-guide/stage1c/TopLevel/topL1.mp4" type="video/mp4">
+        <source src="/img/design-guide/stage1c/TopLevel/topL1.webm" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <figcaption>1. Insert the drivetrain assembly and fasten the origin cube to the assembly origin. You may need to unhide the origin cube to mate it.</figcaption>
@@ -2088,7 +2129,7 @@
   <div class="mySlides fade">
     <figure>
       <video width="1920" controls>
-        <source src="/img/design-guide/stage1c/TopLevel/topL2.mp4" type="video/mp4">
+        <source src="/img/design-guide/stage1c/TopLevel/topL2.webm" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <figcaption>2. Insert the 1678 2023 scoring assembly by pasting the scoring mechanism link into the `Insert` menu textbox. Then, fasten its origin cube to the assembly origin. You may need to hide the drivetrain's origin cube to access the origin of the assembly for mating.</figcaption>
