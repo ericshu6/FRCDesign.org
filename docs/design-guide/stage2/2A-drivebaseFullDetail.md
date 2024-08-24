@@ -212,7 +212,7 @@ A list of typical electrical components found on FRC robots is provided below, a
 | Discrete motor controller  (eg: Spark Max, Talon SRX) | Required to power and control some motors  (eg: Neo, CIM) | Near the controlled motor  or on the bellypan |
 | Robot Radio | Required for robot communications | Follow Vivid Hosting's [radio mounting guidelines](https://frc-radio.vivid-hosting.net/getting-started/usage/mounting-your-radio). |
 | Robot Signal Light | Required to indicate robot status | Somewhere easily visible |
-| Inertial Measurement Unit (IMU) (eg: Pigeon 2.0, NavX2)| Used to determine robot heading | Ontop of the RoboRIO |
+| Inertial Measurement Unit (IMU) (Gyro Sensor) (eg: Pigeon 2.0, NavX2)| Used to determine robot heading | Ontop of the RoboRIO |
 | Voltage Regulator Modules | Can be used for custom circuits | Bellypan |
 | Radio Power Module (RPM) | Powers the OpenMesh Radio | Not required for VH Radio |
 | Pneumatics Hub | Controls pneumatic components | Bellypan |
