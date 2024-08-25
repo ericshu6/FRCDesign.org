@@ -1015,22 +1015,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#origin-cube-method" class="md-nav__link">
+  <a href="#the-origin-cube" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Origin Cube Method
+        The Origin Cube
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Origin Cube Method">
+    <nav class="md-nav" aria-label="The Origin Cube">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#utilizing-origin-cube-for-flexible-assemblies" class="md-nav__link">
+  <a href="#utilizing-the-origin-cube-in-assemblies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Utilizing Origin Cube for Flexible Assemblies
+        Utilizing the Origin Cube in Assemblies
       
     </span>
   </a>
@@ -1039,17 +1039,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#origin-mate-connector-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Origin Mate Connector Method
-      
-    </span>
-  </a>
   
 </li>
         
@@ -1342,22 +1331,21 @@
 <p>As with many good practices in CAD, smart origins are another good practice to make future you's life easier. Intelligent origins allow designers to leverage default geometry (Front/Right/Top Planes, Origin Point) in their models. Good designers will utilize the default geometry for robust axes of symmetry and references. </p>
 <p>However, it should be noted that with multi-body part modeling, as opposed to a typical 1 part per file workflow in Solidworks, origins for parts are not quite as critical since there are multiple parts in a single file. For FRC CAD, the purpose of origin is two fold:</p>
 <ol>
-<li>To use the same origin point across all part studios and assemblies in order to have the same origin as the master sketch.</li>
+<li>To use the same origin point as the master sketch across all part studios and assemblies for a consistent central point you can reference</li>
 <li>To unify the robot CAD and robot software origin point. By having the same origin in CAD and code, the robot can be seamlessly exported to <a href="https://github.com/Mechanical-Advantage/AdvantageScope">AdvantageScope</a> and camera transformations more easily measured. </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Although definitions may vary from team to team, the origin of an FRC robot is typically defined as <strong><em>the center of the drivebase, on floor level</em></strong>.</p>
 </div>
-<p>In the following sections, a few different methods for creating origins are introduced.</p>
-<h3 id="origin-cube-method">Origin Cube Method</h3>
-<p>The origin cube Featurescript inserts a 2"x2"x2" transparent cube at the origin of the part studio. The cube has a mate connector for the origin. There is also an option to import a number of useful design constants (bolt hole sizes, common FRC dimensions, etc).</p>
+<h3 id="the-origin-cube">The Origin Cube</h3>
+<p>The Origin Cube Featurescript inserts a 2"x2"x2" transparent cube at the origin of the part studio. The cube has a mate connector for the origin. There is also an option to import a number of useful design constants (bolt hole sizes, common FRC dimensions, etc).</p>
 <p>Compared to other methods like fixing components, the origin cube is a more robust and <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> method of aligning origins.</p>
 <p>In each sub assembly, the cube is mated to the origin. Then, in the top level robot assembly, all the origin cubes are mated together to create the final robot assembly.</p>
 <p><a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/df3afdbec8d1356c2af15e4b?renderMode=0&amp;uiState=6637caa6ccbcaa36badca03a">Link to Featurescript</a></p>
 <p><center> <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\best-practices\originCubeFeature.webp" width="60%"></a> </center>
 <center> <em>Inserting the Origin Cube feature.</em> </center></p>
-<h4 id="utilizing-origin-cube-for-flexible-assemblies">Utilizing Origin Cube for Flexible Assemblies</h4>
+<h4 id="utilizing-the-origin-cube-in-assemblies">Utilizing the Origin Cube in Assemblies</h4>
 <p>To utilize the full potential of origin cubes and master sketches, it is recommended to have separate sub assemblies for the stationary group of components and the moving group of components of each mechanism. A single part studio or multiple part studios can be used to achieve this, it is up to the personal preference of the designer.</p>
 <p>Take a slap down intake for example. In this example, two part studios that reference the same master sketches are used: one for the arm base and gearboxes, and one for the intake arm. The following three assemblies are then formed: the base components assembly, the arm components assembly, and the top level intake assembly containing the first two sub assemblies. The base component assembly and arm component assembly are both rigid assemblies with their respective origin cubes mated to their assembly origins. A rigid assembly is one where there are no moving components. The top level intake assembly should then only include two mates: a fasten to mate the origin cube of the base assembly to the origin, and a revolute mate to enable the motion of the arm.</p>
 <p>The full file tree of this example will appear like so:</p>
@@ -1402,11 +1390,9 @@ Coming Soon
 
 </details> -->
 
-<h3 id="origin-mate-connector-method">Origin Mate Connector Method</h3>
-<p>WIP</p>
 <h2 id="other-best-practices">Other Best Practices</h2>
 <h3 id="simplified-models">Simplified Models</h3>
-<p>The first advice is to minimize primitives in your assembly. Primitives are kinda like the number of triangles used to render the mesh of the object, or in more simple terms, it's a measure of how complex the object is and how hard it is for Onshape to render. The more primitives there are, the more laggy your assembly will be.</p>
+<p>The first advice is to minimize primitives in your assembly. Primitives are a measure of how complex the object is and how hard it is for Onshape to render. The more primitives there are, the more laggy your assembly will be.</p>
 <p>Use <a href="https://www.frcdesign.org/resources/simplified/">simplified models</a> wherever possible to minimize primitives: electronics, swerve modules, motors, etc. Some of these are added to MKCAD as well.</p>
 <details class="video">
 <summary>Minimize Primitives</summary>
@@ -1417,7 +1403,7 @@ Coming Soon
 <p>Other things to keep in mind:</p>
 <ul>
 <li>Import <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> parts from MKCAD</li>
-<li>Use the <strong>replicate tool</strong> for adding hardware! You should only need toimport one of each type</li>
+<li>Use the <strong>replicate tool</strong> for adding hardware! You should only need to import one of each type</li>
 <li>Minimize the number of mates you use; this lowers the solve time</li>
 <li>Stay organized with folders</li>
 </ul>
@@ -1446,7 +1432,7 @@ Coming Soon
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2024</span>
   </span>
 
     
@@ -1473,6 +1459,16 @@ Coming Soon
 
     
     <nav>
+      
+        <a href="https://github.com/AGB556" class="md-author" title="@AGB556">
+          
+          <img src="../../assets/external/avatars.githubusercontent.com/u/147350275.fe356448.jpg" alt="AGB556">
+        </a>
+      
+        <a href="https://github.com/Nsl106" class="md-author" title="@Nsl106">
+          
+          <img src="../../assets/external/avatars.githubusercontent.com/u/87742096.fe356448.png" alt="Nsl106">
+        </a>
       
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
