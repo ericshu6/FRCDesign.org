@@ -2133,18 +2133,18 @@ Successful battery mounting can be broken down into two components: good battery
 </thead>
 <tbody>
 <tr>
-<td>Power Distribution Hub (<abbr title="Power Distribution Hub.">PDH</abbr>) or  Power Distribution Panel (PDP)</td>
-<td>Required to distribute power</td>
+<td><abbr title="REV Robotics">REV</abbr> Power Distribution Hub (<abbr title="Power Distribution Hub.">PDH</abbr>) or  CTRE Power Distribution Panel (PDP)</td>
+<td>Distributes power to all other components</td>
 <td><abbr title="Plate for mounting electronics on the underside of your drivebase.">Bellypan</abbr></td>
 </tr>
 <tr>
 <td>Main Breaker</td>
-<td>Required to power on/off the robot</td>
+<td>Is used to turn on/off the robot and protect electronics from events with extremely high current drawn</td>
 <td>Somewhere easily accessible and close to the <abbr title="Power Distribution Hub.">PDH</abbr> and Battery</td>
 </tr>
 <tr>
 <td>RoboRIO</td>
-<td>Required to control the robot</td>
+<td>Central controller for all robot operations</td>
 <td><abbr title="Plate for mounting electronics on the underside of your drivebase.">Bellypan</abbr></td>
 </tr>
 <tr>
@@ -2154,33 +2154,28 @@ Successful battery mounting can be broken down into two components: good battery
 </tr>
 <tr>
 <td>Discrete motor controller  (eg: Spark Max, Talon SRX)</td>
-<td>Required to power and control some motors  (eg: Neo, CIM)</td>
+<td>Required to power and control some motors  (eg: NEO, CIM)</td>
 <td>Near the controlled motor  or on the <abbr title="Plate for mounting electronics on the underside of your drivebase.">bellypan</abbr></td>
 </tr>
 <tr>
 <td>Robot <abbr title="Device that helps the robot communicate with the driver station.">Radio</abbr></td>
-<td>Required for robot communications</td>
+<td>Allows the robot to establish wireless connections to the field or driver station</td>
 <td>Follow Vivid Hosting's <a href="https://frc-radio.vivid-hosting.net/getting-started/usage/mounting-your-radio"><abbr title="Device that helps the robot communicate with the driver station.">radio</abbr> mounting guidelines</a>.</td>
 </tr>
 <tr>
-<td>Robot Signal Light</td>
-<td>Required to indicate robot status</td>
+<td>Robot Signal Light (RSL)</td>
+<td>Indicates whether the robot is on and enabled/disabled</td>
 <td>Somewhere easily visible</td>
 </tr>
 <tr>
 <td>Inertial Measurement Unit (IMU)</td>
-<td>Used to determine robot heading</td>
-<td>As close to the center as possible is best practice</td>
+<td>Used to determine robot heading and acceleration</td>
+<td>As close to the center as possible is best practice (on <abbr title="Plate for mounting electronics on the underside of your drivebase.">Bellypan</abbr> or RoboRIO)</td>
 </tr>
 <tr>
-<td>Voltage Regulator Modules</td>
+<td>Voltage Regulator Module</td>
 <td>Can be used for custom circuits</td>
 <td><abbr title="Plate for mounting electronics on the underside of your drivebase.">Bellypan</abbr></td>
-</tr>
-<tr>
-<td><abbr title="Device that helps the robot communicate with the driver station.">Radio</abbr> Power Module (RPM)</td>
-<td>Powers the OpenMesh <abbr title="Device that helps the robot communicate with the driver station.">Radio</abbr></td>
-<td>Not required for VH <abbr title="Device that helps the robot communicate with the driver station.">Radio</abbr></td>
 </tr>
 <tr>
 <td>Pneumatics Hub</td>
@@ -2522,7 +2517,7 @@ function showSlides(n, no) {
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 26, 2024</span>
   </span>
 
     
@@ -2550,6 +2545,11 @@ function showSlides(n, no) {
     
     <nav>
       
+        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
+          
+          <img src="../../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Revision-0">
+        </a>
+      
         <a href="https://github.com/howlongismyname" class="md-author" title="@howlongismyname">
           
           <img src="../../../assets/external/avatars.githubusercontent.com/u/59844493.fe356448.png" alt="howlongismyname">
@@ -2563,11 +2563,6 @@ function showSlides(n, no) {
         <a href="https://github.com/IShaLinI" class="md-author" title="@IShaLinI">
           
           <img src="../../../assets/external/avatars.githubusercontent.com/u/34358667.fe356448.png" alt="IShaLinI">
-        </a>
-      
-        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
-          
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Revision-0">
         </a>
       
       
