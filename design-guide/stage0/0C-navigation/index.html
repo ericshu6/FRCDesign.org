@@ -88,8 +88,8 @@
       
         
         
-        
-        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -1888,7 +1888,7 @@
 <h2 id="documents-page">Documents Page</h2>
 <p>Documents can be viewed and managed from the documents page. You can sort them with folders and labels. On the sidebar, you can switch between stuff owned by you and stuff owned by a classroom/team/organization, and a public search page which can be used to look through public Onshape files. In the top right corner of the page, you can access the app store, learning center, and account settings.</p>
 <p>You can create a document or folder or import CAD files from your computer using the "Create" dropdown button on the left.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/navigation/documentsPage.webp" style="width:90%"></a></center></p>
+<p><center><a class="glightbox" href="/img/design-guide/stage0/navigation/documentsPage.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/navigation/documentsPage.webp" style="width:90%"></a></center></p>
 <p>You can use <a href="https://learn.onshape.com/learn/course/navigating-onshape/onshape-interface/the-documents-page?page=1">this page</a> in the learning center to explore the documents page.</p>
 <h3 id="customizing-your-account">Customizing Your Account</h3>
 <ul>
@@ -1909,11 +1909,11 @@
 <li><strong>Tab bar:</strong> Organizes different tabs in the document. Can be sorted into folders. Add new folders and tabs to the document by clicking the plus on the bottom left.</li>
 <li><strong>Left Side (Feature/Part/Instance/Mate List)</strong>: Breaks down how parts/assembly was made.</li>
 </ul>
-<p><center> <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/navigation/documentNavigationLabeled.webp" style="width:90%"></a></center></p>
+<p><center> <a class="glightbox" href="/img/design-guide/stage0/navigation/documentNavigationLabeled.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/navigation/documentNavigationLabeled.webp" style="width:90%"></a></center></p>
 <p>The space in the middle is called the graphics area. You can interact with the model by selecting entities or rotating the view. </p>
 <details class="info">
 <summary>Mouse Controls</summary>
-<p><center> <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/navigation/mouseControls.webp" style="width:55%"></a> </center></p>
+<p><center> <a class="glightbox" href="/img/design-guide/stage0/navigation/mouseControls.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/navigation/mouseControls.webp" style="width:55%"></a> </center></p>
 </details>
 <div class="admonition tip">
 <p class="admonition-title">Selection</p>
@@ -2025,7 +2025,7 @@
       
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Revision-0">
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
         </a>
       
       
@@ -2147,19 +2147,7 @@
       <script src="../../../assets/javascripts/bundle.94ab4cf4.min.js"></script>
       
     
-  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
-    try {
-        var img = element.querySelector('img');
-        if (img && img.src) {
-            element.setAttribute('href', img.src);
-        } else {
-            console.log('No img element with src attribute found');
-        }
-    } catch (error) {
-        console.log('Error:', error);
-    }
-});
-const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>

@@ -88,8 +88,8 @@
       
         
         
-        
-        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -1902,14 +1902,14 @@
 <p>A common style of intake for gamepieces in FRC (depending on extension rules) is an "over-the-bumper" intake (<abbr title="&quot;Over the Bumper&quot; typically used to refer to a style of intake where you lift the piece over the bumper">OTB</abbr> for short). These bring the gamepiece from the floor against and then over the bumper into another subsystem. They were used commonly in 2019, 2020, 2022, 2023, and 2024, and other past games. </p>
 <p>The two types of <abbr title="&quot;Over the Bumper&quot; typically used to refer to a style of intake where you lift the piece over the bumper">OTB</abbr> intakes are "slapdown" which consists of a single set of arms with rollers which slap down and back up again, and four-bar linkages, which allow the intake to stow more horizontally instead of vertically. The intake designed in this stage will be a slapdown intake for 2022 (inspired by 4414 HighTide’s slapdown intake from 2023).</p>
 <p><br></p>
-<figure><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="left"  src="\img\design-guide\stage2-slapdown\1323intake.gif" width="45%" style="border:5px solid #ADADAD"></a><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" src="\img\design-guide\stage2-slapdown\1678intake.gif" width="51%" style="border:5px solid #ADADAD"></a></figure>
+<figure><a class="glightbox" href="\img\design-guide\stage2-slapdown\1323intake.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="left"  src="\img\design-guide\stage2-slapdown\1323intake.gif" width="45%" style="border:5px solid #ADADAD"></a><a class="glightbox" href="\img\design-guide\stage2-slapdown\1678intake.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" src="\img\design-guide\stage2-slapdown\1678intake.gif" width="51%" style="border:5px solid #ADADAD"></a></figure>
 <p><center><figcaption>1323's 2022 Slapdown Intake and 1678's 2022 Four-bar Intake in action</figcaption></center>
 <br></p>
 <p><a href="https://www.youtube.com/watch?v=pSQX5c7G8yg">This video</a> is a great example of a slapdown intake in 2022, on Madtown 1323's robot.</p>
 <p>Other mechanism examples and deep dives for <abbr title="&quot;Over the Bumper&quot; typically used to refer to a style of intake where you lift the piece over the bumper">OTB</abbr> intakes can be found on the <a href="../../../mechanism-examples/intake/slapdown/">slapdown intakes page</a> and <a href="../../../mechanism-examples/intake/4bar/">4-bar intakes page</a>. The mechanism fundamentals page is yet to be made but will also be a helpful resource.</p>
 <h2 id="project">Project</h2>
 <p>This stage's project is a slapdown intake for 2022 or 2023 (both with the same gamepiece size of 9.5" diameter). </p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/intakeTopLevel.webp" width="70%"></a></center></p>
+<p><center><a class="glightbox" href="/img/design-guide/stage2-slapdown/intakeTopLevel.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/intakeTopLevel.webp" width="70%"></a></center></p>
 <p>The reference is provided in <a href="https://cad.onshape.com/documents/17302d787e092ce11015f7ee/w/f7cf5c02c7655f0328a3a74a/e/f1456325e0175c4c081008c2?renderMode=0&amp;uiState=6652c72b09aa2845d67f627f"><strong>this document</strong></a>. Model a copy of it in your own document. The mechanism design concepts, decisions made for this design, and a basic guide are all provided below.</p>
 <h3 id="engineering-concepts-decisions">Engineering Concepts &amp; Decisions</h3>
 <p>The following sections cover the design rationale for the slapdown intake you will be copying. This integrates practical design principles with CAD skills for a more complete understanding of mechanism design.</p>
@@ -1939,7 +1939,7 @@
 <p>For controlling the intake position, no absolute encoder is needed. You can zero the position when it is stowed and against the <abbr title="A physical limit designed to prevent a mechanism or component from moving beyond a certain point.">hardstop</abbr> or have it rest on the ground when the robot is turned on, and use the relative encoder to take it to a specific position down.
   <br>
   <figure>
-  <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage2-slapdown\pivot.webp" alt="Power Example" width="60%" style="border:5px solid #ADADAD"></a>
+  <a class="glightbox" href="\img\design-guide\stage2-slapdown\pivot.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage2-slapdown\pivot.webp" alt="Power Example" width="60%" style="border:5px solid #ADADAD"></a>
   <figcaption> An Intake Pivot</figcaption>
   </figure></p>
 </details>
@@ -1949,7 +1949,7 @@
 <p>There are 3 total rollers. Rollers often provide more consistent compression than wheels and are a great option for transporting game pieces. They are typically cheaper, lighter, and easier to put on a dead axle than wheels. Dead axles allow the intake arms to be connected by effectively long standoffs, making the assembly more rigid, while still allowing the rollers to spin on bearings. The dead axle rollers used in this project use polycarbonate tube and 3D-printed endcaps for the bearings and power transfer. The document can be found <a href="https://cad.onshape.com/documents/b75886a5660c38eee7d50e47/w/58faeca16d5b2008a9485b5c/e/6274f59b451ed6222cd7523d">here</a>.</p>
 <p>Only 2 of the rollers are on the pivoting arm portion. The final one inside the frame perimeter is on a separate plate. This can keep the pivot for the intake arms lower, lowering the vertical height of the intake when stowed.
   <figure>
-<a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage2-slapdown\ball-path.webp" alt="Ball Path" width="60%" style="border:5px solid #ADADAD"></a>
+<a class="glightbox" href="\img\design-guide\stage2-slapdown\ball-path.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage2-slapdown\ball-path.webp" alt="Ball Path" width="60%" style="border:5px solid #ADADAD"></a>
 <figcaption> See how the roller positions impact the ball path</figcaption>
 </figure></p>
 </details>
@@ -1964,7 +1964,7 @@
 <li>Sketch roller or wheel positions needed to get the game piece to move that way. The distance between rollers should be adjusted using the <a href="https://wcproducts.com/pages/calculator-belt"><abbr title="West Coast Products">WCP</abbr> Belt Calculator</a>. "Extra center" should be set as -0.02 for ease of assembly and efficiency.</li>
 <li>Use a sketch circular pattern to represent the stowed position of your intake rollers and define where you want the pivot to be</li>
 </ol>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/masterSketch.webp" width="70%" style="border:5px solid #ADADAD"></a></center></p>
+<p><center><a class="glightbox" href="/img/design-guide/stage2-slapdown/masterSketch.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/masterSketch.webp" width="70%" style="border:5px solid #ADADAD"></a></center></p>
 <h3 id="part-studio">Part Studio</h3>
 <ol>
 <li>Insert the origin cube (use the featurescript)</li>
@@ -1978,15 +1978,15 @@
 <li>Use your chosen belt/chain generator featurescripts to create the belts and chain</li>
 <li>Name and give materials and appearances to all your parts</li>
 </ol>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/intakePartStudio.webp" width="70%"></a></center></p>
+<p><center><a class="glightbox" href="/img/design-guide/stage2-slapdown/intakePartStudio.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/intakePartStudio.webp" width="70%"></a></center></p>
 <h3 id="assembly">Assembly</h3>
 <p>Just like the dead axle pivot, this subsystem contains a static part and a moving part. Again, we want to separate them into rigid (no movement) assemblies, then combine them at the top level. </p>
 <p>Create an assembly for the static parts, insert the parts and origin cube from the part studio with the green checkmark, and group them together. Fasten the origin cube to the origin. Add the rest of the parts from the part studio, MKCAD, and standard content, using replicate and patterns when you can. <a href="https://cad.onshape.com/documents/b75886a5660c38eee7d50e47/w/58faeca16d5b2008a9485b5c/e/6274f59b451ed6222cd7523d">Here's the link</a> to the <abbr title="A type of axle setup where the axle is fixed in place and or is not transferring the torque of the system through it.">deadaxle</abbr> rollers again. </p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/staticAssembly.webp" width="70%"></a></center></p>
+<p><center><a class="glightbox" href="/img/design-guide/stage2-slapdown/staticAssembly.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/staticAssembly.webp" width="70%"></a></center></p>
 <p>Create an assembly for the intake arms and do the same thing as above to complete the assembly and make it rigid.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/intakeArms.webp" width="70%"></a></center></p>
+<p><center><a class="glightbox" href="/img/design-guide/stage2-slapdown/intakeArms.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/intakeArms.webp" width="70%"></a></center></p>
 <p>Now create a top level assembly and insert the static assembly (fasten to the origin) and intake arm assembly. Create a revolute mate between the mate connectors from the origin cubes in both assemblies and add a limit to it. This completes the slapdown intake assembly.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/intakeTopLevel.webp" width="70%"></a></center></p>
+<p><center><a class="glightbox" href="/img/design-guide/stage2-slapdown/intakeTopLevel.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage2-slapdown/intakeTopLevel.webp" width="70%"></a></center></p>
 <h2 id="summary">Summary</h2>
 <p>You've completed Stage 2D! To summarize what you've learned in this stage:</p>
 <ul>
@@ -2051,17 +2051,17 @@
       
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Revision-0">
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
         </a>
       
         <a href="https://github.com/howlongismyname" class="md-author" title="@howlongismyname">
           
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/59844493.fe356448.png" alt="howlongismyname">
+          <img src="https://avatars.githubusercontent.com/u/59844493?v=4&size=72" alt="howlongismyname">
         </a>
       
         <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
           
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/34979278.fe356448.jpg" alt="jonathanmi6">
+          <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
         </a>
       
       
@@ -2183,19 +2183,7 @@
       <script src="../../../assets/javascripts/bundle.94ab4cf4.min.js"></script>
       
     
-  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
-    try {
-        var img = element.querySelector('img');
-        if (img && img.src) {
-            element.setAttribute('href', img.src);
-        } else {
-            console.log('No img element with src attribute found');
-        }
-    } catch (error) {
-        console.log('Error:', error);
-    }
-});
-const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>

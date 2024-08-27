@@ -88,8 +88,8 @@
       
         
         
-        
-        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -1999,7 +1999,7 @@
 <li>Create a top-level assembly and insert a pre-modeled mechanism (1678's 2023 elevator and manipulator) </li>
 </ol>
 <p>Even if you've already CADed a drivetrain the past, this guide serves as an excellent introduction to the <strong>top-down master sketch</strong> design methodology.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\FullAssy.webp" style="width:100%"></a></center>
+<p><center><a class="glightbox" href="\img\design-guide\stage1c\FullAssy.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\FullAssy.webp" style="width:100%"></a></center>
 <center><em>Swerve drivebase with pre-modeled mechanism</em></center></p>
 <p>As with previous exercises, the finished project is available for reference <a href="https://cad.onshape.com/documents/6c6044229091a87cf359270b/w/ed9648f0c04c639a2561615a/e/67a7ed0c6038787281325a51">here</a>. If you need help, please feel free to ask on the Discord!</p>
 <h2 id="master-sketch-methodology">Master Sketch Methodology</h2>
@@ -2008,13 +2008,13 @@
 <p>To achieve this, a <strong><em>master sketch</em></strong> is utilized. A master sketch is a series of sketches that capture the major dimensions of each mechanism, field element interactions, and robot size constraints. Then, the master sketch(es) are inserted into each mechanism's part studio and the individual components are then modeled around the imported layout sketch. More information on master sketches can be found on the <a href="/best-practices/mastersketch-setup/">Master Sketch Best Practices</a> page.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\exampleMasterSketch.webp" style="width:60%"></a></center>
+<p><center><a class="glightbox" href="\img\design-guide\stage1c\exampleMasterSketch.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\exampleMasterSketch.webp" style="width:60%"></a></center>
 <center><em>Example of robot master sketches. Each mechanism has a number of layout sketches that capture the important details.</em></center></p>
 </div>
 <h2 id="swerve-drivebase">Swerve Drivebase</h2>
 <p>A drivebase is the mobile platform on which all our other mechanisms are designed around and attached to. With the advent of reliable <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> swerve, designing a swerve drivebase has been made significantly easier and has become the most commonly used competitive drivetrain in FRC. </p>
 <p>A swerve drivebase is composed of four <em>swerve modules</em>. Each module has two motors: one for spinning the wheel and one for steering it. This enables the robot to translate in any direction independent of the rotation of the robot. In this project, we'll be using <a href="https://www.swervedrivespecialties.com/products/mk4i-swerve-module">SDS MK4i modules</a>. There are many other <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> options available, each with their own advantages and tradeoffs. You can learn more about drivetrains on the <a href="/design-fundamentals/mechanisms/drivetrain/">Design Fundamentals</a> page.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\SwerveBase\DriveAssy.webp" style="width:100%"></a></center>
+<p><center><a class="glightbox" href="\img\design-guide\stage1c\SwerveBase\DriveAssy.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\design-guide\stage1c\SwerveBase\DriveAssy.webp" style="width:100%"></a></center>
 <center><em>Stage 1C swerve drivebase project.</em></center></p>
 <p>As was introduced in Stage 1A, robot structures are typically constructed out of aluminum box tubing. The drivebase is no exception to this. Most teams will opt to design their box tubing with a standard 0.5" spacing pattern of 0.196" diameter holes. This enables modularity and allows for easy integration of many <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> components like gussets.</p>
 <p>Box tubing extrusions can be purchased at most metal suppliers, but many FRC vendors including <a href="https://wcproducts.com/collections/systems-structure/products/punched-tubing"><abbr title="West Coast Products">WCP</abbr></a>, <a href="https://www.thethriftybot.com/products/thrifty-box-extrusion"><abbr title="The Thrifty Bot">TTB</abbr></a>, and <a href="https://www.revrobotics.com/MAXTube/"><abbr title="REV Robotics">REV</abbr></a> sell box tubing with pre-cut hole patterns which can significantly reduce manufacturing time and equipment requirements.</p>
@@ -2028,28 +2028,28 @@
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtFinalLayout.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtFinalLayout.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtFinalLayout.webp" style="width:100%"></a>
       <figcaption>0. The final layout sketch.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/originCube.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/originCube.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/originCube.webp" style="width:100%"></a>
       <figcaption>1. Start by inserting the origin cube.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtSideLayout1.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtSideLayout1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtSideLayout1.webp" style="width:100%"></a>
       <figcaption>2. Draw the side profile of the drivetrain on the Right Plane. We place the tube 1.75" from the ground, which is the offset from the ground to the bottom of the tube for the MK4i modules.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtSideLayout2.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtSideLayout2.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtSideLayout2.webp" style="width:100%"></a>
       <figcaption>3. Draw the wheel clearance box, which represents the area that the wheel takes up. For the MK4i modules, the box is 4.625" wide. The side layout of the drivebase is now finished.</figcaption>
     </figure>
   </div>
@@ -2076,14 +2076,14 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtTopLayout3.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtTopLayout3.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtTopLayout3.webp" style="width:100%"></a>
       <figcaption>6. To sketch the tubes, draw a square 1" smaller than the previous square. This will represent the four 2"x1" tubes that make up the outer frame. Then, draw the top profile of the 2"x2" tube.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtTopLayout4.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtTopLayout4.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtTopLayout4.webp" style="width:100%"></a>
       <figcaption>7. Next, we need to make the cutouts on the drivetube for the swerve modules. Start by drawing two lines, each offset by 4.25" from the edge. This is the required offset for MK4i modules. Other modules will differ.</figcaption>
     </figure>
   </div>
@@ -2100,7 +2100,7 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtFinalLayout.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtFinalLayout.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtFinalLayout.webp" style="width:100%"></a>
       <figcaption>9. Finally, name your sketches and organize them into folders in the feature tree. Your sketches should all be fully defined.</figcaption>
     </figure>
   </div>
@@ -2125,28 +2125,28 @@
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts0.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtParts0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts0.webp" style="width:100%"></a>
       <figcaption>0. The part studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts1.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtParts1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts1.webp" style="width:100%"></a>
       <figcaption>1. Start by inserting the origin cube. Then, use the <code>Derived</code> tool to insert the layout sketches you previously drew from the Master Sketch part studio. This feature will automatically update if changes are made to the layout sketch.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts2.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtParts2.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts2.webp" style="width:100%"></a>
       <figcaption>2. Use the <code>Extrude Individual</code> and <code>Tube Converter</code> Featurescripts to model the tubes. The 2"x1" tubes should be 1/8" wall for strength, while the 2"x2" tube can be 1/16" wall.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts3.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtParts3.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts3.webp" style="width:100%"></a>
       <figcaption>3. Start with one corner of the bellypan. The corner is cut out to create room for the swerve module. </figcaption>
     </figure>
   </div>
@@ -2173,14 +2173,14 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts6.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtParts6.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts6.webp" style="width:100%"></a>
       <figcaption>6. Use the <code> Fillet All Edges</code> Featurescript to add a 0.25" radius fillet to the remaining edges on the bellypan by selecting the bottom face of the bellypan.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts7.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtParts7.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts7.webp" style="width:100%"></a>
       <figcaption>7. Add the seed instances of the holes for the bellypan.</figcaption>
     </figure>
   </div>
@@ -2217,14 +2217,14 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts11.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtParts11.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts11.webp" style="width:100%"></a>
       <figcaption>11. Clean up the sketch by moving the dimensions so that they are all visible. A clean sketch is important for readability of the CAD so that it is easily editable in the future.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts0.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtParts0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtParts0.webp" style="width:100%"></a>
       <figcaption>12. Finally, name your sketches and organize them into a folder in the feature tree. Additionally, set the material of the bellypan to Aluminum 6061 and name your parts.</figcaption>
     </figure>
   </div>
@@ -2250,7 +2250,7 @@
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAssy0.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtAssy0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAssy0.webp" style="width:100%"></a>
       <figcaption>0. The assembly.</figcaption>
     </figure>
   </div>
@@ -2307,7 +2307,7 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAssy0.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtAssy0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAssy0.webp" style="width:100%"></a>
       <figcaption>6. The assembly.</figcaption>
     </figure>
   </div>
@@ -2338,14 +2338,14 @@
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd0.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtAdd0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd0.webp" style="width:100%"></a>
       <figcaption>0. Finished drivetrain assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd1.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtAdd1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd1.webp" style="width:100%"></a>
       <figcaption>1. Add the gusset for the crosstube with the <code>Gusset</code> Featurescript.</figcaption>
     </figure>
   </div>
@@ -2362,7 +2362,7 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd3.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtAdd3.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd3.webp" style="width:100%"></a>
       <figcaption>3. Copy the gusset and mate it to the other side. </figcaption>
     </figure>
   </div>
@@ -2379,7 +2379,7 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd0.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/SwerveBase/dtAdd0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/SwerveBase/dtAdd0.webp" style="width:100%"></a>
       <figcaption>4. Finished drivetrain assembly.</figcaption>
     </figure>
   </div>
@@ -2407,7 +2407,7 @@
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/TopLevel/topL0.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/TopLevel/topL0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/TopLevel/topL0.webp" style="width:100%"></a>
       <figcaption>0. Finished top level robot assembly.</figcaption>
     </figure>
   </div>
@@ -2434,7 +2434,7 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/TopLevel/topL0.webp" style="width:100%"></a>
+      <a class="glightbox" href="/img/design-guide/stage1c/TopLevel/topL0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage1c/TopLevel/topL0.webp" style="width:100%"></a>
       <figcaption>3. Finished top level assembly. </figcaption>
     </figure>
   </div>
@@ -2567,17 +2567,17 @@ function showSlides(n, no) {
       
         <a href="https://github.com/Nsl106" class="md-author" title="@Nsl106">
           
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/87742096.fe356448.png" alt="Nsl106">
+          <img src="https://avatars.githubusercontent.com/u/87742096?v=4&size=72" alt="Nsl106">
         </a>
       
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Revision-0">
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
         </a>
       
         <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
           
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/34979278.fe356448.jpg" alt="jonathanmi6">
+          <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
         </a>
       
       
@@ -2699,19 +2699,7 @@ function showSlides(n, no) {
       <script src="../../../assets/javascripts/bundle.94ab4cf4.min.js"></script>
       
     
-  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
-    try {
-        var img = element.querySelector('img');
-        if (img && img.src) {
-            element.setAttribute('href', img.src);
-        } else {
-            console.log('No img element with src attribute found');
-        }
-    } catch (error) {
-        console.log('Error:', error);
-    }
-});
-const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>

@@ -88,8 +88,8 @@
       
         
         
-        
-        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -1364,10 +1364,10 @@
 
 
 <h1 id="krayoncad">KrayonCAD</h1>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\KrayonCAD.webp"></a></center></p>
+<p><center><a class="glightbox" href="\img\krayonCAD\KrayonCAD.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\KrayonCAD.webp"></a></center></p>
 <h2 id="what-is-krayoncad">What is KrayonCAD?</h2>
 <p>KrayonCAD is a collection of simplified, configurable Onshape assemblies for the most common FRC subsystems. These subsystems can be modified by changing just a few variables, allowing you to piece together a robot concept extremely quickly and efficiently. KrayonCAD Assemblies only contain the necessary parts to communicate design intent, while minimizing detail and part count to ensure quick load times.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\6657krayon.webp" width="50%"></a></center></p>
+<p><center><a class="glightbox" href="\img\krayonCAD\6657krayon.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\6657krayon.webp" width="50%"></a></center></p>
 <h2 id="why-should-i-use-krayoncad">Why should I use KrayonCAD?</h2>
 <p>After brainstorming ideas for a new game, the first CAD iteration is sometimes a heavily simplified design, commonly referred to as “Crayola CAD.” This workflow is used by many teams, including team 254. This is where KrayonCAD comes in; using a library of configurable subsystems, KrayonCAD allows you to:</p>
 <ul>
@@ -1382,15 +1382,15 @@
 <ol>
 <li>
 <p>Insert: From any Onshape assembly, use the MKCAD app to insert a KrayonCAD Assembly. You can configure the Assembly before inserting.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\krayoncadInsert.gif"></a></center></p>
+<p><center><a class="glightbox" href="\img\krayonCAD\krayoncadInsert.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\krayoncadInsert.gif"></a></center></p>
 </li>
 <li>
 <p>Configure: Right click a KrayonCAD Assembly in the parts list &gt; Configure &gt; change dimensions, check or uncheck boxes, and choose options from drop down lists to configure the assembly to your liking.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\krayoncadConfigure.gif"></a></center></p>
+<p><center><a class="glightbox" href="\img\krayonCAD\krayoncadConfigure.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\krayoncadConfigure.gif"></a></center></p>
 </li>
 <li>
 <p>Mate: KrayonCAD Assemblies have mate connectors placed in strategic places to allow for easy mating using the Fasten and Revolute mate types.</p>
-<p><center><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\krayoncadMate.gif"></a></center></p>
+<p><center><a class="glightbox" href="\img\krayonCAD\krayoncadMate.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\krayonCAD\krayoncadMate.gif"></a></center></p>
 </li>
 </ol>
 <h2 id="credit">Credit</h2>
@@ -1449,7 +1449,7 @@
       
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
-          <img src="../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Revision-0">
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
         </a>
       
       
@@ -1571,19 +1571,7 @@
       <script src="../../assets/javascripts/bundle.94ab4cf4.min.js"></script>
       
     
-  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
-    try {
-        var img = element.querySelector('img');
-        if (img && img.src) {
-            element.setAttribute('href', img.src);
-        } else {
-            console.log('No img element with src attribute found');
-        }
-    } catch (error) {
-        console.log('Error:', error);
-    }
-});
-const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>

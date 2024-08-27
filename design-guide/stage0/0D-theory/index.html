@@ -88,8 +88,8 @@
       
         
         
-        
-        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -1841,21 +1841,21 @@
 
 <h1 id="0d-theory">0D: Theory</h1>
 <p>As you probably know, CAD is a tool used to design parts digitally before they are manufactured. Most of our documentation will focus on FRC-specific CAD practice. However, to get started with Onshape, it’s important to understand some basic theory.</p>
-<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" alt="purple_cylinder" src="../../../img/design-guide/stage0/theory/purplecyl.webp" width="15%" /></a></p>
+<p><a class="glightbox" href="../../../img/design-guide/stage0/theory/purplecyl.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" alt="purple_cylinder" src="../../../img/design-guide/stage0/theory/purplecyl.webp" width="15%" /></a></p>
 <hr style="height:5px; visibility:hidden;" />
 
 <p>Consider a basic 3D object, such as this cylinder. Every object you design in Onshape starts with a 2D sketch within a window called a part studio. Sketches are used to define a 2D profile, that is then manipulated with features. These features transform the 2D sketch, one change at a time, into a 3D object - by “extruding” or pulling the profile into 3D, revolving it around an axis, or by other methods. </p>
 <p><br></p>
 <h2 id="starting-with-a-sketch">Starting with a Sketch</h2>
-<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/theory/cross-light.webp#only-light" style="float:right; width:35%; margin-left:15px; margin-top:-30px"></a>
-<a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/theory/cross-dark.webp#only-dark" style="float:right; width:35%; margin-left:15px; margin-top:-30px"></a>
+<p><a class="glightbox" href="/img/design-guide/stage0/theory/cross-light.webp#only-light" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/theory/cross-light.webp#only-light" style="float:right; width:35%; margin-left:15px; margin-top:-30px"></a>
+<a class="glightbox" href="/img/design-guide/stage0/theory/cross-dark.webp#only-dark" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/design-guide/stage0/theory/cross-dark.webp#only-dark" style="float:right; width:35%; margin-left:15px; margin-top:-30px"></a>
 If you wanted to create this cylinder in Onshape, we would start by representing its profile in a 2D sketch. So what would this sketch look like for a cylinder? If we take the section from the plane on the top of the cylinder. In Onshape this is called the “Top” plane. We can see that this sketch forms a circle. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We could represent the cylinder in other 2D ways, if we chose a different plane.</p>
 </div>
 <h2 id="making-the-leap-to-3d">Making the leap to 3D</h2>
-<p><a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" alt="extrude" src="../../../img/design-guide/stage0/theory/extrude-light.webp#only-light" width="40%" /></a> <a class="glightbox" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" alt="extrude" src="../../../img/design-guide/stage0/theory/extrude-dark.webp#only-dark" width="40%" /></a></p>
+<p><a class="glightbox" href="../../../img/design-guide/stage0/theory/extrude-light.webp#only-light" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" alt="extrude" src="../../../img/design-guide/stage0/theory/extrude-light.webp#only-light" width="40%" /></a> <a class="glightbox" href="../../../img/design-guide/stage0/theory/extrude-dark.webp#only-dark" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" alt="extrude" src="../../../img/design-guide/stage0/theory/extrude-dark.webp#only-dark" width="40%" /></a></p>
 <p>While in the sketch, we define the nature of the circle - its position in space and its diameter. When we bring the sketch into 3D, these characteristics are maintained - determining the final diameter and position of the cylinder within the part studio. It is important to completely define the characteristics sketches so that the characteristics of the part being designed are not arbitrary. </p>
 <p><br>
 But how do we transform this defined sketch into a 3D object? By using <em>features</em>. In this case, an “extrude” feature is used to extend the profile of the sketch into 3D space.
@@ -1930,7 +1930,7 @@ Just like how we defined the sketch, we define the characteristics of this extru
       
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
-          <img src="../../../assets/external/avatars.githubusercontent.com/u/68137729.fe356448.jpg" alt="Revision-0">
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
         </a>
       
       
@@ -2052,19 +2052,7 @@ Just like how we defined the sketch, we define the characteristics of this extru
       <script src="../../../assets/javascripts/bundle.94ab4cf4.min.js"></script>
       
     
-  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
-    try {
-        var img = element.querySelector('img');
-        if (img && img.src) {
-            element.setAttribute('href', img.src);
-        } else {
-            console.log('No img element with src attribute found');
-        }
-    } catch (error) {
-        console.log('Error:', error);
-    }
-});
-const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>
