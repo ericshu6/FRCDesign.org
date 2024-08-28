@@ -545,6 +545,8 @@
         
       
         
+          
+        
       
         
       
@@ -1142,23 +1144,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    
-  
-    Drivetrain
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1174,80 +1159,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#types-of-drivetrains" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Types of Drivetrains
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-drivebase-choices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Drivebase Choices
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#frame-perimeter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Frame Perimeter
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wheelbase-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Wheelbase Location
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#electrical-mounting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Electrical Mounting
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1863,7 +1774,9 @@
   
 
 
-<style>
+<h1 id="drivebase-fundamentals">Drivebase Fundamentals</h1>
+<p><strong>Coming Soon</strong></p>
+<!-- <style>
 
 td, th , table{
    border: none!important;
@@ -1880,174 +1793,124 @@ table tr:hover{
 
 </style>
 
-<h1 id="drivebase-fundamentals">Drivebase Fundamentals</h1>
-<h2 id="types-of-drivetrains">Types of Drivetrains</h2>
-<ul>
-<li>Swerve - A drivetrain with 4 wheels in which all drive wheels are independently driven and steered. Drivetrain can move in any direction</li>
-</ul>
-<figure>
-<a class="glightbox" href="../../../img/mechanism-fundamentals/swerve.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="swerve" height="50%" src="../../../img/mechanism-fundamentals/swerve.png" width="50%" /></a>
+# Drivebase Fundamentals
+
+
+## Types of Drivetrains
+
+- Swerve - A drivetrain with 4 wheels in which all drive wheels are independently driven and steered. Drivetrain can move in any direction
+<figure markdown="span">
+![swerve](../../img/mechanism-fundamentals/swerve.png){height=50% width=50%}
 </figure>
-<ul>
-<li>Kit of Part drivebase - 6 wheel drop center(the middle wheels is lower than the outer wheels) drive base made from bent-sheet metal and comes with the kit of parts. </li>
-</ul>
-<figure>
-<a class="glightbox" href="../../../img/mechanism-fundamentals/KOP.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="KOP" height="50%" src="../../../img/mechanism-fundamentals/KOP.png" width="50%" /></a>
+- Kit of Part drivebase - 6 wheel drop center(the middle wheels is lower than the outer wheels) drive base made from bent-sheet metal and comes with the kit of parts. 
+<figure markdown="span">
+![KOP](../../img/mechanism-fundamentals/KOP.png){height=50% width=50%}
 </figure>
-<ul>
-<li>West Coast Drive (WCD) - A six wheel drive base with a drop-center wheel that is directly driven from the gearbox. Traditionally, the power transmission is driven with chain, a gearbox, and box tubing for rigidity. A key characteristic for west coast drives is that the wheels are cantilevered. </li>
-</ul>
-<figure>
-<a class="glightbox" href="../../../img/mechanism-fundamentals/nickwcd.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="WCD" height="50%" src="../../../img/mechanism-fundamentals/nickwcd.webp" width="50%" /></a>
+- West Coast Drive (WCD) - A six wheel drive base with a drop-center wheel that is directly driven from the gearbox. Traditionally, the power transmission is driven with chain, a gearbox, and box tubing for rigidity. A key characteristic for west coast drives is that the wheels are cantilevered. 
+<figure markdown="span">
+![WCD](../../img/mechanism-fundamentals/nickwcd.webp){height=50% width=50%}
 </figure>
-<h2 id="key-drivebase-choices">Key Drivebase Choices</h2>
+
+## Key Drivebase Choices
+
 <p style="font-size:1rem;">Rigidity</p>
 
-<p>In a single FRC game, robots encounter huge forces from collisions, and a rigid frame helps to reduce the risk of any structural damage. In your drivebase, you want to add something to increase the rigidity, such as a cross rail. When building a superstructure, you need to think from the bottom up, and it starts with your drivetrain being as rigid as possible.</p>
+In a single FRC game, robots encounter huge forces from collisions, and a rigid frame helps to reduce the risk of any structural damage. In your drivebase, you want to add something to increase the rigidity, such as a cross rail. When building a superstructure, you need to think from the bottom up, and it starts with your drivetrain being as rigid as possible.
+
 <p style="font-size:1rem;">What do cross members do for your structure?</p>
-<ul>
-<li>Contrary to popular belief, metal isn’t as strong as stable as people think, and it likes to “parallelogram” when compressive loads begin to come on your bracing.</li>
-</ul>
-<figure>
-<a class="glightbox" href="../../../img/mechanism-fundamentals/parallel.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="parallel" height="150%" src="../../../img/mechanism-fundamentals/parallel.png" width="150%" /></a><figcaption> In this picture you can see the square frame turns into a parallelogram as a load comes onto the left side. In a single FRC match, your chassis undergoes a ton of forces, which can affect the shape of your drivebase. </figcaption>
+- Contrary to popular belief, metal isn’t as strong as stable as people think, and it likes to “parallelogram” when compressive loads begin to come on your bracing.
+
+<figure markdown="span">
+![parallel](../../img/mechanism-fundamentals/parallel.png){height=150% width=150%}<figcaption> In this picture you can see the square frame turns into a parallelogram as a load comes onto the left side. In a single FRC match, your chassis undergoes a ton of forces, which can affect the shape of your drivebase. </figcaption>
 </figure>
+
 <p style="font-size:1rem;">Where to place cross rails?</p>
 
-<ul>
-<li>
-<p>There are two main type of cross members that teams do:</p>
-<ul>
-<li>The first type is two vertical cross members, as close to the swerve modules as possible.
-<figure markdown="span">
-<a class="glightbox" href="../../../img/mechanism-fundamentals/twoCross.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="twoCross" height="50%" src="../../../img/mechanism-fundamentals/twoCross.png" width="50%" /></a>
-</figure></li>
-<li>Pros:<ul>
-<li>Easier to mount things</li>
-<li>Stiff structure, less change of compressive loads affecting your drivebase.</li>
-</ul>
-</li>
-<li>
-<p>Cons:</p>
-<ul>
-<li>You severely limit your electrical boards accessibility, and it affects the placement of your electronics.</li>
-</ul>
-</li>
-<li>
-<p>The second type is a single 2x2 Horizontal Cross beam.
-<figure markdown="span">
-<a class="glightbox" href="../../../img/mechanism-fundamentals/citrusCirc.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="citrusCirc" height="50%" src="../../../img/mechanism-fundamentals/citrusCirc.png" width="50%" /></a>
-</figure></p>
-</li>
-<li>Pros:<ul>
-<li>Opens up a ton of electrical board space</li>
-<li>Stronger than having a single 2x1 there because of your cross sectional area, and it can withstand higher loads before yielding or failing. </li>
-<li>Moment of inertia is double, due to the width being double meaning there's a much larger increase in strength.</li>
-<li>2x2 box tubing spreads the <a href="https://www.youtube.com/watch?v=C-FEVzI8oe8&amp;t=109s&amp;ab_channel=TheEfficientEngineer"><abbr title="When forces are applied parallel to the plane of a material, causing breaking of fasteners due to excessive force and stress.">shear</abbr>-load</a> across a larger area</li>
-<li>Stiffness of 2x2 is nicer.</li>
-</ul>
-</li>
-<li>Cons: <ul>
-<li>Harder to mount your superstructure from there, you might have to introduce additional tubes.<ul>
-<li>This could mean that you have to potentially introduce complex bent-metal parts</li>
-</ul>
-</li>
-<li>Severely locks you into a mounting style.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+- There are two main type of cross members that teams do:
+    - The first type is two vertical cross members, as close to the swerve modules as possible.
+    <figure markdown="span">
+    ![twoCross](../../img/mechanism-fundamentals/twoCross.png){height=50% width=50%}
+    </figure>
+    - Pros:
+        - Easier to mount things
+        - Stiff structure, less change of compressive loads affecting your drivebase.
+    - Cons:
+        - You severely limit your electrical boards accessibility, and it affects the placement of your electronics.
+
+    - The second type is a single 2x2 Horizontal Cross beam.
+    <figure markdown="span">
+    ![citrusCirc](../../img/mechanism-fundamentals/citrusCirc.png){height=50% width=50%}
+    </figure>
+    - Pros:
+        - Opens up a ton of electrical board space
+        - Stronger than having a single 2x1 there because of your cross sectional area, and it can withstand higher loads before yielding or failing. 
+        - Moment of inertia is double, due to the width being double meaning there's a much larger increase in strength.
+        - 2x2 box tubing spreads the [shear-load](https://www.youtube.com/watch?v=C-FEVzI8oe8&t=109s&ab_channel=TheEfficientEngineer) across a larger area
+        - Stiffness of 2x2 is nicer.
+    - Cons: 
+        - Harder to mount your superstructure from there, you might have to introduce additional tubes.
+            - This could mean that you have to potentially introduce complex bent-metal parts
+        - Severely locks you into a mounting style.
 <p style="font-size:1rem;">Which tube thickness should you use?</p>
-<ul>
-<li>In a majority of drivebases, people use 2x1 Box tubing that is 1/8th thickness. <ul>
-<li>Generally, the thinner the wall thickness, the more susceptible it is to tearing, as well as crushing. In matches with heavy impacts, your drivebase tubes are the last thing you want bending: <ul>
-<li>1/8" wall thickness is best in scenarios where you know that you will have impacts, or in areas where you know that stress concentration will have to be high according to how it is fixtured or assembled.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+- In a majority of drivebases, people use 2x1 Box tubing that is 1/8th thickness. 
+    - Generally, the thinner the wall thickness, the more susceptible it is to tearing, as well as crushing. In matches with heavy impacts, your drivebase tubes are the last thing you want bending: 
+         - 1/8" wall thickness is best in scenarios where you know that you will have impacts, or in areas where you know that stress concentration will have to be high according to how it is fixtured or assembled.
+
 <p style="font-size:1rem;">Bellypans and their impact on rigidity</p>
-<ul>
-<li>A belly pan is a plate for mounting electronics on the underside of your drivebase, however it also tremendously impacts the rigidity of your drivebase as it acts like a giant <abbr title="Reinforcement plate, usually made of aluminum, used to strengthen connections between two tubes.">gusset</abbr> bringing everything together </li>
-<li>By spanning the underside of the drivebase and connecting to the key structural elements like the frame rails/cross-members, the belly pan is able to distribute loads evenly across the entire structure and the integration helps to prevent any flexing or deformation of the frame. </li>
-</ul>
+- A belly pan is a plate for mounting electronics on the underside of your drivebase, however it also tremendously impacts the rigidity of your drivebase as it acts like a giant gusset bringing everything together 
+- By spanning the underside of the drivebase and connecting to the key structural elements like the frame rails/cross-members, the belly pan is able to distribute loads evenly across the entire structure and the integration helps to prevent any flexing or deformation of the frame. 
+
 <p style="font-size:1rem;">What material should my bellypan be?</p>
-<ul>
-<li>By increasing the thickness of your belly pan, and changing the material, you can drastically change the center of gravity of your robot. </li>
-<li>Popular Material Types:<ul>
-<li>Steel:<ul>
-<li>Pros:<ul>
-<li>Low center of gravity</li>
-<li>High strength</li>
-</ul>
-</li>
-<li>Cons:<ul>
-<li>Heavy weight means you may need to lighten other parts of your robot to be under the weight limit. (See team 254's robot in 2022 when they used a 1/4" Steel <abbr title="Plate for mounting electronics on the underside of your drivebase.">Bellypan</abbr> and compensated by lightening all their other parts)</li>
-<li>Hard to machine</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Aluminum:<ul>
-<li>Pros:<ul>
-<li>Easy to machine</li>
-<li>Relatively high strength</li>
-<li>Lighter weight than steel</li>
-</ul>
-</li>
-<li>Cons:<ul>
-<li>Aluminum is expensive.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Polycarbonate:<ul>
-<li>Pros: <ul>
-<li>Lightweight, meaning that you are able to allocate more weight to other parts of the robot. </li>
-<li>Relatively cost-effective</li>
-<li>Very simple to machine.</li>
-</ul>
-</li>
-<li>Cons:<ul>
-<li>Lower rigidity and can flex</li>
-<li>Lower weight means that your center of gravity could be higher than you want it to be.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>What a lot of teams do to maintain rigidity while lightening the weight is called a pocketed <abbr title="Plate for mounting electronics on the underside of your drivebase.">bellypan</abbr> , and what this accomplishes is it takes away the material in unnecessary places, while allowing for electronics to  be mounted by keeping the holes in the correct locations.</li>
-</ul>
-<figure>
-<a class="glightbox" href="../../../img/mechanism-fundamentals/bPan.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="bPan" height="50%" src="../../../img/mechanism-fundamentals/bPan.png" width="50%" /></a>
+ - By increasing the thickness of your belly pan, and changing the material, you can drastically change the center of gravity of your robot. 
+- Popular Material Types:
+    - Steel:
+        - Pros:
+            - Low center of gravity
+            - High strength
+        - Cons:
+            - Heavy weight means you may need to lighten other parts of your robot to be under the weight limit. (See team 254's robot in 2022 when they used a 1/4" Steel Bellypan and compensated by lightening all their other parts)
+            - Hard to machine
+    - Aluminum:
+        - Pros:
+            - Easy to machine
+            - Relatively high strength
+            - Lighter weight than steel
+        - Cons:
+            - Aluminum is expensive.
+    - Polycarbonate:
+        - Pros: 
+            - Lightweight, meaning that you are able to allocate more weight to other parts of the robot. 
+            - Relatively cost-effective
+            - Very simple to machine.
+        - Cons:
+            - Lower rigidity and can flex
+            - Lower weight means that your center of gravity could be higher than you want it to be.
+- What a lot of teams do to maintain rigidity while lightening the weight is called a pocketed bellypan , and what this accomplishes is it takes away the material in unnecessary places, while allowing for electronics to  be mounted by keeping the holes in the correct locations.
+<figure markdown="span">
+![bPan](../../img/mechanism-fundamentals/bPan.png){height=50% width=50%}
 </figure>
-<h2 id="frame-perimeter">Frame Perimeter</h2>
-<ul>
-<li>In accordance with the game manual, your drivebase frame perimeter must be a maximum of 120". <ul>
-<li>Frame Extension: <ul>
-<li>In accordance to the game manual, at the beginning of your match, no part of your robot can stick out of the frame. To gain more clearance teams use <a href="https://cad.onshape.com/documents/3969471095df924bad241f81/w/42f02d1579e8bcd9c0435d48/e/b1b02258ec73e6686b1e62fd">Swerve-Corners</a> and 1/4” plates to extend their frame perimeter by a 1/2” on all sides, and this allows to mount plates to the edges of your tubing.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure>
-<a class="glightbox" href="../../../img/mechanism-fundamentals/swerveCorner.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="swerveCorner" height="50%" src="../../../img/mechanism-fundamentals/swerveCorner.png" width="50%" /></a><figcaption>You can see in the highlighted section that it sticks out further than your box tubing extension.</figcaption>
+
+## Frame Perimeter
+
+- In accordance with the game manual, your drivebase frame perimeter must be a maximum of 120". 
+    - Frame Extension: 
+        - In accordance to the game manual, at the beginning of your match, no part of your robot can stick out of the frame. To gain more clearance teams use [Swerve-Corners](https://cad.onshape.com/documents/3969471095df924bad241f81/w/42f02d1579e8bcd9c0435d48/e/b1b02258ec73e6686b1e62fd) and 1/4” plates to extend their frame perimeter by a 1/2” on all sides, and this allows to mount plates to the edges of your tubing.
+
+<figure markdown="span">
+![swerveCorner](../../img/mechanism-fundamentals/swerveCorner.png){height=50% width=50%}<figcaption>You can see in the highlighted section that it sticks out further than your box tubing extension.</figcaption>
 </figure>
-<h2 id="wheelbase-location">Wheelbase Location</h2>
-<ul>
-<li>You want your wheels as far apart as possible in order to give you more stability, especially while turning. </li>
-</ul>
-<h2 id="electrical-mounting">Electrical Mounting</h2>
-<ul>
-<li>When designing a <abbr title="Plate for mounting electronics on the underside of your drivebase.">bellypan</abbr>, you need to ensure that your electronics are as accessible as possible. What some teams do is they drill massive access holes in their cross tubing. One thing to keep in mind for this is you may want to 3D Print protection guards/rubber grommets on the holes to ensure the wires don’t strip on the hole’s sharp edges.</li>
-</ul>
-<figure>
-<a class="glightbox" href="../../../img/mechanism-fundamentals/accessHoles.png" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="accessHoles" height="50%" src="../../../img/mechanism-fundamentals/accessHoles.png" width="50%" /></a>
+
+## Wheelbase Location
+- You want your wheels as far apart as possible in order to give you more stability, especially while turning. 
+
+## Electrical Mounting
+- When designing a bellypan, you need to ensure that your electronics are as accessible as possible. What some teams do is they drill massive access holes in their cross tubing. One thing to keep in mind for this is you may want to 3D Print protection guards/rubber grommets on the holes to ensure the wires don’t strip on the hole’s sharp edges.
+
+<figure markdown="span">
+![accessHoles](../../img/mechanism-fundamentals/accessHoles.png){height=50% width=50%}
 </figure>
-<p><br></p>
+
+<br> -->
 
 
 
@@ -2070,7 +1933,7 @@ table tr:hover{
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 8, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 28, 2024</span>
   </span>
 
     
@@ -2097,6 +1960,11 @@ table tr:hover{
 
     
     <nav>
+      
+        <a href="https://github.com/IShaLinI" class="md-author" title="@IShaLinI">
+          
+          <img src="https://avatars.githubusercontent.com/u/34358667?v=4&size=72" alt="IShaLinI">
+        </a>
       
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
