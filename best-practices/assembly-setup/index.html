@@ -902,7 +902,7 @@
   <span class="md-ellipsis">
     
   
-    Feature Tree Best Practices
+    Part Studio Best Practices
   
 
     
@@ -981,10 +981,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#the-origin-cube" class="md-nav__link">
     <span class="md-ellipsis">
       
-        
+        The Origin Cube
       
     </span>
   </a>
@@ -1003,63 +1003,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-importance-of-intelligent-origins" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Importance of Intelligent Origins
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The Importance of Intelligent Origins">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-origin-cube" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Origin Cube
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The Origin Cube">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilizing-the-origin-cube-in-assemblies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Utilizing the Origin Cube in Assemblies
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Best Practices
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Other Best Practices">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#simplified-models" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1069,9 +1012,15 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#other-small-things" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Small Things
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1314,87 +1263,60 @@
 
 <h1 id="assembly-best-practices">Assembly Best Practices</h1>
 <p>Assuming you have already named your parts and organized your work within the rest of the document, creating a well-organized assembly is very straightforward. </p>
-<h2 id="_1"></h2>
-<h2 id="process-for-inserting-parts">Process for Inserting Parts</h2>
+<h3 id="the-origin-cube">The Origin Cube</h3>
+<p>The <a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/df3afdbec8d1356c2af15e4b?renderMode=0&amp;uiState=6637caa6ccbcaa36badca03a">Origin Cube Featurescript</a> inserts a 2" transparent cube at the origin of the part studio. The cube has a mate connector at the origin. Because this part will never change and always stays at the origin of the part studio, using it to group and fasten parts to the origin will always be more <strong>robust and <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr></strong> than fixing or using a mate connector attached to another part, in case that part changes or is deleted.</p>
+<figure>
+<a class="glightbox" href="\img\best-practices\originCubeFeature.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\best-practices\originCubeFeature.webp" width="60%"></a>
+<figcaption>Inserting the Origin Cube feature</figcaption>
+</figure>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The origin cube has the option of importing a number of useful constants and functions, including bolt hole sizes, gear outer diameter, and a center-to-center calculator.</p>
+</div>
+<h3 id="process-for-inserting-parts">Process for Inserting Parts</h3>
+<p>As is described in <a href="../sub-document-setup/#subsystems-with-multiple-degrees-of-freedom">Sub-Document Setup</a>, subsystems with no degrees of freedom will only have one assembly, while subsystems with multiple moving parts are separated into rigid assemblies. The process for inserting parts and finishing assemblies is similar for both circumstances.</p>
 <ol>
-<li>Chose a method for creating an origin mate connector in your part studio</li>
-<li>Insert the whole part studio with the green checkbox so the origin is in the same place</li>
-<li>Use the "group" tool on all parts that don't move</li>
+<li>Create the origin cube in your part studio</li>
+<li>Insert the related parts and origin cube for a rigid subassembly</li>
+<li>Use the "group" tool on all parts</li>
 <li>Fasten the origin mate connector to the origin</li>
 <li>Duplicate and fasten any duplicate parts</li>
+<li>Insert standard hardware and <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> components</li>
+<li>Sort the instances into folders (i.e. tubes, swerve modules, spacers)</li>
 </ol>
-<p>This is a fast and <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> way of putting together an assembly, as opposed to using mates to constrain all the parts that were already in the correct place.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>As you add more parts in the part studio, you can insert them individually into the assembly with the green checkmark, double click on the initial group, and add the part to the group to avoid mating it. This means that new part will always stay in the same place relative to where it was designed in the part studio.</p>
 </div>
-<p>Make sure you sort the instances in your assembly into folders (i.e. tubes, swerve modules).</p>
-<h2 id="the-importance-of-intelligent-origins">The Importance of Intelligent Origins</h2>
-<p>As with many good practices in CAD, smart origins are another good practice to make future you's life easier. Intelligent origins allow designers to leverage default geometry (Front/Right/Top Planes, Origin Point) in their models. Good designers will utilize the default geometry for robust axes of symmetry and references. </p>
-<p>However, it should be noted that with multi-body part modeling, as opposed to a typical 1 part per file workflow in Solidworks, origins for parts are not quite as critical since there are multiple parts in a single file. For FRC CAD, the purpose of origin is two fold:</p>
-<ol>
-<li>To use the same origin point as the master sketch across all part studios and assemblies for a consistent central point you can reference</li>
-<li>To unify the robot CAD and robot software origin point. By having the same origin in CAD and code, the robot can be seamlessly exported to <a href="https://github.com/Mechanical-Advantage/AdvantageScope">AdvantageScope</a> and camera transformations more easily measured. </li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although definitions may vary from team to team, the origin of an FRC robot is typically defined as <strong><em>the center of the drivebase, on floor level</em></strong>.</p>
-</div>
-<h3 id="the-origin-cube">The Origin Cube</h3>
-<p>The Origin Cube Featurescript inserts a 2"x2"x2" transparent cube at the origin of the part studio. The cube has a mate connector for the origin. There is also an option to import a number of useful design constants (bolt hole sizes, common FRC dimensions, etc).</p>
-<p>Compared to other methods like fixing components, the origin cube is a more robust and <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> method of aligning origins.</p>
-<p>In each sub assembly, the cube is mated to the origin. Then, in the top level robot assembly, all the origin cubes are mated together to create the final robot assembly.</p>
-<p><a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/df3afdbec8d1356c2af15e4b?renderMode=0&amp;uiState=6637caa6ccbcaa36badca03a">Link to Featurescript</a></p>
-<p><center> <a class="glightbox" href="\img\best-practices\originCubeFeature.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\best-practices\originCubeFeature.webp" width="60%"></a> </center>
-<center> <em>Inserting the Origin Cube feature.</em> </center></p>
-<h4 id="utilizing-the-origin-cube-in-assemblies">Utilizing the Origin Cube in Assemblies</h4>
-<p>To utilize the full potential of origin cubes and master sketches, it is recommended to have separate sub assemblies for the stationary group of components and the moving group of components of each mechanism. A single part studio or multiple part studios can be used to achieve this, it is up to the personal preference of the designer.</p>
-<p>Take a slap down intake for example. In this example, two part studios that reference the same master sketches are used: one for the arm base and gearboxes, and one for the intake arm. The following three assemblies are then formed: the base components assembly, the arm components assembly, and the top level intake assembly containing the first two sub assemblies. The base component assembly and arm component assembly are both rigid assemblies with their respective origin cubes mated to their assembly origins. A rigid assembly is one where there are no moving components. The top level intake assembly should then only include two mates: a fasten to mate the origin cube of the base assembly to the origin, and a revolute mate to enable the motion of the arm.</p>
-<p>The full file tree of this example will appear like so:</p>
-<ul>
-<li>Top Assembly: Intake</li>
-<li>Assembly: Intake Base</li>
-<li>Part Studio: Intake Base</li>
-<li>Assembly: Intake Arm</li>
-<li>Part Studio: Intake Arm</li>
-</ul>
-<p>If only a single part studio is used, then there would be a single intake part studio:</p>
-<ul>
-<li>Top Assembly: Intake</li>
-<li>Assembly: Intake Base</li>
-<li>Assembly: Intake Arm</li>
-<li>Part Studio: Intake</li>
-</ul>
-<details>
-<summary>Images of example assembly</summary>
-<br>
-
-<center><a class="glightbox" href="/img/best-practices/0200-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0200-A.webp"></a><figcaption>Top Level Assembly: 0200-A-Intake. Notice that there is only two mates. The revolute is between the two intake pivot mate connectors, which are attached to the repective origin cubes.</figcaption></center>
-
-<center><a class="glightbox" href="/img/best-practices/0210-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0210-A.webp"></a><figcaption>Stationary Components Assembly: 0210-A-Intake Base. The components are group mated and the origin cube is fastened to the origin.</figcaption></center>
-
-<center><a class="glightbox" href="/img/best-practices/0210-PS.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0210-PS.webp"></a><figcaption>Stationary Components PS: 0210-A-Intake Base. Notice the intake pivot mate connector, derived from the orange master sketch. </figcaption></center>
-
-<center><a class="glightbox" href="/img/best-practices/0220-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0220-A.webp"></a><figcaption>Moving Components Assembly: 0220-A-Intake Arm. The components are group mated and the origin cube is fastened to the origin.</figcaption></center>
-
-<center><a class="glightbox" href="/img/best-practices/0220-PS.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0220-PS.webp"></a><figcaption>Moving Components PS: 0220-Intake Arm. Notice the intake pivot mate connector, derived from the orange master sketch.</figcaption></center>
-
+<p>If the subsystem has multiple moving parts (like an over-the-bumper intake or elevator), create a mate connector on the master sketch for each degree of freedom. This may be a pivot point or the starting point of a slider mate (in the case of an elevator). Make each mate connector owned by the origin cube.</p>
+<p>Repeat steps 4-7 of the process for all other rigid subassemblies, if applicable. This will result in each subassembly being rigid, with the origin cube fastened to the origin and all the parts in the same place as in the part studio. Each subassembly will also contain the mate connectors owned by the origin cube.</p>
+<p>Now create a top-level subsystem assembly and insert each subassembly into it. Fasten the origin cube of the static subassembly to the origin, and use the other mate connectors to mate the other subassemblies together.</p>
+<details class="example">
+<summary>Stage 2D - Slapdown Intake</summary>
+<p><a href="https://cad.onshape.com/documents/17302d787e092ce11015f7ee/w/f7cf5c02c7655f0328a3a74a/e/f1456325e0175c4c081008c2">Stage 2D - Slapdown Intake</a> is a subsystem with a static portion and a pivoting portion. An extra mate connector is added for the pivot on the master sketch, owned by the origin cube</p>
+<p><center><a class="glightbox" href="/img/best-practices/slapdown-intake-example/slapdown-intake-mate-connector.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/slapdown-intake-example/slapdown-intake-mate-connector.webp" style="border:5px solid #ADADAD"></a></center></p>
+<p>This mate connector exists in both subassemblies.
+<center><a class="glightbox" href="/img/best-practices/slapdown-intake-example/slapdown-intake-static-connectors.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/slapdown-intake-example/slapdown-intake-static-connectors.webp" style="border:5px solid #ADADAD"></a></center></p>
+<p><center><a class="glightbox" href="/img/best-practices/slapdown-intake-example/slapdown-intake-arm-connectors.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/slapdown-intake-example/slapdown-intake-arm-connectors.webp" style="border:5px solid #ADADAD"></a></center></p>
+<p>The static assembly is fastened to the origin and the arm assembly revolves using the pivot mate connector owned by both instances of the origin cube.
+<center><a class="glightbox" href="/img/best-practices/slapdown-intake-example/slapdown-intake-top-level.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/slapdown-intake-example/slapdown-intake-top-level.webp" style="border:5px solid #ADADAD"></a></center></p>
 </details>
-
-<p>In order to create a more robust revolute mate for the pivot, start by creating a mate connector in both part studios at the pivot point and attaching it to the origin cube. Then, in the top level assembly, add a revolute mate between the two origin cube's pivot mate connector and optionally set angle limits. By referencing the master sketch for the pivot point, the mate becomes <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> to any changes in either part studio. In fact, there would not need to be <em>any</em> parts in either assembly for the pivot to work because the mate connectors are attached to the origin cubes.</p>
-<p>Again, the separation of the stationary components and moving components into two part studios for this example is purely personal preference. The key takeaway is that the parts need to be inserted into separate sub assemblies. A simple example of both methods is given in the Origin Cube Featurescript document.</p>
-<p>This same method can also work for any type of flexible mechanism including elevators and linkages.</p>
-<!-- <details>
-<summary>A video explanation is also available.</summary>
-<br>
-
-Coming Soon
-
-</details> -->
-
-<h2 id="other-best-practices">Other Best Practices</h2>
+<details class="example">
+<summary>Stage 2E - Cascade Elevator</summary>
+<p><a href="https://cad.onshape.com/documents/da5aef9e6bf6e869f4a51a45/w/5a0f4a3426876db0ba214277/e/f8fd8133abcb12800eacb5d1">Stage 2E - Cascade Elevator</a> is a subsystem with a static portion and two subassemblies that slide linearly. This contains a part studio, a static frame/gearbox assembly, assemblies for the first stage and carriage, and a top-level assembly combining the 3 subassemblies with slider mates.</p>
+<p><center><a class="glightbox" href="/img/best-practices/elevatorAssembly.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/elevatorAssembly.webp" style="border:5px solid #ADADAD"></a></center></p>
+</details>
+<details class="example">
+<summary>3647 Millennium Falcons 2024 Intake</summary>
+<p><center><a class="glightbox" href="/img/best-practices/0200-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0200-A.webp"></a><figcaption>Top Level Assembly: 0200-A-Intake. Notice that there is only two mates. The revolute is between the two intake pivot mate connectors, which are attached to the repective origin cubes.</figcaption></center></p>
+<p><center><a class="glightbox" href="/img/best-practices/0210-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0210-A.webp"></a><figcaption>Stationary Components Assembly: 0210-A-Intake Base. The components are group mated and the origin cube is fastened to the origin.</figcaption></center></p>
+<p><center><a class="glightbox" href="/img/best-practices/0210-PS.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0210-PS.webp"></a><figcaption>Stationary Components PS: 0210-A-Intake Base. Notice the intake pivot mate connector, derived from the orange master sketch. </figcaption></center></p>
+<p><center><a class="glightbox" href="/img/best-practices/0220-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0220-A.webp"></a><figcaption>Moving Components Assembly: 0220-A-Intake Arm. The components are group mated and the origin cube is fastened to the origin.</figcaption></center></p>
+<p><center><a class="glightbox" href="/img/best-practices/0220-PS.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0220-PS.webp"></a><figcaption>Moving Components PS: 0220-Intake Arm. Notice the intake pivot mate connector, derived from the orange master sketch.</figcaption></center></p>
+</details>
 <h3 id="simplified-models">Simplified Models</h3>
-<p>The first advice is to minimize primitives in your assembly. Primitives are a measure of how complex the object is and how hard it is for Onshape to render. The more primitives there are, the more laggy your assembly will be.</p>
+<p>Make sure to minimize primitives in your assembly. Primitives are a measure of how complex the object is and how hard it is for Onshape to render. The more primitives there are, the more laggy your assembly will be.</p>
 <p>Use <a href="https://www.frcdesign.org/resources/simplified/">simplified models</a> wherever possible to minimize primitives: electronics, swerve modules, motors, etc. Some of these are added to MKCAD as well.</p>
 <details class="video">
 <summary>Minimize Primitives</summary>
@@ -1402,10 +1324,10 @@ Coming Soon
   <source src="/img/best-practices/minimizePrimitives.webm" type="video/webm">
 </video></p>
 </details>
-<p>Other things to keep in mind:</p>
+<h3 id="other-small-things">Other Small Things</h3>
 <ul>
 <li>Import <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> parts from MKCAD</li>
-<li>Use the <strong>replicate tool</strong> for adding hardware! You should only need to import one of each type</li>
+<li>Use the <strong>replicate tool</strong> for adding hardware!</li>
 <li>Minimize the number of mates you use; this lowers the solve time</li>
 <li>Stay organized with folders</li>
 </ul>
@@ -1434,7 +1356,7 @@ Coming Soon
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 28, 2024</span>
   </span>
 
     
@@ -1462,6 +1384,11 @@ Coming Soon
     
     <nav>
       
+        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
+          
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
+        </a>
+      
         <a href="https://github.com/AGB556" class="md-author" title="@AGB556">
           
           <img src="https://avatars.githubusercontent.com/u/147350275?v=4&size=72" alt="AGB556">
@@ -1470,11 +1397,6 @@ Coming Soon
         <a href="https://github.com/Nsl106" class="md-author" title="@Nsl106">
           
           <img src="https://avatars.githubusercontent.com/u/87742096?v=4&size=72" alt="Nsl106">
-        </a>
-      
-        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
-          
-          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
         </a>
       
         <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
@@ -1521,7 +1443,7 @@ Coming Soon
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../feature-tree-setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Feature Tree Best Practices">
+          <a href="../feature-tree-setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Part Studio Best Practices">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1531,7 +1453,7 @@ Coming Soon
                 Previous
               </span>
               <div class="md-ellipsis">
-                Feature Tree Best Practices
+                Part Studio Best Practices
               </div>
             </div>
           </a>
