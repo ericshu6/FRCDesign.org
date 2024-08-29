@@ -1,13 +1,4 @@
 <style>
-.right{
-    float:right;
-}
-.center{
-    text-align:center;
-}
-.left{
-    float:left;
-}
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -21,12 +12,13 @@
 .mySlides {
   display: none;
 }
+#slide1 {display:block}
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 250px;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -34,14 +26,13 @@
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px 3px 3px 3px;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -100,9 +91,6 @@
 
 # 1A: Onshape Fundamentals
 
-<span class="left">[< 0D: Theory](../stage0/0D-theory.md)</span> <span class="right">[1B: Design Methodology >](1B-designMethodology.md)</span>
-<br>
-
 Welcome to Stage 1! Here, you'll engage in a series of Onshape exercises and projects designed to introduce and develop your CAD skills within an FRC context. 
 
 ## Getting Started
@@ -119,42 +107,62 @@ The structure of the courses includes some short videos and practice models, exp
 !!! Warning
     The Onshape learning courses are important as they will teach you the Onshape interface and form a basic foundation for CAD skills. Unless you have prior experience using Onshape, you should not skip the learning courses as the exercises assume that you have an understanding of CAD basics.
 
-### Practice Exercises
-Make a copy of the [Stage 1A Exercises Document](https://cad.onshape.com/documents/812b2974ed32b9c89e8f1e25/w/747e47444b6c685bd0bee334/e/58894354f0152cd6485fe45e?renderMode=0&uiState=663d81b7afce5246f0309e28). A template for each exercise has been created for you in the exercises document (you do not need to create any new tabs). Each exercise also includes a preview of what the final model should look like in the `Reference` file. Solutions are available [here](https://cad.onshape.com/documents/1bdaed8e23446ffe70a851a4/w/37cd1a4984497b01d74e4c41/e/fd6796321fb9611305e5ff7d?renderMode=0&uiState=663d81d5d060d67d3cd48855).
+## Practice Exercises
+Make a copy of the Stage 1A Exercises Document through the button below. A template for each exercise has been created for you in the exercises document (you do not need to create any new tabs). Each exercise also includes a preview of what the final model should look like in the `Reference` file. Solutions are also provided to check your work afterwards.
+
+[1A Exercises Document](https://cad.onshape.com/documents/812b2974ed32b9c89e8f1e25/w/747e47444b6c685bd0bee334/e/58894354f0152cd6485fe45e?renderMode=0&uiState=663d81b7afce5246f0309e28){ .md-button .md-button--primary }
+[1A Exercises Solutions](https://cad.onshape.com/documents/1bdaed8e23446ffe70a851a4/w/37cd1a4984497b01d74e4c41/e/fd6796321fb9611305e5ff7d?renderMode=0&uiState=663d81d5d060d67d3cd48855){ .md-button .md-button--primary }
+
 
 !!! Tip
     You can navigate between the tabs by accessing the tab manager or from the bottom navigation bar. 
-    <center><img src="\img\design-guide\stage1a\1a-tabs.gif" width="100%"> </center>
+    <center>
+      <video width="1920" controls>
+        <source src="\img\design-guide\stage1a\1a-tabs.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
     <center> *Accessing the Tab Manager.* </center>
 
     
 ## Sketching and Part Design
 Sketches and features are the building blocks you will use to create every 3D model in Onshape, so it's good to have a good grasp on the fundamentals.
 
-Complete the following courses:
+**Complete the following courses:**
 
-1. The [**Introduction to Sketching**](https://learn.onshape.com/courses/introduction-to-sketching) course runs you through different sketch tools, constraints, and a good sketch workflow.
+1. The [**Introduction to Sketching**](https://learn.onshape.com/courses/fundamentals-sketching) course runs you through different sketch tools, constraints, and a good sketch workflow.
 
 2. The [**Part Design Using Part Studios**](https://learn.onshape.com/courses/fundamentals-part-design-using-part-studios) course runs you through creating different parts with a variety of features.
 
 With a good understanding of both of these, you can create almost any part you want to. The following sections are all about integrating design intent into the process and learning how to design a whole project with multiple pieces.
 
+!!! Tip
+    For future reference without having to go through the learning center, [sketch basics](https://cad.onshape.com/help/Content/sketch_basics.htm?tocpath=Part%20Studios%7C_____15), [sketch tools](https://cad.onshape.com/help/Content/sketch-tools.htm?TocPath=Part%20Studios%7CSketch%20Tools%7C_____0), [feature basics](https://cad.onshape.com/help/Content/feature-basics.htm?tocpath=Part%20Studios%7C_____17), and [feature tools](https://cad.onshape.com/help/Content/featuretools.htm?TocPath=Part%20Studios%7CFeature%20Tools%7C_____0) are all covered in text form in the help center. 
+
+<br>
+<center><p style="font-size:20px;"><b>DO NOT MOVE PAST THIS POINT UNTIL YOU HAVE COMPLETED THE TWO COURSES ABOVE</b></p></center>
+<br>
+
 ### Exercise 1: Simple Box Tube
 In FRC, robot structures are typically constructed out of aluminum box tubing, similar to wood beams for a house. Aluminum box tubing is commonly found in 2"x1", 1"x1", and 2"x2" sizes with 1/8" (thickwall) or 1/16" (thinwall) wall thicknesses. Box tubing is typically referred to by its size, eg: 2x1, 1x1, and 2x2 (Spoken as "two-by-one", "one-by-one", and "two-by-two"). For the rest of the design-guide, we will use this notation when referring to box tube.
 
-Here's an example of an aluminum box tube structure on a robot:
 
-<center><img src="\img\design-guide\stage1a\tube.webp" width="45%"> </center>
-<center> *Example of a 2x1 box tube.* </center>
+!!! Example
+    <center><img src="\img\design-guide\stage1a\tube.webp" width="45%"> </center>
+    <center> *Example of 2x1 box tube structure on a robot* </center>
 
 For exercise 1, you will be modeling a simple 2x1 with some holes in it. For this exercise, do not use any Featurescripts.
+
+!!! Note
+    You will see in some slides that the sketch dialogue box has a different name, such as "Tube Profile". You can rename sketches and features by hovering over the name in the dialogue box and clicking the pencil icon, or right clicking a sketch or feature in the feature list and clicking "rename". 
+    
+    You should name your sketches and features and organize them into folders. This helps enable collaboration and makes working on previous features much faster.
 
 <center>**Exercise 1 Instruction Slides**</center>
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+  <div id="slide1" class="mySlides fade">
     <figure>
       <img src="/img/design-guide/stage1a/exercises/e1/e1s6.webp" style="width:100%">
       <figcaption>0. The final part.</figcaption>
@@ -177,21 +185,30 @@ For exercise 1, you will be modeling a simple 2x1 with some holes in it. For thi
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/design-guide/stage1a/exercises/e1/e1s3.gif" style="width:100%">
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1a/exercises/e1/e1s3.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>3. Shell the block to turn it into a 1/16" wall tube.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/design-guide/stage1a/exercises/e1/e1s4.gif" style="width:100%">
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1a/exercises/e1/e1s4.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>4. Add the top holes. Set the centerpoint of the hole to be vertical with the midpoint of the bottom line, then Mirror the hole across, using the front plane as the mirror line. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/design-guide/stage1a/exercises/e1/e1s5.gif" style="width:100%">
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1a/exercises/e1/e1s5.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>5. Add the side holes. Create the layout for the side holes by creating a center point rectangle and turning it into construction geometry. </figcaption>
     </figure>
   </div>
@@ -225,15 +242,15 @@ As introduced in the learning course, Onshape is a software focused on multi-bod
 !!! Example
     Notice how there's one instance of each unique part within this part studio. The part studio also resembles the completed product, as the parts are modeled relative to each other.
     <center><img src="\img\design-guide\stage1a\1a-PartStudio.webp" width="55%"></center>
-    <center> *Example of a part studio.* </center>
-
+    <center> *Example of a part studio* </center>
 
 
 ### Exercise 2: Box Tube and Gusset Joint
-For this exercise, you will design two tubes and a part called a "gusset". A gusset is the flat part that connects the two tubes. This gusset will be created in the same part studio as the tubes that it is connecting! Here's an example of a gusset:
+For this exercise, you will design two tubes and a part called a "gusset". A gusset is the flat part that connects the two tubes. This gusset will be created in the same part studio as the tubes that it is connecting!
 
-<center><img src="\img\design-guide\stage1a\8033-000-2024C_8.png" width="45%"> </center>
-<center> *Example of a gusset.* </center>
+!!! Example
+    <center><img src="\img\design-guide\stage1a\8033-000-2024C_8.png" width="45%"> </center>
+    <center> *Example of a gusset* </center>
 
 You will utilize the `Extrude Individual` and `Tube Converter` Featurescripts for this exercise. Do not use the `Gusset` Featurescript for this exercise.
 
@@ -242,7 +259,9 @@ The `Extrude individual` Featurescript enables you to extrude sketch regions wit
 The `Tube Converter` Featurescript condenses the steps of shelling, sketching and dimensioning holes, and extruding holes into a single, customizable feature to easily model tubes. 
 
 !!! Tip
-    When extruding a sketch in a part studio, you can decide whether to "add" to existing geometry, or to create a "new" part. Make sure that when you extrude your gusset, you tell Onshape to create a new part.
+    When extruding a sketch in a part studio, you can decide whether to `Add` to existing geometry, or to create `New` geometry. `New` creates a new body, whereas `Add` will merge the feature with existing parts. Make sure that when you extrude your gusset, you tell Onshape to create a new part.
+    <center><img src="\img\design-guide\stage1a\1a-merge.png" width="20%"></center>
+    <center> *The different options for extruding* </center>
 
 <center>**Exercise 2 Instruction Slides**</center>
 
@@ -250,7 +269,7 @@ The `Tube Converter` Featurescript condenses the steps of shelling, sketching an
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+  <div id="slide1" class="mySlides fade">
     <figure>
       <img src="/img/design-guide/stage1a/exercises/e2/e2s11.webp" style="width:100%">
       <figcaption>0. The finished parts.</figcaption>
@@ -323,7 +342,7 @@ The `Tube Converter` Featurescript condenses the steps of shelling, sketching an
   <div class="mySlides fade">
     <figure>
       <img src="/img/design-guide/stage1a/exercises/e2/e2s10.webp" style="width:100%">
-      <figcaption>10. Extrude the gusset to be 1/8" thick. </figcaption>
+      <figcaption>10. Extrude the gusset to be 1/8" thick. Select <code>New</code> as the extrude type to make the extrude a new part. </figcaption>
     </figure>
   </div>
 
@@ -343,7 +362,7 @@ The `Tube Converter` Featurescript condenses the steps of shelling, sketching an
   </div>
 </div>
 
-In this exercise, you can see the power of Featurescripts. What would have been a number of sketches, extrudes, and shells to create the tubes is packaged into a single, easy to use custom feature. 
+In this exercise, you can begin see the power of Featurescripts. What would have been a number of sketches, extrudes, and shells to create the tubes is packaged into a single, easy to use custom feature. 
 
 ## Assemblies
 
@@ -353,17 +372,23 @@ The [Onshape Assemblies](https://learn.onshape.com/courses/fundamentals-onshape-
 
 As was introduced in the Onshape learning tutorials, when parts are inserted into an assembly, they free float. We can utilize a number of different assembly tools to constrain the motion of all the parts:
 
-- **`Group`**: Restricts the relative motion between a group of parts.
-- **`Fix`**: Locks a part in place within the assembly. (Not recommended as it's not parametric.)
+- **`Group`**: Restricts the relative motion between a group of parts
+- **`Fix`**: Locks a part in place within the assembly (not recommended as it's not parametric)
 - **`Mates`**: Tools to constrain the degrees of freedom between parts using "mate connectors." These connectors are automatically generated or manually created coordinate systems on parts. You can align the axes and apply offsets in any direction or rotation. Different mates constrain different degrees of freedom. Here are three commonly used mates:
-    - `Fasten`: Prevents any movement between two mate connectors, such as a bolt in a hole.
-    - `Revolute`: Allows rotational movement about the z-axis between two mate connectors, like an arm pivot (e.g. an arm pivot).
-    - `Slider`: Enables linear movement along the z-axis between two mate connectors (e.g. an elevator).
+    - `Fasten`: Prevents any movement between two mate connectors, such as a bolt in a hole
+    - `Revolute`: Allows rotational movement about the z-axis between two mate connectors (e.g. an arm pivot)
+    - `Slider`: Enables linear movement along the z-axis between two mate connectors (e.g. an elevator)
 
-<center><img src="\img\design-guide\stage1a\1a-fasten.gif"width="80%"></center>
-<center> *Example of a fasten mate.* </center>
+!!! Example
+    <center>
+      <video width="1920" controls>
+        <source src="\img\design-guide\stage1a\1a-fasten.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </center>
+    <center> *Example of a fasten mate.* </center>
 
-The best practices for constraining an assembly, along with other assembly tools like replicate, pattern, and standard content, will be learned through projects and described in more detail in later stages. They are also outlined [here](../../best-practices/assembly-setup.md).
+The best practices for constraining an assembly, along with other assembly tools like replicate, pattern, and standard content, will be learned through projects and described in more detail in later stages. They are also outlined in the [assembly best practices](../../best-practices/assembly-setup.md) page.
 
 
 ### Exercise 3: Box Tube Frame
@@ -379,7 +404,7 @@ The `Gusset` Featurescript is an easy way to create gussets by selecting the loc
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+  <div id="slide1" class="mySlides fade">
     <figure>
       <img src="/img/design-guide/stage1a/exercises/e3/e3s10.webp" style="width:100%">
       <figcaption>0. Final assembly.</figcaption>
@@ -430,21 +455,30 @@ The `Gusset` Featurescript is an easy way to create gussets by selecting the loc
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/design-guide/stage1a/exercises/e3/e3s7.gif" style="width:100%">
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1a/exercises/e3/e3s7.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>7. Insert the parts into the assembly by directly clicking on the green checkmark. Then, <code>Group</code> all the parts together. Finally, <code>fix</code> the bottom tube in place. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/design-guide/stage1a/exercises/e3/e3s8.gif" style="width:100%">
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1a/exercises/e3/e3s8.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>8. Copy and paste the gussets four times. Then, use the <code>Fasten</code> mate to attach the gussets to the tube. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/design-guide/stage1a/exercises/e3/e3s9.gif" style="width:100%">
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1a/exercises/e3/e3s9.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>9. Some gussets may need to have their <code>Fasten</code> mate reoriented in order to properly line up. </figcaption>
     </figure>
   </div>
@@ -482,7 +516,7 @@ You will utilize the `Spacer` Featurescript for this exercise.
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+  <div id="slide1" class="mySlides fade">
     <figure>
       <img src="/img/design-guide/stage1a/exercises/e4/e4s10.webp" style="width:100%">
       <figcaption>0. Final assembly.</figcaption>
@@ -512,7 +546,10 @@ You will utilize the `Spacer` Featurescript for this exercise.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/design-guide/stage1a/exercises/e4/e4s4.gif" style="width:100%">
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1a/exercises/e4/e4s4.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>4. Use the <code>Linear Pattern</code> sketch tool to pattern the mounting holes. </figcaption>
     </figure>
   </div>
@@ -520,7 +557,7 @@ You will utilize the `Spacer` Featurescript for this exercise.
   <div class="mySlides fade">
     <figure>
       <img src="/img/design-guide/stage1a/exercises/e4/e4s5.webp" style="width:100%">
-      <figcaption>5. Make the hook 3/16" thick. </figcaption>
+      <figcaption>5. Make the hook 3/16" thick. Select <code>New</code> as the extrude type to make the extrude a new part.  </figcaption>
     </figure>
   </div>
 
@@ -533,7 +570,10 @@ You will utilize the `Spacer` Featurescript for this exercise.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/design-guide/stage1a/exercises/e4/e4s7.gif" style="width:100%">
+      <video width="1920" controls>
+        <source src="/img/design-guide/stage1a/exercises/e4/e4s7.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>7. Use the <code>Spacer</code> Featurescript to add a 0.5" diameter spacer. Use the `Up to Face` end condition to make the spacer match the tube width. </figcaption>
     </figure>
   </div>
@@ -570,149 +610,7 @@ You will utilize the `Spacer` Featurescript for this exercise.
 
 In this exercise, you practiced more advanced sketching and were introduced to the `Spacer` Featurescript. 
 
-### Exercise 5: Two Stage Gearbox
-
-In this exercise, you will be CADing and assembling a two stage gearbox. The layout of the gearbox is already done, you just need to finish drawing the plate, model the spacers and shafts, and put together the assembly. Don't worry too much about the design aspect of the gearbox right now, you'll learn more about it Stage 1C.
-
-The goal of this exercise is to introduce the `Shaft` and `Vent` Featurescripts, `Replicate` tool, MKCad parts library, part configurations, practice more complex sketches, and practice mating together larger assemblies.
-<center>**Exercise 5 Instruction Slides**</center>
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s15.webp" style="width:100%">
-      <figcaption>0. Final assembly.</figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s1.webp" style="width:100%">
-      <figcaption>1. This is the layout sketch of the gearbox, it has been drawn for you already. The layout sketch models where the motors and gears will go and how the gears should mesh. You'll learn more about this in Stage 1C.</figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s2.webp" style="width:100%">
-      <figcaption>2. Open the "Finish This!" sketch and finish the plate. You can utilize the <code>Mirror</code> sketch tool to mirror the geometry from the left side to the right side. </figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s3.webp" style="width:100%">
-      <figcaption>3. Extrude the plate to be 1/4" thick.</figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s4.webp" style="width:100%">
-      <figcaption>4. Use the <code>Spacer</code> Featurescript to create the gearbox spacer. </figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s5.gif" style="width:100%">
-      <figcaption>5. Use the <code>Shaft</code> Featurescript to create the first stage shaft. </figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s6.webp" style="width:100%">
-      <figcaption>6. Use the <code>Shaft</code> Featurescript to create the output shaft.</figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s7.webp" style="width:100%">
-      <figcaption>7. Create a sketch on the face of the plate and draw the lines for the pocketing ribs. </figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s8.gif" style="width:100%">
-      <figcaption>8. Use the <code>Vent</code> Featurescript to pocket the plate by selecting the sketch regions created by the previous sketch. </figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s9.webp" style="width:100%">
-      <figcaption>9. Name the key sketches and parts. Set the material of the plate and spacers to 6061 Aluminum. </figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s10.gif" style="width:100%">
-      <figcaption>10. Insert the assembly and only fix the gearbox plate. Mate the spacer to the plate. Then, use the <code>Replicate</code> tool to replicate the spacer and its associated mate onto the other spacer locations. </figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s11.webp" style="width:100%">
-      <figcaption>11. Copy the gearbox plate and mate it into place. </figcaption>
-    </figure>
-  </div>
-
-  <div class="mySlides fade">
-    <li class="slideVideo">
-      <video width="1920" controls>
-        <source src="/img/design-guide/stage1a/exercises/e5/e5s12.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <figcaption>12. Assemble the bearings and shafts using parts from the MKCad App. </figcaption>
-    </li>
-  </div>
-
-  <div class="mySlides fade">
-    <li class="slideVideo">
-      <video width="1920" controls>
-        <source src="/img/design-guide/stage1a/exercises/e5/e5s13.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <figcaption>13. Assemble the motor and motor pinion gear using parts from the MKCad App. </figcaption>
-    </li>
-  </div>
-
-  <div class="mySlides fade">
-    <li class="slideVideo">
-      <video width="1920" controls>
-        <source src="/img/design-guide/stage1a/exercises/e5/e5s14.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <figcaption>14. Assemble the shaft spacers and gears using parts from the MKCad App. </figcaption>
-    </li>
-  </div>
-
-  <div class="mySlides fade">
-    <figure>
-      <img src="/img/design-guide/stage1a/exercises/e5/e5s15.webp" style="width:100%">
-      <figcaption>15. Finished assembly. </figcaption>
-    </figure>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1,4)" style="background-color: #000; color: #fff;">&#10094;</a>
-  <a class="next" onclick="plusSlides(1,4)" style="background-color: #000; color: #fff;">&#10095;</a>
-  <!-- The dots/circles -->
-  <div class="dotsContainer" style="text-align:center">
-    <!-- Dots will be generated here -->
-  </div>
-</div>
-
-In this exercise, you practiced more complex sketches, and practice mating together larger assemblies. You also used part configurations - which are a powerful tool that allows for variations of the same part. The gears that you inserted from MKCad were configurable - you were able to easily change the tooth count of the gear.
-
-## Conclusion
+## Summary
 
 Congratulations on completing Stage 1A! Remember, practice is essential – the more CAD models you create, the more proficient and efficient you'll become. Using keyboard shortcuts can significantly accelerate your CAD workflow. Be attentive to best practices to avoid developing any bad habits. Keep up the good work!
 
@@ -720,18 +618,13 @@ Here is a quick summary of what you have achieved in 1A:
 
 * Learned how to use the OnShape interface and basic sketching and modeling features with the OnShape Learning Center courses
 * Learned how to model basic FRC structures
-* Learned how to use the `Gusset`, `Extrude Individual`, `Tube Converter`, `Spacer`, `Shaft`, and `Vent` Featurescripts
-* Learned how to assemble basic models using `Group`, `Fasten`, and `Replicate`
-* Learned how to insert models into assemblies using the MKCad parts library!
+* Learned how to use the `Gusset`, `Extrude Individual`, `Tube Converter`, and `Spacer` Featurescripts
+* Learned how to assemble basic models using `Group` and `Fasten`
+* Learned how to insert models into assemblies using the MKCad parts library
 
-In stage 1B, you will begin to learn the basic workflow for robot modeling!
+In stage 1B, you will be introduced to power transmissions, which enable your robot to move and score. 
 
 <br>
-<center>1A: Fundamentals</center> 
-<span class="left">[< 0D: Theory](../stage0/0D-theory.md)</span> <span class="right">[1B: Design Methodology >](1B-designMethodology.md)</span>
-<br>
-<br>
-
 
 <!-- ------------------DO NOT TOUCH ANYTHING BELOW HERE------------------ -->
 
