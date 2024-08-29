@@ -1,0 +1,3180 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive learning guide and technical reference for FRC design using Onshape.">
+      
+      
+      
+        <link rel="canonical" href="https://www.FRCDesign.org/learning-course/stage1/1B-powerTransmissions/">
+      
+      
+        <link rel="prev" href="../1A-onshapeFundamentals/">
+      
+      
+        <link rel="next" href="../1C-designMethodology/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32+insiders-4.53.12">
+    
+    
+  
+    <title>B: Power Transmissions | FRCDesign.org</title>
+  
+
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.dad623df.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64H64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64 32-32z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7.1 27.6 25.9 53.5 53.8 77.7 84 11-14.4 23.5-30.1 37-42.9 7.9-7.4 20.1-7.4 28 .1 34.6 33 63.9 76.6 84.5 118 20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512 98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21 42.1-29.4 53.4-88.2 28.1-134.4-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5-16.5-21-46-58.5-62.8-79.8-6.3-8-18.3-8.1-24.7-.1-33.8 42.5-50.8 69.3-50.8 99.4.1 68.5 50.7 109.1 113.8 109.1z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4l-45.6-16.8zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16h-8z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1zM96 256a64 64 0 1 1 128 0 64 64 0 1 1-128 0zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h120c39.8 0 72 32.2 72 72v272c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72h120V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16h-32zM264 256a40 40 0 1 0-80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224h16z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0h-32zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-KX3MNPJ4L6"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-KX3MNPJ4L6",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-KX3MNPJ4L6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="B: Power Transmissions - FRCDesign.org" />
+<meta property="og:description" content="A comprehensive learning guide and technical reference for FRC design using Onshape." />
+<meta property="og:image" content="https://www.FRCDesign.org/assets/images/social/learning-course/stage1/1B-powerTransmissions.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://www.FRCDesign.org/learning-course/stage1/1B-powerTransmissions/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="B: Power Transmissions - FRCDesign.org" />
+<meta property="twitter:description" content="A comprehensive learning guide and technical reference for FRC design using Onshape." />
+<meta property="twitter:image" content="https://www.FRCDesign.org/assets/images/social/learning-course/stage1/1B-powerTransmissions.png" />
+ <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1b-power-transmissions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="FRCDesign.org" class="md-header__button md-logo" aria-label="FRCDesign.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FRCDesign.org
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              B: Power Transmissions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="white"  aria-label="Switch to Light Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Light Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="black"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/frcdesign/FRCDesign.org" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    frcdesign/FRCDesign.org
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Learning Course
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../design-handbook/" class="md-tabs__link">
+          
+  
+    
+  
+  Design Handbook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../mechanism-examples/" class="md-tabs__link">
+          
+  
+    
+  
+  Mechanism Examples
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../best-practices/" class="md-tabs__link">
+          
+  
+    
+  
+  Best Practices
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../design-challenge/" class="md-tabs__link">
+          
+  
+    
+  
+  Design Challenges
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../resources/" class="md-tabs__link">
+          
+  
+    
+  
+  Other Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../contribution/methodsOfContributing/" class="md-tabs__link">
+          
+  
+    
+  
+  Contribution Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="FRCDesign.org" class="md-nav__button md-logo" aria-label="FRCDesign.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32 93.5 32 46.3 45.3 18.1 56.1 6.8 60.5 0 71.7 0 83.8v370.3c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6 11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/></svg>
+
+    </a>
+    FRCDesign.org
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/frcdesign/FRCDesign.org" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    frcdesign/FRCDesign.org
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Course
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learning Course
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 0
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stage 0
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage0/0A-introductionToCAD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    A: Introduction to CAD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage0/0B-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    B: Onshape Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage0/0C-navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    C: Navigating Onshape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage0/0D-theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    D: Theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stage 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1A-onshapeFundamentals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    A: Onshape Fundamentals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    B: Power Transmissions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    B: Power Transmissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shafts-and-bearings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shafts and Bearings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#torque-and-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Torque and Speed
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Torque and Speed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mechanical-advantage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanical Advantage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ratio-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ratio Applications
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-transmissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Transmissions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Transmissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gear-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gear Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise Document
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-1-simple-gearbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 1: Simple Gearbox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2-two-stage-gearbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 2: Two Stage Gearbox
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercise 2: Two Stage Gearbox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#belts-and-pulley-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Belts and Pulley Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chain-and-sprocket-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chain and Sprocket Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-3-belt-and-gear-transmission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 3: Belt and Gear Transmission
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1C-designMethodology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    C: Design Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stage 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage2/2A-drivebaseFullDetail/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    A: Full Detail Drivebase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage2/2B-basicShooter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    B: Basic Shooter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage2/2C-deadaxlePivot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    C: Deadaxle Pivot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage2/2D-slapdownIntake/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    D: Slapdown Intake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage2/2E-cascadeElevator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    E: Cascade Elevator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stage4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../design-handbook/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Handbook
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../mechanism-examples/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanism Examples
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../best-practices/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../design-challenge/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Challenges
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../resources/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Other Resources
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../contribution/methodsOfContributing/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribution Guide
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/frcdesign/FRCDesign.org/edit/main/docs/learning-course/stage1/1B-powerTransmissions.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/frcdesign/FRCDesign.org/raw/main/docs/learning-course/stage1/1B-powerTransmissions.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<style>
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+#slide1 {display:block}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 250px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.25s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+
+<h1 id="1b-power-transmissions">1B: Power Transmissions</h1>
+<h2 id="introduction">Introduction</h2>
+<p>So far the models you have created are all structural components, but this is only half of what makes up a robot. In order to make our robots move and score, motors that generate rotational motion are typically utilized. In Stage 1B, you'll be introduced to modeling basic <em>power transmissions</em>. Power transmissions include the motors, bearings, shafts, gears, belts, and chains that are used to transform rotational motion from a motor to do just about anything. </p>
+<p>In this stage, you'll focus on the fundamentals of power transmissions, with an emphasis on how to model them in CAD. The process of selecting motors and calculating power transmission ratios will be gone over on <a href="../../../design-handbook/power-transmission/electronics-motors-sensors/">the design handbook page about electronics, motors, and sensors</a> (<strong>Coming Soon</strong>) and also explored later in Stage 2 of the guide with multiple different mechanisms.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Below are some examples of power transmissions found in robots to achieve a range of different tasks.</p>
+<p><center><strong>Power Transmission Examples</strong></center>
+<!-- Slideshow container -->
+  <div class="slideshow-container"></p>
+<p><!-- Full-width images with number and caption text -->
+  <div id="slide1" class="mySlides fade">
+      <figure>
+          <a class="glightbox" href="/img/learning-course/stage1b/examples/intakeRollers.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/examples/intakeRollers.webp" style="width:80%"></a>
+          <figcaption> Belt and gear power transmission to spin intake rollers. </figcaption>
+      </figure>
+  </div></p>
+<p><div class="mySlides fade">
+      <figure>
+          <a class="glightbox" href="/img/learning-course/stage1b/examples/intakePivot.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/examples/intakePivot.webp" style="width:80%"></a>
+          <figcaption> Gear and chain power transmission to pivot the intake. </figcaption>
+      </figure>
+  </div></p>
+<p><div class="mySlides fade">
+      <figure>
+          <a class="glightbox" href="/img/learning-course/stage1b/examples/shooter.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/examples/shooter.webp" style="width:80%"></a>
+          <figcaption> Belt and gear power transmission to spin shooter wheels.</figcaption>
+      </figure>
+  </div></p>
+<p><div class="mySlides fade">
+      <figure>
+          <a class="glightbox" href="/img/learning-course/stage1b/examples/ampArm.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/examples/ampArm.webp" style="width:60%"></a>
+          <figcaption> Gear and chain power transmission to rotate a small arm. </figcaption>
+      </figure>
+  </div></p>
+<p><div class="mySlides fade">
+      <figure>
+          <a class="glightbox" href="/img/learning-course/stage1b/examples/armGearbox.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/examples/armGearbox.webp" style="width:75%"></a>
+          <figcaption> Gear and chain power transmission to rotate a large arm.</figcaption>
+      </figure>
+  </div></p>
+<p><!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1,0)" style="background-color: #000; color: #fff;">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,0)" style="background-color: #000; color: #fff;">&#10095;</a>
+  <!-- The dots/circles -->
+  <div class="dotsContainer" style="text-align:center">
+  <!-- Dots will be generated here -->
+  </div>
+</div></p>
+</div>
+<p>In this stage, there are exercises designed to practice modeling simple power transmissions in the form of stand alone gearboxes. In stage 2, you will begin to model more integrated power transmissions within mechanisms. Practice exercise solutions can be found <a href="https://cad.onshape.com/documents/c6a8ec29479a2578841fb9f2/w/85094b3baa15a05c873920c9/e/21fa04df80572c41ab64f27b">here</a>.</p>
+<h2 id="motors">Motors</h2>
+<p>Motors spin! They transform electrical energy supplied by the robot battery into rotational motion. From intaking to climbing to driving, just about anything on your robot can be moved with the right motor(s).</p>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\motorLineup.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\motorLineup.webp" style="width:100%"></a></center>
+<center><em>Some of the motors available for use in FRC.</em></center></p>
+<p>In FRC, a number of different motor options are available, all with different advantages and use cases. The most common type of motor found in modern FRC is the "CIM class" motor. This includes the CIM, Mini-CIM, Vexpro Falcon 500, <abbr title="West Coast Products">WCP</abbr> Kraken x60, Rev NEO, and Rev Vortex. While each of the CIM class motors have different speeds and power, they have two traits in common for modeling:</p>
+<ul>
+<li>The motors' outer diameters can be represented with a 2.5" diameter circle (some are slightly smaller at 60mm/2.362").</li>
+<li>The motors have anywhere from 2 to 11 holes for mounting, but all are on a 2" diameter bolt circle (See below image). The holes are #10-32 threaded (0.159"), as #10-32 is the hardware standard for <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> parts.</li>
+</ul>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\cimBoltCircle.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\cimBoltCircle.webp" style="width:50%"></a></center></p>
+<figcaption>Mounting holes for CIM class motors are on a 2" diameter bolt circle. All of the holes are 1" away from the center of the motor.</figcaption>
+
+<p>All of the exercises for this stage will use CIM class motors. </p>
+<h2 id="shafts-and-bearings">Shafts and Bearings</h2>
+<p>Shafts transmit rotational power along an axis, with hex shafts being the most common in FRC. These hexagonal shafts, typically in 1/2" and 3/8" diameters (measured from flat to flat), may sometimes have rounded corners, known as "rounded hex" or "Thunderhex."</p>
+<p>Bearings allow shafts to spin independently of plates and/or things to spin independently of shafts. Standard hex shafts use 1/2" hex bearings, while rounded hex shafts can use round bearings for easier assembly.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The easiest way to model shafts is to use the <code>Shaft</code> <a href="/resources/featurescripts/">Featurescript</a>. For bearings, insert your desired bearing from the MKCad app.</p>
+</div>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\bearingAndShaft.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\bearingAndShaft.webp" style="width:75%"></a></center>
+<center><em>A rounded 1/2" hex bearing (Left) and 1/2" rounded hex shaft (Right). (Image Source: <abbr title="West Coast Products">WCP</abbr>)</em></center></p>
+<h2 id="torque-and-speed"><abbr title="Force that produces rotational movement.">Torque</abbr> and Speed</h2>
+<p>When designing power transmissions, there are two interlinked quantities that we are trying to modify: <abbr title="Force that produces rotational movement.">torque</abbr> and speed. <abbr title="Force that produces rotational movement.">Torque</abbr> refers to the rotational force applied to an object, while speed denotes how quickly that object rotates. In FRC, the unit used for speed is typically Rotations Per Minute (RPM). The units used for <abbr title="Force that produces rotational movement.">torque</abbr> is typically Newton-Meters (Nm).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Speed and <abbr title="Force that produces rotational movement.">torque</abbr> are inversely related in mechanical systems. This means that as one increases, the other decreases, and vice versa. For example, if speed is decreased by 4x, <abbr title="Force that produces rotational movement.">torque</abbr> is increased by 4x. This is because of the principle of conservation of energy: the output energy is the same as the input energy (ignoring losses like friction), so if speed is reduced through mechanical means, <abbr title="Force that produces rotational movement.">torque</abbr> must increase.</p>
+</div>
+<h3 id="mechanical-advantage">Mechanical Advantage</h3>
+<p>Many mechanical systems use the principle of the conservation of energy to convert energy from type to another, usually to produce larger forces or larger speeds with a set amount of force and speed at the beginning. <strong><em>Mechanical advantage</em></strong> is the ratio of output force to input force in a system, whether it's a lever, screw, gears, or pulley, mechanical advantage is used to quantify how the force changes.</p>
+<p>The ratio between the number of teeth of the input and output gear/sprocket/pulley system represents the mechanical advantage of that system. This is also called the <strong>gear ratio</strong>, and is the key to understanding how to achieve a needed <abbr title="Force that produces rotational movement.">torque</abbr> or speed from the set <abbr title="Force that produces rotational movement.">torque</abbr> and speed of a given motor.</p>
+<p>Gear ratio is typically written in the form <code>n1:n2</code>. Since <abbr title="Force that produces rotational movement.">torque</abbr> and speed are interlinked quantities, the ratio can be understood from the perspective of <abbr title="Force that produces rotational movement.">torque</abbr> or speed. From the perspective of <abbr title="Force that produces rotational movement.">torque</abbr>, <code>n1</code> is the output <abbr title="Force that produces rotational movement.">torque</abbr> for <code>n2</code> input <abbr title="Force that produces rotational movement.">torque</abbr>. From the perspective of speed, <code>n1</code> is the speed of the input for <code>n2</code> speed of the output. </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>A system has a gear ratio of 4:1. This means the output <abbr title="Force that produces rotational movement.">torque</abbr> is 4x the input <abbr title="Force that produces rotational movement.">torque</abbr> and that the output speed is 1/4 the input speed.</p>
+</div>
+<p>For a single stage transmission (only two transmission components), <code>n1</code> is the size of the driven component for <code>n2</code> size of the driving component.</p>
+<h3 id="ratio-applications">Ratio Applications</h3>
+<p>An arm mechanism needs very low RPM but a lot of <abbr title="Force that produces rotational movement.">torque</abbr> to control efficiently, so a large <em>reduction</em> of speed might be used to increase <abbr title="Force that produces rotational movement.">torque</abbr>. This depends on the weight and length of the arm, but can be 30:1 up to even 200:1. </p>
+<p>Shooter wheels or intake rollers often have little to no reduction, and in some cases may even need to go faster than the motor's free speed. In this case, an <em>upduction</em> can be be used to increase the speed, but the output <abbr title="Force that produces rotational movement.">torque</abbr> gets lower as a consequence. Upductions typically don't get much higher than 1:2 due to the available motors already having a high speed, low <abbr title="Force that produces rotational movement.">torque</abbr> output. A 1:2 upduction would double the speed and halve the <abbr title="Force that produces rotational movement.">torque</abbr> of the input.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For situations that require higher speed and higher <abbr title="Force that produces rotational movement.">torque</abbr> than what a single motor can provide, add more motors.</p>
+</div>
+<h2 id="power-transmissions">Power Transmissions</h2>
+<p>In FRC, the three most common types of power transmissions are gears, chain and sprocket, and belt and pulley. Although they all achieve the same end result of changing speed and <abbr title="Force that produces rotational movement.">torque</abbr>, they each excel in different situations. In the following sections you'll be introduced to each of them and how to model them.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Gears, sprockets, and pulleys all follow profile standards that specify how big the teeth are. This means that the ratio between the number of teeth and diameter of the part is a constant. There are different profile standards, but only parts of the same profile can be meshed or used together.</p>
+</div>
+<h3 id="gear-basics">Gear Basics</h3>
+<p>Gears are mechanical devices with teeth that mesh with each other to transmit motion or power between rotating shafts. They're like wheels with teeth that fit together, allowing them to transfer <abbr title="Force that produces rotational movement.">torque</abbr>, change speed, and change direction of rotation. </p>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\gears\simpleGears.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\gears\simpleGears.gif" style="width:40%"></a></center>
+<center><em>A simple animation of two gears meshing. Notice that meshed gears will spin in opposite directions.</em></center></p>
+<p>In order to change the <abbr title="Force that produces rotational movement.">torque</abbr> and speed from the input to output, different sized gears must be used. Remember that the ratio is related to the number of teeth of the gears. Teeth will always mesh together one by one, but the number of teeth per revolution is different for different sized gears, causing a difference in angular speed even if the surface speed of the gear is the same.</p>
+<p><center><strong>Changing Speed and <abbr title="Force that produces rotational movement.">Torque</abbr> with Gears</strong></center></p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+<div id="slide1" class="mySlides fade">
+    <figure>
+        <a class="glightbox" href="/img/learning-course/stage1b/gears/gearReduction.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/gears/gearReduction.webp" style="width:100%"></a>
+        <figcaption>1. A 12T gear drives an 84T gear. The gear ratio is 84:12, which can be simplified to 7:1. The torque is increased by 7x while the speed is reduced to 1/7 of the original speed. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/gears">WCP</a>)</figcaption>
+    </figure>
+</div>
+
+<div class="mySlides fade">
+    <figure>
+        <a class="glightbox" href="/img/learning-course/stage1b/gears/gearUpduction.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/gears/gearUpduction.webp" style="width:100%"></a>
+        <figcaption>2. A 48T gear drives an 24T gear. The gear ratio is 24:48, which can be simplified to 1:2. The torque is reduced to 1/2 of the original torque while the speed is increased by 2x. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/gears">WCP</a>)</figcaption>
+    </figure>
+</div>
+
+<div class="mySlides fade">
+    <figure>
+        <a class="glightbox" href="/img/learning-course/stage1b/gears/gearSwap.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/gears/gearSwap.webp" style="width:100%"></a>
+        <figcaption>3. If the same size gears are used, there is no change in speed and torque. However, the direction of the rotation is flipped if there is an even number of gears from input to output. If there is an odd number of gears, the direction remains the same. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/gears">WCP</a>)</figcaption>
+    </figure>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1,1)" style="background-color: #000; color: #fff;">&#10094;</a>
+<a class="next" onclick="plusSlides(1,1)" style="background-color: #000; color: #fff;">&#10095;</a>
+<!-- The dots/circles -->
+<div class="dotsContainer" style="text-align:center">
+<!-- Dots will be generated here -->
+</div>
+</div>
+
+<p><strong>Center to Center Calculation</strong> </p>
+<p>To calculate how far apart to space the gears, you can use the following formula to calculate the center-to-center distance:</p>
+<p><center><strong><code>CC = 0.5*PD1 + 0.5*PD2</code></strong></center></p>
+<p>Where <code>PD1</code> and <code>PD2</code> are the <em>Pitch Diameters</em> of the two gears. The <strong>Pitch Diameter (PD)</strong>  is the size of the imaginary circle that passes through the center of the gear teeth. The pitch diameters of two gears should be tangent in order for the gears to properly mesh. The equation for PD is as follows:</p>
+<p><center><strong><code>PD = (# of teeth) / <abbr title="Diametral pitch is the number of teeth per inch of the pitch circle.">DP</abbr></code></strong></center></p>
+<p>Where <abbr title="Diametral pitch is the number of teeth per inch of the pitch circle.">DP</abbr> stands for <strong>diametral pitch</strong>. For now, you can assume it to always be 20. If you're curious, you can learn more about this in the Design Handbook pages.</p>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\gears\gearDiagram.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\gears\gearDiagram.webp" style="width:70%"></a></center>
+<center><em>Illustration of a gear's pitch diameter and outer diameter. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/gears"><abbr title="West Coast Products">WCP</abbr></a>).</em></center></p>
+<p><strong>Modeling Gear Transmissions</strong></p>
+<p>When modeling, an easy way to set the center-to-center distance between two gears is to draw two circles sized to the gears' pitch diameters and then set two circles to be tangent to each other. For example, if you need to mesh a 20T gear and a 60T gear, you can draw a <code>20/20 = 1"</code> and a <code>60/20 = 3"</code> circle and add a tangent constraint between the two circles. The reason we enter the full expression is so that we can easily see what the circle represents (a gear, sprocket, or pulley, and how many teeth it has).</p>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\gears\gearCad.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\gears\gearCad.webp" style="width:60%"></a></center></p>
+<figcaption>Modeling gear C-C distance by constraining two pitch diameter construction circles tangent. The diameters of the circle are calculated by dividing the tooth count by DP, which is 20 in this case.</figcaption>
+
+<p>It's recommended to input the pitch diameter fraction (Eg: <code>(60/20)"</code>) rather than the calculated pitch diameter (Eg: Only inputting <code>3"</code> as the dimension) so that you can easily see the tooth count of the designed gear. </p>
+<h2 id="exercise-document">Exercise Document</h2>
+<p>Make a copy of the Stage 1B Exercises Document through the button below. A template for each exercise has been created for you in the exercises document (you do not need to create any new tabs).</p>
+<p><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/ce41613fac38db8c00e65020/w/a65651477167d5e36fe871c0/e/b31e08475df637b12d58f61e?renderMode=0&amp;uiState=66cf9bde38437847c7b79c0c">Copy the 1B Exercises Document Here</a></p>
+<h2 id="exercise-1-simple-gearbox">Exercise 1: Simple Gearbox</h2>
+<p>In this exercise, you will be CADing and assembling a simple single stage gearbox. Practice exercise solutions can be found <a href="https://cad.onshape.com/documents/c6a8ec29479a2578841fb9f2/w/85094b3baa15a05c873920c9/e/21fa04df80572c41ab64f27b">here</a>.</p>
+<p>The goal of this exercise is to introduce how to model a very simple gear transmission. Additionally, you will learn how to use the the <code>Shaft</code> Featurescript, <code>Replicate</code> tool, MKCad parts library, and part configurations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Exercise 1 adds hardware (bolts and nuts) to the CAD models. You can read more about hardware standards on the <a href="/design-handbook/structure/hardware">Design Handbook</a> page.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To lock mate inferences when you see the one you want to select, hold the <code>Shift</code> key when mousing. This is particularly useful for mating the motor pinion gear.
+<center>
+  <video width="1920" controls>
+    <source src="/img/learning-course/stage1b/shiftSelectEdited.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</center>
+<center><em>Using Shift key to lock mate inferences while mating.</em></center></p>
+</div>
+<p><center><strong>Exercise 1 Instruction Slides</strong></center></p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div id="slide1" class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s0.webp" style="width:100%"></a>
+      <figcaption>0. Final assembly.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s1.webp" style="width:100%"></a>
+      <figcaption> 1. Begin by creating the layout sketch for the gearbox. Draw the pitch circles for the 60T and 12T gears. Set the pitch circles tangent to constrain the center-to-center distance between the gears. Constrain the centers of the two gears to be vertical.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s2.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s2.webp" style="width:100%"></a>
+      <figcaption> 2. Add the outline of the motor, a 2.5" diameter circle, around the 12T gear that the motor is attached to. The layout sketch is now finished.  </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s3.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s3.webp" style="width:100%"></a>
+      <figcaption> 3. Create a new sketch for the motor plate. Using the layout as the reference, draw a 1.125" hole for the bearing and a 0.8" hole for the motor boss (the nub that sticks out from the motor). Note that depending on your manufacturing processes and tolerances, you may need to draw your bearing holes slightly larger or smaller than nominal (1.125"). </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s4.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s4.webp" style="width:100%"></a>
+      <figcaption> 4. Add two mounting holes for the motor. A good practice to constrain the holes is to draw and dimension a <it>bolt circle</it>, then draw the holes for the bolts on the bolt circle. This constrains the distance of the holes from the center of the motor with a single dimension. The bolt circle for the motor we are using is 2". </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s5.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s5.webp" style="width:100%"></a>
+      <figcaption>  5. Add the four bolt holes for connecting the two plates. Use a center rectangle to create the construction geometry so that only two dimensions are required to constrain the holes.    </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s6.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s6.webp" style="width:100%"></a>
+      <figcaption> 6. Using centerpoint arcs, lines, and the sketch mirror tool, draw the outline for the plate around the holes and motor outline. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s7.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s7.webp" style="width:100%"></a>
+      <figcaption> 7. Extrude the motor plate to be 1/4" thick. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s8.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s8.webp" style="width:100%"></a>
+      <figcaption> 8. Use the <code>Spacer</code> Featurescript to add a round 3/8" diameter, 5/8" long spacer. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s9.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s9.webp" style="width:100%"></a>
+      <figcaption> 9. Create the outer plate sketch on the face of the spacer. Use the <code>Use</code> sketch tool to copy the geometry and holes of the motor plate, but add a round cutout at the top.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s10.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s10.webp" style="width:100%"></a>
+      <figcaption>10. Extrude the outer plate to be 1/4" thick.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e1/e1s11.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>11. Use the <code>Shaft</code> Featurescript to model the output shaft. Follow the settings used. You can learn more about the shaft retention property on the Design Handbook page. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s12.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s12.webp" style="width:100%"></a>
+      <figcaption> 12. Finished part studio. Name the key sketches and parts. Set the material of the plate and spacers to 6061 Aluminum. The shaft has its material automatically determined from the <code>Shaft</code> Featurescript.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e1/e1s13.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption> 13. Insert the part studio into the assembly and fix the gearbox plate. Group mate the two plates together and then mate the spacer to the motor plate. Then, use the <code>Replicate</code> tool to replicate the spacer and its associated mate onto the other spacer locations. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e1/e1s14.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption> 14. Assemble the bearings and shaft using parts from the MKCad App.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e1/e1s15.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption> 15. Assemble the motor and motor pinion gear using parts from the MKCad App. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e1/e1s16.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption> 16. Assemble the shaft spacer and gear using parts from the MKCad App. Configurable parts will have a blue grid icon in the instance list. Notice how you were able to change the tooth count of the gear from 40T to 60T after mating it. Using configurable components like this makes your models more parametric since you can change the component without needing to re-insert and mate. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e1/e1s17.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption> 17. Assemble the shaft retention bolts using the MKCad app parts. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e1/e1s18.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption> 18. Assemble the motor bolts, gearbox bolts, and nuts using the Onshape Standard Content and MKCad app parts. When inserting Onshape Standard Content, you can use the snap mode to automatically add the mates when inserting or insert the component and then manually mate it. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e1/e1s0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e1/e1s0.webp" style="width:100%"></a>
+      <figcaption>19. Finished assembly. Make sure to sort your parts into folders and name your replicate features. </figcaption>
+    </figure>
+  </div>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1,2)" style="background-color: #000; color: #fff;">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,2)" style="background-color: #000; color: #fff;">&#10095;</a>
+  <!-- The dots/circles -->
+  <div class="dotsContainer" style="text-align:center">
+    <!-- Dots will be generated here -->
+  </div>
+</div>
+
+<p>In this exercise you made your first gearbox. In doing so, you also used part configurations - a powerful tool that allows for variations of the same part. The gears that you inserted from MKCad were configurable - you were able to easily change the tooth count of the gear without needing to inserting a new component.</p>
+<p><br></p>
+<h2 id="exercise-2-two-stage-gearbox">Exercise 2: Two Stage Gearbox</h2>
+<p>In this exercise, you will be CADing and assembling a two stage gearbox. Practice exercise solutions can be found <a href="https://cad.onshape.com/documents/c6a8ec29479a2578841fb9f2/w/85094b3baa15a05c873920c9/e/21fa04df80572c41ab64f27b">here</a>.</p>
+<p>The goal of this exercise is to practice modeling more advanced gearboxes. You will also learn how to use the <code>Vent</code> Featurescript used for pocketing.</p>
+<p><center><strong>Exercise 2 Instruction Slides</strong></center></p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div id="slide1" class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s0.webp" style="width:100%"></a>
+      <figcaption>0. Final assembly.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s1a.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s1a.webp" style="width:100%"></a>
+      <figcaption>1a. Create the layout sketch for the gearbox. Start by drawing the 2nd stage, which is a 20T gear to a 50T gear.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s1b.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s1b.webp" style="width:100%"></a>
+      <figcaption>1b. Draw the first stage, which is a 12T motor pinion gear to a 50T gear.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s1c.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s1c.webp" style="width:100%"></a>
+      <figcaption>1c. Draw the outline of the motors as a 2.5" diameter circle. This is the finished layout sketch for the gearbox.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s2.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s2.webp" style="width:100%"></a>
+      <figcaption>2. Create a new sketch to draw the profile of the plate. Add the bearing holes, which are 1.125" diameter holes, as well as the motor boss holes, which are 0.8". Also add the motor mounting holes. You can utilize the <code>Mirror</code> sketch tool to mirror the geometry from the left side to the right side. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s3.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s3.webp" style="width:100%"></a>
+      <figcaption>3. Extrude the plate to be 1/4" thick.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s4.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s4.webp" style="width:100%"></a>
+      <figcaption>4. Use the <code>Spacer</code> Featurescript to create the gearbox spacer. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e2/e2s5.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>5. Use the <code>Shaft</code> Featurescript to create the first stage shaft. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s6.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s6.webp" style="width:100%"></a>
+      <figcaption>6. Use the <code>Shaft</code> Featurescript to create the output shaft.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s7.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s7.webp" style="width:100%"></a>
+      <figcaption>7. Create a sketch on the face of the plate and draw the lines for the pocketing ribs. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e2/e2s8.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>8. Use the <code>Vent</code> Featurescript to pocket the plate by selecting the sketch regions created by the previous sketch. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s9.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s9.webp" style="width:100%"></a>
+      <figcaption>9. Finished part studio. Name the key sketches and parts. Set the material of the plate and spacers to 6061 Aluminum. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e2/e2s10.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>10. Insert the part studio into the assembly and fix only the gearbox plate. Mate the spacer to the plate. Then, use the <code>Replicate</code> tool to replicate the spacer and its associated mate onto the other spacer locations. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s11.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s11.webp" style="width:100%"></a>
+      <figcaption>11. Copy the gearbox plate and mate it into place. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <li class="slideVideo">
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e2/e2s12.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>12. Assemble the bearings and shafts using parts from the MKCad App. </figcaption>
+    </li>
+  </div>
+
+  <div class="mySlides fade">
+    <li class="slideVideo">
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e2/e2s13.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>13. Assemble the motor and motor pinion gear using parts from the MKCad App. </figcaption>
+    </li>
+  </div>
+
+  <div class="mySlides fade">
+    <li class="slideVideo">
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e2/e2s14.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>14. Assemble the shaft spacers and gears using parts from the MKCad App. </figcaption>
+    </li>
+  </div>
+
+  <div class="mySlides fade">
+    <li class="slideVideo">
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e2/e2s15.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>15. Assemble the shaft retention bolts, motor bolts, gearbox bolts, and nuts using the Onshape Standard Content and MKCad app parts. </figcaption>
+    </li>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e2/e2s0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e2/e2s0.webp" style="width:100%"></a>
+      <figcaption>15. Finished assembly. Make sure to sort your parts into folders and name your replicate features. </figcaption>
+    </figure>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1,3)" style="background-color: #000; color: #fff;">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,3)" style="background-color: #000; color: #fff;">&#10095;</a>
+  <!-- The dots/circles -->
+  <div class="dotsContainer" style="text-align:center">
+    <!-- Dots will be generated here -->
+  </div>
+</div>
+
+<p>In this exercise, you practiced more complex gearbox modeling and mating together larger assemblies. </p>
+<h3 id="belts-and-pulley-basics">Belts and Pulley Basics</h3>
+<p>Timing belt and pulley drives are mechanical systems used to transmit motion and power between rotating shafts using flexible belts and pulleys. The system consists of two main components: the belt, which is a flexible loop made of a material like rubber, and the pulleys, which are wheels with grooves that the belt wraps around. As one pulley rotates, it drives the belt, which in turn drives the other pulley, transferring motion and power from one shaft to another</p>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\belt\beltAndPulley.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\belt\beltAndPulley.webp" style="width:50%"></a></center>
+<center><em>A belt and pulley transmission. (Image Source: <a href="https://www.reca.lc/belts">ReCalc</a>)</em></center></p>
+<p>In order to change the <abbr title="Force that produces rotational movement.">torque</abbr> and speed from the input to the output, different sized pulleys must be used. The mechanical advantage for belt transmissions, similar to gears, is based on the ratio between the number of teeth of the output pulley to the number of teeth of the input pulley. Note that unlike gears, pulleys will spin in the same direction.</p>
+<p><strong>Types of Belt</strong></p>
+<p>Like gears, belts also have a pitch. The pitch is defined as the distance between each tooth on the belt. In FRC, this is typically 5 mm. To calculate the pitch diameter of a pulley, the following equation can be used:</p>
+<p><center><strong><code>PD = Pitch * (# of Teeth) / 3.14</code></strong></center></p>
+<p>Belts also come in various widths. In FRC, you will typically use either 9 mm or 15 mm wide belts.</p>
+<p><strong>Center to Center Calculation</strong></p>
+<p>To calculate the center-to-center distance of the pulleys, it is recommended to use an online calculator, such as <a href="https://www.reca.lc/belts">ReCalc</a>. In the calculator, you can set the belt pitch, desired center distance, and the number of teeth on each pulley to get the closest integer belt size  (belt tooth counts must be whole numbers) and corresponding center to center distance.</p>
+<p><strong>Modeling Belt Transmissions</strong></p>
+<p>When modeling, you will typically draw either the pitch diameter of the two pulleys and connect them with tangent lines to represent the belt. A simplified 3D model of the belt can be generated using the <code>Contextless Belts</code> Featurescript from <a href="/resources/featurescripts/#julias-featurescripts">Julia's Featurescripts</a>.</p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+<div id="slide1" class="mySlides fade">
+    <figure>
+        <a class="glightbox" href="/img/learning-course/stage1b/belt/beltCad1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/belt/beltCad1.webp" style="width:75%"></a>
+        <figcaption>1. Use ReCalc to find the closest belt size to the desired C-C distance. Set the pitch diameter and select the closest smaller or larger belt, whichever fits your design better.</figcaption>
+    </figure>
+</div>
+
+<div class="mySlides fade">
+    <figure>
+        <a class="glightbox" href="/img/learning-course/stage1b/belt/beltCad2.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/belt/beltCad2.webp" style="width:100%"></a>
+        <figcaption>2. Draw two circles to represent pulley pitch diameters and connect them with tangent lines. Set the center distance with the calculated number from ReCalc.</figcaption>
+    </figure>
+</div>
+
+<div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/belt/beltCad3.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>3. Use the <code>Contextless Belts</code> Featurescript to generate a 3D model of the belt.</figcaption>
+    </figure>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1,4)" style="background-color: #000; color: #fff;">&#10094;</a>
+<a class="next" onclick="plusSlides(1,4)" style="background-color: #000; color: #fff;">&#10095;</a>
+<!-- The dots/circles -->
+<div class="dotsContainer" style="text-align:center">
+<!-- Dots will be generated here -->
+</div>
+</div>
+
+<h3 id="chain-and-sprocket-basics">Chain and Sprocket Basics</h3>
+<p>Roller chain and sprocket drives are very similar to belt and pulley transmissions. They consist of two main components: a chain, which is a series of interconnected links, and sprockets, which are toothed wheels that mesh with the chain. As the sprockets rotate, they engage with the chain, causing it to move and transmit power from one shaft to another. Bikes are an everyday object that use chain to transmit power. Chains excel at transmitting high force over long distances.</p>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\chain\chainAnimation.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\chainAnimation.gif" style="width:40%"></a></center>
+<center><em>A simple animation of chain and sprocket. Notice that the sprockets will spin in the same direction.</em></center></p>
+<p>In order to change the <abbr title="Force that produces rotational movement.">torque</abbr> and speed from the input to the output, different sized sprockets must be used. The mechanical advantage for chain transmissions, similar to gears and pulleys, is based on the ratio between the number of teeth of the output sprocket to the number of teeth of the input sprocket. Similar to pulleys, the sprockets will spin in the same direction.</p>
+<p><strong>Types of Chain</strong></p>
+<p>The two commonly used sizes of roller chain in FRC is #25 and #35 chain, with 0.25" and 0.375" pitch respectively. For chain, the <strong>pitch</strong> is the length of each link. To calculate the pitch diameter, the following equation can be used:</p>
+<p><center><strong><code>PD = Pitch / sin [180°/# of teeth]</code></strong></center></p>
+<p>Additionally, the <strong>chain clearance diameter</strong> describes the diameter of the sprocket with the chain wrapped around it. The following equation can be used:</p>
+<p><center><strong><code>Clearance Diameter = PD + Pitch</code></strong></center></p>
+<p>Below is an illustration of the pitch, pitch diameter, outside diameter, and chain clearance diameter of a sprocket.</p>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\chain\chainDiagram.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\chainDiagram.webp" style="width:70%"></a></center>
+<center><em>Illustration of chain sprocket diameter measures. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/sprockets-and-chain"><abbr title="West Coast Products">WCP</abbr></a>)</em></center></p>
+<p>In FRC, #25 chain is most commonly used as it is strong yet relatively lightweight. #35 is sometimes used on very high <abbr title="Force that produces rotational movement.">torque</abbr> transmissions, but it is heavy and bulky. </p>
+<p><strong>Center to Center Calculation</strong> </p>
+<p>Calculating sprocket center-to-center is very similar to pulley center-to-centers. To calculate the center-to-center distance of the sprockets, it is recommended to use an online calculator, such as <a href="https://www.reca.lc/chains">ReCalc</a>. In the calculator, you can set the chain size, desired center distance, and the number of teeth on each sprocket to get the required center distance.</p>
+<p>When modeling, you will typically draw either the pitch diameter or chain clearance diameter of the two sprockets and connect them with tangent lines to represent the links. A simplified 3D model of the chain can be generated using the <code>Chain Generator</code> Featurescript from <a href="/resources/featurescripts/#julias-featurescripts">Julia's Featurescripts</a>. The modeling workflow is very similar to belt and pulley.</p>
+<p><center><strong>Modeling Chain Transmissions</strong></center></p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+<div id="slide1" class="mySlides fade">
+    <figure>
+        <a class="glightbox" href="/img/learning-course/stage1b/chain/chainCad1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/chain/chainCad1.webp" style="width:80%"></a>
+        <figcaption>1. Use ReCalc to find the closest C-C size to the desired C-C distance. Set the pitch diameter and select the closest smaller or larger chain link count, whichever fits your design better.</figcaption>
+    </figure>
+</div>
+
+<div class="mySlides fade">
+    <figure>
+        <a class="glightbox" href="/img/learning-course/stage1b/chain/chainCad2.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/chain/chainCad2.webp" style="width:100%"></a>
+        <figcaption>2. Draw two circles to represent sprocket pitch diameters and connect them with tangent lines. Set the center distance with the calculated number from ReCalc.</figcaption>
+    </figure>
+</div>
+
+<div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/chain/chainCad3.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>3. Use the <code>Chain Generator</code> Featurescript to generate a simplified 3D model of the chain.</figcaption>
+    </figure>
+</div>
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1,5)" style="background-color: #000; color: #fff;">&#10094;</a>
+<a class="next" onclick="plusSlides(1,5)" style="background-color: #000; color: #fff;">&#10095;</a>
+<!-- The dots/circles -->
+<div class="dotsContainer" style="text-align:center">
+<!-- Dots will be generated here -->
+</div>
+</div>
+
+<p><strong>Chain Tensioners</strong></p>
+<p>One difficulty when designing with chain is that it will physically stretch as it is used. This means the distance between each link will slightly increase, making the overall chain longer in a non-insignificant way. Loose chain can be difficult to fix if the chain transmission is not designed with chain tensioning in mind. Although you will not be learning about chain tensioning methods quite yet, you should keep this idea in the back of your mind. In Stage 2, different chain tensioning methods are introduced in the context of different types of robot mechanisms. The <a href="/design-handbook/">Design Handbook page</a> also dives deeper into this topic.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><center><a class="glightbox" href="\img\learning-course\stage1b\chain\turnbuckle.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\turnbuckle.webp" style="width:60%"></a></center>
+<figcaption>A "<abbr title="A threaded part that goes in between chain links to tension the chain">turnbuckle</abbr>" chain tensioner. The <abbr title="A threaded part that goes in between chain links to tension the chain">turnbuckle</abbr> acts as a variable-length link in the chain that can be adjusted to keep the chain tight. (Photo Credit: FRC 1538)</figcaption></p>
+</div>
+<h2 id="exercise-3-belt-and-gear-transmission">Exercise 3: Belt and Gear Transmission</h2>
+<p>In this exercise, you will be modeling a two stage gearbox that uses gears and belts. This gearbox will also include elements like frame and gussets, which you previously learned in Stage 1A. Practice exercise solutions can be found <a href="https://cad.onshape.com/documents/c6a8ec29479a2578841fb9f2/w/85094b3baa15a05c873920c9/e/21fa04df80572c41ab64f27b">here</a>.</p>
+<p>The goal of this exercise is to continue to ramp up your modeling skills. Always make sure to fully define your sketches and keep your feature and instance trees organized. </p>
+<p><center><strong>Exercise 3 Part Studio Instruction Slides</strong></center></p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div id="slide1" class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s0.webp" style="width:100%"></a>
+      <figcaption>0. Final part studio.</figcaption>
+    </figure>
+    </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s1.webp" style="width:100%"></a>
+      <figcaption>1. Draw the tube profiles for the frame. There is a an 1/8" gap between the slanted tube and the vertical tube to allow for assembly tolerances. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s2.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s2.webp" style="width:100%"></a>
+      <figcaption>2. Use the <code>Extrude Individual</code> Featurescript to extrude the tube profiles.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s3.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s3.webp" style="width:100%"></a>
+      <figcaption>3. Use the <code>Tube Converter</code> Featurescript to convert the rectangles into hole patterned 1x1 thin-wall tube (1/16" thick wall).</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s4.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s4.webp" style="width:100%"></a>
+      <figcaption>4. Use the <code>Gusset</code> Featurescript to add a corner gusset between the lower two tubes.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s5.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s5.webp" style="width:100%"></a>
+      <figcaption>5. Create the gearbox layout sketch on the outer face of the bottom tube. Begin by drawing the two gears, a 60T and 20T gear. The 60T gear is the output, and we would like to constrain it to a specific location given by the 2" and 4.5" dimensions.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s6.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s6.webp" style="width:100%"></a>
+      <figcaption>6. Next, draw the 5mm pitch 12T and 36T pulleys. Use a line to connect the two pulleys. Pay attention to the expressions that were entered to calculate the pitch diameters of the pulleys. Also space the 36T pulley to be 0.25" from the vertical tube. This step fully constrains the location of the gears.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s7.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s7.webp" style="width:75%"></a>
+      <figcaption>7. Use a belt c-c calculator (eg: reca.lc) to calculate the pulley c-c. In this example, we know we have a 60T belt on hand, so we would like to use that specific belt in the design. The belt we are using is 5mm pitch.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s8.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s8.webp" style="width:100%"></a>
+      <figcaption>8. Add the calculated c-c to the layout sketch.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s9.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s9.webp" style="width:100%"></a>
+      <figcaption>9. Optionally draw two tangent lines to connect the two pulley circles. This represents the belt.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s10.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s10.webp" style="width:100%"></a>
+      <figcaption>10. Finally, sketch a 2.5" circle for the motor. Space the motor to be 1/8" away from the slanted tube. The layout sketch is now fully defined.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s11.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s11.webp" style="width:100%"></a>
+      <figcaption>11. Create the plate sketch on the outer face of the bottom tube. Begin by drawing the two 1.125" diameter bearing holes. Add a 0.95" for the bearing boss instead of the standard 0.8" so that the 12T pulley on the motor can fit through the hole to assist with real life assembly. This will become more clear when you create the gearbox assembly.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s12.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s12.webp" style="width:100%"></a>
+      <figcaption>12. Add a 2" bolt circle for the motor with a circular pattern. Constrain the center of the top left hole to be coincident with the center line between the pulleys (coincident uses an infinite extension of the line) </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s13.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s13.webp" style="width:100%"></a>
+      <figcaption>13. Add the tube mounting holes for the plate. Note that the holes reference the edges of the tube and not the holes on the tube. This is to make the model more parametric, as changes in the tube can change the locations of the holes and break the gearbox plate sketch.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s14.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s14.webp" style="width:100%"></a>
+      <figcaption>14. Draw the outline for the plate. Space the bottom of the plate 0.25" from the edge of the pitch circle for the 60T gear. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s15.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s15.webp" style="width:100%"></a>
+      <figcaption>15. Add two holes for spacers. The construction circles represent the 3/8" diameter spacer. The top hole is tangent with the left edge of the plate and tangent with the 2.5" motor circle.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s16.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s16.webp" style="width:100%"></a>
+      <figcaption>16. Extrude the plate to be 1/4" thick.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s17.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s17.webp" style="width:100%"></a>
+      <figcaption>17. On the opposite side, create a sketch for the inner plate. Utilize the <code>Use</code> sketch feature to copy over common geometry (holes, outline). Do not copy the motor holes, as there will be a cutout on the inner plate for the body of the motor.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s18.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s18.webp" style="width:100%"></a>
+      <figcaption>18. Finish the outline of the plate by adding an arc for the motor cutout.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s19.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s19.webp" style="width:100%"></a>
+      <figcaption>19. Extrude the inner plate to be 1/4" thick.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s20.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s20.webp" style="width:100%"></a>
+      <figcaption>20. Add a 3/16" radius fillet on the two edges for the motor cutout. The radius is selected to match the 3/8" diameter spacer.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s21.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s21.webp" style="width:100%"></a>
+      <figcaption>21. Model the 3/8" diameter spacer. The <code>Up to Face</code> end condition can be utilized to keep the spacer length parametric.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s22.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s22.webp" style="width:100%"></a>
+      <figcaption>22. Use the <code>Contextless Belt</code> Featurescript to create a simplified model of the belt. The pitch of the belt is 5mm and the width is 9mm.  </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s23.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s23.webp" style="width:100%"></a>
+      <figcaption>23. Use the <code>Shaft Generator</code> Featurescript to create the 1st stage shaft. Note that this length is simply an estimate. While you could calculate the length of the shaft based on the components that will go on it, it is often easier to create the assembly then measure what the shaft length should be and update accordingly.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s24.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s24.webp" style="width:100%"></a>
+      <figcaption>24. Use the <code>Shaft Generator</code> Featurescript to create the output shaft.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s25.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s25.webp" style="width:100%"></a>
+      <figcaption>25. Optionally pocket the plates. To begin, create a sketch on the outer face of the motor plate and draw lines to create the struts.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s26.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s26.webp" style="width:100%"></a>
+      <figcaption>26. Use the <code>Vent</code> Featurescript to add the pocketing. Use 0.15" wide ribs and 0.15" tool radius. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s27.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s27.webp" style="width:100%"></a>
+      <figcaption>27. Create a sketch on the inner plate and draw the strut lines. You can utilize the <code>Use</code> sketch feature to copy over strut lines from the motor plate pocketing sketch.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s28.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s28.webp" style="width:100%"></a>
+      <figcaption>28. Use the <code>Vent</code> Featurescript to add the pocketing. Again, use 0.15" wide ribs and 0.15" tool radius. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s0.webp" style="width:100%"></a>
+      <figcaption>29. Finished part studio. Name the key sketches and parts. Set the material of the plate and spacers to 6061 Aluminum. The tube, gusset, and shafts should have their material automatically set already. </figcaption>
+    </figure>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1,6)" style="background-color: #000; color: #fff;">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,6)" style="background-color: #000; color: #fff;">&#10095;</a>
+  <!-- The dots/circles -->
+  <div class="dotsContainer" style="text-align:center">
+    <!-- Dots will be generated here -->
+  </div>
+</div>
+
+<p><center><strong>Exercise 3 Assembly Instruction Slides</strong></center></p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div id="slide1" class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3a0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3a0.webp" style="width:100%"></a>
+      <figcaption>0. Final assembly.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3a1.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>1. Insert the part studio into the assembly and fix only the bottom tube. Use the group mate on the tubes, plates, and gusset. Copy the gusset and mate it to the other side of the tube. Next, mate the spacer to the plate and use the <code>Replicate</code> tool to replicate the spacer. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3a2.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>2. Assemble the bearings and shafts using parts from the MKCad App. Use the <code>Replicate</code> tool to replicate the bearing.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3a3.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>3. Assemble the 36T pulley, belt, motor, and motor pinion pulley using parts from the MKCad App. Notice that the motor pinion is offset 1/16" from the bottom of the shaft to better align with the belt. Additionally, notice that the belt requires only a single fasten mate since its orientation was determined by how it was modeled in the part studio.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3a4.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>4. Assemble the shaft spacers and gears using parts from the MKCad App. Notice that this time we used a pocketed gear for the 60T gear. Pocketed gears are the same as normal gears except they have some material removed to save weight. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3a5.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>5. At this point, you have all of the core components assembled and can update the length of the first stage shaft. Copy the measured shaft length and update the part studio accordingly. It is recommended to round up to the nearest 0.01" for manufacturability. </figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3a6.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>6. Assemble the shaft retention bolts using MKCad app parts.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3a7.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>7. Assemble the motor bolts, gearbox bolts, and nuts using the Onshape Standard Content and MKCad app parts</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3a8.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>8. Assemble the gusset rivets using the MKCad app parts.</figcaption>
+    </figure>
+  </div>
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3a0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3a0.webp" style="width:100%"></a>
+      <figcaption>9. Finished assembly. Make sure to sort your parts into folders and name your replicate features. </figcaption>
+    </figure>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1,7)" style="background-color: #000; color: #fff;">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,7)" style="background-color: #000; color: #fff;">&#10095;</a>
+  <!-- The dots/circles -->
+  <div class="dotsContainer" style="text-align:center">
+    <!-- Dots will be generated here -->
+  </div>
+</div>
+
+<p>In this exercise, you modeled a fairly complex gearbox that was integrated with some frame elements. At this point, you should be begin to feel comfortable with the sketching and extrude tools. You should also familiarize yourself with all the options present in the Featurescripts that you have used up until this point by playing around with different settings. </p>
+<p>To get a feel for how <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> your model is, you can try and change certain key dimensions in the layout sketches, such as the length of the tubes, angle of the tubes, length of the belt, and the size of the gears. Play around with which modifications will update smoothly and which require additional fixes in the CAD.</p>
+<p>You may also be curious as to how things like the hole sizes, materials, etc were selected in each of these designs. You are encouraged to learn more by browsing the <a href="/design-handbook/">Design Handbook</a> pages which contain in-depth information on a wide range of topics, or by discussing with your team and or other students and mentors on the DDS Discord.</p>
+<h2 id="summary">Summary</h2>
+<p>Congratulations on completing Stage 1B! Keep up the good work! Remember that practice is key - the only way to get better is to model more.</p>
+<p>Here is a quick summary of what you have achieved in stage 1B:</p>
+<ul>
+<li>Learned about speed, <abbr title="Force that produces rotational movement.">torque</abbr>, and mechanical advantage</li>
+<li>Learned the basics of motors, bearings, shafts, gears, chain and sprockets, and belt and pulleys</li>
+<li>Learned how to model basic power transmissions</li>
+<li>Learned how to use the <code>Contextless Belt</code>, <code>Chain Generator</code>, <code>Shaft</code>, and <code>Vent</code> Featurescripts</li>
+<li>Learned how to insert Standard Library components and mate bolts and nuts</li>
+<li>Learned how to use the <code>Replicate</code> tool</li>
+</ul>
+<p>Again, it should be noted that Stage 1B is a very basic introduction to modeling power transmissions and some details were glossed over. Stage 2 will introduce how to <em>design</em> power transmissions - selecting motors and calculating optimal ratios. </p>
+<!-- For future reference, you can refer to the [Design Handbook](/design-handbook/) power transmissions pages, which are more in depth. -->
+
+<p>In stage 1C, you will begin to learn the basic workflow for robot modeling. This is the final step before being able to design a full mechanism!</p>
+<p><br></p>
+<!-- ------------------DO NOT TOUCH ANYTHING BELOW HERE------------------ -->
+
+<script>
+// Initialize slide index for each slideshow
+let slideIndices = [];
+
+let slideshows = document.getElementsByClassName("slideshow-container");
+  for (let no = 0; no < slideshows.length; no++) {
+    slideIndices[no] = 1;
+    let dotsContainer = slideshows[no].getElementsByClassName("dotsContainer")[0];
+    let slides = slideshows[no].getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+      let dot = document.createElement("span");
+      dot.className = "dot";
+      dot.onclick = function() { currentSlide(i+1, no); };
+      dotsContainer.appendChild(dot);
+    }
+    showSlides(1, no);
+  }
+
+// Next/previous controls
+function plusSlides(n, no) {
+  showSlides(slideIndices[no] += n, no);
+}
+
+// Thumbnail image controls
+function currentSlide(n, no) {
+  showSlides(slideIndices[no] = n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName("slideshow-container")[no].getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("slideshow-container")[no].getElementsByClassName("dot");
+  if (n > x.length) {slideIndices[no] = 1}    
+  if (n < 1) {slideIndices[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  x[slideIndices[no]-1].style.display = "block";  
+  dots[slideIndices[no]-1].className += " active";
+}
+
+</script>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 29, 2024</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2024</span>
+  </span>
+
+    
+    
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Contributors">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
+          
+          <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
+        </a>
+      
+        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
+          
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../1A-onshapeFundamentals/" class="md-footer__link md-footer__link--prev" aria-label="Previous: A: Onshape Fundamentals">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                A: Onshape Fundamentals
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../1C-designMethodology/" class="md-footer__link md-footer__link--next" aria-label="Next: C: Design Methodology">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                C: Design Methodology
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/jHXTdNjYCg" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.footer", "navigation.prune", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotate", "content.code.copy", "content.tooltips", "content.action.edit", "content.action.view", "header.autohide"], "search": "../../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.94ab4cf4.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
