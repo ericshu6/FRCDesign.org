@@ -395,7 +395,7 @@
   
     
   
-  Best Practices
+  CAD Best Practices
 
         </a>
       </li>
@@ -1610,7 +1610,7 @@
   <span class="md-ellipsis">
     
   
-    Best Practices
+    CAD Best Practices
   
 
     
@@ -1941,12 +1941,16 @@
 <h1 id="1a-onshape-fundamentals">1A: Onshape Fundamentals</h1>
 <p>Welcome to Stage 1! Here, you'll engage in a series of Onshape exercises and projects designed to introduce and develop your CAD skills within an FRC context. </p>
 <p>In Stage 1A, there are 3 major sections: sketching and part design, multi-part part studios, and assemblies. Each section has a link to a learning course to learn the skills of each topic, then an exercise to help immediately apply those skills in an FRC context. </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Remember to take a look at the <a href="../../../website-feature-guide/" target="_blank" title="Website Feature Guide Page">website feature guide</a> to gain an understanding of the different features used throughout the learning course!</p>
+</div>
 <h3 id="learning-courses">Learning Courses</h3>
 <p><a href="https://learn.onshape.com/" target="_blank" title="Onshape Learning Center">Onshape's Learning Center</a> provides free learning courses and articles covering everything from document navigation and sketching to advanced surface and sheet metal modeling. It's a valuable resource for both novice and seasoned users alike. We use a few selected courses to assist learning the fundamentals of doing CAD in Onshape, but the rest of the curriculum is project based.</p>
 <p>The structure of the courses includes some short videos and practice models, expected time is 2-4 hours.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The Onshape learning courses are important as they will teach you the Onshape interface and form a basic foundation for CAD skills. Unless you have prior experience using Onshape, you should not skip the learning courses as the exercises assume that you have an understanding of CAD basics.</p>
+<p>The Onshape learning courses are important as they will teach you the interface and form a basic foundation for CAD skills. Unless you have a significant amount of prior experience using Onshape, you should not skip the learning courses as the exercises assume that you have an understanding of CAD basics.</p>
 </div>
 <h2 id="sketching-and-part-design">Sketching and Part Design</h2>
 <p>Sketches and features are the building blocks you will use to create every 3D model in Onshape, so it's good to have a good grasp on the fundamentals.</p>
@@ -1975,8 +1979,8 @@
 <a class="md-button md-button--primary" href="https://cad.onshape.com/documents/1bdaed8e23446ffe70a851a4/w/37cd1a4984497b01d74e4c41/e/fd6796321fb9611305e5ff7d?renderMode=0&amp;uiState=663d81d5d060d67d3cd48855" target="_blank" title="1A Exercise Solutions Onshape Document">1A Exercise Solutions Document</a>
 </center></p>
 <p><br></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<details class="tip">
+<summary>Tab Manager</summary>
 <p>You can navigate between the tabs by accessing the tab manager or from the bottom navigation bar. 
 <center>
   <video width="1920" controls>
@@ -1984,7 +1988,7 @@
     Your browser does not support the video tag.
   </video>
 <center> <em>Accessing the Tab Manager.</em> </center></p>
-</div>
+</details>
 <p><br></p>
 <h3 id="exercise-1-simple-box-tube">Exercise #1: Simple Box Tube</h3>
 <p><strong>Box Tube Explanation</strong></p>
@@ -2068,9 +2072,9 @@
   </div>
 </div>
 
-<div class="admonition note">
-<p class="admonition-title">Validation</p>
-<p>If you did everything correctly your box tube should weigh about 0.351lbs</p>
+<div class="admonition success">
+<p class="admonition-title">Verification</p>
+<p>If you did everything correctly your box tube should weigh about 0.35lbs</p>
 </div>
 <p>Notice how we utilized construction geometry to define the location of the holes on the 2" face of the tube. Using construction geometry to assist with sketching makes your parts more <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> and betters conveys design intent compared to manually specifying the location of each hole with dimensions.</p>
 <div class="admonition note">
@@ -2220,7 +2224,7 @@
 </div>
 
 <p>In this exercise, you can begin to see the power of Featurescripts. What would have been a number of sketches, extrudes, and shells to create the tubes is packaged into a single, easy to use custom feature. </p>
-<div class="admonition note">
+<div class="admonition success">
 <p class="admonition-title">Verification</p>
 <p>If all is done correctly your parts should weigh a combined 0.27lbs</p>
 </div>
@@ -2365,9 +2369,9 @@
 
 <p>In this exercise, you were introduced to yet another highly useful Featurescript for creating gussets. Additionally, notice that we only model 1 of each type of <abbr title="Reinforcement plate, usually made of aluminum, used to strengthen connections between two tubes.">gusset</abbr> in the part studio. For the tubes, we choose to model all of the tubes even though the two vertical tubes are the same - this is to make assembly more <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> since the tube would otherwise be difficult to mate.</p>
 <p>It should be noted that while fixing the tube is not considered an <a href="/best-practices/assembly-setup#origin-cube-method" target="_blank" title="Assembly Best Practices Page">assembly best practice</a> for setting the origin of an assembly, it is sufficient for the purposes of these exercises.</p>
-<div class="admonition note">
+<div class="admonition success">
 <p class="admonition-title">Verification</p>
-<p>If all is done correctly your assembly should have 12 Instances, and weigh approximately 1.946lbs.</p>
+<p>If all is done correctly your assembly should have 12 Instances, and weigh approximately 1.95lbs.</p>
 </div>
 <h3 id="exercise-4-climber-hook">Exercise #4: Climber Hook</h3>
 <p>As you get more comfortable with modeling, we can begin to create more complex parts. For this exercise, you will create a climber hook and tube. Then, you will create the assembly and mate together the components.</p>
@@ -2470,7 +2474,7 @@
 </div>
 
 <p>In this exercise, you practiced more advanced sketching and were introduced to the <code>Spacer</code> Featurescript. </p>
-<div class="admonition note">
+<div class="admonition success">
 <p class="admonition-title">Verification</p>
 <p>If all is done correctly your assembly should have 5 Instances, and weigh approximately 0.56lbs.</p>
 </div>
@@ -2656,6 +2660,11 @@ function showSlides(n, no) {
     
     <nav>
       
+        <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
+          
+          <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
+        </a>
+      
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
           <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
@@ -2664,11 +2673,6 @@ function showSlides(n, no) {
         <a href="https://github.com/IShaLinI" class="md-author" title="@IShaLinI">
           
           <img src="https://avatars.githubusercontent.com/u/34358667?v=4&size=72" alt="IShaLinI">
-        </a>
-      
-        <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
-          
-          <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
         </a>
       
         <a href="https://github.com/howlongismyname" class="md-author" title="@howlongismyname">
