@@ -1776,18 +1776,18 @@
 <figure><a class="glightbox" href="\img\learning-course\stage2-slapdown\1323intake.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="left"  src="\img\learning-course\stage2-slapdown\1323intake.gif" width="45%" style="border:5px solid #ADADAD"></a><a class="glightbox" href="\img\learning-course\stage2-slapdown\1678intake.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img align="right" src="\img\learning-course\stage2-slapdown\1678intake.gif" width="51%" style="border:5px solid #ADADAD"></a></figure>
 <p><center><figcaption>1323's 2022 Slapdown Intake and 1678's 2022 Four-bar Intake in action</figcaption></center>
 <br></p>
-<p><a href="https://www.youtube.com/watch?v=pSQX5c7G8yg">This video</a> is a great example of a slapdown intake in 2022, on Madtown 1323's robot.</p>
-<p>Other mechanism examples and deep dives for <abbr title="&quot;Over the Bumper&quot; typically used to refer to a style of intake where you lift the piece over the bumper">OTB</abbr> intakes can be found on the <a href="../../../mechanism-examples/intake/slapdown/">slapdown intakes page</a> and <a href="../../../mechanism-examples/intake/4bar/">4-bar intakes page</a>. The mechanism fundamentals page is yet to be made but will also be a helpful resource.</p>
+<p><a href="https://www.youtube.com/watch?v=pSQX5c7G8yg" target="_blank" title="Team 1323 Match Footage">Match footage of Team 1323's 2022 intake</a> is an example of a well executed slapdown intake.</p>
+<p>Other mechanism examples and deep dives for <abbr title="&quot;Over the Bumper&quot; typically used to refer to a style of intake where you lift the piece over the bumper">OTB</abbr> intakes can be found on the <a href="../../../mechanism-examples/intake/slapdown/" target="_blank" title="Slapdown Intake Mechanism Examples Page">slapdown intakes page</a> and <a href="../../../mechanism-examples/intake/4bar/" target="_blank" title="4-bar Intake Mechanism Examples Page">4-bar intakes page</a>. The mechanism fundamentals page is yet to be made but will also be a helpful resource.</p>
 <h2 id="project">Project</h2>
 <p>This stage's project is a slapdown intake for 2022 or 2023 (both with the same gamepiece size of 9.5" diameter). </p>
 <p><center><a class="glightbox" href="/img/learning-course/stage2-slapdown/intakeTopLevel.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage2-slapdown/intakeTopLevel.webp" width="70%"></a></center></p>
 <p>The reference CAD model is provided. Model a copy of it in your own document. The mechanism design concepts, decisions made for this design, and a basic guide are all provided below.</p>
-<p><center><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/17302d787e092ce11015f7ee/w/f7cf5c02c7655f0328a3a74a/e/f1456325e0175c4c081008c2?renderMode=0&amp;uiState=6652c72b09aa2845d67f627f"><strong>Slap Down Intake Reference Document</strong></a> </center></p>
+<p><center><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/17302d787e092ce11015f7ee/w/f7cf5c02c7655f0328a3a74a/e/f1456325e0175c4c081008c2?renderMode=0&amp;uiState=6652c72b09aa2845d67f627f" target="_blank" title="Slap Down Intake Reference Document"><strong>Slap Down Intake Reference Document</strong></a> </center></p>
 <h3 id="engineering-concepts-decisions">Engineering Concepts &amp; Decisions</h3>
 <p>The following sections cover the design rationale for the slapdown intake you will be copying. This integrates practical design principles with CAD skills for a more complete understanding of mechanism design.</p>
 <details class="concept">
 <summary>Intake Golden Rules</summary>
-<p>There are many good resources out there for how to design good intakes. Torrance from Team 254 has provided <a href="https://www.chiefdelphi.com/t/besiktas-rsports-9483-2023-off-season-build-blog/440340/15">a list of golden rules for roller intakes</a>. This will also be slightly paraphrased/added to in the intake fundamentals page.</p>
+<p>There are many good resources out there for how to design good intakes. Andrew Torrance from Team 254 has provided <a href="https://www.chiefdelphi.com/t/besiktas-rsports-9483-2023-off-season-build-blog/440340/15" target="_blank" title="Andrew Torrance's Golden Intake Rules Thread">a list of golden rules for roller intakes</a>.</p>
 <p>Summary:</p>
 <ul>
 <li>The surface speed of intake rollers/wheels should be at least double the robot's max speed.</li>
@@ -1818,11 +1818,12 @@
 <details class="concept">
 <summary>Rollers and Roller Position</summary>
 <p>The rollers are powered with a single Kraken motor with small reduction of 1.6:1; often, you want rollers to be spinning very fast, but still have enough <abbr title="Force that produces rotational movement.">torque</abbr> to bring in game pieces without stalling the motor. Compression also matters a lot with this. You want to balance compression of a game piece so the intake can move it easily enough without needing too much extra <abbr title="Force that produces rotational movement.">torque</abbr> from the motors. This is often why adding grippy material to the rollers instead of increasing compression is optimal.</p>
-<p>There are 3 total rollers. Rollers often provide more consistent compression than wheels and are a great option for transporting game pieces. They are typically cheaper, lighter, and easier to put on a dead axle than wheels. Dead axles allow the intake arms to be connected by effectively long standoffs, making the assembly more rigid, while still allowing the rollers to spin on bearings. The dead axle rollers used in this project use polycarbonate tube and 3D-printed endcaps for the bearings and power transfer. The document can be found <a href="https://cad.onshape.com/documents/b75886a5660c38eee7d50e47/w/58faeca16d5b2008a9485b5c/e/6274f59b451ed6222cd7523d">here</a>.</p>
-<p>Only 2 of the rollers are on the pivoting arm portion. The final one inside the frame perimeter is on a separate plate. This can keep the pivot for the intake arms lower, lowering the vertical height of the intake when stowed.
+<p>There are 3 total rollers. Rollers often provide more consistent compression than wheels and are a great option for transporting game pieces. They are typically cheaper, lighter, and easier to put on a dead axle than wheels. Dead axles allow the intake arms to be connected by effectively long standoffs, making the assembly more rigid, while still allowing the rollers to spin on bearings. The dead axle rollers used in this project use polycarbonate tube and 3D-printed endcaps for the bearings and power transfer. We use Andrew Card's Configurable Rollers for the example intake, but you are also welcome to model your own rollers.</p>
+<p><center><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/b75886a5660c38eee7d50e47/w/58faeca16d5b2008a9485b5c/e/6274f59b451ed6222cd7523d" target="_blank" title="Configurable Rollers Onshape Document">Configurable Rollers Document</a></center></p>
+<p>Only 2 of the rollers are on the pivoting arm portion. The final one inside the frame perimeter is on a separate plate. This can keep the pivot for the intake arms lower, decreasing the vertical height of the intake when stowed.
   <figure>
 <a class="glightbox" href="\img\learning-course\stage2-slapdown\ball-path.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage2-slapdown\ball-path.webp" alt="Ball Path" width="60%" style="border:5px solid #ADADAD"></a>
-<figcaption> See how the roller positions impact the ball path</figcaption>
+<figcaption> Roller positions influence the ball path.</figcaption>
 </figure></p>
 </details>
 <details class="concept">
@@ -1833,7 +1834,7 @@
 <ol>
 <li>Sketch the side of your drivetrain and bumper profile</li>
 <li>Sketch the path of the ball over the bumper</li>
-<li>Sketch roller or wheel positions needed to get the game piece to move that way. The distance between rollers should be adjusted using the <a href="https://wcproducts.com/pages/calculator-belt"><abbr title="West Coast Products">WCP</abbr> Belt Calculator</a>. "Extra center" should be set as -0.02 for ease of assembly and efficiency.</li>
+<li>Sketch roller or wheel positions needed to get the game piece to move that way. Use the belt transmission tools you learned in 1B to dimension the location of the rollers. Decreasing the c-c distance by 0.02" can help with ease of assembly and roller efficiency.</li>
 <li>Use a sketch circular pattern to represent the stowed position of your intake rollers and define where you want the pivot to be</li>
 </ol>
 <p><center><a class="glightbox" href="/img/learning-course/stage2-slapdown/masterSketch.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage2-slapdown/masterSketch.webp" width="70%" style="border:5px solid #ADADAD"></a></center></p>
@@ -1853,7 +1854,8 @@
 <p><center><a class="glightbox" href="/img/learning-course/stage2-slapdown/intakePartStudio.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage2-slapdown/intakePartStudio.webp" width="70%"></a></center></p>
 <h3 id="assembly">Assembly</h3>
 <p>Just like the dead axle pivot, this subsystem contains a static part and a moving part. Again, we want to separate them into rigid (no movement) assemblies, then combine them at the top level. </p>
-<p>Create an assembly for the static parts, insert the parts and origin cube from the part studio with the green checkmark, and group them together. Fasten the origin cube to the origin. Add the rest of the parts from the part studio, MKCAD, and standard content, using replicate and patterns when you can. <a href="https://cad.onshape.com/documents/b75886a5660c38eee7d50e47/w/58faeca16d5b2008a9485b5c/e/6274f59b451ed6222cd7523d">Here's the link</a> to the <abbr title="A type of axle setup where the axle is fixed in place and or is not transferring the torque of the system through it.">deadaxle</abbr> rollers again. </p>
+<p>Create an assembly for the static parts, insert the parts and origin cube from the part studio with the green checkmark, and group them together. Fasten the origin cube to the origin. Add the rest of the parts from the part studio, MKCAD, and standard content, using replicate and patterns when you can. For the rollers, insert them from the configurable rollers document.</p>
+<p><center><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/b75886a5660c38eee7d50e47/w/58faeca16d5b2008a9485b5c/e/6274f59b451ed6222cd7523d" target="_blank" title="Configurable Rollers Onshape Document">Configurable Rollers Document</a></center></p>
 <p><center><a class="glightbox" href="/img/learning-course/stage2-slapdown/staticAssembly.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage2-slapdown/staticAssembly.webp" width="70%"></a></center></p>
 <p>Create an assembly for the intake arms and do the same thing as above to complete the assembly and make it rigid.</p>
 <p><center><a class="glightbox" href="/img/learning-course/stage2-slapdown/intakeArms.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage2-slapdown/intakeArms.webp" width="70%"></a></center></p>
@@ -1893,7 +1895,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 30, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2024</span>
   </span>
 
     

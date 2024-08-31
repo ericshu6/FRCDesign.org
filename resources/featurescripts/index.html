@@ -1102,6 +1102,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#troubleshooting-and-updating-featurescripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting and Updating Featurescripts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#list-of-featurescripts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1136,10 +1147,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#belt-pulleys-chain-sprockets-gears" class="md-nav__link">
+  <a href="#power-transmissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Belt, Pulleys, Chain, Sprockets, Gears
+        Power Transmissions
       
     </span>
   </a>
@@ -1169,10 +1180,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#onshape" class="md-nav__link">
+  <a href="#onshape-functionality-extensions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Onshape
+        Onshape Functionality Extensions
       
     </span>
   </a>
@@ -1181,17 +1192,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Troubleshooting
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1394,7 +1394,7 @@
 
 
 <h1 id="featurescripts">Featurescripts</h1>
-<p>Onshape has its own scripting language to create custom features to automate aspects of design called <a href="https://www.onshape.com/features/custom-features">Featurescript</a>. There are a lot of featurescripts (what we call the custom features) that make designing for FRC much easier.</p>
+<p>Onshape has its own scripting language to create custom features to automate aspects of design called <a href="https://www.onshape.com/features/custom-features" target="_blank" title="Onshape Featurescript Page">Featurescript</a>. There are a lot of featurescripts (what we call the custom features) that make designing for FRC much easier.</p>
 <h3 id="how-to-install-featurescripts">How To Install Featurescripts</h3>
 <ol>
 <li>Open any Onshape document and go inside of a part studio</li>
@@ -1418,267 +1418,11 @@
   <source src="../../../../img/resources/featurescripts/addingFeaturescriptsTutorial.webm" type="video/webm">
 </video></p>
 </details>
-<div class="admonition alternate">
-<p class="admonition-title">Alternate</p>
-<p>When viewing a tab in a document that uses custom features, you can click a button near the top left that says 'custom features'. From here you can add custom features used in the document to your profile. This method is used in <a href="../../learning-course/stage0/0B-setup/#featurescripts">stage 0</a> to add Julia's Featurescripts when setting up Onshape.</p>
+<div class="admonition note">
+<p class="admonition-title">Adding Featurescripts while in a Featurescript Document</p>
+<p>When viewing a tab in a document that uses custom features, you can click a button near the top left that says 'custom features'. From here you can add custom features used in the document to your profile.</p>
 </div>
-<h2 id="list-of-featurescripts">List of Featurescripts</h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The title of each featurescript or group of featurescripts links to its respective document. Right click the title and click "copy link address" for installing it to your profile using the above process.</p>
-</div>
-<h3 id="bundles">Bundles</h3>
-<p>The below links contain several featurescripts each that you can add all at once. Each useful one will be included separately in the below sections.</p>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>Julia's Featurescripts</strong></a></p>
-<p><a href="https://cad.onshape.com/documents/9cffa92db8b62219498f89af/v/d1389fa34235160533671706/e/99672d1e329b38e647d90146"><strong>Alex's Featurescripts</strong></a></p>
-<p><a href="https://cad.onshape.com/documents/96d32fd4fe5341563a402ecd/v/042060f84c30390d82d806f8/e/d7f04278e0325b6d4426ca34?jumpToIndex=2635&amp;showReturnToWorkspaceLink=true"><strong>Abhi's Features &amp; Configs</strong></a></p>
-<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d"><strong>2471 Featurescripts</strong></a></p>
-<p><a href="https://cad.onshape.com/documents/f46510f08cc311a34733cac2/v/f7f3a1c996c58466f6b88a37/e/8e9fbf1ac2f0980e4bc34951"><strong>TLamp's Featurescripts</strong></a></p>
-<p><a href="https://www.cadsharp.com/featurescripts/"><strong>CADSHARP's Featurescripts</strong></a></p>
-<h3 id="structure">Structure</h3>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>Extrude Individual</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>Can extrude multiple regions as different parts with one feature, even if regions are adjacent</li>
-<li>Commonly used with tube converter to make punched aluminum tubes from a top view sketch</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/EI.webp">
-  <source src="../../../../img/resources/featurescripts/extrudeIndividual.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>Tube Converter</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>Converts extrusions into punched tube, with customization and presets for hole pattern, wall thickness, and profile.</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/TC.webp">
-  <source src="../../../../img/resources/featurescripts/tubeConverter.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong><abbr title="Reinforcement plate, usually made of aluminum, used to strengthen connections between two tubes.">Gusset</abbr> Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>One of Julia's featurescripts</li>
-<li><strong>Not recommended</strong> due to load time</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>FilletXpert (Fillet All Edges)</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>After selecting a face, it adds a fillet to the corners of that face (all edges normal to the selected face)</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/FAE.webp">
-  <source src="../../../../img/resources/featurescripts/filletEdges.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>Shaft Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>Generates a shaft, with options for hex, rounded hex (13.75mm OD), MAXSpline, etc.</li>
-<li>Options for retention type on both ends</li>
-<li>Can be generated in-place and with offsets</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/SG.webp">
-  <source src="../../../../img/resources/featurescripts/shaftGenerator.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>Spacer Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>Generates a spacer, with options for round, 3/8" hex, and 1/2" hex</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/S.webp">
-  <source src="../../../../img/resources/featurescripts/spacer.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/9cffa92db8b62219498f89af/v/d1389fa34235160533671706/e/99672d1e329b38e647d90146"><strong>Robot Spacer</strong></a> <em>(Alex's Featurescripts)</em></p>
-<ul>
-<li>A more complex alternative to Julia's spacer generator, if you need more config options</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d"><strong>In-Place Bearings</strong></a> <em>(2471 Featurescripts)</em></p>
-<ul>
-<li>Place different types of bearings in place in a part studio</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>Electronics Mounting</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>Generates hole patterns for different electronic components using center points and mate connectors on sketches</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/f46510f08cc311a34733cac2/v/f7f3a1c996c58466f6b88a37/e/8e9fbf1ac2f0980e4bc34951"><strong>MechSketch</strong></a> <em>(TLamp's Featurescripts)</em></p>
-<ul>
-<li>Incredibly useful, generates sketch profiles for a variety of things</li>
-<li>Profiles for <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> parts like Maxspline, <abbr title="The Thrifty Bot">TTB</abbr> inserts, maxtube, motors, and the versa patern</li>
-<li>Profiles and holes for all electronics</li>
-<li>Profile generator for pulleys and a spur gears</li>
-</ul>
-<h3 id="belt-pulleys-chain-sprockets-gears">Belt, Pulleys, Chain, Sprockets, Gears</h3>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>Contextless Belts</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>Similar to chain generator, generates a simplified belt given the tooth counts of both sprockets and pitch</li>
-<li>Either in-place and generates the closest belt, or takes a c-c distance without context and does the same</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/CB.webp">
-  <source src="../../../../img/resources/featurescripts/contextlessBelts.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/9cffa92db8b62219498f89af/v/d1389fa34235160533671706/e/99672d1e329b38e647d90146"><strong>Robot Belt</strong></a> <em>(Alex's Featurescripts)</em></p>
-<ul>
-<li>An alternative to contextless belts with an included belt calculator, but can get angry if the c-c distance isn't correct.</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d"><strong>Belt &amp; Pulley Generation</strong></a> <em>(2471 Featurescripts)</em></p>
-<ul>
-<li>Incredibly configurable belt and pulley generation</li>
-<li>Belt width, pulley tooth count, offset and fit adjustment, belt type, etc.</li>
-<li>Options for bore and flanges for both pulleys</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/w/f8670c98f827edfb8e96e7e9/e/9076725852f28d52fd6e796f"><strong>Complex Belt Generator</strong></a></p>
-<ul>
-<li>Generates a complex belt run based off of a sketch with pulley and idler circles</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/55ae3138e0cd7c325239208b/v/bfe7a53a6752a35e56338377/e/b08c0071a21e9ab74baaf916"><strong>Timing Belt Pulley Generator</strong></a></p>
-<ul>
-<li>Generates GT2 pulleys</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/c54b1ff25af8ec89778cac4f/v/5a909b5ad938a3116448922f/e/c4fc9251685f8516e9022bc6"><strong>Thrifty Insert</strong></a></p>
-<ul>
-<li>Cuts a profile in a part at a given location and depth to fit a <a href="https://www.thethriftybot.com/products/qty-5-aluminum-insert-for-3d-printed-parts">thriftybot insert</a> into, for 3D-printed parts to stop them from <abbr title="Process of removing threads or bolt heads, often due to excessive force or wear.">stripping</abbr> while being driven on an axle.</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d"><strong>Polybelt Generator</strong></a> <em>(2471 Featurescripts)</em></p>
-<ul>
-<li>Generates polycord and pulleys based off of selected points</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>Chain Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>Generates a simple chain path and sprockets with given tooth count of both sprockets and pitch</li>
-<li>Either in-place with points and generates the closest chain length or takes a c-c distance</li>
-<li>Options for simplified or realistic</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/CG.webp">
-  <source src="../../../../img/resources/featurescripts/chainGen.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/96d32fd4fe5341563a402ecd/v/042060f84c30390d82d806f8/e/d7f04278e0325b6d4426ca34?jumpToIndex=2635&amp;showReturnToWorkspaceLink=true"><strong>Sprocket</strong></a> <em>(Abhi's Features &amp; Configs)</em></p>
-<ul>
-<li>Generate a sprocket for common types of chain</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/9cffa92db8b62219498f89af/v/d1389fa34235160533671706/e/99672d1e329b38e647d90146"><strong>Spur Gear</strong></a> <em>(Alex's Featurescripts)</em></p>
-<ul>
-<li>Generates a spur gear with a ton of different options</li>
-<li>Can be useful for 3D-printed parts.</li>
-</ul>
-<h3 id="pocketing">Pocketing</h3>
-<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d"><strong>Part Lighten</strong></a> <em>(2471 Featurescripts)</em></p>
-<ul>
-<li>Better than "Lighten" and more complex than "Vent"</li>
-<li>Better control over ribs, cut depth, fillets, etc.</li>
-<li>Gives a nice estimate of how much weight is being saved</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/702f94d6e4ffb0c64f611f87/w/f6ac7d31494b1215bb9c8a61/e/4bf4eb130870ebdf0008c5a4"><strong>Vent Featurescript</strong></a></p>
-<ul>
-<li>Used for pocketing and lightening plates</li>
-<li>Uses sketch regions to determine pocket and rib placement</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/V.webp">
-  <source src="../../../../img/resources/featurescripts/vent.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/573f7d70e4b0fddafb52148c/v/0edea0fa2707e715d040e74f/e/5eccf6d369b0312a728d77d3"><strong>Lighten</strong></a></p>
-<ul>
-<li>Less optimized and breaks more then vent.</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/f46510f08cc311a34733cac2/v/f7f3a1c996c58466f6b88a37/e/8e9fbf1ac2f0980e4bc34951"><strong>CheeseIt!</strong></a> <em>(TLamp's Featurescripts)</em></p>
-<ul>
-<li>Advanced lightening pattern generation</li>
-<li>Isogrid, hexagon, or circle pattern</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/f46510f08cc311a34733cac2/v/f7f3a1c996c58466f6b88a37/e/8e9fbf1ac2f0980e4bc34951"><strong>PatchIt!</strong></a> <em>(TLamp's Featurescripts)</em></p>
-<ul>
-<li>Patches specified pockets in a part</li>
-</ul>
-<h3 id="manufacturing">Manufacturing</h3>
-<p><a href="https://cad.onshape.com/documents/576e01dbe4b0cc2e7f46a55d/v/f697250aa149b6846173f4b1/e/887d6e2324589bfd2058c3e1?jumpToIndex=2346"><strong>Auto Layout</strong></a></p>
-<ul>
-<li>Given some derived plates, either transformed from an in-context assembly (to maintain part count) or derived from a part studio, it will automatically lay them out into sheets of a given size, sorted by thickness. This is used to prepare a file to route or waterjet parts out of material with a machine.</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/395304920b30c3b382fd312d/w/86481637ad1e9da01b0e5d60/e/e19230df69a29e1fc2259b9d?renderMode=0&amp;tangentEdgeStyle=2&amp;uiState=6642611f3aed1a692ef01f41"><strong>Measure Cut List</strong></a></p>
-<ul>
-<li>Creates a table of measurements</li>
-<li>Great for creating cut lists for parts</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/578830e4e4b0e65410f9c34e/v/8916b9beca0f64d7dd945ce5/e/dfd5effddfd7f2ecce4b0246"><strong>Laser Joint</strong></a></p>
-<ul>
-<li>Highly configurable featurescript that generates tab joints between overlapping parts</li>
-<li>Options to make it easier for cnc routers to cut parts</li>
-<li>Can use for bumper wood corners</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/51695bc13e3d9fb286023c70/v/adff35c9e1ef83771d6dc29c/e/3a9512753b299d5fefc39f46"><strong>Dogbone and Corner Overcut</strong></a></p>
-<ul>
-<li>Features to make it easier for cnc routers to cut cavities in parts</li>
-</ul>
-<h3 id="onshape">Onshape</h3>
-<p><a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/df3afdbec8d1356c2af15e4b?renderMode=0&amp;uiState=6637caa6ccbcaa36badca03a"><strong>Origin Cube Featurescript</strong></a></p>
-<ul>
-<li>Used to create an origin reference for assembly mating</li>
-<li>Optionally import design constants like bolt hole sizes, heat set insert hole sizes, etc</li>
-<li>See <a href="../../best-practices/assembly-setup/#the-origin-cube">Assembly Best Practices</a> for more information on usage</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/77baa8153589a7fc5f289829/w/cffd0f2a7077380d5378a885/e/d3174bf5315e6aafcb889367?renderMode=0&amp;uiState=652ee7d25129162fc0afad5f"><strong>Measure Value</strong></a></p>
-<ul>
-<li>An extremely useful featurescript</li>
-<li>Creates variables from measured values</li>
-<li>Useful for creating <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> patterns, including hole patterns</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/0f7d68295ff4dab57adcf92c/v/88fbfa19a2e2555d18599db4/e/bcf3052f00f1f9d3d95a89c7?jumpToIndex=1392"><strong>Assembly Mirror</strong></a></p>
-<ul>
-<li>Adds reflected mate connectors to a part so you can easily mate it reflected across a plane in an assembly (does not mirror geometry).</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/d997b0ffc30f659113b10c00/v/a9e4f209775174dbb9f2b5fa/e/b6db0c9545b9a2df1d7ea546"><strong>Part Color</strong></a></p>
-<ul>
-<li>Give color to faces on a part retroactively</li>
-<li>Can use a variety of different color inputs</li>
-<li>Can be used for part color configurations</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/96d32fd4fe5341563a402ecd/v/042060f84c30390d82d806f8/e/d7f04278e0325b6d4426ca34?jumpToIndex=2635&amp;showReturnToWorkspaceLink=true"><strong>Set Materials</strong></a> <em>(Abhi's Features &amp; Configs)</em></p>
-<ul>
-<li>Parametrically set materials and appearances of parts in batches</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/96d32fd4fe5341563a402ecd/v/042060f84c30390d82d806f8/e/d7f04278e0325b6d4426ca34?jumpToIndex=2635&amp;showReturnToWorkspaceLink=true"><strong>Set Properties</strong></a> <em>(Abhi's Features &amp; Configs)</em></p>
-<ul>
-<li>Sets properties of parts in batches</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d"><strong>2471's Part Numbering</strong></a> <em>(2471 Featurescripts)</em></p>
-<ul>
-<li>Numbers parts based off of a given standard</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/443e443bb2a37736743bf314/w/6539c7379d36307a6a2cc01d/e/ef4e1b0c40e1dbf2ee36d02e"><strong>Abhi's Part Numbering</strong></a></p>
-<ul>
-<li>Used for quickly applying a system to number parts</li>
-</ul>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8"><strong>3D Printed Mass</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>Modifies 3D-printed parts to have accurate mass with given material, infill, and wall thickness</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/3DP.webp">
-  <source src="../../../../img/resources/featurescripts/3DPMass.mp4" type="video/mp4">
-</video></p>
-</details>
-<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d"><strong>Advanced Variables</strong></a> <em>(2471 Featurescripts)</em></p>
-<ul>
-<li>Can create a compound variable with path length, angle between edges, distance between planes, angle between planes, distance between points, pulley center distance, and chain center distance</li>
-<li>Very useful for complex belt and chain runs</li>
-<li>Include measurements that Onshape can't normally do</li>
-</ul>
-<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="troubleshooting-and-updating-featurescripts">Troubleshooting and Updating Featurescripts</h3>
 <p>If a featurescript is not working as expected, the current version might be broken. You might have to update the featurescript. If it needs updating, the feature will show a blue icon to the right of it that, when hovered over, will say "change version of linked document."</p>
 <ol>
 <li>The first way to update it is by individually by right clicking the feature you want updated in the feature list and clicking "Update linked document..."</li>
@@ -1690,6 +1434,264 @@
   <source src="../../../../img/resources/featurescripts/updatingFeaturescriptDocuments.webm" type="video/webm">
 </video></p>
 </details>
+<h2 id="list-of-featurescripts">List of Featurescripts</h2>
+<!-- 
+!!! tip
+    The title of each featurescript or group of featurescripts links to its respective document. Right click the title and click "copy link address" for installing it to your profile using the above process. -->
+
+<h3 id="bundles">Bundles</h3>
+<p>The below links contain several featurescripts each that you can add all at once. The more useful featurescripts from each bundle are demonstrated further below.</p>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Julia's Featurescripts Onshape Document"><strong>Julia's Featurescripts</strong></a></p>
+<p><a href="https://cad.onshape.com/documents/9cffa92db8b62219498f89af/v/d1389fa34235160533671706/e/99672d1e329b38e647d90146" target="_blank" title="Alex's Featurescripts Onshape Document"><strong>Alex's Featurescripts</strong></a></p>
+<p><a href="https://cad.onshape.com/documents/96d32fd4fe5341563a402ecd/v/042060f84c30390d82d806f8/e/d7f04278e0325b6d4426ca34?jumpToIndex=2635&amp;showReturnToWorkspaceLink=true" target="_blank" title="Abhi's Features &amp; Configs Onshape Document"><strong>Abhi's Features &amp; Configs</strong></a></p>
+<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d" target="_blank" title="2471 Featurescripts Onshape Document"><strong>2471 Featurescripts</strong></a></p>
+<p><a href="https://cad.onshape.com/documents/f46510f08cc311a34733cac2/v/f7f3a1c996c58466f6b88a37/e/8e9fbf1ac2f0980e4bc34951" target="_blank" title="TLamp's Featurescripts Onshape Document"><strong>TLamp's Featurescripts</strong></a></p>
+<p><a href="https://www.cadsharp.com/featurescripts/" target="_blank" title="CADSHARP's Featurescripts"><strong>CADSHARP's Featurescripts</strong></a></p>
+<h3 id="structure">Structure</h3>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Extrude Individual Featurescript Onshape Document"><strong>Extrude Individual</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Can extrude multiple regions as different parts with one feature, even if regions are adjacent</li>
+<li>Commonly used with tube converter to make punched aluminum tubes from a top view sketch</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/EI.webp">
+  <source src="../../../../img/resources/featurescripts/extrudeIndividual.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Tube Converter Featurescript Onshape Document"><strong>Tube Converter</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Converts extrusions into punched tube, with customization and presets for hole pattern, wall thickness, and profile.</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/TC.webp">
+  <source src="../../../../img/resources/featurescripts/tubeConverter.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Gusset Generator Featurescript Onshape Document"><strong><abbr title="Reinforcement plate, usually made of aluminum, used to strengthen connections between two tubes.">Gusset</abbr> Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Generate a <abbr title="Reinforcement plate, usually made of aluminum, used to strengthen connections between two tubes.">gusset</abbr> from hole selections</li>
+<li><strong>Warning</strong>: Not a very <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> featurescript and causes lag, but can be useful in a pinch</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Fillet All Edges Featurescript Onshape Document"><strong>FilletXpert (Fillet All Edges)</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>After selecting a face, it adds a fillet to the corners of that face (all edges normal to the selected face)</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/FAE.webp">
+  <source src="../../../../img/resources/featurescripts/filletEdges.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Shaft Generator Featurescript Onshape Document"><strong>Shaft Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Generates a shaft, with options for hex, rounded hex (13.75mm OD), MAXSpline, etc.</li>
+<li>Options for retention type on both ends</li>
+<li>Can be generated in-place and with offsets</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/SG.webp">
+  <source src="../../../../img/resources/featurescripts/shaftGenerator.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Spacer Generator Featurescript Onshape Document"><strong>Spacer Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Generates a spacer, with options for round, 3/8" hex, and 1/2" hex</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/S.webp">
+  <source src="../../../../img/resources/featurescripts/spacer.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/9cffa92db8b62219498f89af/v/d1389fa34235160533671706/e/99672d1e329b38e647d90146" target="_blank" title="Robot Spacer Featurescript Onshape Document"><strong>Robot Spacer</strong></a> <em>(Alex's Featurescripts)</em></p>
+<ul>
+<li>A more complex alternative to Julia's spacer generator, if you need more config options</li>
+</ul>
+<!-- [**In-Place Bearings**](https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d "In-P){:target="_blank"} *(2471 Featurescripts)*
+
+  - Place different types of bearings in place in a part studio -->
+
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Electronics Mounting Featurescript Onshape Document"><strong>Electronics Mounting</strong></a> <em>(Julia's Featurescri pts)</em></p>
+<ul>
+<li>Generates hole patterns for different electronic components using center points and mate connectors on sketches</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/f46510f08cc311a34733cac2/v/f7f3a1c996c58466f6b88a37/e/8e9fbf1ac2f0980e4bc34951" target="_blank" title="mechSketch Featurescript Onshape Document"><strong>MechSketch</strong></a> <em>(TLamp's Featurescripts)</em></p>
+<ul>
+<li>Incredibly useful, generates sketch profiles for a variety of things</li>
+<li>Profiles for <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> parts like Maxspline, <abbr title="The Thrifty Bot">TTB</abbr> inserts, maxtube, motors, and the versa patern</li>
+<li>Profiles and holes for all electronics</li>
+<li>Profile generator for pulleys and a spur gears</li>
+</ul>
+<h3 id="power-transmissions">Power Transmissions</h3>
+<p><a href="https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/v/56fb8fa8d7d90b925d8d9775/e/2fd838311a32255a728a8449?showReturnToWorkspaceLink=true" target="_blank" title="Belt Gen Featurescript Onshape Document"><strong>Belt Gen</strong></a></p>
+<ul>
+<li>Generates a belt path from belt pitch diameter circles</li>
+<li>Allows for multiple pulleys, tensioners, and double sided belts</li>
+<li>Options for simplified or realistic models</li>
+<li>Calculates resulting belt length</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true">
+  <source src="../../../../img/resources/featurescripts/beltGen.mp4" type="video/mp4">
+</video> --&gt;</p>
+</details>
+<p><a href="https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/w/f8670c98f827edfb8e96e7e9/e/9076725852f28d52fd6e796f" target="_blank" title="Chain Gen Featurescript Onshape Document"><strong>Chain Gen</strong></a></p>
+<ul>
+<li>Generates a chain path from sprocket pitch diameter circles</li>
+<li>Allows for multiple sprockets and tensioners</li>
+<li>Options for simplified or realistic models</li>
+<li>Calculates resulting chain length</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true">
+  <source src="../../../../img/resources/featurescripts/chainGen.mp4" type="video/mp4">
+</video> --&gt;</p>
+</details>
+<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d" target="_blank" title="Belt and Pulley Generation Featurescript Onshape Document"><strong>Belt &amp; Pulley Generation</strong></a> <em>(2471 Featurescripts)</em></p>
+<ul>
+<li>Configurable belt and pulley generation</li>
+<li>Belt width, pulley tooth count, offset and fit adjustment, belt type, etc.</li>
+<li>Options for bore and flanges for both pulleys</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/55ae3138e0cd7c325239208b/v/bfe7a53a6752a35e56338377/e/b08c0071a21e9ab74baaf916" target="_blank" title="Featurescript Onshape Document"><strong>Timing Belt Pulley Generator</strong></a></p>
+<ul>
+<li>Generates GT2 pulleys</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/96d32fd4fe5341563a402ecd/v/042060f84c30390d82d806f8/e/d7f04278e0325b6d4426ca34?jumpToIndex=2635&amp;showReturnToWorkspaceLink=true" target="_blank" title="Sprocket Featurescript Onshape Document"><strong>Sprocket</strong></a> <em>(Abhi's Features &amp; Configs)</em></p>
+<ul>
+<li>Generate a sprocket for common types of chain</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/9cffa92db8b62219498f89af/v/d1389fa34235160533671706/e/99672d1e329b38e647d90146" target="_blank" title="Spur Gear Featurescript Onshape Document"><strong>Spur Gear</strong></a> <em>(Alex's Featurescripts)</em></p>
+<ul>
+<li>Generates a spur gear with with many different options</li>
+<li>Can be useful for 3D-printed parts.</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/c54b1ff25af8ec89778cac4f/v/5a909b5ad938a3116448922f/e/c4fc9251685f8516e9022bc6" target="_blank" title="Thrify Insert Featurescript Onshape Document"><strong>Thrifty Insert</strong></a></p>
+<ul>
+<li>Cuts a profile in a part at a given location and depth to fit a <a href="https://www.thethriftybot.com/products/qty-5-aluminum-insert-for-3d-printed-parts" target="_blank">thriftybot insert</a> into, for 3D-printed parts to stop them from <abbr title="Process of removing threads or bolt heads, often due to excessive force or wear.">stripping</abbr> while being driven on an axle.</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d" target="_blank" title="Polybelt Generator Featurescript Onshape Document"><strong>Polybelt Generator</strong></a> <em>(2471 Featurescripts)</em></p>
+<ul>
+<li>Generates polycord and pulleys based off of selected points</li>
+</ul>
+<h3 id="pocketing">Pocketing</h3>
+<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d" target="_blank" title="Part Lighten Featurescript Onshape Document"><strong>Part Lighten</strong></a> <em>(2471 Featurescripts)</em></p>
+<ul>
+<li>Better than "Lighten" and more complex than "Vent"</li>
+<li>Better control over ribs, cut depth, fillets, etc.</li>
+<li>Gives a nice estimate of how much weight is being saved</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/702f94d6e4ffb0c64f611f87/w/f6ac7d31494b1215bb9c8a61/e/4bf4eb130870ebdf0008c5a4" target="_blank" title="Vent Featurescript Onshape Document"><strong>Vent</strong></a></p>
+<ul>
+<li>Used for pocketing and lightening plates</li>
+<li>Uses sketch regions to determine pocket and rib placement</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/V.webp">
+  <source src="../../../../img/resources/featurescripts/vent.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/573f7d70e4b0fddafb52148c/v/0edea0fa2707e715d040e74f/e/5eccf6d369b0312a728d77d3" target="_blank" title="Lighten Featurescript Onshape Document"><strong>Lighten</strong></a></p>
+<ul>
+<li>Less optimized and breaks more then vent.</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/f46510f08cc311a34733cac2/v/f7f3a1c996c58466f6b88a37/e/8e9fbf1ac2f0980e4bc34951" target="_blank" title="CheeseIt1 Featurescript Onshape Document"><strong>CheeseIt!</strong></a> <em>(TLamp's Featurescripts)</em></p>
+<ul>
+<li>Advanced lightening pattern generation</li>
+<li>Isogrid, hexagon, or circle pattern</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/f46510f08cc311a34733cac2/v/f7f3a1c996c58466f6b88a37/e/8e9fbf1ac2f0980e4bc34951" target="_blank" title="PatchIt! Featurescript Onshape Document"><strong>PatchIt!</strong></a> <em>(TLamp's Featurescripts)</em></p>
+<ul>
+<li>Patches specified pockets in a part</li>
+</ul>
+<h3 id="manufacturing">Manufacturing</h3>
+<p><a href="https://cad.onshape.com/documents/576e01dbe4b0cc2e7f46a55d/v/f697250aa149b6846173f4b1/e/887d6e2324589bfd2058c3e1?jumpToIndex=2346" target="_blank" title="Auto Layout Featurescript Onshape Document"><strong>Auto Layout</strong></a></p>
+<ul>
+<li>Given some derived plates, either transformed from an in-context assembly (to maintain part count) or derived from a part studio, it will automatically lay them out into sheets of a given size, sorted by thickness. This is used to prepare a file to route or waterjet parts out of material with a machine.</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/395304920b30c3b382fd312d/w/86481637ad1e9da01b0e5d60/e/e19230df69a29e1fc2259b9d?renderMode=0&amp;tangentEdgeStyle=2&amp;uiState=6642611f3aed1a692ef01f41" target="_blank" title="Measure Cut List Featurescript Onshape Document"><strong>Measure Cut List</strong></a></p>
+<ul>
+<li>Creates a table of measurements</li>
+<li>Great for creating cut lists for parts</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/578830e4e4b0e65410f9c34e/v/8916b9beca0f64d7dd945ce5/e/dfd5effddfd7f2ecce4b0246" target="_blank" title="Laser Joint Featurescript Onshape Document"><strong>Laser Joint</strong></a></p>
+<ul>
+<li>Highly configurable featurescript that generates tab joints between overlapping parts</li>
+<li>Options to make it easier for cnc routers to cut parts</li>
+<li>Can use for bumper wood corners</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/51695bc13e3d9fb286023c70/v/adff35c9e1ef83771d6dc29c/e/3a9512753b299d5fefc39f46" target="_blank" title="Dog Bone Featurescript Onshape Document"><strong>Dogbone and Corner Overcut</strong></a></p>
+<ul>
+<li>Features to make it easier for cnc routers to cut cavities in parts</li>
+</ul>
+<h3 id="onshape-functionality-extensions">Onshape Functionality Extensions</h3>
+<p><a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/df3afdbec8d1356c2af15e4b?renderMode=0&amp;uiState=6637caa6ccbcaa36badca03a" target="_blank" title="Origin Cube Featurescript Onshape Document"><strong>Origin Cube Featurescript</strong></a></p>
+<ul>
+<li>Used to create an origin reference for assembly mating</li>
+<li>Optionally import design constants like bolt hole sizes, heat set insert hole sizes, etc</li>
+<li>Optionally import functions for calculating gear OD, pulley/sprocket pitch &amp; outer diameters, and calculate belt/chain c-c distances</li>
+<li>See <a href="../../best-practices/assembly-setup/#the-origin-cube">Assembly Best Practices</a> for more information on usage</li>
+</ul>
+<details class="video">
+<summary>Video Example</summary>
+<p><video controls="true" allowfullscreen="true">
+  <source src="/img/learning-course/stage1b/belt/beltCad2.webm" type="video/webm">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/77baa8153589a7fc5f289829/w/cffd0f2a7077380d5378a885/e/d3174bf5315e6aafcb889367?renderMode=0&amp;uiState=652ee7d25129162fc0afad5f" target="_blank" title="Measure Value Featurescript Onshape Document"><strong>Measure Value</strong></a></p>
+<ul>
+<li>An extremely useful featurescript</li>
+<li>Creates variables from measured values</li>
+<li>Useful for creating <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> patterns, including hole patterns</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/0f7d68295ff4dab57adcf92c/v/88fbfa19a2e2555d18599db4/e/bcf3052f00f1f9d3d95a89c7?jumpToIndex=1392" target="_blank" title="Assembly Mirror Featurescript Onshape Document"><strong>Assembly Mirror</strong></a></p>
+<ul>
+<li>Adds reflected mate connectors to a part so you can easily mate it reflected across a plane in an assembly (does not mirror geometry).</li>
+</ul>
+<!-- [**Part Color**](https://cad.onshape.com/documents/d997b0ffc30f659113b10c00/v/a9e4f209775174dbb9f2b5fa/e/b6db0c9545b9a2df1d7ea546 "Part Color Featurescript Onshape Document"){:target="_blank"}
+
+- Give color to faces on a part retroactively
+- Can use a variety of different color inputs
+- Can be used for part color configurations -->
+
+<p><a href="https://cad.onshape.com/documents/96d32fd4fe5341563a402ecd/v/042060f84c30390d82d806f8/e/d7f04278e0325b6d4426ca34?jumpToIndex=2635&amp;showReturnToWorkspaceLink=true" target="_blank" title="Set Materials Featurescript Onshape Document"><strong>Set Materials</strong></a> <em>(Abhi's Features &amp; Configs)</em></p>
+<ul>
+<li>Parametrically set materials and appearances of parts in batches</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/96d32fd4fe5341563a402ecd/v/042060f84c30390d82d806f8/e/d7f04278e0325b6d4426ca34?jumpToIndex=2635&amp;showReturnToWorkspaceLink=true" target="_blank" title="Set Properties Featurescript Onshape Document"><strong>Set Properties</strong></a> <em>(Abhi's Features &amp; Configs)</em></p>
+<ul>
+<li>Sets properties of parts in batches</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d" target="_blank" title="2471 Part Number Featurescript Onshape Document"><strong>2471's Part Numbering</strong></a> <em>(2471 Featurescripts)</em></p>
+<ul>
+<li>Numbers parts based off of a given standard</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/443e443bb2a37736743bf314/w/6539c7379d36307a6a2cc01d/e/ef4e1b0c40e1dbf2ee36d02e" target="_blank" title="Ahbi's Part Numbering Featurescript Onshape Document"><strong>Abhi's Part Numbering</strong></a></p>
+<ul>
+<li>Used for quickly applying a system to number parts</li>
+</ul>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="3D Printed Mass Featurescript Onshape Document"><strong>3D Printed Mass</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Modifies 3D-printed parts to have accurate mass with given material, infill, and wall thickness</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/3DP.webp">
+  <source src="../../../../img/resources/featurescripts/3DPMass.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d" target="_blank" title="Advanced Variables Featurescript Onshape Document"><strong>Advanced Variables</strong></a> <em>(2471 Featurescripts)</em></p>
+<ul>
+<li>Can create a compound variable with path length, angle between edges, distance between planes, angle between planes, distance between points, pulley center distance, and chain center distance</li>
+<li>Very useful for complex belt and chain runs</li>
+<li>Include measurements that Onshape can't normally do</li>
+</ul>
 <p><br></p>
 
 
@@ -1713,7 +1715,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 29, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2024</span>
   </span>
 
     
@@ -1741,14 +1743,14 @@
     
     <nav>
       
-        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
-          
-          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
-        </a>
-      
         <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
           
           <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
+        </a>
+      
+        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
+          
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
         </a>
       
       

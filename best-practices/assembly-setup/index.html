@@ -1260,7 +1260,9 @@
 <h1 id="assembly-best-practices">Assembly Best Practices</h1>
 <p>Assuming you have already named your parts and organized your work within the rest of the document, creating a well-organized assembly is very straightforward. </p>
 <h3 id="the-origin-cube">The Origin Cube</h3>
-<p>The <a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/df3afdbec8d1356c2af15e4b?renderMode=0&amp;uiState=6637caa6ccbcaa36badca03a">Origin Cube Featurescript</a> inserts a 2" transparent cube at the origin of the part studio. The cube has a mate connector at the origin. Because this part will never change and always stays at the origin of the part studio, using it to group and fasten parts to the origin will always be more <strong>robust and <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr></strong> than fixing or using a mate connector attached to another part, in case that part changes or is deleted.</p>
+<p>The <code>Origin Cube</code> Featurescript inserts a 2" transparent cube at the origin of the part studio. The cube has a mate connector at the origin. Because this part will never change and always stays at the origin of the part studio, using it to group and fasten parts to the origin will always be more <strong>robust and <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr></strong> than fixing or using a mate connector attached to another part, in case that part changes or is deleted.</p>
+<p><center><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/df3afdbec8d1356c2af15e4b?renderMode=0&amp;uiState=6637caa6ccbcaa36badca03a" target="_blank" title="Origin Cube Featurescript Onshape Document">Origin Cube Featurescript</a></center></p>
+<p><br></p>
 <figure>
 <a class="glightbox" href="\img\best-practices\originCubeFeature.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\best-practices\originCubeFeature.webp" width="60%"></a>
 <figcaption>Inserting the Origin Cube feature</figcaption>
@@ -1271,7 +1273,7 @@
 <p>The origin cube has the option of importing a number of useful constants and functions, including bolt hole sizes, gear outer diameter, and a center-to-center calculator.</p>
 </div>
 <h3 id="process-for-inserting-parts">Process for Inserting Parts</h3>
-<p>As is described in <a href="../sub-document-setup/#subsystems-with-multiple-degrees-of-freedom">Sub-Document Setup</a>, subsystems with no degrees of freedom will only have one assembly, while subsystems with multiple moving parts are separated into rigid assemblies. The process for inserting parts and finishing assemblies is similar for both circumstances.</p>
+<p>As is described in <a href="../sub-document-setup/#subsystems-with-multiple-degrees-of-freedom" title="Sub-Document Setup Page">Sub-Document Setup</a>, subsystems with no degrees of freedom will only have one assembly, while subsystems with multiple moving parts are separated into rigid assemblies. The process for inserting parts and finishing assemblies is similar for both circumstances.</p>
 <ol>
 <li>Create the origin cube in your part studio</li>
 <li>Insert the related parts and origin cube for a rigid subassembly</li>
@@ -1290,7 +1292,8 @@
 <p>Now create a top-level subsystem assembly and insert each subassembly into it. Fasten the origin cube of the static subassembly to the origin, and use the other mate connectors to mate the other subassemblies together.</p>
 <details class="example">
 <summary>Stage 2D - Slapdown Intake</summary>
-<p><a href="https://cad.onshape.com/documents/17302d787e092ce11015f7ee/w/f7cf5c02c7655f0328a3a74a/e/f1456325e0175c4c081008c2">Stage 2D - Slapdown Intake</a> is a subsystem with a static portion and a pivoting portion. An extra mate connector is added for the pivot on the master sketch, owned by the origin cube</p>
+<p>The Stage 2D Slapdown Intake is a subsystem with a static portion and a pivoting portion. An extra mate connector is added for the pivot on the master sketch, owned by the origin cube</p>
+<p><center><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/17302d787e092ce11015f7ee/w/f7cf5c02c7655f0328a3a74a/e/f1456325e0175c4c081008c2" target="_blank" title="Stage 2D Slapdown Intake Onshape Document">Stage 2D - Slapdown Intake</a></center></p>
 <p><center><a class="glightbox" href="/img/best-practices/slapdown-intake-example/slapdown-intake-mate-connector.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/slapdown-intake-example/slapdown-intake-mate-connector.webp" style="border:5px solid #ADADAD"></a></center></p>
 <p>This mate connector exists in both subassemblies.
 <center><a class="glightbox" href="/img/best-practices/slapdown-intake-example/slapdown-intake-static-connectors.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/slapdown-intake-example/slapdown-intake-static-connectors.webp" style="border:5px solid #ADADAD"></a></center></p>
@@ -1300,7 +1303,8 @@
 </details>
 <details class="example">
 <summary>Stage 2E - Cascade Elevator</summary>
-<p><a href="https://cad.onshape.com/documents/da5aef9e6bf6e869f4a51a45/w/5a0f4a3426876db0ba214277/e/f8fd8133abcb12800eacb5d1">Stage 2E - Cascade Elevator</a> is a subsystem with a static portion and two subassemblies that slide linearly. This contains a part studio, a static frame/gearbox assembly, assemblies for the first stage and carriage, and a top-level assembly combining the 3 subassemblies with slider mates.</p>
+<p>The Stage 2E Cascade Elevator is a subsystem with a static portion and two subassemblies that slide linearly. This contains a part studio, a static frame/gearbox assembly, assemblies for the first stage and carriage, and a top-level assembly combining the 3 subassemblies with slider mates.</p>
+<p><center><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/da5aef9e6bf6e869f4a51a45/w/5a0f4a3426876db0ba214277/e/f8fd8133abcb12800eacb5d1" target="_blank" title="Stage 2E - Cascade Elevator Onshape Document">Stage 2E - Cascade Elevator</a></center></p>
 <p><center><a class="glightbox" href="/img/best-practices/elevatorAssembly.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/elevatorAssembly.webp" style="border:5px solid #ADADAD"></a></center></p>
 </details>
 <details class="example">
@@ -1313,7 +1317,7 @@
 </details>
 <h3 id="simplified-models">Simplified Models</h3>
 <p>Make sure to minimize primitives in your assembly. Primitives are a measure of how complex the object is and how hard it is for Onshape to render. The more primitives there are, the more laggy your assembly will be.</p>
-<p>Use <a href="https://www.frcdesign.org/resources/simplified/">simplified models</a> wherever possible to minimize primitives: electronics, swerve modules, motors, etc. Some of these are added to MKCAD as well.</p>
+<p>Use <a href="https://www.frcdesign.org/resources/simplified/" title="Simplified Models Page">simplified models</a> wherever possible to minimize primitives: electronics, swerve modules, motors, etc. Some of these are added to MKCAD as well.</p>
 <details class="video">
 <summary>Minimize Primitives</summary>
 <p><video controls="true" allowfullscreen="true" poster="/img/best-practices/minimizePrimitives.webp">
@@ -1352,7 +1356,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 28, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 30, 2024</span>
   </span>
 
     
@@ -1380,6 +1384,11 @@
     
     <nav>
       
+        <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
+          
+          <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
+        </a>
+      
         <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
           
           <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
@@ -1393,11 +1402,6 @@
         <a href="https://github.com/Nsl106" class="md-author" title="@Nsl106">
           
           <img src="https://avatars.githubusercontent.com/u/87742096?v=4&size=72" alt="Nsl106">
-        </a>
-      
-        <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
-          
-          <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
         </a>
       
       
