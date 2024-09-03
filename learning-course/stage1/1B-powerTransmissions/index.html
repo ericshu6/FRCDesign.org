@@ -2362,7 +2362,7 @@
 <p>In this exercise you made your first gearbox. In doing so, you also used part configurations - a powerful tool that allows for variations of the same part. The gears that you inserted from MKCad were configurable - you were able to easily change the tooth count of the gear without needing to inserting a new component.</p>
 <p><br></p>
 <h2 id="exercise-2-two-stage-gearbox">Exercise 2: Two Stage Gearbox</h2>
-<p>In this exercise, you will be CADing and assembling a two stage gearbox. The goal of this exercise is to practice modeling more advanced gearboxes. You will also learn how to use the <code>Vent</code> Featurescript used for pocketing.</p>
+<p>In this exercise, you will be CADing and assembling a two stage gearbox. The goal of this exercise is to practice modeling more advanced gearboxes. You will also learn how to use the <code>Part Lighten</code> Featurescript used for pocketing.</p>
 <p><strong>Navigate to the "Exercise #2 Part Studio" tab</strong> in your copied document and <strong>follow the instructions in the slides</strong> to complete this exercise.</p>
 <p><center><strong>Exercise 2 Instruction Slides</strong></center></p>
 <!-- Slideshow container -->
@@ -2448,7 +2448,7 @@
         <source src="/img/learning-course/stage1b/exercises/e2/e2s8.webm" type="video/webm">
         Your browser does not support the video tag.
       </video>
-      <figcaption>8. Use the <code>Vent</code> Featurescript to pocket the plate by selecting the sketch regions created by the previous sketch. </figcaption>
+      <figcaption>8. Use the <code>Part Lighten</code> Featurescript to pocket the plate by selecting the ribs created by the previous sketch. </figcaption>
     </figure>
   </div>
 
@@ -2555,7 +2555,7 @@
 <p>Thus, to capture the design intent, you wil use the FRC functions functionality of the <a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/2b321cb91b74224b9c14b433" target="_blank" title="Origin Cube Featurescript Onshape Document"><code>Origin Cube</code> Featurescript</a>, which will allow you to calculate belt and chain center to center distances directly inside sketches. The Origin Cube also has additional functionality for robot and mechanism assemblies that will be discussed in Stage 1C. The Origin Cube feature will be <strong>the first feature in all part studios</strong> from here on out.</p>
 </div>
 <p><strong>Modeling Belt Transmissions</strong></p>
-<p>When modeling, you should draw the pitch diameter of the two pulleys and the centerline then connect the pulley circles with tangent lines to represent the belt. A 3D model of the belt can be generated using the <a href="https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/w/f8670c98f827edfb8e96e7e9/e/9076725852f28d52fd6e796f" target="_blank" title="Belt Gen Featurescript Onshape Document"><code>Belt Gen</code> Featurescript</a>.</p>
+<p>When modeling, you should draw the pitch diameter of the two pulleys and the centerline then connect the pulley circles with tangent lines to represent the belt. A 3D model of the belt can be generated using the <a href="https://cad.onshape.com/documents/53c0b14cad92676c14e04e97/w/1271c254ccb0a79563210195/e/7394c4a86d8d6c35c9a12041" target="_blank" title="Belt &amp; Chain Gen Featurescript Onshape Document"><code>Belt &amp; Chain Gen</code> Featurescript</a>.</p>
 <p>You will utilize use the following functions from the <a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/2b321cb91b74224b9c14b433" target="_blank" title="Origin Cube Featurescript Onshape Document"><code>Origin Cube</code> Featurescript</a> FRC functions:</p>
 <ul>
 <li>
@@ -2612,7 +2612,7 @@
         <source src="/img/learning-course/stage1b/belt/beltCad3.webm" type="video/webm">
         Your browser does not support the video tag.
       </video>
-      <figcaption>5. Use the <code>Belt Gen</code> Featurescript to generate a 3D model of the belt.</figcaption>
+      <figcaption>5. Use the <code>Belt & Chain Gen</code> Featurescript to generate a 3D model of the belt. The reference plane mate connector sets the location of the centerline of the belt. You can modify the selected mate connector offset the location of the belt. You can also choose to generate belt teeth, but do not that this will significantly increase rebuild time.</figcaption>
     </figure>
 </div>
 
@@ -2642,7 +2642,7 @@
 <p>In FRC, #25 chain is most commonly used as it is strong yet relatively lightweight. #35 is sometimes used on very high <abbr title="Force that produces rotational movement.">torque</abbr> transmissions, but it is heavy and bulky. </p>
 <p><strong>Center to Center Calculation</strong> </p>
 <p>Calculating sprocket center-to-center is very similar to pulley center-to-centers. To calculate the center-to-center distance of the sprockets, it is recommended to use an online calculator, such as <a href="https://www.reca.lc/chains" target="_blank" title="ReCalc Design Calculator">ReCalc</a>. In the calculator, you can set the chain size, desired center distance, and the number of teeth on each sprocket to get the required center distance.</p>
-<p>When modeling, you should draw the pitch diameter of the two sprockets and the centerline then connect the sprocket circles with tangent lines to represent the chain links. A 3D model of the chain can be generated using the <a href="https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/w/f8670c98f827edfb8e96e7e9/e/9076725852f28d52fd6e796f" target="_blank" title="Chain Gen Featurescript Onshape Document"><code>Chain Gen</code> Featurescript</a>. The modeling workflow is exactly the same as belt and pulley.</p>
+<p>When modeling, you should draw the pitch diameter of the two sprockets and the centerline then connect the sprocket circles with tangent lines to represent the chain links. A 3D model of the chain can be generated using the same <a href="https://cad.onshape.com/documents/53c0b14cad92676c14e04e97/w/1271c254ccb0a79563210195/e/7394c4a86d8d6c35c9a12041" target="_blank" title="Belt &amp; Chain Gen Featurescript Onshape Document"><code>Belt &amp; Chain Gen</code> Featurescript</a> that you used for belts. The modeling workflow is exactly the same as belt and pulley.</p>
 <p>You will utilize use the following functions from the <a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/2b321cb91b74224b9c14b433" target="_blank" title="Origin Cube Featurescript Onshape Document"><code>Origin Cube</code> Featurescript</a> FRC functions:</p>
 <ul>
 <li>
@@ -2683,7 +2683,7 @@
         <source src="/img/learning-course/stage1b/chain/chainCad3.webm" type="video/webm">
         Your browser does not support the video tag.
       </video>
-      <figcaption>3. Use the <code>Chain Gen</code> Featurescript to generate a simplified 3D model of the chain. While you can also generate a full detail model of the chain, it is very laggy.</figcaption>
+      <figcaption>3. Use the <code>Belt & Chain Gen</code> Featurescript to generate a simplified 3D model of the chain. While you can also generate a full detail model of the chain, it is very laggy.</figcaption>
     </figure>
 </div>
 
@@ -2867,8 +2867,11 @@
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s22.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s22.webp" style="width:100%"></a>
-      <figcaption>22. Use the <code>Belt Gen</code> Featurescript to create a model of the belt. The pitch of the belt is 5mm and the width is 9mm. Notice that the <code>Belt Gen</code> Feature script also calculates the pitch length of the belt which allows us to verify that we calculated the correct C-C in step 7 and 8. </figcaption>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1b/exercises/e3/e3s22.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>22. Use the <code>Belt & Chain Gen</code> Featurescript to create a model of the belt. The pitch of the belt is 5mm and the width is 9mm. Offset the reference plane by 0.5" so that the belt does not collide with the plate. Optionally turn on teeth modeling - note that this option will significantly increase rebuild time. Notice that the <code>Belt & Chain</code> Featurescript also calculates the pitch length of the belt which allows us to verify that we calculated the correct C-C in step 7 and 8. </figcaption>
     </figure>
   </div>
 
@@ -2896,7 +2899,7 @@
   <div class="mySlides fade">
     <figure>
       <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s26.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s26.webp" style="width:100%"></a>
-      <figcaption>26. Use the <code>Vent</code> Featurescript to add the pocketing. Use 0.15" wide ribs and 0.15" tool radius. </figcaption>
+      <figcaption>26. Use the <code>Part Lighten</code> Featurescript to add the pocketing. Use 0.15" wide ribs and 1/4" tool diameter. </figcaption>
     </figure>
   </div>
 
@@ -2910,7 +2913,7 @@
   <div class="mySlides fade">
     <figure>
       <a class="glightbox" href="/img/learning-course/stage1b/exercises/e3/e3s28.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1b/exercises/e3/e3s28.webp" style="width:100%"></a>
-      <figcaption>28. Use the <code>Vent</code> Featurescript to add the pocketing. Again, use 0.15" wide ribs and 0.15" tool radius. </figcaption>
+      <figcaption>28. Use the <code>Part Lighten</code> Featurescript to add the pocketing. Again, use 0.15" wide ribs and 1/4" tool diameter. </figcaption>
     </figure>
   </div>
 
@@ -3053,7 +3056,7 @@
 <li>Learned about speed, <abbr title="Force that produces rotational movement.">torque</abbr>, and mechanical advantage</li>
 <li>Learned the basics of motors, bearings, shafts, gears, chain and sprockets, and belt and pulleys</li>
 <li>Learned how to model basic power transmissions</li>
-<li>Learned how to use the <code>Belt Gen</code>, <code>Chain Gen</code>, <code>Shaft</code>, and <code>Vent</code> Featurescripts</li>
+<li>Learned how to use the <code>Belt &amp; Chain Gen</code>, <code>Shaft</code>, and <code>Part Lighten</code> Featurescripts</li>
 <li>Learned how to use the <code>Origin Cube</code> FRC functions Featurescript for chain and belt c-c's</li>
 <li>Learned how to insert Standard Library components and mate bolts and nuts</li>
 <li>Learned how to use the <code>Replicate</code> tool</li>
@@ -3161,6 +3164,11 @@ function showSlides(n, no) {
     
     <nav>
       
+        <a href="https://github.com/howlongismyname" class="md-author" title="@howlongismyname">
+          
+          <img src="https://avatars.githubusercontent.com/u/59844493?v=4&size=72" alt="howlongismyname">
+        </a>
+      
         <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
           
           <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
@@ -3174,11 +3182,6 @@ function showSlides(n, no) {
         <a href="https://github.com/IShaLinI" class="md-author" title="@IShaLinI">
           
           <img src="https://avatars.githubusercontent.com/u/34358667?v=4&size=72" alt="IShaLinI">
-        </a>
-      
-        <a href="https://github.com/howlongismyname" class="md-author" title="@howlongismyname">
-          
-          <img src="https://avatars.githubusercontent.com/u/59844493?v=4&size=72" alt="howlongismyname">
         </a>
       
       
