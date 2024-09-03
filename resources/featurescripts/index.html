@@ -1168,6 +1168,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#highly-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Highly Recommended
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#bundles" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1478,10 +1489,106 @@
 </video></p>
 </details>
 <h2 id="list-of-featurescripts">List of Featurescripts</h2>
-<!-- 
-!!! tip
-    The title of each featurescript or group of featurescripts links to its respective document. Right click the title and click "copy link address" for installing it to your profile using the above process. -->
-
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The title of each featurescript or group of featurescripts links to its respective document. Right click the title and click "copy link address" for installing it to your profile using the above process.</p>
+</div>
+<h3 id="highly-recommended"><strong>Highly Recommended</strong></h3>
+<p>These featurescripts are must haves to enhance your Onshape workflow. Many of these are developed by members of the FRC community and well maintained.</p>
+<p><a href="https://cad.onshape.com/documents/321c197a842fc5f1a29e6621/w/fc3cdd5ca7edcd93e02f13cc/e/df3afdbec8d1356c2af15e4b?renderMode=0&amp;uiState=6637caa6ccbcaa36badca03a" target="_blank" title="Origin Cube Featurescript Onshape Document"><strong>Origin Cube Featurescript</strong></a></p>
+<ul>
+<li>Used to create an origin reference for assembly mating</li>
+<li>Optionally import design constants like bolt hole sizes, heat set insert hole sizes, etc</li>
+<li>Optionally import functions for calculating gear OD, pulley/sprocket pitch &amp; outer diameters, and calculate belt/chain c-c distances</li>
+<li>See <a href="../../best-practices/assembly-setup/#the-origin-cube">Assembly Best Practices</a> for more information on usage</li>
+</ul>
+<details class="video">
+<summary>Video Example</summary>
+<p><video controls="true" allowfullscreen="true">
+  <source src="/img/learning-course/stage1b/belt/beltCad2.webm" type="video/webm">
+</video>
+<figcaption><center>Origin Cube's FRC Functions enables belt and chain calculations directly inside of sketches and fully captures design intent by capturing tooth counts.</center></figcaption></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/53c0b14cad92676c14e04e97/w/1271c254ccb0a79563210195/e/7394c4a86d8d6c35c9a12041" target="_blank" title="Belt &amp; Chain Gen Featurescript Onshape Document"><strong>Belt &amp; Chain Gen</strong></a></p>
+<ul>
+<li>Used in conjunction with Origin Cube FRC Functions to create highly customizable belts and chains</li>
+<li>Highly <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> - pulley/sprocket tooth count is automatically calculated from sketch pitch diameter.</li>
+<li>Create multi pulley, double sided belt, and multi sprocket transmissions with options for both toothed and round idlers</li>
+<li>Calculates belt and chain pitch; when used in conjunction with <code>Final</code> can allow for easy adjustment of path lengths</li>
+<li>Block model and high detail belt and chain model options available</li>
+<li>Allows for arbitrary placement of belts with a mate connector reference</li>
+</ul>
+<details class="video">
+<summary>Video Example</summary>
+<p><video controls="true" allowfullscreen="true">
+  <source src="/img/resources/featurescripts/beltchaingen.webm" type="video/webm">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Extrude Individual Featurescript Onshape Document"><strong>Extrude Individual</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Can extrude multiple regions as different parts with one feature, even if regions are adjacent</li>
+<li>Commonly used with tube converter to make punched aluminum tubes from a top view sketch</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/EI.webp">
+  <source src="../../../../img/resources/featurescripts/extrudeIndividual.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Tube Converter Featurescript Onshape Document"><strong>Tube Converter</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Converts extrusions into punched tube, with customization and presets for hole pattern, wall thickness, and profile.</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/TC.webp">
+  <source src="../../../../img/resources/featurescripts/tubeConverter.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Shaft Generator Featurescript Onshape Document"><strong>Shaft Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Generates a shaft, with options for hex, rounded hex (13.75mm OD), MAXSpline, etc.</li>
+<li>Options for retention type on both ends</li>
+<li>Can be generated in-place and with offsets</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/SG.webp">
+  <source src="../../../../img/resources/featurescripts/shaftGenerator.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Spacer Generator Featurescript Onshape Document"><strong>Spacer Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>Generates a spacer, with options for round, 3/8" hex, and 1/2" hex</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/S.webp">
+  <source src="../../../../img/resources/featurescripts/spacer.mp4" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d" target="_blank" title="Part Lighten Featurescript Onshape Document"><strong>Part Lighten</strong></a> <em>(2471 Featurescripts)</em></p>
+<ul>
+<li>Better than "Lighten" and more complex than "Vent"</li>
+<li>Better control over ribs, cut depth, fillets, etc.</li>
+<li>Gives a nice estimate of how much weight is being saved</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true">
+  <source src="/img/learning-course/stage1b/exercises/e2/e2s8.webm" type="video/mp4">
+</video></p>
+</details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Fillet All Edges Featurescript Onshape Document"><strong>FilletXpert (Fillet All Edges)</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>After selecting a face, it adds a fillet to the corners of that face (all edges normal to the selected face)</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/FAE.webp">
+  <source src="../../../../img/resources/featurescripts/filletEdges.mp4" type="video/mp4">
+</video></p>
+</details>
 <h3 id="bundles">Bundles</h3>
 <p>The below links contain several featurescripts each that you can add all at once. The more useful featurescripts from each bundle are demonstrated further below.</p>
 <p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Julia's Featurescripts Onshape Document"><strong>Julia's Featurescripts</strong></a></p>
@@ -1517,16 +1624,6 @@
 <li>Generate a <abbr title="Reinforcement plate, usually made of aluminum, used to strengthen connections between two tubes.">gusset</abbr> from hole selections</li>
 <li><strong>Warning</strong>: Not a very <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> featurescript and causes lag, but can be useful in a pinch</li>
 </ul>
-<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Fillet All Edges Featurescript Onshape Document"><strong>FilletXpert (Fillet All Edges)</strong></a> <em>(Julia's Featurescripts)</em></p>
-<ul>
-<li>After selecting a face, it adds a fillet to the corners of that face (all edges normal to the selected face)</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/FAE.webp">
-  <source src="../../../../img/resources/featurescripts/filletEdges.mp4" type="video/mp4">
-</video></p>
-</details>
 <p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Shaft Generator Featurescript Onshape Document"><strong>Shaft Generator</strong></a> <em>(Julia's Featurescripts)</em></p>
 <ul>
 <li>Generates a shaft, with options for hex, rounded hex (13.75mm OD), MAXSpline, etc.</li>
@@ -1549,6 +1646,16 @@
   <source src="../../../../img/resources/featurescripts/spacer.mp4" type="video/mp4">
 </video></p>
 </details>
+<p><a href="https://cad.onshape.com/documents/95c00401c440b44ad8799ef5/w/1f1ebce01a3b8eb6fa102975/e/b92d638809ae48771ecc7ad8" target="_blank" title="Fillet All Edges Featurescript Onshape Document"><strong>FilletXpert (Fillet All Edges)</strong></a> <em>(Julia's Featurescripts)</em></p>
+<ul>
+<li>After selecting a face, it adds a fillet to the corners of that face (all edges normal to the selected face)</li>
+</ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true" poster="../../../../img/resources/featurescripts/FAE.webp">
+  <source src="../../../../img/resources/featurescripts/filletEdges.mp4" type="video/mp4">
+</video></p>
+</details>
 <p><a href="https://cad.onshape.com/documents/9cffa92db8b62219498f89af/v/d1389fa34235160533671706/e/99672d1e329b38e647d90146" target="_blank" title="Robot Spacer Featurescript Onshape Document"><strong>Robot Spacer</strong></a> <em>(Alex's Featurescripts)</em></p>
 <ul>
 <li>A more complex alternative to Julia's spacer generator, if you need more config options</li>
@@ -1569,31 +1676,44 @@
 <li>Profile generator for pulleys and a spur gears</li>
 </ul>
 <h3 id="power-transmissions">Power Transmissions</h3>
-<p><a href="https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/v/56fb8fa8d7d90b925d8d9775/e/2fd838311a32255a728a8449?showReturnToWorkspaceLink=true" target="_blank" title="Belt Gen Featurescript Onshape Document"><strong>Belt Gen</strong></a></p>
+<!-- [**Belt Gen**](https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/v/56fb8fa8d7d90b925d8d9775/e/2fd838311a32255a728a8449?showReturnToWorkspaceLink=true "Belt Gen Featurescript Onshape Document"){:target="_blank"}
+
+- Generates a belt path from belt pitch diameter circles
+- Allows for multiple pulleys, tensioners, and double sided belts
+- Options for simplified or realistic models
+- Calculates resulting belt length
+
+??? Video "Video Tutorial"
+    <video controls="true" allowfullscreen="true">
+      <source src="../../../../img/resources/featurescripts/beltGen.mp4" type="video/mp4">
+    </video> -->
+
+<!-- [**Chain Gen**](https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/w/f8670c98f827edfb8e96e7e9/e/9076725852f28d52fd6e796f "Chain Gen Featurescript Onshape Document"){:target="_blank"}
+
+- Generates a chain path from sprocket pitch diameter circles
+- Allows for multiple sprockets and tensioners
+- Options for simplified or realistic models
+- Calculates resulting chain length
+
+??? Video "Video Tutorial"
+    <video controls="true" allowfullscreen="true">
+      <source src="../../../../img/resources/featurescripts/chainGen.mp4" type="video/mp4">
+    </video> -->
+
+<p><a href="https://cad.onshape.com/documents/53c0b14cad92676c14e04e97/w/1271c254ccb0a79563210195/e/7394c4a86d8d6c35c9a12041" target="_blank" title="Belt &amp; Chain Gen Featurescript Onshape Document"><strong>Belt &amp; Chain Gen</strong></a></p>
 <ul>
-<li>Generates a belt path from belt pitch diameter circles</li>
-<li>Allows for multiple pulleys, tensioners, and double sided belts</li>
-<li>Options for simplified or realistic models</li>
-<li>Calculates resulting belt length</li>
+<li>Used in conjunction with Origin Cube FRC Functions to create highly customizable belts and chains</li>
+<li>Highly <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> - pulley/sprocket tooth count is automatically calculated from sketch pitch diameter.</li>
+<li>Create multi pulley, double sided belt, and multi sprocket transmissions with options for both toothed and round idlers</li>
+<li>Calculates belt and chain pitch; when used in conjunction with <code>Final</code> can allow for easy adjustment of path lengths</li>
+<li>Block model and high detail belt and chain model options available</li>
+<li>Allows for arbitrary placement of belts with a mate connector reference</li>
 </ul>
 <details class="video">
-<summary>Video Tutorial</summary>
+<summary>Video Example</summary>
 <p><video controls="true" allowfullscreen="true">
-  <source src="../../../../img/resources/featurescripts/beltGen.mp4" type="video/mp4">
-</video> --&gt;</p>
-</details>
-<p><a href="https://cad.onshape.com/documents/b273b67c06b86b78b01b6f3a/w/f8670c98f827edfb8e96e7e9/e/9076725852f28d52fd6e796f" target="_blank" title="Chain Gen Featurescript Onshape Document"><strong>Chain Gen</strong></a></p>
-<ul>
-<li>Generates a chain path from sprocket pitch diameter circles</li>
-<li>Allows for multiple sprockets and tensioners</li>
-<li>Options for simplified or realistic models</li>
-<li>Calculates resulting chain length</li>
-</ul>
-<details class="video">
-<summary>Video Tutorial</summary>
-<p><video controls="true" allowfullscreen="true">
-  <source src="../../../../img/resources/featurescripts/chainGen.mp4" type="video/mp4">
-</video> --&gt;</p>
+  <source src="/img/resources/featurescripts/beltchaingen.webm" type="video/webm">
+</video></p>
 </details>
 <p><a href="https://cad.onshape.com/documents/028ca8fb10baf53e1f6fce96/v/821c8b51ed0953526b51926e/e/a8b9e45297aac9f5688c871d" target="_blank" title="Belt and Pulley Generation Featurescript Onshape Document"><strong>Belt &amp; Pulley Generation</strong></a> <em>(2471 Featurescripts)</em></p>
 <ul>
@@ -1629,6 +1749,12 @@
 <li>Better control over ribs, cut depth, fillets, etc.</li>
 <li>Gives a nice estimate of how much weight is being saved</li>
 </ul>
+<details class="video">
+<summary>Video Tutorial</summary>
+<p><video controls="true" allowfullscreen="true">
+  <source src="/img/learning-course/stage1b/exercises/e2/e2s8.webm" type="video/mp4">
+</video></p>
+</details>
 <p><a href="https://cad.onshape.com/documents/702f94d6e4ffb0c64f611f87/w/f6ac7d31494b1215bb9c8a61/e/4bf4eb130870ebdf0008c5a4" target="_blank" title="Vent Featurescript Onshape Document"><strong>Vent</strong></a></p>
 <ul>
 <li>Used for pocketing and lightening plates</li>
@@ -1758,7 +1884,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 3, 2024</span>
   </span>
 
     
@@ -1786,14 +1912,14 @@
     
     <nav>
       
-        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
-          
-          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
-        </a>
-      
         <a href="https://github.com/jonathanmi6" class="md-author" title="@jonathanmi6">
           
           <img src="https://avatars.githubusercontent.com/u/34979278?v=4&size=72" alt="jonathanmi6">
+        </a>
+      
+        <a href="https://github.com/Revision-0" class="md-author" title="@Revision-0">
+          
+          <img src="https://avatars.githubusercontent.com/u/68137729?v=4&size=72" alt="Revision-0">
         </a>
       
       
