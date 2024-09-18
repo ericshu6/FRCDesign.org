@@ -2657,26 +2657,39 @@
     <figcaption>Cascade Motion</figcaption>
 </figure>
 <h3 id="comparison">Comparison</h3>
-<p>Cascade elevators have a number of pros and cons when compared to continuous elevators.</p>
 <table>
 <thead>
 <tr>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
+<th><strong>Category</strong></th>
+<th><strong>Cascade Rigging</strong></th>
+<th><strong>Continuous Rigging</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Cascade elevators are great when you just need to move a mechanism up and down and you don't need more than 3 Elevator stages to reach the desired height. While it is possible to make cascade elevators with more than 3 stages, designing the rigging gets harder, especially if you are width constrained.</td>
-<td>Usually things cannot be passed through a cascade elevator because of the rigging, while you can pass things through a continuous elevator.</td>
+<td>Number of Stages</td>
+<td>Possible to make cascade elevators with more than 3 stages, but designing the rigging gets harder especially if width constrained.</td>
+<td>Additional stages are relatively trivial to add.</td>
 </tr>
 <tr>
-<td>Cascade motion is faster than continuous due to the stages being linked together and continuous effectively being one long stage.</td>
-<td>The center of gravity is not optimal in the middle range of extension compared to continuous.</td>
+<td>Stage Order</td>
+<td>Since all of the stages move together at once, your center of mass will be higher in the middle range of extension as compared to continuous rigging.</td>
+<td>Stages moves up based on the friction between stages and force to move each stage. If properly constructed, the inner stages should move first.</td>
 </tr>
 <tr>
-<td>All of the major Cascade Elevator components are available as <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> components, which means you can simply stock cascade elevator components and throw it together without worrying about custom manufacturing.</td>
-<td>The motors powering a cascade elevator need geared down more to counteract the natural upduction the cascade rigging adds.</td>
+<td><abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr></td>
+<td>Many options available for cable rigging.</td>
+<td>Not as many options available for cable rigging.</td>
+</tr>
+<tr>
+<td>Gearbox (Given the same end effector speed and force)</td>
+<td>Can utilize intermediary stages, which have higher force than the final stage, for situations like climbing (See <a href="https://www.youtube.com/watch?v=47A83OfzYDw" target="void" title="2056's 2018 robot Behind the Bumpers Video">2056's 2018 robot</a>).</td>
+<td>Requires less reduction, but requires a shifting gearbox to have different high speed and high force modes.</td>
+</tr>
+<tr>
+<td>Pass Through</td>
+<td>Can be achieved by moving the location of the rigging.</td>
+<td>Can be achieved by moving the location of the rigging. Intermediary stage positions may be indeterminate depending on how well tuned the stage movement order is.</td>
 </tr>
 </tbody>
 </table>
@@ -2703,7 +2716,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 7, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 18, 2024</span>
   </span>
 
     
