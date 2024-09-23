@@ -972,6 +972,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1599,6 +1603,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1623,7 +1631,151 @@
   <span class="md-ellipsis">
     
   
-    C: Design Methodology
+    C: Practice Mechanisms
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../1D/introduction/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    D: Design Methodology
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../1E/introduction/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    E: Subsystem Workflow
   
 
     
@@ -1659,8 +1811,6 @@
   
     
     
-      
-        
       
         
       
@@ -1741,10 +1891,6 @@
       
         
       
-        
-      
-        
-      
     
     
       
@@ -1769,7 +1915,7 @@
   <span class="md-ellipsis">
     
   
-    A: Full Detail Drivebase
+    A: Basic Shooter
   
 
     
@@ -1836,7 +1982,7 @@
   <span class="md-ellipsis">
     
   
-    B: Basic Shooter
+    B: Dead Axle Pivot
   
 
     
@@ -1903,7 +2049,7 @@
   <span class="md-ellipsis">
     
   
-    C: Dead Axle Pivot
+    C: Slapdown Intake
   
 
     
@@ -1970,74 +2116,7 @@
   <span class="md-ellipsis">
     
   
-    D: Slapdown Intake
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../stage2/2E/introduction/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    
-  
-    E: Cascade Elevator
+    D: Cascade Elevator
   
 
     
@@ -2766,11 +2845,13 @@
 <p><center><a class="glightbox" href="\img\learning-course\stage1b\gears\gearDiagram.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\gears\gearDiagram.webp" style="width:70%"></a></center>
 <center><em>Illustration of a gear's pitch diameter and outer diameter. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/gears"><abbr title="West Coast Products">WCP</abbr></a>).</em></center></p>
 <h3 id="modeling-gear-transmissions">Modeling Gear Transmissions</h3>
-<p>When modeling, an easy way to set the center-to-center distance between two gears is to draw two circles sized to the gears' pitch diameters and then set two circles to be tangent to each other. For example, if you need to mesh a 20T gear and a 60T gear, you can draw a <code>20/20 = 1"</code> and a <code>60/20 = 3"</code> circle and add a tangent constraint between the two circles. The reason we enter the full expression is so that we can easily see what the circle represents (a gear, sprocket, or pulley, and how many teeth it has).</p>
-<p><center><a class="glightbox" href="\img\learning-course\stage1b\gears\gearCad.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\gears\gearCad.webp" style="width:60%"></a></center></p>
+<p>When modeling, an easy way to set the center-to-center distance between two gears is to draw two circles sized to the gears' pitch diameters and then set the two circles to be tangent to each other. For example, if you need to mesh a 20T gear and a 60T gear, you can draw a <code>20/20 = 1"</code> and a <code>60/20 = 3"</code> circle and add a tangent constraint between the two circles. </p>
+<figure>
+<a class="glightbox" href="\img\learning-course\stage1b\gears\gearCad.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\gears\gearCad.webp" style="width:60%"></a>
 <figcaption>Modeling gear C-C distance by constraining two pitch diameter construction circles tangent. The diameters of the circle are calculated by dividing the tooth count by DP, which is 20 in this case.</figcaption>
+</figure>
 
-<p>It's recommended to input the pitch diameter fraction (Eg: <code>(60/20)"</code>) rather than the calculated pitch diameter (Eg: Only inputting <code>3"</code> as the dimension) so that you can see the tooth count of the designed gear in the sketch. </p>
+<p>It's recommended to input the pitch diameter fraction (Eg: <code>(60/20)"</code>) rather than the calculated pitch diameter (Eg: Only inputting <code>3"</code> as the dimension) so that you can easily see what the circle represents (a gear, sprocket, or pulley) and how many teeth it has. </p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can show the expression that a dimension was evaluated from by checking the <code>Show Expression</code> checkbox on the sketch menu. The result will look like the previous image, which allowed you to easily see that the two gears were a 20T and 60T gear, both 20 <abbr title="Diametral pitch is the number of teeth per inch of the pitch circle.">DP</abbr>.</p>

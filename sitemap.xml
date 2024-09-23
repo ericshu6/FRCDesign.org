@@ -321,11 +321,39 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/adding-components/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise-overview/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/assembly-modeling/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise1/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise2/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise3/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise4/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise5/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise6/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise7/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/exercise8/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -333,27 +361,83 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/layout-sketch/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/part-modeling/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/project-overview/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
          <loc>https://www.FRCDesign.org/learning-course/stage1/1C/summary/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/top-down-design/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/adding-components/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage1/1C/top-level-assembly/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/assembly-modeling/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/introduction/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/layout-sketch/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/part-modeling/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/project-overview/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/summary/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/top-down-design/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1D/top-level-assembly/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/battery-mounting/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/electronics/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/exercise1/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/exercise2/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/exercise3/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/exercise4/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/exercise5/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/introduction/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/project-overview/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage1/1E/summary/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -369,39 +453,47 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/battery-mounting/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/assembly/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/electronics/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/ball-trajectory/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/exercise-page-template/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/compression-wrap/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/exercise1/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/exit-velocity/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/exercise2/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/exercise3/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/exercise4/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/exercise5/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/friction-efficiency/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
          <loc>https://www.FRCDesign.org/learning-course/stage2/2A/introduction/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/layout-sketch/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/part-studio/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/project-overview/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/spin-control/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2A/structure-rigidity/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -413,23 +505,11 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/ball-trajectory/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/backlash/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/basic-shooter/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/compression-wrap/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/exit-velocity/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/friction-efficiency/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/friction/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -445,15 +525,15 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/power-transmission/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
          <loc>https://www.FRCDesign.org/learning-course/stage2/2B/project-overview/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/spin-control/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/structure-rigidity/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/strength/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -461,19 +541,15 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2B/tensioning/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
          <loc>https://www.FRCDesign.org/learning-course/stage2/2C/assembly/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/backlash/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/deadaxle-pivot/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/friction/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/intake-golden-rules/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -489,7 +565,7 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/power-transmission/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/pivot/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -497,7 +573,11 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/strength/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/robustness/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/rollers/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -505,7 +585,7 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/tensioning/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2C/zombie-axles/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -513,7 +593,23 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/intake-golden-rules/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/cable-clamp/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/cable-ends/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/chain-attachment/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/drive-system/</loc>
+         <lastmod>2024-09-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/elevator-blocks/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -529,59 +625,15 @@
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/pivot/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
          <loc>https://www.FRCDesign.org/learning-course/stage2/2D/project-overview/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/robustness/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/rollers/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/slapdown-intake/</loc>
+         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/rigging/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
          <loc>https://www.FRCDesign.org/learning-course/stage2/2D/summary/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2D/zombie-axles/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/assembly/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/cable-clamp/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/cable-ends/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/cascade-elevator/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/chain-attachment/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/drive-system/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/elevator-blocks/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
@@ -590,22 +642,6 @@
     </url>
     <url>
          <loc>https://www.FRCDesign.org/learning-course/stage2/2E/layout-sketch/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/part-studio/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/project-overview/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/rigging/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://www.FRCDesign.org/learning-course/stage2/2E/summary/</loc>
          <lastmod>2024-09-23</lastmod>
     </url>
     <url>
