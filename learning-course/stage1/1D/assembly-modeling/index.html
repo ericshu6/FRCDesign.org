@@ -2716,7 +2716,9 @@
 <h1 id="1d-design-methodology-simple-swerve-drivebase">1D: Design Methodology - Simple Swerve Drivebase</h1>
 <h2 id="assembly">Assembly</h2>
 <p>Now that the part studio is finished, you can create the drivetrain assembly. </p>
-<p>Previously, in Stage 1A when you created assemblies one of the parts in the group mate was fixed in place. However, this is not considered a good practice as it is not <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr>. This is where the origin cube comes in: the origin cube has a mate connector placed at the origin of the part studio. After inserting and grouping all of the parts, you can fasten the origin cube to the origin of the assembly. This aligns the part studio origin and assembly origin.</p>
+<!-- Previously, in Stage 1A when you created assemblies one of the parts in the group mate was fixed in place. However, this is not considered a good practice as it is not parametric. This is where the origin cube comes in: the origin cube has a mate connector placed at the origin of the part studio.  -->
+
+<p>Just like with the practice exercises in the previous stage, after inserting and grouping all of the parts, you should fasten the origin cube to the origin of the assembly. This aligns the part studio origin and assembly origin.</p>
 <h3 id="instructions">Instructions</h3>
 <p>Start by <strong>creating a new assembly tab called <code>Drivetrain Assembly</code></strong> in the <code>Drivetrain</code> folder. <strong>Follow the instructions in the slides</strong> to complete the assembly.</p>
 <!-- <center>**Drivetrain Assembly**</center> -->
@@ -2733,11 +2735,8 @@
 
   <div class="mySlides fade">
     <figure>
-      <video width="1920" controls>
-        <source src="/img/learning-course/stage1d/SwerveBase/dtAssy1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <figcaption>1. Insert the parts into the assembly, <code>Group</code> them, then fasten the origin cube to the origin of the assembly.</figcaption>
+      <a class="glightbox" href="/img/learning-course/stage1d/SwerveBase/dtAssy1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1d/SwerveBase/dtAssy1.webp" style="width:100%"></a>
+      <figcaption>1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin.</figcaption>
     </figure>
   </div>
 
@@ -2761,7 +2760,7 @@
     </figure>
   </div>
 
-  <div class="mySlides fade">
+  <!-- <div class="mySlides fade">
     <figure>
       <video width="1920" controls>
         <source src="/img/learning-course/stage1d/SwerveBase/dtAssy4.mp4" type="video/mp4">
@@ -2779,12 +2778,19 @@
       </video>
       <figcaption>5. Use the <code>Replicate </code> assembly tool to replicate the rivet and rivet mate onto all matching geometry on the bottom face of the bellypan</figcaption>
     </figure>
+  </div> -->
+
+  <div class="mySlides fade">
+    <figure>
+      <a class="glightbox" href="/img/learning-course/stage1d/SwerveBase/dtAssy4.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1d/SwerveBase/dtAssy4.webp" style="width:100%"></a>
+      <figcaption>4. Insert, fasten, and replicate the 3/16" rivet from MKCad onto the bellypan holes. For the replicate feature, you can use "Select edges on face" rather than "Select individual edges" since we want all of the holes to have a rivet.</figcaption>
+    </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
       <a class="glightbox" href="/img/learning-course/stage1d/SwerveBase/dtAssy0.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1d/SwerveBase/dtAssy0.webp" style="width:100%"></a>
-      <figcaption>6. The assembly.</figcaption>
+      <figcaption>5. To finish the assembly, organize your components into folders and name your replicates.</figcaption>
     </figure>
   </div>
 
@@ -2829,7 +2835,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 29, 2024</span>
   </span>
 
     
