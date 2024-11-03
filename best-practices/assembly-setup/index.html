@@ -1442,12 +1442,12 @@
 <p class="admonition-title">Tip</p>
 <p>As you add more parts in the part studio, you can insert them individually into the assembly with the green checkmark, double click on the initial group, and add the part to the group to avoid mating it. This means that new part will always stay in the same place relative to where it was designed in the part studio.</p>
 </div>
-<p>If the subsystem has multiple moving parts (like an over-the-bumper intake or elevator), create a mate connector on the master sketch for each degree of freedom. This may be a pivot point or the starting point of a slider mate (in the case of an elevator). Make each mate connector owned by the origin cube.</p>
+<p>If the subsystem has multiple moving parts (like an over-the-bumper intake or elevator), create a mate connector on the main layout sketch for each degree of freedom. This may be a pivot point or the starting point of a slider mate (in the case of an elevator). Make each mate connector owned by the origin cube.</p>
 <p>Repeat steps 4-7 of the process for all other rigid subassemblies, if applicable. This will result in each subassembly being rigid, with the origin cube fastened to the origin and all the parts in the same place as in the part studio. Each subassembly will also contain the mate connectors owned by the origin cube.</p>
 <p>Now create a top-level subsystem assembly and insert each subassembly into it. Fasten the origin cube of the static subassembly to the origin, and use the other mate connectors to mate the other subassemblies together.</p>
 <details class="example">
 <summary>Stage 2C - Slapdown Intake</summary>
-<p>The Stage 2C Slapdown Intake is a subsystem with a static portion and a pivoting portion. An extra mate connector is added for the pivot on the master sketch, owned by the origin cube</p>
+<p>The Stage 2C Slapdown Intake is a subsystem with a static portion and a pivoting portion. An extra mate connector is added for the pivot on the main layout sketch, owned by the origin cube</p>
 <p><center><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/17302d787e092ce11015f7ee/w/f7cf5c02c7655f0328a3a74a/e/f1456325e0175c4c081008c2" target="_blank" title="Stage 2C Slapdown Intake Onshape Document">Stage 2C - Slapdown Intake</a></center></p>
 <p><center><a class="glightbox" href="/img/best-practices/slapdown-intake-example/slapdown-intake-mate-connector.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/slapdown-intake-example/slapdown-intake-mate-connector.webp" style="border:5px solid #ADADAD"></a></center></p>
 <p>This mate connector exists in both subassemblies.
@@ -1466,9 +1466,9 @@
 <summary>3647 Millennium Falcons 2024 Intake</summary>
 <p><center><a class="glightbox" href="/img/best-practices/0200-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0200-A.webp"></a><figcaption>Top Level Assembly: 0200-A-Intake. Notice that there is only two mates. The revolute is between the two intake pivot mate connectors, which are attached to the repective origin cubes.</figcaption></center></p>
 <p><center><a class="glightbox" href="/img/best-practices/0210-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0210-A.webp"></a><figcaption>Stationary Components Assembly: 0210-A-Intake Base. The components are group mated and the origin cube is fastened to the origin.</figcaption></center></p>
-<p><center><a class="glightbox" href="/img/best-practices/0210-PS.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0210-PS.webp"></a><figcaption>Stationary Components PS: 0210-A-Intake Base. Notice the intake pivot mate connector, derived from the orange master sketch. </figcaption></center></p>
+<p><center><a class="glightbox" href="/img/best-practices/0210-PS.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0210-PS.webp"></a><figcaption>Stationary Components PS: 0210-A-Intake Base. Notice the intake pivot mate connector, derived from the orange main layout sketch. </figcaption></center></p>
 <p><center><a class="glightbox" href="/img/best-practices/0220-A.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0220-A.webp"></a><figcaption>Moving Components Assembly: 0220-A-Intake Arm. The components are group mated and the origin cube is fastened to the origin.</figcaption></center></p>
-<p><center><a class="glightbox" href="/img/best-practices/0220-PS.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0220-PS.webp"></a><figcaption>Moving Components PS: 0220-Intake Arm. Notice the intake pivot mate connector, derived from the orange master sketch.</figcaption></center></p>
+<p><center><a class="glightbox" href="/img/best-practices/0220-PS.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/0220-PS.webp"></a><figcaption>Moving Components PS: 0220-Intake Arm. Notice the intake pivot mate connector, derived from the orange main layout sketch.</figcaption></center></p>
 </details>
 <h3 id="simplified-models">Simplified Models</h3>
 <p>Make sure to minimize primitives in your assembly. Primitives are a measure of how complex the object is and how hard it is for Onshape to render. The more primitives there are, the more laggy your assembly will be.</p>
@@ -1511,7 +1511,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 3, 2024</span>
   </span>
 
     

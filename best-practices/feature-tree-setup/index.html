@@ -1399,7 +1399,7 @@
 <p>Instead of deriving <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> parts for reference, usually you can add simple measurements in your sketches (like a pitch circle instead of a derived gear), which faster both in the moment and overall with load times. You can derive parts from your other subsystems (such as the frame and simplified modules from your drivetrain part studio into your intake part studio) and make them closed composites for easy reference, but keep it to a minimum.</p>
 </div>
 <h3 id="feature-tree-organization">Feature Tree Organization</h3>
-<p>Every part studio feature tree should start with a derive command, pulling down the relevant master sketches. This is what you will build on. </p>
+<p>Every part studio feature tree should start with a derive command, pulling down the relevant main layout sketches. This is what you will build on. </p>
 <p><strong>Sort and name the features, parts, and tabs and use folders</strong> to make your CAD more understandable for other people working on the robot. One of the biggest benefits of Onshape is its collaborative capability, but unnamed and unsorted documents eliminate that point entirely. Sorting and naming in real time can also make it easier to go back and change things (which you will inevitably need to do). Some teams even use a part naming system to assist with organizing manufacturing and assembly.</p>
 <!-- !!! Tip
     You can rename parts manually or use one of many various [featurescripts](https://www.frcdesign.org/resources/featurescripts/?h=feat#onshape) to do so automatically.  -->
@@ -1408,7 +1408,7 @@
 <p><center><a class="glightbox" href="/img/best-practices/organized-part-studio.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/best-practices/organized-part-studio.webp" style="border:5px solid #ADADAD"></a></center></p>
 <h3 id="the-importance-of-intelligent-origins">The Importance of Intelligent Origins</h3>
 <p>As with many good practices in CAD, smart origins are another good practice to make future you's life easier. Intelligent origins allow designers to leverage default geometry (Front/Right/Top Planes, Origin Point) for robust axes of symmetry and references in their models. </p>
-<p>For FRC CAD, the purpose of using the same origin as the master sketch across all studios and assemblies is twofold:</p>
+<p>For FRC CAD, the purpose of using the same origin as the main layout sketch across all studios and assemblies is twofold:</p>
 <ol>
 <li>The origin will always be a consistent central point you can reference. This helps keep things <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr> too.</li>
 <li>To unify the robot CAD and robot software origin point. By having the same origin in CAD and code, the robot can be seamlessly exported to <a href="https://github.com/Mechanical-Advantage/AdvantageScope" target="_blank" title="AdvantageScope Repository">AdvantageScope</a> and camera transformations more easily measured. </li>
@@ -1441,7 +1441,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 30, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 3, 2024</span>
   </span>
 
     
