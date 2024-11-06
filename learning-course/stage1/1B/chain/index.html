@@ -2792,8 +2792,11 @@
 <h1 id="1b-power-transmissions">1B: Power Transmissions</h1>
 <h2 id="chain-and-sprocket-basics">Chain and Sprocket Basics</h2>
 <p>Roller chain and sprocket drives are very similar to belt and pulley transmissions. They consist of two main components: a chain, which is a series of interconnected links, and sprockets, which are toothed wheels that mesh with the chain. As the sprockets rotate, they engage with the chain, causing it to move and transmit power from one shaft to another. Bikes are an everyday object that use chain to transmit power. Chains excel at transmitting high force over long distances.</p>
-<p><center><a class="glightbox" href="\img\learning-course\stage1b\chain\chainAnimation.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\chainAnimation.gif" style="width:40%"></a></center>
-<center><em>A simple animation of chain and sprocket. Notice that the sprockets will spin in the same direction.</em></center></p>
+<figure>
+    <a class="glightbox" href="\img\learning-course\stage1b\chain\chainAnimation.gif" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\chainAnimation.gif" style="width:40%"></a>
+    <figpcation>A simple animation of chain and sprocket. Notice that the sprockets will spin in the same direction.</figcaption>
+</figure>
+
 <p>In order to change the <abbr title="Force that produces rotational movement.">torque</abbr> and speed from the input to the output, different sized sprockets must be used. The mechanical advantage for chain transmissions, similar to gears and pulleys, is based on the ratio between the number of teeth of the output sprocket to the number of teeth of the input sprocket. Similar to pulleys, the sprockets will spin in the same direction.</p>
 <h3 id="types-of-chain">Types of Chain</h3>
 <p>The two commonly used sizes of roller chain in FRC is #25 and #35 chain, with 0.25" and 0.375" pitch respectively. For chain, the <strong>pitch</strong> is the length of each link. The <em>pitch length</em> of the chain is then the pitch (0.25" or 0.375") multiplied by the number of links. Try to use an even number of links to avoid the use of a "half-link" which is weaker than a full-link. This means your chain pitch length should be a multiple of 0.5".</p>
@@ -2805,8 +2808,11 @@ To calculate the pitch diameter, the following equation can be used:
 <p>Additionally, the <strong>chain clearance diameter</strong> describes the diameter of the sprocket with the chain wrapped around it. The following equation can be used:</p>
 <p><center><strong><code>Clearance Diameter = PD + Pitch</code></strong></center></p>
 <p>Below is an illustration of the pitch, pitch diameter, outside diameter, and chain clearance diameter of a sprocket.</p>
-<p><center><a class="glightbox" href="\img\learning-course\stage1b\chain\chainDiagram.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\chainDiagram.webp" style="width:70%"></a></center>
-<center><em>Illustration of chain sprocket diameter measures. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/sprockets-and-chain"><abbr title="West Coast Products">WCP</abbr></a>)</em></center></p>
+<figure>
+    <a class="glightbox" href="\img\learning-course\stage1b\chain\chainDiagram.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\chainDiagram.webp" style="width:70%"></a>
+    <figcaption>Illustration of chain sprocket diameter measures. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/sprockets-and-chain">WCP</a>)</figcaption>
+</figure>
+
 <p>In FRC, #25 chain is most commonly used as it is strong yet relatively lightweight. #35 is sometimes used on very high <abbr title="Force that produces rotational movement.">torque</abbr> transmissions, but it is heavy and bulky. </p>
 <h3 id="modeling-chain-transmissions">Modeling Chain Transmissions</h3>
 <p>The modeling workflow for chain is the exact same as for belts in the previous page. You will need the pitch diameter of the two sprockets and a correct center-to-center distance.</p>
@@ -2829,8 +2835,10 @@ To calculate the pitch diameter, the following equation can be used:
 <p>In Stage 2, different chain tensioning methods are introduced in the context of different types of robot mechanisms. The <a href="/design-handbook/" target="_blank" title="Design Handbook Page">Design Handbook page</a> also dives deeper into this topic.</p>
 <div class="admonition example">
 <p class="admonition-title">Example of Chain Tensioning</p>
-<p><center><a class="glightbox" href="\img\learning-course\stage1b\chain\turnbuckle.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\turnbuckle.webp" style="width:60%"></a></center>
-<figcaption>A "<abbr title="A threaded part that goes in between chain links to tension the chain">turnbuckle</abbr>" chain tensioner. The <abbr title="A threaded part that goes in between chain links to tension the chain">turnbuckle</abbr> acts as a variable-length link in the chain that can be adjusted to keep the chain tight. (Photo Credit: FRC 1538)</figcaption></p>
+<p><figure>
+    <a class="glightbox" href="\img\learning-course\stage1b\chain\turnbuckle.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="\img\learning-course\stage1b\chain\turnbuckle.webp" style="width:60%"></a>
+    <figcaption>A "<abbr title="A threaded part that goes in between chain links to tension the chain">turnbuckle</abbr>" chain tensioner. The <abbr title="A threaded part that goes in between chain links to tension the chain">turnbuckle</abbr> acts as a variable-length link in the chain that can be adjusted to keep the chain tight. (Photo Credit: FRC 1538)</figcaption>
+</figure></p>
 </div>
 <p><br></p>
 
@@ -2855,7 +2863,7 @@ To calculate the pitch diameter, the following equation can be used:
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 5, 2024</span>
   </span>
 
     
