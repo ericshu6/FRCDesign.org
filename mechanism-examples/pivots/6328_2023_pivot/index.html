@@ -1944,6 +1944,62 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Behind the Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#force-breakdown-on-pivot-arm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Force Breakdown on Pivot Arm
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-improved-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Improved Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Improved Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-gearbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Gearbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-second-joint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Second Joint
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2425,6 +2481,62 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Behind the Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#force-breakdown-on-pivot-arm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Force Breakdown on Pivot Arm
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-improved-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Improved Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Improved Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-gearbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Gearbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-second-joint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Second Joint
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2573,6 +2685,10 @@ table tr:hover{
     background-color: transparent !important;
 }
 
+span{
+  text-align: center !important;
+}
+
 </style>
 
 <h1 id="6328-a-frame-pivot-2023">6328 A-Frame Pivot 2023</h1>
@@ -2582,8 +2698,59 @@ table tr:hover{
 </figure>
 <h3 id="links">Links</h3>
 <p><a class="md-button md-button--primary" href="https://cad.onshape.com/documents/7b17c8664d1313c397a0fcf3/w/61b5c8329f7f5c6023f50c77/e/58bc5035e6e718d34ade872d" target="_blank" title="CAD Document Link">CAD Document</a></p>
+<p><a href="https://www.chiefdelphi.com/t/frc-6328-mechanical-advantage-2023-build-thread/420691" title="ChiefDelphi OpenAlliance Build Thread">ChiefDelphi OpenAlliance Build Thread</a></p>
+<p><a href="https://youtu.be/XA15Qq2CXY0" title="6328 Pivot April Tag Tracking">Pivot April Tag Tracking</a></p>
 <h2 id="behind-the-design">Behind the Design</h2>
-<p>In many cases, pivoting arms are a fundamental mechanism in the architecture of a robot. Thus, rigid, robust, and fast pivoting mechanisms can make or break a good design. A failure in the pivot of a design like this would put completely put a robot out of commission.</p>
+<p>In many cases, pivoting arms are a fundamental mechanism in the architecture of a robot. Thus, rigid, robust, and fast pivoting mechanisms can make or break a good design. Due to the massive moment load applied on this pivot joint at full arm extension, its essential that this pivots drive mechanism is both powerful and bulletproof.</p>
+<h3 id="force-breakdown-on-pivot-arm">Force Breakdown on Pivot Arm</h3>
+<p><span style="text-align: center"><abbr title="Force that produces rotational movement.">Torque</abbr> is a function of two main variables: the magnitude of the applied force, the distance from the axis of rotation to where the force is applied (often referred to as the lever arm or moment arm), as well as the angle at which the force is applied. The force applied across an objects mass by gravity can be equivalently represented by a single force applied to the center of gravity of the object. At full arm extension, the CoG of the lever arm is at its max distance from the pivot axis, and gravity applies a point load at the CoG at a 90 degree angle relative to the lever arm, at which point the <abbr title="Force that produces rotational movement.">torque</abbr> applied the pivot is this force MULTIPLIED by the distance from the CoG to the pivot.</span></p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_forces.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328 Force Breakdown" height="150%" src="../../../img/mechanism-examples/pivots/6328/6328_forces.webp" width="150%" /></a>
+</figure>
+<p><span style="text-align: center">This massive moment load on the main pivot joint requires the pivot mechanism to both be built durable enough to handle this large <abbr title="Force that produces rotational movement.">torque</abbr> without breaking, and also powerful enough to counteract and overcome this <abbr title="Force that produces rotational movement.">torque</abbr> so that the pivot is able to be driven. When designing drive mechanisms and gearboxes for pivot arms like this, it is generally very useful to get a good estimation of how powerful a mechanism you will need to drive your arm depending on its length and mass, so many designers use simulators such as the <a href="https://www.reca.lc/arm">Reca.lc Arm Calculator</a> or the <a href="https://ambcalc.com/mechanism?=">AMB Mechanism Ratio Calculator</a>.</span></p>
+<p><span>
+<br>
+<br>
+<em>The following breakdown is an excerpt from the 6328 OpenAlliance thread on ChiefDelphi, written by <a href="https://www.chiefdelphi.com/u/Matthew3/summary">Matthew3 of FRC 6328</a></em>
+<br>
+<br>
+<br>
+</span></p>
+<h2 id="the-improved-design"><strong>The Improved Design</strong></h2>
+<h3 id="custom-gearbox">Custom Gearbox</h3>
+<p>Due to the limited availability of MAXPlanetaries and belly pan space constraints, we have re-evaluated the way we are powering the first joint. The gearbox will be placed low in the belly pan powering a dead-axle MAXSpline where we chain that to the two first joints. This has a few major advantages over our previous approach: <abbr title="The way in which you fit parts of your robot together in a space">packaging</abbr>, mechanically linking the first two joints, limited stick out into the middle of the robot to make it easier to pass through, and eliminating several MAXPlantary cartridges.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_gearbox.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328 Gearbox" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_gearbox.webp" width="50%" /></a></figure>
+<p>The two bottom NEOs power the MAXSpline that crosses the width of the robot, while the MAXPlanetary NEO is powering the joint of the cube intake.</p>
+<p><br>
+For the new first joint dead axles, we are using 1.25” 0.25 wall tube turned down to 30mm for the bearings. To hold the dead axles, we were inspired by 971’s 2018 robot and their use of mitee-bites to hold the dead axle.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_1.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_1" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_1.webp" width="50%" /></a>
+</figure>
+<p>For this, we use an ‘outside’ 0.25 aluminum plate with an interesting profile put into it for clearance around the tube and to be selective about contact points. On the inside plate, the one that can move, this same profile is used but flipped 180 degrees.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_2.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_2" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_2.webp" width="50%" /></a>
+</figure>
+<p>This inside plate is mounted with a few bolts in some oversized holes (0.005”). They tap into the outer plate and the clearance holes in the blue plate allow the blue inner plate to have some movement. This means when you tighten the mitee-bite, it clamps the dead-axle in place. We calculated that this system provides around 1800 lbs of clamping force on the dead-axle for secure mounting. This also means it can easily switch out in the somewhat extreme scenario where we need to replace the dead-axle or if we need to replace the joint.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_3.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_3" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_3.webp" width="50%" /></a>
+</figure>
+<p>This stackup is all contained within two snap rings (98541A134). This outermost constraint is for the “worst case scenario” where the mitee-bites fail. The inside snap ring is essential for keeping the stack up together.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_4.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_4" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_4.webp" width="50%" /></a>
+</figure>
+<p>Moving to the joint itself, the previous design for this was a live axle MAXspline, this had a few small issues, but definitely things we would like to fix going forward. With the move to a real dead-axle, we solve all of these problems (hopefully).</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_5.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_5" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_5.webp" width="50%" /></a>
+</figure>
+<p>Taking a look at the joint itself, you will see the tube of the link, and the joint that connects to that link, this is a drastic improvement in repairability and was a requirement for us. We also switched the link tube into a thick wall MAXtube from the thin wall MAXtube. The joint itself consists of 0.25” aluminum plates captured in PA12-CF nylon 3d prints. In the following picture, you can see the aluminum plate (light blue) captured in the nylon part (light gray). The aluminum plate takes the bearing while the nylon part captures it and locates it in the tube (creating the more complicated geometry of the inside of the MAXtube) and becomes a spacer for the bearings side to side.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_6.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_6" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_6.webp" width="50%" /></a>
+</figure>
+<p>The encoder is a 3d printed part that comes off the side of the sprocket and uses the same system as the previous design.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_7.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_7" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_7.webp" width="50%" /></a>
+</figure>
+<h3 id="the-second-joint">The Second Joint</h3>
+<p>The second joint was host to most of the issues with the arm. This is mostly due to us taking what seemed to be the easiest design-wise when building it at first. Just as a reminder, the previous joint was a 3 stage max planetary and a 32t to 80t geared reduction. A very simple joint, but an issue ridden one at best. The MAXplanetary has a significant amount of <abbr title="'Slop' in a power transmission system; can wiggle back and forth without engaging the whole system">backlash</abbr>, it is all assembled with press fit tube blocks and such, making it almost impossible to take apart, and the MAXspline itself has a significant amount of spring in it. With these issues in mind, let’s take a look at the new design.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_8.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_8" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_8.webp" width="50%" /></a>
+</figure>
+<p>This joint looks fairly similar to the first joint. The dead axle is clamped by a very similar system as the first joint, with the sub plate (light blue) clamping the dead axle onto the first tube. The shaft has snap rings on the outside for the worst case scenario where the tube slips.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_9.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_9" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_9.webp" width="50%" /></a>
+</figure>
+<p>The dead axle tube (orange) has thin wall aluminum tube (1.25 OD 0.028 wall) acting as spacers, contacting the inner race of the bearing and the outer tube. The dead axle (orange tube) has a length of it turned 0.005” less than the 30mm OD of the rest of the tube (the length where no bearings are in contact) for assembly reasons.</p>
+<p>This system will (hopefully) reduce spring and separate the joints from the tubes, aiding repairability.</p>
 <table>
 <thead>
 <tr>
@@ -2593,47 +2760,18 @@ table tr:hover{
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/gearbox.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Main Pivot Gearbox" height="120%" src="../../../img/mechanism-examples/pivots/6328/gearbox.webp" width="120%" /></a><figcaption> Robots with lower <abbr title="Center of Gravity, also referred to as COM(Center of Mass)">COG</abbr>'s are less likely to tip and have the advantage in pushing battles! </figcaption></figure></td>
-<td style="text-align: center;"><span style="font-size:.8rem;">The main pivot is powered by a custom 2 NEO high-reduction gearbox that is integrated into the A-Frame of the pivot. This is the most important pivot on the robot, since it moves the most mass. For those reasons want as much power as possible here, so two-four motors is ideal. MAXPlanetaries are not rated for the forces expected to be applied in this gearbox, so a custom gearbox is a necessity. The gearbox is placed as low as possible to lower the <abbr title="Center of Gravity, also referred to as COM(Center of Mass)">COG</abbr> of the robot.</span></td>
-</tr>
-<tr>
-<td style="text-align: center;"><span style="font-size:.8rem;"> The gearbox drives a Super Max Spline shaft, which is a Max Spline shaft reinforced with an interal aluminum tube. Using this <abbr title="A type of axle setup where the main torque transfer is through the axle.">liveaxle</abbr> takes the load of the pivot off of the gearbox and onto an incredibly heavy duty shaft. All of the Max Spline on this robot is reinforced Super Max Spline, except for the main pivot joint.</span></td>
-<td style="text-align: center;"><figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/supermaxspline.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Super Max Spline" height="60%" src="../../../img/mechanism-examples/pivots/6328/supermaxspline.webp" width="60%" /></a><figcaption> Internal aluminum tube reinforces the main drive shaft. </figcaption></figure></td>
+<td style="text-align: center;"><figure markdown="span"><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_10.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_10" height="100%" src="../../../img/mechanism-examples/pivots/6328/6328_10.webp" width="100%" /></a></figure></td>
+<td style="text-align: center;"><figure markdown="span"><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_11.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_11" height="100%" src="../../../img/mechanism-examples/pivots/6328/6328_11.webp" width="100%" /></a></figure></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><span style="text-align: center; font-size:1rem">The main pivot joint is supported vertically on each side by 2 angled 1x1 shafts and a 2x1 shaft. Triangles are strong! The A frame is a triangle, and the vertical 2x1 splits each side into two more mirrored triangles. With the plates clamping on both sides this thing is bulletproof. Plates are not lightweighted at the bottom in order to lower <abbr title="Center of Gravity, also referred to as COM(Center of Mass)">COG</abbr> and because these parts are fixed to the superstructure, so their weight doesn’t limit the rotational speed of the pivot.</span></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/aframe.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328 A-Frame" height="75%" src="../../../img/mechanism-examples/pivots/6328/aframe.webp" width="75%" /></a><figcaption> A-Frame superstructure side view. </figcaption></figure></td>
-<td style="text-align: center;"><figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/triangles.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Triangle Breakdown" height="120%" src="../../../img/mechanism-examples/pivots/6328/triangles.webp" width="1500rem" /></a><figcaption> Static triangle load distribution breakdown. Triangles are the only shape which are not collapsable when a force is applied to any side. </figcaption></figure></td>
-</tr>
-</tbody>
-</table>
-<p><span style="text-align: center; font-size:1rem">The main pivot is driven on both sides by long runs of chain to prevent torsion (twisting of the arm). These long runs of chain allow for inline tensioners to eliminate <abbr title="'Slop' in a power transmission system; can wiggle back and forth without engaging the whole system">backlash</abbr> in the pivot. The maxspline here is a live axle. There are bearings in the blue plates that are constrained from the outside with button head cap flanges and on the inside with 3d printed spacers. The large axle collar in between the two plates prevents the spline from sliding. The second arm section is rigidly bolted to both the sprocket and the maxspline shaft. There is tiny <abbr title="Typically used on pivots a zombie axle spins with the mechanism, but is transferring little to no torque through it. This is commonly used to put an encoder on the pivot point.">Zombie-Axle</abbr> shaft with a gear on it rigged 1:1 with the main shaft to measure the rotation of the shaft directly for more accurate positioning. It doesn’t need a bearing, the shaft just spins with the inside of the encoder!</span></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/mainpivot.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Main Pivot" height="60%" src="../../../img/mechanism-examples/pivots/6328/mainpivot.webp" width="60%" /></a><figcaption> Main pivot side view. </figcaption></figure></td>
-<td style="text-align: center;"><figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/pivot_side.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="Pivot Bearing Retention" height="60%" src="../../../img/mechanism-examples/pivots/6328/pivot_side.webp" width="60%" /></a><figcaption> Bearing retention using button head machine screw flange. </figcaption></figure></td>
-</tr>
-</tbody>
-</table>
-<hr />
+<p>The gearbox is 3 stages (+ chain) to a total of 228:1 of reduction. While this will add weight to the arm, it is located relatively low when compared to the previous solution and we are willing to trade weight for lower <abbr title="'Slop' in a power transmission system; can wiggle back and forth without engaging the whole system">backlash</abbr>. The output of the gearbox is chained to the sprocket attached to the second link. The sprocket is a Rev 64t maxspline sprocket with the center enlarged to 1.375 for clearance around the dead axle. The sprocket is spaced off of the joint with a 3d printed spacer made in Pa12-CF nylon filament bolted to the joint with through bolts.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_12.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_12" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_12.webp" width="50%" /></a>
+</figure>
+<p>The second joint has significantly more bracing in the previous design. We will now have full 1/16 wall 2x1s going across the second link, compared to the previous ½ hex going across. The gussets will be riveted onto the cross 2x1 and bolted onto the MAXtube to allow for repairability.</p>
+<figure><a class="glightbox" href="../../../img/mechanism-examples/pivots/6328/6328_13.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img alt="6328_13" height="50%" src="../../../img/mechanism-examples/pivots/6328/6328_13.webp" width="50%" /></a>
+</figure>
+<p>The wrist stackup will be the exact same as the previous, with the same end effector and encoder/chain system.</p>
 <h2 id="see-this-pivot-in-action-here"><p style="text-align: center;"> See this Pivot in Action Here </p></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -2663,7 +2801,7 @@ table tr:hover{
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 18, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2024</span>
   </span>
 
     
