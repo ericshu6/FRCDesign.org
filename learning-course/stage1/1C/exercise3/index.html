@@ -1438,7 +1438,7 @@
   <a href="#3d-printed-pulleys" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3D Printed Pulleys
+        3D-printed Pulleys
       
     </span>
   </a>
@@ -2653,7 +2653,7 @@
   <a href="#3d-printed-pulleys" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3D Printed Pulleys
+        3D-printed Pulleys
       
     </span>
   </a>
@@ -2839,22 +2839,27 @@
 For exact feature details, you should refer to the exercise solutions document. 
 This is to prepare you for later exercises that are gradually less guided.</p>
 <p>In this exercise, you will be modeling a very simple 2.5" ball shooter. 
-This mechanism features 3D printed pulleys, a 3D printed ramp, and nut strips. Be sure to pay attention to layout sketches when modeling. </p>
-<h3 id="3d-printed-pulleys">3D Printed Pulleys</h3>
+This mechanism features 3D-printed pulleys, a 3D-printed ramp, and nut strips. Be sure to pay attention to layout sketches when modeling. </p>
+<h3 id="3d-printed-pulleys">3D-printed Pulleys</h3>
 <p>Thus far, you've only utilized <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> pulleys in your assemblies. 
-However, 3D printed pulleys are a fantastic alternative since they are cheaper, readily available (assuming you have a 3D printer), and highly customizable.</p>
-<!-- Most applications that utilize pulleys (rollers, shooter wheels, etc) are low torque so 3D printed pulleys provide more than adequate strength. -->
+However, 3D-printed pulleys are a fantastic alternative since they are cheaper, readily available (assuming you have a 3D printer), and highly customizable.</p>
+<!-- Most applications that utilize pulleys (rollers, shooter wheels, etc) are low torque so 3D-printed pulleys provide more than adequate strength. -->
 
-<p>3D printed pulleys can easily be generated using pulley generators, such as the one included in MKCad.
-Close attention must be paid to the shaft interface however. 3D printed hex profiles can easily strip out, so a metal insert (Available from vendors like <a href="https://wcproducts.com/products/adapters" target="_blank" title="WCP Adapater Product Page"><abbr title="West Coast Products">WCP</abbr></a> or <a href="https://www.thethriftybot.com/products/qty-5-aluminum-insert-for-3d-printed-parts" target="_blank" title="Thrifty Bot 3D Print Adapter Product Page">Thrifty Bot</a>) should be used to better transfer <abbr title="Force that produces rotational movement.">torque</abbr>.
-Take a look below at some examples of 3D printed pulleys with different types of inserts. </p>
+<p>3D-printed pulleys can easily be generated using pulley generators, such as the one included in MKCad.
+Close attention must be paid to the shaft interface however. 3D-printed hex profiles can easily strip out, so a metal insert (Available from vendors like <a href="https://wcproducts.com/products/adapters" target="_blank" title="WCP Adapater Product Page"><abbr title="West Coast Products">WCP</abbr></a> or <a href="https://www.thethriftybot.com/products/qty-5-aluminum-insert-for-3d-printed-parts" target="_blank" title="Thrifty Bot 3D Print Adapter Product Page">Thrifty Bot</a>) should be used to better transfer <abbr title="Force that produces rotational movement.">torque</abbr>.
+Take a look below at some examples of 3D-printed pulleys with different types of inserts. </p>
 <details class="example" open="open">
-<summary>3D Printed Pulley Inserts</summary>
+<summary>3D-printed Pulley Inserts</summary>
 <p><figure>
   <a class="glightbox" href="/img/learning-course/stage1c/shooter/3dp-pulleys.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1c/shooter/3dp-pulleys.webp" style="width:80%"></a>
-  <figcaption>3D printed pulleys with hex insert for hex shaft (left), SplineXS insert for Kraken motors (center), and pinion gear insert for NEO/CIM motors (right). </figcaption>
+  <figcaption>3D-printed pulleys with hex insert for hex shaft (left), SplineXS insert for Kraken motors (center), and pinion gear insert for NEO/CIM motors (right). </figcaption>
 </figure></p>
 </details>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Since 3D-printed pulley bores are easily worn out, you should try to always use a metal insert or a pinion gear insert.
+A cheap alternative to buying <abbr title="Commercial Off the Shelf parts are anything you can buy from a vendor.">COTS</abbr> inserts is to order them from a laser cutting service like <a href="fabworks.com" target="_blank" title="Fabworks Sheet Metal Cutting">Fabworks</a>. In large quantities (~20 pieces), they only cost around $1 each.</p>
+</div>
 <h3 id="nut-strips">Nut Strips</h3>
 <p>Nut strips are a very versatile structural component often used to connect perpendicular plates or a plate to a tube.
 Vendors like <a href="https://wcproducts.com/products/nut-strips" target="_blank"><abbr title="West Coast Products">WCP</abbr></a>, <a href="https://www.revrobotics.com/3-8in-nut-strips/" target="_blank" title="REV Nut Strips Product Page"><abbr title="REV Robotics">REV</abbr></a>, and <a href="https://lastanvil.com/products/nut-strip" target="_blank">Last Anvil</a> carry nut strips in 6" long segments with either #10-32 or #8-32 tapped holes.
@@ -2936,7 +2941,7 @@ In the exercise you just completed, the nut strips would allow you to easily mou
         <source src="/img/learning-course/stage1c/shooter/s8.webm" type="video/webm">
         Your browser does not support the video tag.
       </video>
-      <figcaption>8. Use the <code>Fillet All Edges</code> Featurescript to add a 3/16" radius fillet to all of the 3D printed part edges. To select the face of the part, you can utilize the <code>Isolate</code> tool, which will make all other components that are not currently selected transparent or hidden.</figcaption>
+      <figcaption>8. Use the <code>Fillet All Edges</code> Featurescript to add a 3/16" radius fillet to all of the 3D-printed part edges. To select the face of the part, you can utilize the <code>Isolate</code> tool, which will make all other components that are not currently selected transparent or hidden.</figcaption>
     </figure>
   </div>
 
@@ -3156,7 +3161,7 @@ The Hide tool removes the selected parts from view, while Make transparent allow
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2024</span>
   </span>
 
     
