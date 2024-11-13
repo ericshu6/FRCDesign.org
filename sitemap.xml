@@ -645,15 +645,35 @@
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/swerve/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/2910/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/swerve/1678_2024_dt/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/brainpan/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/swerve/2910_2023_dt/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/swerve/3005_2023_dt/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/swerve/5460_2023_dt/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/swerve/6328_2024_dt/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/swerve/972_2024_dt/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/drivebase/tank/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
@@ -661,11 +681,15 @@
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/cascade/2stage/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/cascade/2_stage_elevator/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/cascade/3stage/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/cascade/3_stage_elevator/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/cascade/wcp_greyt_elevator/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
@@ -673,27 +697,35 @@
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/continuous/belt/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/continuous/1678_2023_elevator/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/continuous/cable/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/elevator/continuous/3847_2023_elevator/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/intake/4bar/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/end-effector/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/intake/4bar/1678/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/indexer/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/intake/4bar/clean/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/linkage/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/intake/4bar/vaughn4bar/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/linkage/1678_2022_intake/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/linkage/4089_2022_intake/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/linkage/6800_2022_intake/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
@@ -701,19 +733,27 @@
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/4414style/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/1678_2024_intake/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/6423otb/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/1778_2024_intake/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/low/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/2910_2021_intake/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/washed/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/3847_2022_intake/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/slapdown/6423_2024_intake/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/intake/utb/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
@@ -721,11 +761,19 @@
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/pivots/2910pivot/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/pivots/1690_2024_pivot/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/pivots/6328pivot/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/pivots/2910_2023_pivot/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/pivots/5460_2023_pivot/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/pivots/6328_2023_pivot/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
@@ -733,11 +781,31 @@
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/shooter/citrus/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/shooter/1678_2022_shooter/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
-         <loc>https://www.FRCDesign.org/mechanism-examples/shooter/small/</loc>
+         <loc>https://www.FRCDesign.org/mechanism-examples/shooter/2910_2021_shooter/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/shooter/2910_2022_shooter/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/shooter/6328_2024_shooter/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/shooter/6800_2022_shooter/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/telescope/</loc>
+         <lastmod>2024-11-13</lastmod>
+    </url>
+    <url>
+         <loc>https://www.FRCDesign.org/mechanism-examples/turret/</loc>
          <lastmod>2024-11-13</lastmod>
     </url>
     <url>
