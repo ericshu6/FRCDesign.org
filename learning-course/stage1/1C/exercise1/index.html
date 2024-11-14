@@ -1053,6 +1053,8 @@
       
         
       
+        
+      
     
     
       
@@ -2830,8 +2832,13 @@ They can be used to connect plates to the open face of tubes or to connect tubes
   <figcaption>Tube plugs can be used to create <abbr title="Reinforcement plate, usually made of aluminum, used to strengthen connections between two tubes.">gusset</abbr>-less tube to tube (left) and tube to plate (right) connections. (Photo Credits: FRC 4414, FRC 9442)</figcaption>
 </figure></p>
 </details>
-<p>This exercise also introduces you to the use of the the <a href="https://cad.onshape.com/documents/0f7d68295ff4dab57adcf92c/v/88fbfa19a2e2555d18599db4/e/bcf3052f00f1f9d3d95a89c7?jumpToIndex=1392&amp;showReturnToWorkspaceLink=true" target="_blank" title="Assembly Mirror FS Onshape Document">Assembly Mirror Featurescript</a> which is a useful tool to  help make your assembly more <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr>.
-Make sure to add this to your Featurescripts if you have not already.</p>
+<p>This exercise also introduces you to the use of the the <a href="https://cad.onshape.com/documents/0f7d68295ff4dab57adcf92c/v/88fbfa19a2e2555d18599db4/e/bcf3052f00f1f9d3d95a89c7?jumpToIndex=1392&amp;showReturnToWorkspaceLink=true" target="_blank" title="Assembly Mirror FS Onshape Document"><code>Assembly Mirror Featurescript</code></a>. Make sure to add this to your Featurescripts if you have not already. </p>
+<ul>
+<li>This featurescript generates allows you to mirror the position of a duplicate part in the assembly. </li>
+<li>This is often useful so you can avoid creating a duplicate part in the part studio (to preserve the Bill of Materials) and keep the assembly <abbr title="Designed in a way that uses relationships between steps to maintain design intent">parametric</abbr>.</li>
+<li>The featurescript takes a part and a mirror plane and generates a pair of mate connectors to simulate an mirror in the assembly.</li>
+<li>In the assembly, you simply have to copy the part and mate it to the mate connector on the other side. Show mate connnectors by pressing the <code>k</code> key.</li>
+</ul>
 <h3 id="part-studio-instructions">Part Studio Instructions</h3>
 <p><strong>Navigate to the "Exercise #1 Part Studio" tab</strong> in your copied document and <strong>follow the instructions in the slides</strong> to complete the part studio for this exercise.</p>
 <!-- Slideshow container -->
@@ -2971,46 +2978,46 @@ Make sure to add this to your Featurescripts if you have not already.</p>
 
   <div class="mySlides fade">
     <figure>
-      <video width="1920" controls>
-        <source src="/img/learning-course/stage1c/flat-intake/s18.webm" type="video/webm">
-        Your browser does not support the video tag.
-      </video>
-      <figcaption>18. In the assembly, we would like the location of the two plates to be fully parametric. Since Onshape does not support assembly mirroring, we can instead use the <code>Assembly Mirror</code> Featurescript which provides a workaround to assembly mirroring by generating a pair of mate connectors to simulate an assembly mirror. The featurescript will generate a mate connector at the origin of the selected part, and another at the center of the virtually mirrored part. The usage of these two mate connectors will become clear when we create the assembly.</figcaption>
+      <a class="glightbox" href="/img/learning-course/stage1c/flat-intake/s18.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1c/flat-intake/s18.webp" style="width:100%"></a>
+      <figcaption>18. Using the tube sketch we created earlier in the part studio, we can now extrude the upper tube profile up to the mirrored plate's inside face. This ensures that the upper tube is parametric to changes in intake width.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
       <a class="glightbox" href="/img/learning-course/stage1c/flat-intake/s19.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1c/flat-intake/s19.webp" style="width:100%"></a>
-      <figcaption>19. Using the tube sketch we created earlier in the part studio, we can now extrude the upper tube profile up to the mirrored plate's inside face. This ensures that the upper tube is parametric to changes in intake width.</figcaption>
+      <figcaption>19. Convert the solid into a 2x1 thin-wall tube with 0.5" hole pattern spacing. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
       <a class="glightbox" href="/img/learning-course/stage1c/flat-intake/s20.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1c/flat-intake/s20.webp" style="width:100%"></a>
-      <figcaption>20. Convert the solid into a 2x1 thin-wall tube with 0.5" hole pattern spacing. </figcaption>
+      <figcaption>20. Sketch and extrude the 0.125" thick polycarbonate plate on the top face of the bottom tube. It will have a mounting hole in each corner and be spaced away from the edges of the 1x1 tube by 0.125".</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
       <a class="glightbox" href="/img/learning-course/stage1c/flat-intake/s21.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1c/flat-intake/s21.webp" style="width:100%"></a>
-      <figcaption>21. Create the bottom polycarbonate plate on the top face of the bottom tube.</figcaption>
+      <figcaption>21. Model the roller shaft with the <code>Shaft</code> Featurescript. You can estimate the length first and then adjust it once you create the assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
       <a class="glightbox" href="/img/learning-course/stage1c/flat-intake/s22.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1c/flat-intake/s22.webp" style="width:100%"></a>
-      <figcaption>22. Model the roller shaft with the <code>Shaft</code> Featurescript. You can estimate the length first and then adjust it once you create the assembly.</figcaption>
+      <figcaption>22. Model the belt using the <code>Belt & Chain Gen</code> Featurescript. Use a mate connector offset from the plate's bearing hole as the reference plane and offet by 3/8". Select the layout sketch pulley PDs to use as the guides.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <a class="glightbox" href="/img/learning-course/stage1c/flat-intake/s23.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1c/flat-intake/s23.webp" style="width:100%"></a>
-      <figcaption>23. Model the belt using the <code>Belt & Chain Gen</code> Featurescript. Use a mate connector offset from the plate's bearing hole as the reference plane and offset by 3/8". Select the layout sketch pulley PDs to use as the guides.</figcaption>
+      <video width="1920" controls>
+        <source src="/img/learning-course/stage1c/flat-intake/s23.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>23. Use the Assembly Mirror Featurescript (you can add this using the link above the slides). The featurescript will generate a mate connector at the origin of the selected part, and another at the center of the virtually mirrored part. The usage of these two mate connectors will become clear when we create the assembly.</figcaption>
     </figure>
   </div>
 
@@ -3047,7 +3054,7 @@ Make sure to add this to your Featurescripts if you have not already.</p>
         <source src="/img/learning-course/stage1c/flat-intake/a1.webm" type="video/webm">
         Your browser does not support the video tag.
       </video>
-      <figcaption>1. Insert all of the part studio components, except for the zREF part, and group the plates and tubes with the origin cube. Fasten the cube to the origin.</figcaption>
+      <figcaption>1. Insert all of the part studio components, except for the zREF part, and group the plates, tubes, and shaft with the origin cube. Fasten the cube to the origin.</figcaption>
     </figure>
   </div>
 
@@ -3074,7 +3081,7 @@ Make sure to add this to your Featurescripts if you have not already.</p>
   <div class="mySlides fade">
     <figure>
       <a class="glightbox" href="/img/learning-course/stage1c/flat-intake/a4.webp" data-type="image" data-width="90%" data-height="auto" data-desc-position="bottom"><img src="/img/learning-course/stage1c/flat-intake/a4.webp" style="width:100%"></a>
-      <figcaption>4. Insert the motor and roller pulleys. Fasten them into place and then fasten the roller shaft. </figcaption>
+      <figcaption>4. Insert the motor and roller pulleys and fasten them into place. </figcaption>
     </figure>
   </div>
 
@@ -3170,9 +3177,9 @@ Make sure to add this to your Featurescripts if you have not already.</p>
   </div>
 </div>
 
-<div class="admonition note">
+<div class="admonition success">
 <p class="admonition-title">Verification</p>
-<p>If all is done correctly your assembly should have 32 Instances.</p>
+<p>Make sure to have you and/or a more experienced member/mentor of your team <a href="../../1A/focusing-on-improvement/" target="_blank" title="Focusing on Improvement Page"><strong>review your CAD!</strong></a> Your assembly should have 32 instances.</p>
 </div>
 <h3 id="parametric-modeling"><abbr title="Designed in a way that uses relationships between steps to maintain design intent">Parametric</abbr> Modeling</h3>
 <p>Some of the steps we took to complete this exercise could have been simplified.
@@ -3208,7 +3215,7 @@ As you use best practices, they’ll become second nature.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 12, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2024</span>
   </span>
 
     
