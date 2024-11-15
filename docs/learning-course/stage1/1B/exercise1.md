@@ -36,77 +36,77 @@ Keeping the key dimensions in a layout sketch makes it easy to adjust when neede
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s12.webp" style="width:100%">
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s12.webp" style="width:100%; data-description="0. Finished Part Studio."">
       <figcaption>0. Finished Part Studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s1.webp" style="width:100%">
-      <figcaption> 1. Begin by creating the layout sketch for the gearbox. Draw the pitch circles for the 60T and 12T gears. Set the pitch circles tangent to constrain the center-to-center distance between the gears. Constrain the centers of the two gears to be vertical.</figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s1.webp" style="width:100%; data-description="1. Begin by creating the layout sketch for the gearbox. Draw the pitch circles for the 60T and 12T gears. Set the pitch circles tangent to constrain the center-to-center distance between the gears. Constrain the centers of the two gears to be vertical."">
+      <figcaption>1. Begin by creating the layout sketch for the gearbox. Draw the pitch circles for the 60T and 12T gears. Set the pitch circles tangent to constrain the center-to-center distance between the gears. Constrain the centers of the two gears to be vertical.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s2.webp" style="width:100%">
-      <figcaption> 2. Add the outline of the motor, a 2.5" diameter circle, around the 12T gear that the motor is attached to. The layout sketch is now finished.  </figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s2.webp" style="width:100%; data-description="2. Add the outline of the motor, a 2.5 in diameter circle, around the 12T gear that the motor is attached to. The layout sketch is now finished."">
+      <figcaption>2. Add the outline of the motor, a 2.5" diameter circle, around the 12T gear that the motor is attached to. The layout sketch is now finished.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s3.webp" style="width:100%">
-      <figcaption> 3. Create a new sketch for the motor plate. Using the layout as the reference, draw a 1.125" hole for the bearing and a 0.8" hole for the motor boss (the nub that sticks out from the motor). Note that depending on your manufacturing processes and tolerances, you may need to draw your bearing holes slightly larger or smaller than nominal (1.125"). </figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s3.webp" style="width:100%; data-description="3. Create a new sketch for the motor plate. Using the layout as the reference, draw a 1.125 in hole for the bearing and a 0.8" hole for the motor boss (the nub that sticks out from the motor). Note that depending on your manufacturing processes and tolerances, you may need to draw your bearing holes slightly larger or smaller than nominal (1.125 in)."">
+      <figcaption>3. Create a new sketch for the motor plate. Using the layout as the reference, draw a 1.125" hole for the bearing and a 0.8" hole for the motor boss (the nub that sticks out from the motor). Note that depending on your manufacturing processes and tolerances, you may need to draw your bearing holes slightly larger or smaller than nominal (1.125").</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s4.webp" style="width:100%">
-      <figcaption> 4. Add two mounting holes for the motor. A good practice to constrain the holes is to draw and dimension a <it>bolt circle</it>, then draw the holes for the bolts on the bolt circle. This constrains the distance of the holes from the center of the motor with a single dimension. The bolt circle for the motor we are using is 2". </figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s4.webp" style="width:100%; data-description="4. Add two mounting holes for the motor. A good practice to constrain the holes is to draw and dimension a bolt circle, then draw the holes for the bolts on the bolt circle. This constrains the distance of the holes from the center of the motor with a single dimension. The bolt circle for the motor we are using is 2 in."">
+      <figcaption>4. Add two mounting holes for the motor. A good practice to constrain the holes is to draw and dimension a <it>bolt circle</it>, then draw the holes for the bolts on the bolt circle. This constrains the distance of the holes from the center of the motor with a single dimension. The bolt circle for the motor we are using is 2".</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s5.webp" style="width:100%">
-      <figcaption>  5. Add the four bolt holes for connecting the two plates. Use a center rectangle to create the construction geometry so that only two dimensions are required to constrain the holes.    </figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s5.webp" style="width:100%; data-description="5. Add the four bolt holes for connecting the two plates. Use a center rectangle to create the construction geometry so that only two dimensions are required to constrain the holes."">
+      <figcaption>5. Add the four bolt holes for connecting the two plates. Use a center rectangle to create the construction geometry so that only two dimensions are required to constrain the holes.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s6.webp" style="width:100%">
-      <figcaption> 6. Using centerpoint arcs, lines, and the sketch mirror tool, draw the outline for the plate around the holes and motor outline. The intelligent placement of the origin along the vertical line of symmetry allows you to use the right plane to mirror the plate outline. </figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s6.webp" style="width:100%; data-description="6. Using centerpoint arcs, lines, and the sketch mirror tool, draw the outline for the plate around the holes and motor outline. The intelligent placement of the origin along the vertical line of symmetry allows you to use the right plane to mirror the plate outline."">
+      <figcaption>6. Using centerpoint arcs, lines, and the sketch mirror tool, draw the outline for the plate around the holes and motor outline. The intelligent placement of the origin along the vertical line of symmetry allows you to use the right plane to mirror the plate outline.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s7.webp" style="width:100%">
-      <figcaption> 7. Extrude the motor plate to be 1/4" thick. </figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s7.webp" style="width:100%; data-description="7. Extrude the motor plate to be .25 in thick."">
+      <figcaption>7. Extrude the motor plate to be 1/4" thick.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s8.webp" style="width:100%">
-      <figcaption> 8. Use the <code>Spacer</code> Featurescript to add a round 3/8" diameter, 5/8" long spacer. </figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s8.webp" style="width:100%; data-description="8. Use the Spacer Featurescript to add a round .375 in diameter, .625 in long spacer."">
+      <figcaption>8. Use the <code>Spacer</code> Featurescript to add a round 3/8" diameter, 5/8" long spacer.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s9.webp" style="width:100%">
-      <figcaption> 9. Create the outer plate sketch on the face of the spacer. Use the <code>Use</code> sketch tool to copy the geometry and holes of the motor plate, but add a round cutout at the top.</figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s9.webp" style="width:100%; data-description="9. Create the outer plate sketch on the face of the spacer. Use the Use sketch tool to copy the geometry and holes of the motor plate, but add a round cutout at the top."">
+      <figcaption>9. Create the outer plate sketch on the face of the spacer. Use the <code>Use</code> sketch tool to copy the geometry and holes of the motor plate, but add a round cutout at the top.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s10.webp" style="width:100%">
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s10.webp" style="width:100%; data-description="10. Extrude the outer plate to be .25 in thick."">
       <figcaption>10. Extrude the outer plate to be 1/4" thick.</figcaption>
     </figure>
   </div>
@@ -123,7 +123,7 @@ Keeping the key dimensions in a layout sketch makes it easy to adjust when neede
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s12.webp" style="width:100%">
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s12.webp" style="width:100%; data-description="12. Finished part studio. Name the key sketches and parts. Set the material of the plate and spacers to 6061 Aluminum. The shaft has its material automatically determined from the Shaft Featurescript."">
       <figcaption> 12. Finished part studio. Name the key sketches and parts. Set the material of the plate and spacers to 6061 Aluminum. The shaft has its material automatically determined from the <code>Shaft</code> Featurescript.</figcaption>
     </figure>
   </div>
@@ -158,7 +158,7 @@ When putting together the assembly, you may need to use the "Lock Mate Inference
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s0.webp" style="width:100%; data-description="0. Final assembly."">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
@@ -225,8 +225,8 @@ When putting together the assembly, you may need to use the "Lock Mate Inference
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1b/exercises/e1/e1s0.webp" style="width:100%">
-      <figcaption>7. Finished assembly. Make sure to sort your parts into folders and name your replicate features. </figcaption>
+      <img src="/img/learning-course/stage1b/exercises/e1/e1s0.webp" style="width:100%; data-description="7. Finished assembly. Make sure to sort your parts into folders and name your replicate features."">
+      <figcaption>7. Finished assembly. Make sure to sort your parts into folders and name your replicate features.</figcaption>
     </figure>
   </div>
   <!-- Next and previous buttons -->

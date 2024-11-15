@@ -16,28 +16,28 @@ You will utilize the [`Spacer` Featurescript](https://cad.onshape.com/documents/
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s10.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s10.webp" style="width:100%; data-description="0. Final assembly."">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s1.webp" style="width:100%; data-description="1. Start by sketching the tube on the right plane."">
       <figcaption>1. Start by sketching the tube on the right plane.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s2.webp" style="width:100%">
-      <figcaption>2. Use the <code>Tube</code> Featurescript to create a thin-wall 1"x1" tube with no holes.</figcaption>
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s2.webp" style="width:100%; data-description="2. Use the Tube Converter Featurescript to create a thin-wall 1 in x 1 in tube with no holes."">
+      <figcaption>2. Use the <code>Tube Converter</code> Featurescript to create a thin-wall 1"x1" tube with no holes.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s3a.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s3a.webp" style="width:100%; data-description="3a. Start the climber hook sketch by drawing the construction geometry circle that represents the bar on which the hook will grab onto. The hole on the far right would be to attach a rope to pull the hook with."">
       <figcaption>3a. Start the climber hook sketch by drawing the construction geometry circle that represents the bar on which the hook will grab onto. The hole on the far right would be to attach a rope to pull the hook with.</figcaption>
     </figure>
   </div>
@@ -63,14 +63,14 @@ You will utilize the [`Spacer` Featurescript](https://cad.onshape.com/documents/
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s5.webp" style="width:100%">
-      <figcaption>5. Make the hook 3/16" thick. Select <code>New</code> as the extrude type to make the extrude a new part.  </figcaption>
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s5.webp" style="width:100%; data-description="5. Make the hook 3/16" thick. Select <code>New</code> as the extrude type to make the extrude a new part."">
+      <figcaption>5. Make the hook 3/16" thick. Select <code>New</code> as the extrude type to make the extrude a new part.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s6.webp" style="width:100%; data-description="6. Fillet the bottom two corners with a 0.25" radius."">
       <figcaption>6. Fillet the bottom two corners with a 0.25" radius.</figcaption>
     </figure>
   </div>
@@ -81,28 +81,28 @@ You will utilize the [`Spacer` Featurescript](https://cad.onshape.com/documents/
         <source src="/img/learning-course/stage1a/exercises/e4/e4s7.webm" type="video/webm">
         Your browser does not support the video tag.
       </video>
-      <figcaption>7. Use the <code>Spacer</code> Featurescript to add a 0.5" diameter spacer. Use the `Up to Face` end condition to make the spacer match the tube width. </figcaption>
+      <figcaption>7. Use the <code>Spacer</code> Featurescript to add a 0.5" diameter spacer. Use the `Up to Face` end condition to make the spacer match the tube width.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s8.webp" style="width:100%">
-      <figcaption>8. Use the <code>Use</code> sketch tool to add the mounting holes to the tube. </figcaption>
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s8.webp" style="width:100%; data-description="8. Use the Use sketch tool to add the mounting holes to the tube."">
+      <figcaption>8. Use the <code>Use</code> sketch tool to add the mounting holes to the tube.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s9.webp" style="width:100%">
-      <figcaption>9. Name the key sketches and parts. Set the material of the hook and spacer to 6061 Aluminum. </figcaption>
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s9.webp" style="width:100%; data-description="9. Name the key sketches and parts. Set the material of the hook and spacer to 6061 Aluminum."">
+      <figcaption>9. Name the key sketches and parts. Set the material of the hook and spacer to 6061 Aluminum.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e4/e4s10.webp" style="width:100%">
-      <figcaption>10. Finished assembly. </figcaption>
+      <img src="/img/learning-course/stage1a/exercises/e4/e4s10.webp" style="width:100%; data-description="10. Finished assembly."">
+      <figcaption>10. Finished assembly.</figcaption>
     </figure>
   </div>
 

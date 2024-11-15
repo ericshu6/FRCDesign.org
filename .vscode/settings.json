@@ -21,6 +21,7 @@
         "drivetrains",
         "Drivetrains",
         "Fabworks",
+        "Featurescript",
         "featurescripts",
         "Featurescripts",
         "fontawesome",
@@ -42,6 +43,7 @@
         "superfences",
         "twemoji",
         "Uncreate",
+        "webm",
         "writeups"
     ],
     "python.defaultInterpreterPath": "/usr/local/bin/python"
