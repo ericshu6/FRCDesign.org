@@ -15,7 +15,7 @@ In this exercise, you will use a [configurable 3D printed crush block](https://c
 
 ???+ example "Crush Blocks and Crush Plates"
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/crush-blocks.webp" width="65%">
+      <img src="/img/learning-course/stage1c/index-centering/crush-blocks.webp" width="65%" data-description="A 3D printed crush block (left) and crush plate (right). Crush plates tend to work well for the middle of the tubes where it may be difficult to insert a crush block.">
       <figcaption>A 3D printed crush block (left) and crush plate (right). Crush plates tend to work well for the middle of the tubes where it may be difficult to insert a crush block.</figcaption>
     </figure>
 
@@ -29,14 +29,14 @@ In this exercise, you will use a [configurable 3D printed crush block](https://c
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/s0.webp" style="width:100%" data-description="0. Final Part Studio.">
       <figcaption>0. Final Part Studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/s1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/s1.webp" style="width:100%" data-description="1. Begin by creating the layout sketch on the top plane.">
       <figcaption>1. Begin by creating the layout sketch on the top plane.
                   Just like with the previous exercise, we define the distance between the rollers by mirroring the indexer wheel.
                   We add 0.016" to the chain c-c to account for stretch in the chain.  </figcaption>
@@ -45,14 +45,14 @@ In this exercise, you will use a [configurable 3D printed crush block](https://c
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/s2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/s2.webp" style="width:100%" data-description="2. Model the thin-wall 2x1 tubes with Extrude Individual and Tube Converter.">
       <figcaption>2. Model the thin-wall 2x1 tubes with Extrude Individual and Tube Converter.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/s3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/s3.webp" style="width:100%" data-description="3. Model the top plates and bottom plates.">
       <figcaption>3. Model the top plates and bottom plates. 
                   The top plates can be modeled in the same sketch since they are on the same plane.
                   Pay close attention to the plate constraints in the solution document.</figcaption>
@@ -61,7 +61,7 @@ In this exercise, you will use a [configurable 3D printed crush block](https://c
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/s4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/s4.webp" style="width:100%" data-description="4. Pocket the plates using the <code>Part Lighten</code> featurescript.">
       <figcaption>4. Pocket the plates using the <code>Part Lighten</code> featurescript. 
                   Recall that you can select an entire sketch to automatically select all the ribs.</figcaption>
     </figure>
@@ -79,21 +79,21 @@ In this exercise, you will use a [configurable 3D printed crush block](https://c
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/s6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/s6.webp" style="width:100%" data-description="6. Model the 5mm HTD belt.">
       <figcaption>6. Model the 5mm HTD belt.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/s7.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/s7.webp" style="width:100%" data-description="7. Model the shafts.">
       <figcaption>7. Model the shafts.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/s0.webp" style="width:100%" data-description="8. Finish the part studio by naming your features and organizing them into folders. Assign the part materials accordingly.">
       <figcaption>8. Finish the part studio by naming your features and organizing them into folders. Assign the part materials accordingly.</figcaption>
     </figure>
   </div>
@@ -116,21 +116,21 @@ In this exercise, you will use a [configurable 3D printed crush block](https://c
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/a0.webp" style="width:100%" data-description="0. Final assembly.">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/a1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/a1.webp" style="width:100%" data-description="1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin.">
       <figcaption>1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/a2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/a2.webp" style="width:100%" data-description="2. Insert, fasten, and replicate the 2" long, 3/8" OD plate spacers.">
       <figcaption>2. Insert, fasten, and replicate the 2" long, 3/8" OD plate spacers. 
                 Insert, fasten, and replicate the 1.5" long, 3/8" OD motor spacers.
                 Copy and fasten the bottom gear plate to the 2" spacer.
@@ -150,7 +150,7 @@ In this exercise, you will use a [configurable 3D printed crush block](https://c
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/a4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/a4.webp" style="width:100%" data-description="4. Insert and fasten the motor, motor pulley, 48T 3D printed HTD pulley with 1/2" hex insert, 30T gears, and configurable spacer stacks fro MKCad. Fasten the belt to the pulley. Also fasten the shafts.">
       <figcaption>4. Insert and fasten the motor, motor pulley, 48T 3D printed HTD pulley with 1/2" hex insert, 30T gears, and configurable spacer stacks fro MKCad. Fasten the belt to the pulley. Also fasten the shafts.</figcaption>
     </figure>
   </div>
@@ -177,21 +177,21 @@ In this exercise, you will use a [configurable 3D printed crush block](https://c
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/a7.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/a7.webp" style="width:100%" data-description="7. Insert, configure, and fasten the Configurable Spacer Stack to fill the gap on the wheel shaft.">
       <figcaption>7. Insert, configure, and fasten the Configurable Spacer Stack to fill the gap on the wheel shaft.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/a8.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/a8.webp" style="width:100%" data-description="8. Insert, fasten, and replicate all of the required fasteners.">
       <figcaption>8. Insert, fasten, and replicate all of the required fasteners. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/index-centering/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/index-centering/a0.webp" style="width:100%" data-description="9. To finish the assembly, organize your components into folders and name your replicates.">
       <figcaption>9. To finish the assembly, organize your components into folders and name your replicates.</figcaption>
     </figure>
   </div>

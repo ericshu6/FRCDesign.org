@@ -13,25 +13,25 @@ Follow the instructions in the slides to create your elevator layout sketches.
     <!-- Full-width images with number and caption text -->
     <div id="slide1" class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-elevator/master-sketch.webp" style="width:40%">
+            <img src="/img/learning-course/stage2-elevator/master-sketch.webp" style="width:40%" data-description="A clean view of the front sketch of the elevator tubes.">
             <figcaption>A clean view of the front sketch of the elevator tubes.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-elevator/elevatorSideExtendedSketch.webp" style="width:75%" style="border:5px solid #ADADAD">
+            <img src="/img/learning-course/stage2-elevator/elevatorSideExtendedSketch.webp" style="width:75%" style="border:5px solid #ADADAD" data-description="As practice for stage 3, we'll start with defining the position of the elevator in relation to drivetrain side sketch. Use rectangles to represent the 2x2 tube and the length of the stages. Add rectangles to represent the bottom tubes of each stage and carriage as well.">
             <figcaption> As practice for stage 3, we'll start with defining the position of the elevator in relation to drivetrain side sketch. Use rectangles to represent the 2x2 tube and the length of the stages. Add rectangles to represent the bottom tubes of each stage and carriage as well. </figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-elevator/elevatorSideRetractedSketch.webp" style="width:70%" style="border:5px solid #ADADAD">
+            <img src="/img/learning-course/stage2-elevator/elevatorSideRetractedSketch.webp" style="width:70%" style="border:5px solid #ADADAD" data-description="Feel free to create a retracted side sketch (constraining it to the geometry of the first side sketch) to help double check geometry and integration. This especially helpful when designing a full robot.">
             <figcaption> Feel free to create a retracted side sketch (constraining it to the geometry of the first side sketch) to help double check geometry and integration. This especially helpful when designing a full robot. </figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-elevator/elevatorFrontSketch.webp" style="width:75%" style="border:5px solid #ADADAD">
+            <img src="/img/learning-course/stage2-elevator/elevatorFrontSketch.webp" style="width:75%" style="border:5px solid #ADADAD" data-description="Now add the front sketch to define all the elevator tubes, the width of the elevator, and the distance between stages on the side.">
             <figcaption> Now add the front sketch to define all the elevator tubes, the width of the elevator, and the distance between stages on the side.</figcaption>
         </figure>
     </div>

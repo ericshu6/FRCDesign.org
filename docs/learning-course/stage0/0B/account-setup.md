@@ -17,21 +17,21 @@ To start registering, go to the [Onshape for Education](https://onshape.com/educ
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
       <figure>
-          <img src="/img/learning-course/stage0/setup/signup.webp" style="width:90%; border:5px solid #ADADAD; border-radius: 2%">
+          <img src="/img/learning-course/stage0/setup/signup.webp" style="width:90%; border:5px solid #ADADAD; border-radius: 2%" data-description="Fill out the details in the sign up form.">
           <figcaption> Fill out the details in the sign up form. </figcaption>
       </figure>
   </div>
 
   <div class="mySlides fade">
       <figure>
-          <img src="/img/learning-course/stage0/setup/edusignup2.webp" style="width:90%; border:5px solid #ADADAD; border-radius: 2%">
+          <img src="/img/learning-course/stage0/setup/edusignup2.webp" style="width:90%; border:5px solid #ADADAD; border-radius: 2%" data-description="On the next screen, select that you are a student and that you are in grade school.">
           <figcaption> On the next screen, select that you are a student and that you are in grade school.</figcaption>
       </figure>
   </div>
 
   <div class="mySlides fade">
       <figure>
-          <img src="/img/learning-course/stage0/setup/edusignup3.webp" style="width:60%; border:5px solid #ADADAD; border-radius: 2%">
+          <img src="/img/learning-course/stage0/setup/edusignup3.webp" style="width:60%; border:5px solid #ADADAD; border-radius: 2%" data-description="Finally, fill the form with your school information. You may enter "Robotics" as the reason for using Onshape.">
           <figcaption> Finally, fill the form with your school information. You may enter "Robotics" as the reason for using Onshape. </figcaption>
       </figure>
   </div>

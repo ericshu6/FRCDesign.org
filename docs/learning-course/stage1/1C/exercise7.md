@@ -11,7 +11,7 @@ If you have a 3D printer, this can be a good option.
 
 ???+ example "3D Printed Spacer Block"
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/3dp-spacer.webp" width="65%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/3dp-spacer.webp" width="65%" data-description="Multiple spacers can be combined into single 3D printed block to reduce part count.">
       <figcaption>Multiple spacers can be combined into single 3D printed block to reduce part count. </figcaption>
     </figure>
 
@@ -24,14 +24,14 @@ If you have a 3D printer, this can be a good option.
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/s0.webp" style="width:100%" data-description="0. Final Part Studio.">
       <figcaption>0. Final Part Studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/s1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/s1.webp" style="width:100%" data-description="1. Begin by creating the layout sketch on an offset mate connector 3" above the origin.">
       <figcaption>1. Begin by creating the layout sketch on an offset mate connector 3" above the origin. 
                   We subtract 0.015" from each of the belt c-c's to reduce friction since we are linking multiple belts in series.</figcaption>
     </figure>
@@ -49,7 +49,7 @@ If you have a 3D printer, this can be a good option.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/s3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/s3.webp" style="width:100%" data-description="3. Extrude the bottom plate. Then, create the top plate offset 5" from the bottom plate.">
       <figcaption>3. Extrude the bottom plate. Then, create the top plate offset 5" from the bottom plate. 
                     Pay close attention to the plate sketches in the solution document. 
                     Note that the 1x1" tube plug requires a 4 holes spaced 3/8" apart from each other in a square pattern. </figcaption>
@@ -58,35 +58,35 @@ If you have a 3D printer, this can be a good option.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/s4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/s4.webp" style="width:100%" data-description="4. Sketch, extrude, then tube convert the thin-wall 1x1 tube.">
       <figcaption>4. Sketch, extrude, then tube convert the thin-wall 1x1 tube.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/s5.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/s5.webp" style="width:100%" data-description="5. Model the the 3D printed motor spacer block and extrude it to be 1" long.">
       <figcaption>5. Model the the 3D printed motor spacer block and extrude it to be 1" long.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/s6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/s6.webp" style="width:100%" data-description="6. Model the belts. The calculated pitch length is slightly under a multiple of 5 mm since we subtracted 0.015" from each c-c.">
       <figcaption>6. Model the belts. The calculated pitch length is slightly under a multiple of 5 mm since we subtracted 0.015" from each c-c.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/s7.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/s7.webp" style="width:100%" data-description="7. Use the <code>Assembly Mirror</code> Featurescript to create a reference mate connector for the 1x1 tube. This will be used in the assembly for mating.">
       <figcaption>7. Use the <code>Assembly Mirror</code> Featurescript to create a reference mate connector for the 1x1 tube. This will be used in the assembly for mating.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/s0.webp" style="width:100%" data-description="8. Finish the part studio by naming your features and organizing them into folders. Assign the part materials accordingly.">
       <figcaption>8. Finish the part studio by naming your features and organizing them into folders. Assign the part materials accordingly.</figcaption>
     </figure>
   </div>
@@ -108,14 +108,14 @@ If you have a 3D printer, this can be a good option.
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/a0.webp" style="width:100%" data-description="0. Final assembly.">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/a1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/a1.webp" style="width:100%" data-description="1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin.">
       <figcaption>1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin.</figcaption>
     </figure>
   </div>
@@ -132,7 +132,7 @@ If you have a 3D printer, this can be a good option.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/a3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/a3.webp" style="width:100%" data-description="3. Insert four 1x1 tube plugs and fasten them into place on the 1x1 tubes.">
       <figcaption>3. Insert four 1x1 tube plugs and fasten them into place on the 1x1 tubes.
                     Then, copy and fasten the rest of the frame pieces on the right hand side.</figcaption>
     </figure>
@@ -140,7 +140,7 @@ If you have a 3D printer, this can be a good option.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/a4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/a4.webp" style="width:100%" data-description="4. Insert the Configurable Roller assembly from the link at the top of this page.">
       <figcaption>4. Insert the Configurable Roller assembly from the link at the top of this page.
                   Set the overall roller length to 5" and use 24T pulleys on each end. Duplicate and fasten the roller assembly into place.
                   Then, insert and fasten the motor and motor pulleys. Also fasten the left hand side belts into place. </figcaption>
@@ -160,14 +160,14 @@ If you have a 3D printer, this can be a good option.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/a6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/a6.webp" style="width:100%" data-description="6. Insert, fasten, and replicate all of the required fasteners.">
       <figcaption>6. Insert, fasten, and replicate all of the required fasteners. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/vertical-rollers/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/vertical-rollers/a0.webp" style="width:100%" data-description="7. To finish the assembly, organize your components into folders and name your replicates.">
       <figcaption>7. To finish the assembly, organize your components into folders and name your replicates.</figcaption>
     </figure>
   </div>

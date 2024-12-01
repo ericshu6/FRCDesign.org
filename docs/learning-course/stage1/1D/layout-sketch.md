@@ -15,28 +15,28 @@ Start by **creating a new Onshape Document called `Stage 1D Robot`** and within 
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtFinalLayout.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtFinalLayout.webp" style="width:100%" data-description="0. The final layout sketch.">
       <figcaption>0. The final layout sketch.</figcaption>
     </figure>
   </div>
 
   <!-- <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/originCube.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/originCube.webp" style="width:100%" data-description="1. Start by inserting the origin cube.">
       <figcaption>1. Start by inserting the origin cube.</figcaption>
     </figure>
   </div> -->
 
   <!-- <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtSideLayout1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtSideLayout1.webp" style="width:100%" data-description="2.">
       <figcaption>2. </figcaption>
     </figure>
   </div> -->
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtSideLayout2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtSideLayout2.webp" style="width:100%" data-description="1. Draw the side profile of the drivetrain on the Right Plane. We place the tube 1.75" from the ground, which is the offset from the ground to the bottom of the tube for the MK4i modules.">
       <figcaption>1. Draw the side profile of the drivetrain on the Right Plane. We place the tube 1.75" from the ground, which is the offset from the ground to the bottom of the tube for the MK4i modules. 
                   Then, draw the wheel clearance box, which represents the area that the wheel takes up. 
                   For the MK4i modules, the box is 4.625" wide.</figcaption>
@@ -65,7 +65,7 @@ Start by **creating a new Onshape Document called `Stage 1D Robot`** and within 
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtTopLayout3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtTopLayout3.webp" style="width:100%" data-description="4. To sketch the tubes, draw a square 1" smaller than the previous square.">
       <figcaption>4. To sketch the tubes, draw a square 1" smaller than the previous square. 
                   This will represent the four 2"x1" tubes that make up the outer frame. 
                   Then, draw the top profile of the 2"x2" tube.
@@ -76,7 +76,7 @@ Start by **creating a new Onshape Document called `Stage 1D Robot`** and within 
 
   <!-- <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtTopLayout4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtTopLayout4.webp" style="width:100%" data-description="5. Next, we need to make the cutouts on the drivetube for the swerve modules. Start by drawing two lines, each offset by 4.25" from the edge. This is the required offset for MK4i modules. Other modules will differ.">
       <figcaption>5. Next, we need to make the cutouts on the drivetube for the swerve modules. Start by drawing two lines, each offset by 4.25" from the edge. This is the required offset for MK4i modules. Other modules will differ.</figcaption>
     </figure>
   </div> -->
@@ -94,7 +94,7 @@ Start by **creating a new Onshape Document called `Stage 1D Robot`** and within 
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtFinalLayout.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtFinalLayout.webp" style="width:100%" data-description="6. Finally, name your sketches and organize them into folders in the feature tree. Your sketches should all be fully defined.">
       <figcaption>6. Finally, name your sketches and organize them into folders in the feature tree. Your sketches should all be fully defined.</figcaption>
     </figure>
   </div>

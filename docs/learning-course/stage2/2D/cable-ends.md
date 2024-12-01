@@ -5,7 +5,7 @@
 The ends of the cable are arguably the most important part of elevator rigging to do right. If they are handled improperly it can cause issues with rigging falling apart during impacts; this usually takes the elevator (and anything requiring it to move) completely out of commission for the match. Cascade rigging consists of at least one loop of cable per stage, which drives the motion for the next stage.
 
 <figure markdown="span">
-    <img src="/img/learning-course/stage2-elevator/carriage.webp" style="width:50%">
+    <img src="/img/learning-course/stage2-elevator/carriage.webp" style="width:50%" data-description="Elevator carriage with ratchet plate">
     <figcaption>Elevator carriage with ratchet plate</figcaption>
 
 </figure>
@@ -18,7 +18,7 @@ It is important to tie a self-tightening knot in the cable to prevent this from 
 <br>
 
 <figure markdown="span">
-    <img src="/img/learning-course/stage2-elevator/ratchet-plate.webp" style="width:50%">
+    <img src="/img/learning-course/stage2-elevator/ratchet-plate.webp" style="width:50%" data-description="Close up of ratchet plate">
     <figcaption>Close up of ratchet plate</figcaption>
 </figure>
 

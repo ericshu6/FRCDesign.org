@@ -5,7 +5,7 @@
 Motors spin! They transform electrical energy supplied by the robot battery into rotational motion. From intaking to climbing to driving, just about anything on your robot can be moved with the right motor(s).
 
 <figure>
-    <img src="\img\learning-course\stage1b\motorLineup.webp" style="width:100%">
+    <img src="\img\learning-course\stage1b\motorLineup.webp" style="width:100%" data-description="Some of the motors available for use in FRC.">
     <figcaption>Some of the motors available for use in FRC.</figcaption>
 </figure>
 
@@ -17,7 +17,7 @@ In FRC, a number of different motor options are available, all with different ad
 * The motors have anywhere from 2 to 11 holes for mounting, but all are on a 2" diameter bolt circle (See below image). The holes are #10-32 threaded, as #10-32 is the hardware standard for FRC COTS parts.
 
 <figure>
-    <img src="\img\learning-course\stage1b\cimBoltCircle.webp" style="width:50%">
+    <img src="\img\learning-course\stage1b\cimBoltCircle.webp" style="width:50%" data-description="Mounting holes for CIM class motors are on a 2" diameter bolt circle. All of the holes are 1" away from the center of the motor.">
     <figcaption>Mounting holes for CIM class motors are on a 2" diameter bolt circle. All of the holes are 1" away from the center of the motor.</figcaption>
 </figure>
 

@@ -13,7 +13,7 @@
 
 <center>
 <figure>
-    <img src="/img/learning-course/stage2-pivot/PivotPartStudio.webp" width="70%">
+    <img src="/img/learning-course/stage2-pivot/PivotPartStudio.webp" width="70%" data-description="Finished part studio.">
     <figcaption>Finished part studio.</figcaption>
 </figure>
 </center>

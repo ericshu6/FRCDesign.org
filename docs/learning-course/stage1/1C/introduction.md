@@ -51,14 +51,14 @@ As mentioned in previous sections of Stage 1, you should maintain a consistent o
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/origin-cube-tutorial/origin-cube-tutorial-1.webp" style="width:90%">
+      <img src="/img/learning-course/stage1c/origin-cube-tutorial/origin-cube-tutorial-1.webp" style="width:90%" data-description="Place the Origin Cube featurescript as the first feature in the part studio.">
       <figcaption>Place the Origin Cube featurescript as the first feature in the part studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/origin-cube-tutorial/origin-cube-tutorial-2.webp" style="width:90%">
+      <img src="/img/learning-course/stage1c/origin-cube-tutorial/origin-cube-tutorial-2.webp" style="width:90%" data-description="Model your mechanism.">
       <figcaption>Model your mechanism.</figcaption>
     </figure>
   </div>

@@ -14,7 +14,7 @@ While most shooting games involve launching a ball, the fundamentals between bal
 
 -   <center><img src="\img\learning-course\stage2-shooter\2910shooter.gif" width="100%" style="border:5px solid #ADADAD; border-radius: 2%"></center>
 
--   <center><img src="\img\learning-course\stage2-shooter\1690shooter.gif" width="88%" style="border:5px solid #ADADAD; border-radius: 2%"></center>
+-   <center data-description="<center>FRC Team 2910 and's 1690's 2021 Robot Launching Game Pieces</center>"><img src="\img\learning-course\stage2-shooter\1690shooter.gif" width="88%" style="border:5px solid #ADADAD; border-radius: 2%" data-description="<center>FRC Team 2910 and's 1690's 2021 Robot Launching Game Pieces</center>"></center data-description="<center>FRC Team 2910 and's 1690's 2021 Robot Launching Game Pieces</center>">
 
 </div>
 
@@ -33,7 +33,7 @@ The most common way to launch game pieces is with flywheel shooters. Other metho
 
 -   <center><img src="/img/mechanism-examples/shooter/1678_2022_shooter.webp" width="100%" style="border-radius: 2%"></center>
 
--   <center><img src="/img/learning-course/stage2-shooter/1678-2024-shooter.webp" width="100%" style="border-radius: 2%"></center>
+-   <center data-description="1678's 2022 and 2024 Flywheel Shooters. The 2022 shooter launched 9.5" diameter inflated balls and the 2024 shooter launched 14" diameter foam rings."><img src="/img/learning-course/stage2-shooter/1678-2024-shooter.webp" width="100%" style="border-radius: 2%" data-description="1678's 2022 and 2024 Flywheel Shooters. The 2022 shooter launched 9.5" diameter inflated balls and the 2024 shooter launched 14" diameter foam rings."></center data-description="1678's 2022 and 2024 Flywheel Shooters. The 2022 shooter launched 9.5" diameter inflated balls and the 2024 shooter launched 14" diameter foam rings.">
 
 </div>
 <figure>

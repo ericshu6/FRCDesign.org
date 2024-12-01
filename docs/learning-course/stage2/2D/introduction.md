@@ -4,7 +4,7 @@
 Elevators pop up commonly in FRC and are used to move mechanisms in a compact linear fashion. This is usually to reach higher places with a mechanism, reach far out from your frame perimeter, or even climb on a field element. Elevators are typically classified by the way they are "Rigged". Elevator "Rigging" is what allows the motor to transmit motion to each stage. FRC elevators are usually rigged to be either "Cascade" or "Continuous." 
 
 <br>
-<figure><img align="left"  src="\img\learning-course\stage2-elevator\2468elevator.gif" width="55%" style="border:5px solid #ADADAD"><img align="right" src="\img\learning-course\stage2-elevator\4414elevator.gif" width="39%" style="border:5px solid #ADADAD"></figure>
+<figure data-description="<center>2468's Cascade Elevator and 4414's Continuous Elevator</center>"><img align="left"  src="\img\learning-course\stage2-elevator\2468elevator.gif" width="55%" style="border:5px solid #ADADAD" data-description="<center>2468's Cascade Elevator and 4414's Continuous Elevator</center>"><img align="right" src="\img\learning-course\stage2-elevator\4414elevator.gif" width="39%" style="border:5px solid #ADADAD" data-description="<center>2468's Cascade Elevator and 4414's Continuous Elevator</center>"></figure data-description="<center>2468's Cascade Elevator and 4414's Continuous Elevator</center>">
 <center><figcaption>2468's Cascade Elevator and 4414's Continuous Elevator</figcaption></center>
 <br>
 

@@ -6,7 +6,7 @@ You will be designing a flywheel shooter to launch a Power Cell, a 7 inch diamet
 
 The shooter will be designed to shoot the Power Cells into the high goal from just behind the white "Initiation Line."
 <figure>
-    <img src="\img\learning-course\stage2-shooter\Shooter Assembly.webp" style="width:60%">
+    <img src="\img\learning-course\stage2-shooter\Shooter Assembly.webp" style="width:60%" data-description="Finished shooter assembly.">
     <figcaption>Finished shooter assembly.</figcaption>
 </figure>
 

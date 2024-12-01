@@ -15,7 +15,7 @@ Check out [this page](../../../best-practices/sub-document-setup.md "Sub-Documen
 !!! Example "Multi-Part Part Studio Example"
     Notice how there's only one instance of each unique part within this part studio. The part studio resembles the completed product, as the parts are modeled relative to each other.
     <figure>
-        <img src="\img\learning-course\stage1a\1a-PartStudio.webp" width="55%">
+        <img src="\img\learning-course\stage1a\1a-PartStudio.webp" width="55%" data-description="Example of a part studio">
         <figcaption> Example of a part studio</figcaption>
     </figure>
 

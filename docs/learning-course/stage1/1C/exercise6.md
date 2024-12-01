@@ -16,7 +16,7 @@ However, they can be pricy and only come in certain lengths, though you can easi
 
 ???+ Example "Spacer Stock"
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/spacers.webp" width="100%">
+      <img src="/img/learning-course/stage1c/dir-swap/spacers.webp" width="100%" data-description="Spacers can be 3D printed (left), purchased as COTS pre-cut spacers (center), or fabricated in-house from spacer stock (right). (Image Source: WCP)">
       <figcaption>Spacers can be 3D printed (left), purchased as COTS pre-cut spacers (center), or fabricated in-house from spacer stock (right). (Image Source: WCP)</figcaption>
     </figure>
 
@@ -33,21 +33,21 @@ This helps make it clear which parts are custom and which are COTS.
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/s0.webp" style="width:100%" data-description="0. Final Part Studio.">
       <figcaption>0. Final Part Studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/s1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/s1.webp" style="width:100%" data-description="1. Begin by creating the layout sketch on the right plane.">
       <figcaption>1. Begin by creating the layout sketch on the right plane. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/s2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/s2.webp" style="width:100%" data-description="2. Using a mate connector offset 0.5" from the Right plane as the sketch plane, sketch the plate.">
       <figcaption>2. Using a mate connector offset 0.5" from the Right plane as the sketch plane, sketch the plate. 
                   Pay close attention to the clearances used to define the edges of the plate.
                   The location of the two spacers to the left of the motor are driven by the tangency between the 3/8" OD spacer and the 2.5" motor clearance circle.</figcaption>
@@ -66,35 +66,35 @@ This helps make it clear which parts are custom and which are COTS.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/s4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/s4.webp" style="width:100%" data-description="4. Mirror the plate across the Right plane and add the motor cutout.">
       <figcaption>4. Mirror the plate across the Right plane and add the motor cutout.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/s5.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/s5.webp" style="width:100%" data-description="5. If you choose to not use COTS spacers, you can use the <code>Spacer</code> Featurescript to create the plate spacer.">
       <figcaption>5. If you choose to not use COTS spacers, you can use the <code>Spacer</code> Featurescript to create the plate spacer.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/s6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/s6.webp" style="width:100%" data-description="6. Model all of the shafts and belts. You should be feeling very comfortable using the <code>Shaft</code> and <code>Belt & Chain Gen</code> Featurescripts at this point.">
       <figcaption>6. Model all of the shafts and belts. You should be feeling very comfortable using the <code>Shaft</code> and <code>Belt & Chain Gen</code> Featurescripts at this point.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/s7.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/s7.webp" style="width:100%" data-description="7. Pocket the two plates. Since the plates are identical apart from the motor cutout, you can use same sketch to pocket both plates. Only create one sketch with the ribs.">
       <figcaption>7. Pocket the two plates. Since the plates are identical apart from the motor cutout, you can use same sketch to pocket both plates. Only create one sketch with the ribs.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/s0.webp" style="width:100%" data-description="8. Finish the part studio by naming your features and organizing them into folders. Assign the part materials accordingly.">
       <figcaption>8. Finish the part studio by naming your features and organizing them into folders. Assign the part materials accordingly.</figcaption>
     </figure>
   </div>
@@ -116,35 +116,35 @@ This helps make it clear which parts are custom and which are COTS.
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/a0.webp" style="width:100%" data-description="0. Final assembly.">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/a1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/a1.webp" style="width:100%" data-description="1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin.">
       <figcaption>1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/a2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/a2.webp" style="width:100%" data-description="2. Fasten the spacer to the plate and replicate it.">
       <figcaption>2. Fasten the spacer to the plate and replicate it.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/a3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/a3.webp" style="width:100%" data-description="3. Insert, fasten, and replicate the bearings. Also insert the 2" flex wheel and Kraken motor from MKCad.">
       <figcaption>3. Insert, fasten, and replicate the bearings. Also insert the 2" flex wheel and Kraken motor from MKCad.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/a4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/a4.webp" style="width:100%" data-description="4. Insert and fasten the pulleys pulleys and spacers. Use the Configurable Spacer Stack from MKCad for all the spacers.">
       <figcaption>4. Insert and fasten the pulleys pulleys and spacers. Use the Configurable Spacer Stack from MKCad for all the spacers. 
                   For the pulleys, you can utilize 3D printed HTD pulleys from the MKCad library with 1/2" hex inserts.
                   Also fasten the belts into place. </figcaption>
@@ -153,21 +153,21 @@ This helps make it clear which parts are custom and which are COTS.
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/a5.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/a5.webp" style="width:100%" data-description="5. Insert, fasten, and replicate all of the required fasteners.">
       <figcaption>5. Insert, fasten, and replicate all of the required fasteners.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/a6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/a6.webp" style="width:100%" data-description="6. When replicating the plate bolts, flip the mounting side for this bolt so that the nut does not hit the belt.">
       <figcaption>6. When replicating the plate bolts, flip the mounting side for this bolt so that the nut does not hit the belt. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dir-swap/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dir-swap/a0.webp" style="width:100%" data-description="7. To finish the assembly, organize your components into folders and name your replicates.">
       <figcaption>7. To finish the assembly, organize your components into folders and name your replicates.</figcaption>
     </figure>
   </div>

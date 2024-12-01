@@ -9,7 +9,7 @@
 4. Use a sketch circular pattern to represent the stowed position of your intake rollers and define where you want the pivot to be
 
 <figure>
-    <img src="/img/learning-course/stage2-slapdown/masterSketch.webp" width="70%" style="border:5px solid #ADADAD">
+    <img src="/img/learning-course/stage2-slapdown/masterSketch.webp" width="70%" style="border:5px solid #ADADAD" data-description="Finished Layout Sketch">
     <figcaption>Finished Layout Sketch</figcaption>
 </figure>
 

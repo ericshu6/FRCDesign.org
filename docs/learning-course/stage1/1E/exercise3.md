@@ -15,37 +15,37 @@ Some teams may choose to pocket their bellypan to reduce weight and make wiring 
     <!-- Full-width images with number and caption text -->
     <div id="slide1" class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s0.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s0.webp" style="width:100%" data-description="0. Pocketed bellypan.">
             <figcaption>0. Pocketed bellypan. </figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s1.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s1.webp" style="width:100%" data-description="1. Draw two perpendicular lines that are offset 45 degrees from vertical.">
             <figcaption>1. Draw two perpendicular lines that are offset 45 degrees from vertical. </figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s2.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s2.webp" style="width:100%" data-description="2. Linear pattern the lines until they completely cover the bellypan. These will be the ribs for the bellypan.">
             <figcaption>2. Linear pattern the lines until they completely cover the bellypan. These will be the ribs for the bellypan.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s3.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s3.webp" style="width:100%" data-description="3. Offset the outline of the bellypan 0.5”.">
             <figcaption>3. Offset the outline of the bellypan 0.5”.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s4.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s4.webp" style="width:100%" data-description="4.  Connect any islands that might result from mounting holes being too far from a rib. One way to fix this is to add a slot connecting the island to a rib.">
             <figcaption>4.  Connect any islands that might result from mounting holes being too far from a rib. One way to fix this is to add a slot connecting the island to a rib.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s0.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/pocket/pocket1s0.webp" style="width:100%" data-description="5. Use a pocketing Featurescript to pocket the bellypan. Recommended settings are 0.15” wide ribs and 3/16” tool radius.">
             <figcaption>5. Use a pocketing Featurescript to pocket the bellypan. Recommended settings are 0.15” wide ribs and 3/16” tool radius.</figcaption>
         </figure>
     </div>

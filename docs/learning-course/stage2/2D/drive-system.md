@@ -6,7 +6,7 @@ Elevators need motors to power them. Once you have the rigging planned out you c
 
 <br>
 <figure markdown="span">
-    <img src="/img/learning-course/stage2-elevator/gearbox.webp" style="width:60%">
+    <img src="/img/learning-course/stage2-elevator/gearbox.webp" style="width:60%" data-description="Elevator drive system close up">
     <figcaption>Elevator drive system close up</figcaption>
 </figure>
 

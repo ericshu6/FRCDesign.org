@@ -13,7 +13,7 @@
 10. Name and give materials and appearances to all your parts
 
 <figure>
-    <img src="/img/learning-course/stage2-slapdown/intakePartStudio.webp" width="70%">
+    <img src="/img/learning-course/stage2-slapdown/intakePartStudio.webp" width="70%" data-description="Finished Part Studio">
     <figcaption> Finished Part Studio </figcaption>
 </figure>
 

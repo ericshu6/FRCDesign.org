@@ -11,7 +11,7 @@ In FRC, robot structures are typically constructed out of aluminum box tubing, s
 
 ???+ Example "Box Tube Example"
     <figure>
-      <img src="\img\learning-course\stage1a\tube.webp" width="45%">
+      <img src="\img\learning-course\stage1a\tube.webp" width="45%" data-description="2x1 thinwall tube forming part of a robot structure. (Photo Credit: FRC 3647)">
       <figcaption>2x1 thinwall tube forming part of a robot structure. (Photo Credit: FRC 3647) </figcaption>
     </figure>
 
@@ -27,21 +27,21 @@ In FRC, robot structures are typically constructed out of aluminum box tubing, s
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure markdown="span">
-      <img src="/img/learning-course/stage1a/exercises/e1/e1s0.webp" style="width:100%; data-description="0. The final part"">
+      <img src="/img/learning-course/stage1a/exercises/e1/e1s0.webp" style="width:100%; data-description="0. The final part"" data-description="0. The final part.">
       <figcaption>0. The final part.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e1/e1s1.webp" style="width:100%; data-description="1. Start by sketching a center rectangle on the top plane."">
+      <img src="/img/learning-course/stage1a/exercises/e1/e1s1.webp" style="width:100%; data-description="1. Start by sketching a center rectangle on the top plane."" data-description="1. Start by sketching a center rectangle on the top plane. Notice that we put the origin of the part at the center of the tube so that we can leverage the default geometry later on.">
       <figcaption>1. Start by sketching a center rectangle on the top plane. Notice that we put the origin of the part at the center of the tube so that we can leverage the default geometry later on. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e1/e1s2.webp" style="width:100%; data-description="2. Extrude the rectangle symmetrically, 2 inches tall."">
+      <img src="/img/learning-course/stage1a/exercises/e1/e1s2.webp" style="width:100%; data-description="2. Extrude the rectangle symmetrically, 2 inches tall."" data-description="2. Extrude the rectangle symmetrically, 2" tall.">
       <figcaption>2. Extrude the rectangle symmetrically, 2" tall.</figcaption>
     </figure>
   </div>
@@ -88,7 +88,7 @@ In FRC, robot structures are typically constructed out of aluminum box tubing, s
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e1/e1s7.webp" style="width:100%; data-description="6. Name the key sketches and part. Set the material to be 6061 Aluminum."">
+      <img src="/img/learning-course/stage1a/exercises/e1/e1s7.webp" style="width:100%; data-description="6. Name the key sketches and part. Set the material to be 6061 Aluminum."" data-description="7. Extrude the side holes to cut all the way through the tube.">
       <figcaption>7. Extrude the side holes to cut all the way through the tube. </figcaption>
     </figure>
   </div>
@@ -106,7 +106,7 @@ In FRC, robot structures are typically constructed out of aluminum box tubing, s
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e1/e1s0.webp" style="width:100%; data-description="6. Name the key sketches and part. Set the material to be 6061 Aluminum."">
+      <img src="/img/learning-course/stage1a/exercises/e1/e1s0.webp" style="width:100%; data-description="6. Name the key sketches and part. Set the material to be 6061 Aluminum."" data-description="9. Finished Part Studio.">
       <figcaption>9. Finished Part Studio. </figcaption>
     </figure>
   </div>

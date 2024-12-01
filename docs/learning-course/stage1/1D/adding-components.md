@@ -17,14 +17,14 @@ Start by **navigating to the `Drivetrain` Part Studio** in the `Drivetrain` fold
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtAdd0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtAdd0.webp" style="width:100%" data-description="0. Finished drivetrain assembly.">
       <figcaption>0. Finished drivetrain assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtAdd1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtAdd1.webp" style="width:100%" data-description="1. Add the gusset for the crosstube with the <code>Gusset</code> Featurescript.">
       <figcaption>1. Add the gusset for the crosstube with the <code>Gusset</code> Featurescript.</figcaption>
     </figure>
   </div>
@@ -41,7 +41,7 @@ Start by **navigating to the `Drivetrain` Part Studio** in the `Drivetrain` fold
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtAdd3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtAdd3.webp" style="width:100%" data-description="3. Copy the gusset and mate it to the other side.">
       <figcaption>3. Copy the gusset and mate it to the other side. </figcaption>
     </figure>
   </div>
@@ -58,7 +58,7 @@ Start by **navigating to the `Drivetrain` Part Studio** in the `Drivetrain` fold
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtAdd0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtAdd0.webp" style="width:100%" data-description="4. Finished drivetrain assembly.">
       <figcaption>4. Finished drivetrain assembly.</figcaption>
     </figure>
   </div>

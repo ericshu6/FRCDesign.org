@@ -6,7 +6,7 @@ Elevator rigging typically takes up the bulk of the design process, as its the m
 
 <figure markdown="span">
     <img src="/img/learning-course/stage2-elevator/rigging-light.webp#only-light" style="width:50%">
-    <img src="/img/learning-course/stage2-elevator/rigging-dark.webp#only-dark" style="width:50%">
+    <img src="/img/learning-course/stage2-elevator/rigging-dark.webp#only-dark" style="width:50%" data-description="Example of a 3 stage cascade elevator rigging">
     <figcaption>Example of a 3 stage cascade elevator rigging</figcaption>
 </figure>
 

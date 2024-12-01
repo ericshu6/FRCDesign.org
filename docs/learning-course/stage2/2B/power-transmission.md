@@ -7,7 +7,7 @@ Sprocket and chain is used for transmitting power due chain's high load rating a
 Torque is transmitted directly to the rotating mechanism from the sprocket, while the entire thing only uses the axle as a structural member to rotate on.
 
 <figure>
-<img src="\img\learning-course\stage2-pivot\chaintensioncut.gif" alt="chain with tensioner" width="60%">
+<img src="\img\learning-course\stage2-pivot\chaintensioncut.gif" alt="chain with tensioner" width="60%" data-description="A chain and sprocket powered pivot.">
 <figcaption> A chain and sprocket powered pivot.</figcaption>
 </figure>
 
@@ -15,7 +15,7 @@ Torque is transmitted directly to the rotating mechanism from the sprocket, whil
 The reference design utilizes a 60T #25 chain sprocket to drive the arm.
 
 <figure>
-<img src="\img\learning-course\stage2-pivot\power-example.webp" alt="Power Example" width="60%">
+<img src="\img\learning-course\stage2-pivot\power-example.webp" alt="Power Example" width="60%" data-description="Reference design chain and sprocket.">
 <figcaption> Reference design chain and sprocket.</figcaption>
 </figure>
 <br>

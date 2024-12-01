@@ -14,7 +14,7 @@ This helps ensure your time is spent where it makes the most impact, rather than
 
     -   <center><img src="/img/learning-course/stage1c/telescope/greyt.webp" width="100%"></center>
 
-    -   <center><img src="/img/learning-course/stage1c/telescope/maxplanetary.webp" width="100%"></center>
+    -   <center data-description="The telescoping bearing blocks have complex geometry that would be difficult and time consuming to manufacture for most teams."><img src="/img/learning-course/stage1c/telescope/maxplanetary.webp" width="100%" data-description="The telescoping bearing blocks have complex geometry that would be difficult and time consuming to manufacture for most teams."></center data-description="The telescoping bearing blocks have complex geometry that would be difficult and time consuming to manufacture for most teams.">
 
     </div>
 
@@ -33,49 +33,49 @@ This helps ensure your time is spent where it makes the most impact, rather than
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s0.webp" style="width:100%" data-description="0. Final Part Studio.">
       <figcaption>0. Final Part Studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s1.webp" style="width:100%" data-description="1. Begin by creating a side profile sketch of the telescope tubes on the right plane.">
       <figcaption>1. Begin by creating a side profile sketch of the telescope tubes on the right plane.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s2.webp" style="width:100%" data-description="2. Use two extrudes to create the solid bodies for the tubes. Then, use the Tube Converter Featurescript to convert the solid bodies into two thin-wall tubes with no hole pattern.">
       <figcaption>2. Use two extrudes to create the solid bodies for the tubes. Then, use the Tube Converter Featurescript to convert the solid bodies into two thin-wall tubes with no hole pattern.</figcaption>
     </figure>
   </div>
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s3.webp" style="width:100%" data-description="3. Add the holes for the WCP bearing blocks to the inner and outer tubes. The dimensions are from <a href="https://docs.wcproducts.com/greyt-telescope/overview-and-features/tubing-hole-pattern">WCP's documentation</a>.">
       <figcaption>3. Add the holes for the WCP bearing blocks to the inner and outer tubes. The dimensions are from <a href="https://docs.wcproducts.com/greyt-telescope/overview-and-features/tubing-hole-pattern">WCP's documentation</a>.</figcaption>
     </figure>
   </div>
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s4.webp" style="width:100%" data-description="4. Model the crush block at the top of the inner tube. You will add the holes that go through the crush block after you model the hook.">
       <figcaption>4. Model the crush block at the top of the inner tube. You will add the holes that go through the crush block after you model the hook.</figcaption>
     </figure>
   </div>
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s5.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s5.webp" style="width:100%" data-description="5. Sketch the hook. Pay attention to the sketch relations in the solution document.">
       <figcaption>5. Sketch the hook. Pay attention to the sketch relations in the solution document.</figcaption>
     </figure>
   </div>
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s6.webp" style="width:100%" data-description="6. Extrude the hook. Then, extrude the mounting holes to cut through the tube and the crush block. Also add the hook spacer.">
       <figcaption>6. Extrude the hook. Then, extrude the mounting holes to cut through the tube and the crush block. Also add the hook spacer.</figcaption>
     </figure>
   </div>
@@ -92,42 +92,42 @@ This helps ensure your time is spent where it makes the most impact, rather than
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s8.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s8.webp" style="width:100%" data-description="8. Sketch the gearbox mounting plate on the outside of the tube. There should be a small 0.01" gap between the 3/8" clamping spacers and the tube to make sure that the gearbox can be assembled properly. The 13.75 mm construction circle represents the rounded hex spool. The #10-32 tapped hole allows for a bolt to thread into the plate and sit flush with the inside of the outer tube to lock the gearbox in place without interfering with the inner tube.">
       <figcaption>8. Sketch the gearbox mounting plate on the outside of the tube. There should be a small 0.01" gap between the 3/8" clamping spacers and the tube to make sure that the gearbox can be assembled properly. The 13.75 mm construction circle represents the rounded hex spool. The #10-32 tapped hole allows for a bolt to thread into the plate and sit flush with the inside of the outer tube to lock the gearbox in place without interfering with the inner tube.</figcaption>
     </figure>
   </div>
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s9.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s9.webp" style="width:100%" data-description="9. Sketch the pull down string by creating a line tangent to the rounded hex spool. Note that we will use this line to create a sweep of the rope, therefore this line cannot be construction geometry.">
       <figcaption>9. Sketch the pull down string by creating a line tangent to the rounded hex spool. Note that we will use this line to create a sweep of the rope, therefore this line cannot be construction geometry.</figcaption>
     </figure>
   </div>
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s10.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s10.webp" style="width:100%" data-description="10. Extrude the plate, then add half depth pockets. The pockets should leave 1/16" of material on the bottom. The half-depth pocketing allows the contact face between the gearbox plate and tube to be solid. The plate should be mirrored to generate the opposite hand version on the other side of the tube.">
       <figcaption>10. Extrude the plate, then add half depth pockets. The pockets should leave 1/16" of material on the bottom. The half-depth pocketing allows the contact face between the gearbox plate and tube to be solid. The plate should be mirrored to generate the opposite hand version on the other side of the tube.</figcaption>
     </figure>
   </div>
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s11.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s11.webp" style="width:100%" data-description="11. Add a 10-32 clearance hole for the bolt that is threaded into the gearbox plate. Also model the gearbox spacer and the shaft.">
       <figcaption>11. Add a 10-32 clearance hole for the bolt that is threaded into the gearbox plate. Also model the gearbox spacer and the shaft.</figcaption>
     </figure>
   </div>
   
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s12.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s12.webp" style="width:100%" data-description="12. Model the rope by creating an 3 mm circle on the end of the vertical line from the gearbox. Then, sweep the circle along the vertical line from the gearbox to create a model of the rope.">
       <figcaption>12. Model the rope by creating an 3 mm circle on the end of the vertical line from the gearbox. Then, sweep the circle along the vertical line from the gearbox to create a model of the rope. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/s0.webp" style="width:100%" data-description="13. Finish the part studio by naming your features and putting them into folders. Also assign materials according to the reference design.">
       <figcaption>13. Finish the part studio by naming your features and putting them into folders. Also assign materials according to the reference design. </figcaption>
     </figure>
   </div>
@@ -150,7 +150,7 @@ This helps ensure your time is spent where it makes the most impact, rather than
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/a0.webp" style="width:100%" data-description="0. Final assembly.">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
@@ -167,14 +167,14 @@ This helps ensure your time is spent where it makes the most impact, rather than
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/a2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/a2.webp" style="width:100%" data-description="2. Fasten the inner stage components together.">
       <figcaption>2. Fasten the inner stage components together. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/a3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/a3.webp" style="width:100%" data-description="3. Insert and fasten the WCP GreyT telescope bearing blocks from the <a href="https://cad.onshape.com/documents/3f21b4b70302525a1e1f2c29/v/4ec8cc58f734f29f41a0fdb8/e/4646e6fc60ff8c4fe2a9d4dd" target="_blank">WCP GreyT telescope document</a>.">
       <figcaption>3. Insert and fasten the WCP GreyT telescope bearing blocks from the <a href="https://cad.onshape.com/documents/3f21b4b70302525a1e1f2c29/v/4ec8cc58f734f29f41a0fdb8/e/4646e6fc60ff8c4fe2a9d4dd" target="_blank">WCP GreyT telescope document</a>.</figcaption>
     </figure>
   </div>
@@ -191,35 +191,35 @@ This helps ensure your time is spent where it makes the most impact, rather than
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/a5.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/a5.webp" style="width:100%" data-description="5. Fasten the spacer and replicate it. Insert and fasten the shaft bearing to the plate and shaft. Note that we only require one bearing on the plate since the MAXPlanetary gearbox has another bearing at its output as we do not want to overconstrain the shaft.">
       <figcaption>5. Fasten the spacer and replicate it. Insert and fasten the shaft bearing to the plate and shaft. Note that we only require one bearing on the plate since the MAXPlanetary gearbox has another bearing at its output as we do not want to overconstrain the shaft.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/a6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/a6.webp" style="width:100%" data-description="6. Insert and fasten the MAXPlanetary gearbox from MKCad. We use the 90 degree output with a 25:1 gear ratio.">
       <figcaption>6. Insert and fasten the MAXPlanetary gearbox from MKCad. We use the 90 degree output with a 25:1 gear ratio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/a7.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/a7.webp" style="width:100%" data-description="7. Insert, fasten, and replicate all of the required fasteners.">
       <figcaption>7. Insert, fasten, and replicate all of the required fasteners.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/a8.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/a8.webp" style="width:100%" data-description="8. Close up of the bolt used to pin the gearbox in place. This bolt keeps the gearbox from sliding up and down.">
       <figcaption>8. Close up of the bolt used to pin the gearbox in place. This bolt keeps the gearbox from sliding up and down.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/telescope/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/telescope/a0.webp" style="width:100%" data-description="9. Finish your assembly by organizing the parts into folders and naming your replicates.">
       <figcaption>9. Finish your assembly by organizing the parts into folders and naming your replicates.</figcaption>
     </figure>
   </div>

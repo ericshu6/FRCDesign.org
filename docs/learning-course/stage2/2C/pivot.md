@@ -19,7 +19,7 @@ To reduce backlash in the system, the 1:1 belt/pulley is exact center-center dis
 For controlling the intake position, no absolute encoder is needed. You can zero the position when it is stowed and against the hardstop or have it rest on the ground when the robot is turned on, and use the relative encoder to take it to a specific position down.
 
 <figure>
-    <img src="\img\learning-course\stage2-slapdown\pivot.webp" alt="Power Example" width="60%" style="border:5px solid #ADADAD">
+    <img src="\img\learning-course\stage2-slapdown\pivot.webp" alt="Power Example" width="60%" style="border:5px solid #ADADAD" data-description="Reference Design Intake Pivot">
     <figcaption> Reference Design Intake Pivot</figcaption>
 </figure>
 

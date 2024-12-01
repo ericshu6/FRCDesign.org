@@ -5,7 +5,7 @@
 You will be designing a slapdown intake applicable to both the 2022 and 2023 games, both of which had a 9.5" diameter game piece.
 
 <figure>
-    <img src="/img/learning-course/stage2-slapdown/intakeTopLevel.webp" width="70%">
+    <img src="/img/learning-course/stage2-slapdown/intakeTopLevel.webp" width="70%" data-description="Finished Intake Assembly">
     <figcaption>Finished Intake Assembly</figcaption>
 </figure>
 

@@ -19,14 +19,14 @@ Start by **creating a new assembly tab called `Drivetrain Assembly`** in the `Dr
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtAssy0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtAssy0.webp" style="width:100%" data-description="0. The assembly.">
       <figcaption>0. The assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtAssy1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtAssy1.webp" style="width:100%" data-description="1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin.">
       <figcaption>1. Add the part studio parts to the assembly. Like before, group mate the rigid components with the Origin Cube and mate the Origin Cube to the assembly origin.</figcaption>
     </figure>
   </div>
@@ -73,14 +73,14 @@ Start by **creating a new assembly tab called `Drivetrain Assembly`** in the `Dr
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtAssy4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtAssy4.webp" style="width:100%" data-description="4. Insert, fasten, and replicate the 3/16" rivet from MKCad onto the bellypan holes. For the replicate feature, you can use "Select edges on face" rather than "Select individual edges" since we want all of the holes to have a rivet.">
       <figcaption>4. Insert, fasten, and replicate the 3/16" rivet from MKCad onto the bellypan holes. For the replicate feature, you can use "Select edges on face" rather than "Select individual edges" since we want all of the holes to have a rivet.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/SwerveBase/dtAssy0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/SwerveBase/dtAssy0.webp" style="width:100%" data-description="5. To finish the assembly, organize your components into folders and name your replicates.">
       <figcaption>5. To finish the assembly, organize your components into folders and name your replicates.</figcaption>
     </figure>
   </div>

@@ -6,7 +6,7 @@ To make wiring the robot and later inspecting the wiring easier, enough space sh
 
 !!! Example
     <figure>
-        <img src="\img\learning-course\stage2-drivebase\elec\elecPic.png" style="width:80%">
+        <img src="\img\learning-course\stage2-drivebase\elec\elecPic.png" style="width:80%" data-description="Example layout of various different electronic components on a bellypan. (Photo Credit: FRC 3647)">
         <figcaption>Example layout of various different electronic components on a bellypan. (Photo Credit: FRC 3647)</figcaption>
     </figure>
 

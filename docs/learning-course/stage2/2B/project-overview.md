@@ -11,7 +11,7 @@ The project requirements are as follows:
 - **Axle:** Use 7/8 inch tube for the dead axle and ensure proper support.
 
 <figure>
-    <img src="/img/learning-course/stage2-pivot/Top Level Pivot.webp" width="70%">    
+    <img src="/img/learning-course/stage2-pivot/Top Level Pivot.webp" width="70%" data-description="Finished arm assembly.">    
     <figcaption>Finished arm assembly.</figcaption>
 </figure>
 

@@ -18,7 +18,7 @@ Start by, **creating a new assembly tab above the `Main Layout Sketch` part stud
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/TopLevel/topL0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/TopLevel/topL0.webp" style="width:100%" data-description="0. Finished top level robot assembly.">
       <figcaption>0. Finished top level robot assembly.</figcaption>
     </figure>
   </div>
@@ -45,7 +45,7 @@ Start by, **creating a new assembly tab above the `Main Layout Sketch` part stud
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1d/TopLevel/topL0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1d/TopLevel/topL0.webp" style="width:100%" data-description="3. Finished top level assembly.">
       <figcaption>3. Finished top level assembly. </figcaption>
     </figure>
   </div>

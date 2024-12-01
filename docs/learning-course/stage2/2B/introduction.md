@@ -3,7 +3,7 @@
 ## Rotary Mechanisms
 Rotary mechanisms enable the pivoting of mechanisms through rotational movement. These mechanisms come in many shapes and sizes but there are a couple good practices that should be followed when designing powered pivots.
 
-<figure><img align="left"  src="/img/learning-course/stage2-pivot/6036pivot.gif" width="46%" style="border:5px solid #ADADAD"><img align="right"  src="\img\learning-course\stage2-pivot\2910video.gif" width="48%" style="border:5px solid #ADADAD"></figure>
+<figure data-description="<center>6036's 2023 Arm and 2910's 2023 Arm</center>"><img align="left"  src="/img/learning-course/stage2-pivot/6036pivot.gif" width="46%" style="border:5px solid #ADADAD" data-description="<center>6036's 2023 Arm and 2910's 2023 Arm</center>"><img align="right"  src="\img\learning-course\stage2-pivot\2910video.gif" width="48%" style="border:5px solid #ADADAD" data-description="<center>6036's 2023 Arm and 2910's 2023 Arm</center>"></figure data-description="<center>6036's 2023 Arm and 2910's 2023 Arm</center>">
 <center><figcaption>6036's 2023 Arm and 2910's 2023 Arm</figcaption></center>
 
 Take a look at [Team 2910's 2023 robot reveal video](https://youtu.be/R5r28-MQqzg?si=wgrmD0YIbUkkHDyv&t=65 "2910 2023 Reveal Video"){:target="_blank"} to see their pivoting arm in action. 

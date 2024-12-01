@@ -25,7 +25,7 @@ The recommended way of going through the course is using two screens, but if thi
 <br>
 
 <figure>
-      <img src="/img/learning-course/stage1a/split-screen.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/split-screen.webp" style="width:100%" data-description="Example of split screen when doing the Onshape Learning Courses">
       <figcaption>Example of split screen when doing the Onshape Learning Courses</figcaption>
 </figure>
 

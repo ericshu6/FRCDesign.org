@@ -11,7 +11,7 @@ For live axle, the shaft spins on fixed bearings, while for dead axle, the beari
 
 ???+ Example "Live vs Dead Axle Rollers"
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/dead-vs-live.webp" style="width:65%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/dead-vs-live.webp" style="width:65%" data-description="Section view of a dead axle (left) and live axle (right) roller. The dead axle roller sits on bearings and needs to be directly powered (in this case, through the integrated pulley). The live axle roller is powered from a pulley farther down the hex shaft.">
       <figcaption>Section view of a dead axle (left) and live axle (right) roller. The dead axle roller sits on bearings and needs to be directly powered (in this case, through the integrated pulley). The live axle roller is powered from a pulley farther down the hex shaft.</figcaption>
     </figure>
 
@@ -29,84 +29,84 @@ This exercise introduces you to the use of the [Configurable Rollers Document](h
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s0.webp" style="width:100%" data-description="0. Final Part Studio.">
       <figcaption>0. Final Part Studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s1.webp" style="width:100%" data-description="1. Start the layout sketch on the Right Plane. Sketch the hole for a bearing and four #10-32 clearance holes on a 2" bolt circle.">
       <figcaption>1. Start the layout sketch on the Right Plane. Sketch the hole for a bearing and four #10-32 clearance holes on a 2" bolt circle. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s2.webp" style="width:100%" data-description="2. Sketch the pulleys and belt paths for the first two rollers. You will use 5mm pitch 24T pulleys. We subtract 0.015" from the calculated c-c distance to decrease the friction that results from linking together multiple belts.">
       <figcaption>2. Sketch the pulleys and belt paths for the first two rollers. You will use 5mm pitch 24T pulleys. We subtract 0.015" from the calculated c-c distance to decrease the friction that results from linking together multiple belts. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s3.webp" style="width:100%" data-description="3. Add the pulley and belt path for the 3rd roller.">
       <figcaption>3. Add the pulley and belt path for the 3rd roller.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s4.webp" style="width:100%" data-description="4. Sketch 2" construction circles to represent the rollers, which are 2" OD.">
       <figcaption>4. Sketch 2" construction circles to represent the rollers, which are 2" OD. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s5.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s5.webp" style="width:100%" data-description="5. Sketch the pulleys and belt path for the motor. Since the motor transmission will also utilize a 24T pulley, we can reutilize the same pulley PD sketch from the first roller. The motor pulley will be a 12T pinion.">
       <figcaption>5. Sketch the pulleys and belt path for the motor. Since the motor transmission will also utilize a 24T pulley, we can reutilize the same pulley PD sketch from the first roller. The motor pulley will be a 12T pinion.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s6.webp" style="width:100%" data-description="6. Sketch the OD of the Kraken motor, which is 60 mm.">
       <figcaption>6. Sketch the OD of the Kraken motor, which is 60 mm.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s7.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s7.webp" style="width:100%" data-description="7. Create the plate sketch by using an offset mate connector from the layout sketch as the origin entity. Select the motor pulley and offset by 12".">
       <figcaption>7. Create the plate sketch by using an offset mate connector from the layout sketch as the origin entity. Select the motor pulley and offset by 12".</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s8.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s8.webp" style="width:100%" data-description="8. Sketch the plate outline. Pay attention to the sketch constraints in the solutions document. We offset the curve on the top right 0.25" away from the belt to that it is fully covered by the plate.">
       <figcaption>8. Sketch the plate outline. Pay attention to the sketch constraints in the solutions document. We offset the curve on the top right 0.25" away from the belt to that it is fully covered by the plate.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s9.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s9.webp" style="width:100%" data-description="9. Add the holes for the mounting point by using the <code>Use</code> feature and selecting the layout sketch entities to convert over.">
       <figcaption>9. Add the holes for the mounting point by using the <code>Use</code> feature and selecting the layout sketch entities to convert over.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s10.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s10.webp" style="width:100%" data-description="10. Sketch the motor bore and #10-32 clearance holes for motor mounting. Note that we only use 3 out of 6 of the patterned mounting holes, the rest are left as construction geometry. Also sketch the #10-32 clearance holes for the dead axle shafts.">
       <figcaption>10. Sketch the motor bore and #10-32 clearance holes for motor mounting. Note that we only use 3 out of 6 of the patterned mounting holes, the rest are left as construction geometry. Also sketch the #10-32 clearance holes for the dead axle shafts. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s11.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s11.webp" style="width:100%" data-description="11. Extrude the plate to be 1/4" thick.">
       <figcaption>11. Extrude the plate to be 1/4" thick. </figcaption>
     </figure>
   </div>
@@ -123,21 +123,21 @@ This exercise introduces you to the use of the [Configurable Rollers Document](h
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s13.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s13.webp" style="width:100%" data-description="13. Your belt tooth count and pitch length should match the solution document. The two 70T belts have a pitch length slightly less than 350 mm since we subtracted 0.015" from the c-c's in the layout.">
       <figcaption>13. Your belt tooth count and pitch length should match the solution document. The two 70T belts have a pitch length slightly less than 350 mm since we subtracted 0.015" from the c-c's in the layout. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s14.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s14.webp" style="width:100%" data-description="14. Use the Assembly Mirror Featurescript to add a mate connector for mating the opposite side plate. There is no reason to use a part mirror since the two plates will be identical and we have no need to reference the other plate in the part studio.">
       <figcaption>14. Use the Assembly Mirror Featurescript to add a mate connector for mating the opposite side plate. There is no reason to use a part mirror since the two plates will be identical and we have no need to reference the other plate in the part studio. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/s0.webp" style="width:100%" data-description="15. Finish the part studio by naming your features and organizing them into folders. Assign the plate material to be polycarbonate.">
       <figcaption>15. Finish the part studio by naming your features and organizing them into folders. Assign the plate material to be polycarbonate. </figcaption>
     </figure>
   </div>
@@ -160,7 +160,7 @@ This exercise introduces you to the use of the [Configurable Rollers Document](h
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/a0.webp" style="width:100%" data-description="0. Final assembly.">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
@@ -240,21 +240,21 @@ This exercise introduces you to the use of the [Configurable Rollers Document](h
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/a8.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/a8.webp" style="width:100%" data-description="8. Insert a 1.5" long, #10-32 button head bolt for the motor. Fasten one instance and replicate the other two.">
       <figcaption>8. Insert a 1.5" long, #10-32 button head bolt for the motor. Fasten one instance and replicate the other two.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/a9.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/a9.webp" style="width:100%" data-description="9. Insert a 3/4" long, #10-32 button head bolt for the roller shafts. Fasten one instance and replicate the other 5.">
       <figcaption>9. Insert a 3/4" long, #10-32 button head bolt for the roller shafts. Fasten one instance and replicate the other 5.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/dead-axle-rollers/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/dead-axle-rollers/a0.webp" style="width:100%" data-description="10. Finish your assembly by organizing the parts into folders and naming your replicates.">
       <figcaption>10. Finish your assembly by organizing the parts into folders and naming your replicates.</figcaption>
     </figure>
   </div>

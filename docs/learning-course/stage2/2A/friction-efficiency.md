@@ -14,7 +14,7 @@ Slightly reduce belt tension by shortening the center-to-center distance (0.01-0
 #### Spacers
 Use spacers between components on shafts and bearings. Components should not contact the outer race of the bearing to avoid friction.
 <figure>
-    <img src="/img/learning-course/stage2-shooter/hexspacers.webp" width="60%" style="border-radius: 2%">
+    <img src="/img/learning-course/stage2-shooter/hexspacers.webp" width="60%" style="border-radius: 2%" data-description="A COTS 1/2 hex delrin spacer which is used to reduce friction and constrain the object.">
     <figcaption>A COTS 1/2 hex delrin spacer which is used to reduce friction and constrain the object.
 </figure>
 
@@ -24,13 +24,13 @@ Don't over-constrain shafts by using more than 2 fixed bearing points to hold a 
 !!! Example
     <div class = "right">
         <center>
-        <img src="/img/learning-course/stage2-shooter/overconstrained-shaft.webp" width="40%">
+        <img src="/img/learning-course/stage2-shooter/overconstrained-shaft.webp" width="40%" data-description="Example of a shaft being overconstrained by having a fixed bearing in the middle of the shaft.">
         <figcaption>Example of a shaft being overconstrained by having a fixed bearing in the middle of the shaft.</figcaption>
         </center>
     </div>
     <div class = "left">
         <center>
-        <img src="/img/learning-course/stage2-shooter/proper-constraint.webp" width="40%">
+        <img src="/img/learning-course/stage2-shooter/proper-constraint.webp" width="40%" data-description="Example of a shaft being properly constrained with two fixed bearings.">
         <figcaption>Example of a shaft being properly constrained with two fixed bearings.</figcaption>
         </center>
     </div>

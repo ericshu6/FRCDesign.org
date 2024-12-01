@@ -5,7 +5,7 @@
 Because elevators are just mechanisms to move other mechanisms around, this project is similar to the dead axle pivot and will be designed without much context to learn the design process and components. You will get practice with designing elevators in the context of a robot in Stage 3.
 
 <figure markdown="span">
-    <img src="/img/learning-course/stage2-elevator/elevatorTopLevel.webp" style="width:85%">
+    <img src="/img/learning-course/stage2-elevator/elevatorTopLevel.webp" style="width:85%" data-description="Reference Elevator Assembly">
     <figcaption>Reference Elevator Assembly</figcaption>
 </figure>
 

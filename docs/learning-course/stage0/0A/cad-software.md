@@ -14,7 +14,7 @@ Depending on the circumstances, Onshape may not be the best fit for a team; howe
 
 
 <figure>
-    <center><img src="/img/learning-course/stage0/introcad/bread.webp" style="width:75%"></center>
+    <center data-description="Team 5940 is a high caliber team that models their robot in Onshape."><img src="/img/learning-course/stage0/introcad/bread.webp" style="width:75%" data-description="Team 5940 is a high caliber team that models their robot in Onshape."></center data-description="Team 5940 is a high caliber team that models their robot in Onshape.">
     <figcaption>Team 5940 is a high caliber team that models their robot in Onshape.</figcaption>
 </figure>
 

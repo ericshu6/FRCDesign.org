@@ -10,7 +10,7 @@ Aluminum box tubes are commonly connected together with 'gussets'. A gusset is a
 
 !!! Example "Gusset Example"
     <figure>
-      <img src="\img\learning-course\stage1a\8033-000-2024C_8.png" width="70%">
+      <img src="\img\learning-course\stage1a\8033-000-2024C_8.png" width="70%" data-description="A gusset connecting two tubes on a robot. </ficaption>">
       <figcaption> A gusset connecting two tubes on a robot. </ficaption>
     </figure>
 
@@ -44,84 +44,84 @@ You will utilize the [`Extrude Individual` and `Tube Converter` Featurescripts](
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure markdown="span">
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s11.webp" style="width:100%; data-description="0. The finished parts."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s11.webp" style="width:100%; data-description="0. The finished parts."" data-description="0. The finished parts.">
       <figcaption>0. The finished parts.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s1.webp" style="width:100%; data-description="1. Start by sketching the tubes on the right plane."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s1.webp" style="width:100%; data-description="1. Start by sketching the tubes on the right plane."" data-description="1. Start by sketching the tubes on the right plane. Positioning the origin horizontally in the center of the part studio enables mirroring the vertical tube from the left to the right using the front plane.">
       <figcaption>1. Start by sketching the tubes on the right plane. Positioning the origin horizontally in the center of the part studio enables mirroring the vertical tube from the left to the right using the front plane.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s2.webp" style="width:100%; data-description="2. Use the `Extrude Individual` Featurescript to extrude the blocks."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s2.webp" style="width:100%; data-description="2. Use the `Extrude Individual` Featurescript to extrude the blocks."" data-description="2. Use the <code>Extrude Individual</code> Featurescript to extrude the blocks.">
       <figcaption>2. Use the <code>Extrude Individual</code> Featurescript to extrude the blocks. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s3.webp" style="width:100%; data-description="3. Use `Tube Converter` Featurescript to turn the blocks into 1/16 inch wall tubes with a 0.5 inch spacing pattern of 0.196 inch holes."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s3.webp" style="width:100%; data-description="3. Use `Tube Converter` Featurescript to turn the blocks into 1/16 inch wall tubes with a 0.5 inch spacing pattern of 0.196 inch holes."" data-description="3. Use <code>Tube Converter</code> Featurescript to turn the blocks into 1/16" wall tubes with a 0.5" spacing pattern of 0.196" holes.">
       <figcaption>3. Use <code>Tube Converter</code> Featurescript to turn the blocks into 1/16" wall tubes with a 0.5" spacing pattern of 0.196" holes.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s4.webp" style="width:100%; data-description="4. Draw a triangle with construction geometry for the gusset."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s4.webp" style="width:100%; data-description="4. Draw a triangle with construction geometry for the gusset."" data-description="4. Draw a triangle with construction geometry for the gusset.">
       <figcaption>4. Draw a triangle with construction geometry for the gusset. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s5.webp" style="width:100%; data-description="5. Dimension the triangle to be 0.5 inches away from the edges of the tube."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s5.webp" style="width:100%; data-description="5. Dimension the triangle to be 0.5 inches away from the edges of the tube."" data-description="5. Dimension the triangle to be 0.5" away from the edges of the tube.">
       <figcaption>5. Dimension the triangle to be 0.5" away from the edges of the tube. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s6.webp" style="width:100%; data-description="6. Use the `Offset Entities` tool to offset the construction geometry 0.25 inches. This will be the outline of the gusset."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s6.webp" style="width:100%; data-description="6. Use the `Offset Entities` tool to offset the construction geometry 0.25 inches. This will be the outline of the gusset."" data-description="6. Use the <code>Offset</code> tool to offset the construction geometry 0.25". This will be the outline of the gusset.">
       <figcaption>6. Use the <code>Offset</code> tool to offset the construction geometry 0.25". This will be the outline of the gusset. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s7.webp" style="width:100%; data-description="7. Use the `Sketch Fillet` tool to add a 0.25 inch fillet to the three corners of the gusset."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s7.webp" style="width:100%; data-description="7. Use the `Sketch Fillet` tool to add a 0.25 inch fillet to the three corners of the gusset."" data-description="7. Use the <code>Sketch Fillet</code> tool to add a 0.25" fillet to the three corners of the gusset.">
       <figcaption>7. Use the <code>Sketch Fillet</code> tool to add a 0.25" fillet to the three corners of the gusset. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s8.webp" style="width:100%; data-description="8. Delete the three points left over from the fillet."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s8.webp" style="width:100%; data-description="8. Delete the three points left over from the fillet."" data-description="8. Delete the three points left over from the fillet.">
       <figcaption>8. Delete the three points left over from the fillet. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s9.webp" style="width:100%; data-description="9. Use the `Use (Project/Convert)` tool to project the tube holes onto the gusset sketch."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s9.webp" style="width:100%; data-description="9. Use the `Use (Project/Convert)` tool to project the tube holes onto the gusset sketch."" data-description="9. Use the <code>Use (Project/Convert)</code> tool to project the tube holes onto the gusset sketch.">
       <figcaption>9. Use the <code>Use (Project/Convert)</code> tool to project the tube holes onto the gusset sketch. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s10.webp" style="width:100%; data-description="10. Extrude the gusset to be 1/8 inch thick. Select `New` as the extrude type to make the extrude a new part."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s10.webp" style="width:100%; data-description="10. Extrude the gusset to be 1/8 inch thick. Select `New` as the extrude type to make the extrude a new part."" data-description="10. Extrude the gusset to be 1/8" thick. Select <code>New</code> as the extrude type to make the extrude a new part.">
       <figcaption>10. Extrude the gusset to be 1/8" thick. Select <code>New</code> as the extrude type to make the extrude a new part. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e2/e2s11.webp" style="width:100%; data-description="11. Name the key sketches and parts. Set the material to be 6061 Aluminum."">
+      <img src="/img/learning-course/stage1a/exercises/e2/e2s11.webp" style="width:100%; data-description="11. Name the key sketches and parts. Set the material to be 6061 Aluminum."" data-description="11. Name the key sketches and parts. Set the material to be 6061 Aluminum.">
       <figcaption>11. Name the key sketches and parts. Set the material to be 6061 Aluminum. </figcaption>
     </figure>
   </div>

@@ -20,7 +20,7 @@ Take a look below at some examples of 3D-printed pulleys with different types of
 
 ???+ example "3D-printed Pulley Inserts"
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/3dp-pulleys.webp" style="width:80%">
+      <img src="/img/learning-course/stage1c/shooter/3dp-pulleys.webp" style="width:80%" data-description="3D-printed pulleys with hex insert for hex shaft (left), SplineXS insert for Kraken motors (center), and pinion gear insert for NEO/CIM motors (right).">
       <figcaption>3D-printed pulleys with hex insert for hex shaft (left), SplineXS insert for Kraken motors (center), and pinion gear insert for NEO/CIM motors (right). </figcaption>
     </figure>
 
@@ -36,7 +36,7 @@ In the exercise you just completed, the nut strips would allow you to easily mou
 
 ???+ example "Nut Strips"
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/nut-strips-real.webp" style="width:65%">
+      <img src="/img/learning-course/stage1c/shooter/nut-strips-real.webp" style="width:65%" data-description="<!-- Example of using a nut strip to connect two perpendicular plates (left) as well as a plate to a tube (right) -->">
       <!-- <figcaption>Example of using a nut strip to connect two perpendicular plates (left) as well as a plate to a tube (right)</figcaption> -->
       <figcaption>Nut strips can be used to connect a plate to a tube or a plate to a perpendicular plate. (Photo Credits: FRC 4414)</figcaption>
     </figure>
@@ -51,56 +51,56 @@ In the exercise you just completed, the nut strips would allow you to easily mou
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s0.webp" style="width:100%" data-description="0. Final Part Studio.">
       <figcaption>0. Final Part Studio.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s1.webp" style="width:100%" data-description="1. Create the layout sketch on the Right plane. Begin by sketching the 4" shooter wheel, 2" feeder wheel, and the ball path.">
       <figcaption>1. Create the layout sketch on the Right plane. Begin by sketching the 4" shooter wheel, 2" feeder wheel, and the ball path. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s2.webp" style="width:100%" data-description="2. On the right plane, create a new sketch with the belts, pulleys, and motors. The bottom most construction line defines the bottom of our shooter.">
       <figcaption>2. On the right plane, create a new sketch with the belts, pulleys, and motors. The bottom most construction line defines the bottom of our shooter.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s3.webp" style="width:100%" data-description="3. Using a mate connector offset 1.375" from the layout sketch plane as the sketch plane, sketch the side plate. Use a circular pattern to sketch the #10-32 clearance holes around the shooter hood.">
       <figcaption>3. Using a mate connector offset 1.375" from the layout sketch plane as the sketch plane, sketch the side plate. Use a circular pattern to sketch the #10-32 clearance holes around the shooter hood. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s4.webp" style="width:100%" data-description="4. Extrude the plate as 1/4", then mirror it across the Right plane. We use a mirror because the opposite side plate is the same except for an extra cutout for the motors.">
       <figcaption>4. Extrude the plate as 1/4", then mirror it across the Right plane. We use a mirror because the opposite side plate is the same except for an extra cutout for the motors.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s5.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s5.webp" style="width:100%" data-description="5. On the mirrored plate, create a sketch to provide clearance for the motors. Sketch a 2.5" diameter slot connecting the two motor centers to use as the clearance cutout.">
       <figcaption>5. On the mirrored plate, create a sketch to provide clearance for the motors. Sketch a 2.5" diameter slot connecting the two motor centers to use as the clearance cutout.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s6.webp" style="width:100%" data-description="6. Model the shooter wheel and feeder wheel shaft. You can estimate the length or offsets first and then correct it after completing the assembly.">
       <figcaption>6. Model the shooter wheel and feeder wheel shaft. You can estimate the length or offsets first and then correct it after completing the assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s7.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s7.webp" style="width:100%" data-description="7. Model the large 3D print that goes in between the plates. There should only be three dimensions you need to sketch, all other entities should be defined by the layout or plate geometry. Use an "Up to face" extrude to ensure that the width is parametric.">
       <figcaption>7. Model the large 3D print that goes in between the plates. There should only be three dimensions you need to sketch, all other entities should be defined by the layout or plate geometry. Use an "Up to face" extrude to ensure that the width is parametric.</figcaption>
     </figure>
   </div>
@@ -117,7 +117,7 @@ In the exercise you just completed, the nut strips would allow you to easily mou
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s9.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s9.webp" style="width:100%" data-description="9. Add the HTD 5mm pitch belts. Double check that the pitch length is a multiple of 5 mm to ensure that the belt has an integer number of teeth.">
       <figcaption>9. Add the HTD 5mm pitch belts. Double check that the pitch length is a multiple of 5 mm to ensure that the belt has an integer number of teeth.</figcaption>
     </figure>
   </div>
@@ -134,14 +134,14 @@ In the exercise you just completed, the nut strips would allow you to easily mou
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s11.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s11.webp" style="width:100%" data-description="11. Repeat the same steps as before to add a mate connector to the shooter wheel shaft. Make sure you select the shooter wheel shaft as the mate connector owner.">
       <figcaption>11. Repeat the same steps as before to add a mate connector to the shooter wheel shaft. Make sure you select the shooter wheel shaft as the mate connector owner.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/s0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/s0.webp" style="width:100%" data-description="12. Finish the part studio by naming your features and organizing them into folders.">
       <figcaption>12. Finish the part studio by naming your features and organizing them into folders. </figcaption>
     </figure>
   </div>
@@ -163,14 +163,14 @@ In the exercise you just completed, the nut strips would allow you to easily mou
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/a0.webp" style="width:100%" data-description="0. Final assembly.">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/a1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/a1.webp" style="width:100%" data-description="1. Insert all the part studio components. Group all the components except for the shafts and belts. Fasten the Origin Cube to the origin.">
       <figcaption>1. Insert all the part studio components. Group all the components except for the shafts and belts. Fasten the Origin Cube to the origin.</figcaption>
     </figure>
   </div>
@@ -187,7 +187,7 @@ In the exercise you just completed, the nut strips would allow you to easily mou
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/a3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/a3.webp" style="width:100%" data-description="3. Insert and fasten the two NEO motors. Insert, fasten, and replicate the bearings.">
       <figcaption>3. Insert and fasten the two NEO motors. Insert, fasten, and replicate the bearings. </figcaption>
     </figure>
   </div>
@@ -221,7 +221,7 @@ In the exercise you just completed, the nut strips would allow you to easily mou
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/a6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/a6.webp" style="width:100%" data-description="6. Fasten the shafts to the pulleys.">
       <figcaption>6. Fasten the shafts to the pulleys. </figcaption>
     </figure>
   </div>
@@ -239,7 +239,7 @@ In the exercise you just completed, the nut strips would allow you to easily mou
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/a8.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/a8.webp" style="width:100%" data-description="8. Insert and fasten the 4" SDS Flywheel to the other side of the shooter.">
       <figcaption>8. Insert and fasten the 4" SDS Flywheel to the other side of the shooter. </figcaption>
     </figure>
   </div>
@@ -258,7 +258,7 @@ In the exercise you just completed, the nut strips would allow you to easily mou
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/a10.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/a10.webp" style="width:100%" data-description="10. Repeat the previous steps to fill the shafts.">
       <figcaption>10. Repeat the previous steps to fill the shafts. 
                   You can choose to uncheck the spacer boxes of spacers that are not used in the calculated spacer stack to clear the red error that appears on the Spacer Stack assembly. 
                   Make sure to mate the spacer stack using the generated mate connectors so that if you update the desired length the mates will not break. </figcaption>
@@ -267,14 +267,14 @@ In the exercise you just completed, the nut strips would allow you to easily mou
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/a11.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/a11.webp" style="width:100%" data-description="11. Insert, fasten, and replicate all of the required fasteners.">
       <figcaption>11. Insert, fasten, and replicate all of the required fasteners.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1c/shooter/a0.webp" style="width:100%">
+      <img src="/img/learning-course/stage1c/shooter/a0.webp" style="width:100%" data-description="12. Finish your assembly by organizing the parts into folders and naming your replicates. You can also insert and position the ball to visualize it.">
       <figcaption>12. Finish your assembly by organizing the parts into folders and naming your replicates. You can also insert and position the ball to visualize it. </figcaption>
     </figure>
   </div>

@@ -6,7 +6,7 @@ Friction must be minimized since the mechanism pivots around the axle. This can 
 <center>
 <div id="wrapper">
     <img id="centeredImages" border="0" src="/img/learning-course/stage2-pivot/wcpbushing.webp"  width="30%">
-    <img id="centeredImages" border="0" src="/img/learning-course/stage2-pivot/xcontact.webp" width="30%">
+    <img id="centeredImages" border="0" src="/img/learning-course/stage2-pivot/xcontact.webp" width="30%" data-description="A stepped bushing and a large x contact bearing sometimes used for large dead axles.">
 <figcaption>A stepped bushing and a large x contact bearing sometimes used for large dead axles.</figcaption>
 </div>
 </center>

@@ -20,7 +20,7 @@ Each time a game piece is launched, the flywheel loses energy and slows down as 
 
 -   <center><img src="\img\learning-course\stage2-shooter\2056.gif" width="100%" style="border:5px solid #ADADAD; border-radius: 2%"></center>
 
--   <center><img src="\img\learning-course\stage2-shooter\118.gif" width="81%" style="border:5px solid #ADADAD; border-radius: 2%"></center>
+-   <center data-description="Team 2056 and 118 shooting quickly by utilizing a high moment of inertia shooter wheel"><img src="\img\learning-course\stage2-shooter\118.gif" width="81%" style="border:5px solid #ADADAD; border-radius: 2%" data-description="Team 2056 and 118 shooting quickly by utilizing a high moment of inertia shooter wheel"></center data-description="Team 2056 and 118 shooting quickly by utilizing a high moment of inertia shooter wheel">
 
 </div>
 
@@ -36,7 +36,7 @@ Acceleration and recovery times can be improved by properly gearing down your mo
 In the reference design, two Kraken X60 motors are employed, though any brushless CIM-class motor will suffice. 
 
 <figure>
-<img src="/img/learning-course/stage2-shooter/motorsAndFlywheels.webp" width="60%" style="border-radius: 2%">
+<img src="/img/learning-course/stage2-shooter/motorsAndFlywheels.webp" width="60%" style="border-radius: 2%" data-description="Two Krakens driving the shooter wheels, flywheels, and a belt transferring power to the hood wheels.">
 <figcaption>Two Krakens driving the shooter wheels, flywheels, and a belt transferring power to the hood wheels.
 </figure>
 

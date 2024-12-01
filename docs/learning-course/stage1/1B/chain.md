@@ -28,7 +28,7 @@ Additionally, the **chain clearance diameter** describes the diameter of the spr
 Below is an illustration of the pitch, pitch diameter, outside diameter, and chain clearance diameter of a sprocket.
 
 <figure>
-    <img src="\img\learning-course\stage1b\chain\chainDiagram.webp" style="width:70%">
+    <img src="\img\learning-course\stage1b\chain\chainDiagram.webp" style="width:70%" data-description="Illustration of chain sprocket diameter measures. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/sprockets-and-chain">WCP</a>)">
     <figcaption>Illustration of chain sprocket diameter measures. (Image source: <a href="https://docs.wcproducts.com/frc-build-system/belts-chain-and-gears/sprockets-and-chain">WCP</a>)</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ In Stage 2, different chain tensioning methods are introduced in the context of 
 
 !!! Example "Example of Chain Tensioning"
     <figure>
-        <img src="\img\learning-course\stage1b\chain\turnbuckle.webp" style="width:60%">
+        <img src="\img\learning-course\stage1b\chain\turnbuckle.webp" style="width:60%" data-description="A "turnbuckle" chain tensioner. The turnbuckle acts as a variable-length link in the chain that can be adjusted to keep the chain tight. (Photo Credit: FRC 1538)">
         <figcaption>A "turnbuckle" chain tensioner. The turnbuckle acts as a variable-length link in the chain that can be adjusted to keep the chain tight. (Photo Credit: FRC 1538)</figcaption>
     </figure>
 

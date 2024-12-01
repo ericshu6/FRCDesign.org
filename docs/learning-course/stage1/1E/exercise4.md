@@ -18,49 +18,49 @@ It is recommended to place the bumpers in a new part studio and assembly to keep
     <!-- Full-width images with number and caption text -->
     <div id="slide1" class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s0.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s0.webp" style="width:100%" data-description="0. Finished bumpers assembly inserted into drivetrain assembly.">
             <figcaption>0. Finished bumpers assembly inserted into drivetrain assembly. </figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s1.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s1.webp" style="width:100%" data-description="1. Create a new sketch in the Main Layout Sketch part studio with the bumper profile. A 3/4" ground clearance and 1/4" gap between the bumper and frame is recommended.">
             <figcaption>1. Create a new sketch in the Main Layout Sketch part studio with the bumper profile. A 3/4" ground clearance and 1/4" gap between the bumper and frame is recommended.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s2.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s2.webp" style="width:100%" data-description="2. Create a new part studio in the drivetrain folder for the bumpers. Insert the Origin Cube and derive the drivetrain and bumper sketches from the Main Layout Sketch.">
             <figcaption>2. Create a new part studio in the drivetrain folder for the bumpers. Insert the Origin Cube and derive the drivetrain and bumper sketches from the Main Layout Sketch.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s3.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s3.webp" style="width:100%" data-description="3. Sweep the bumper profile along the edges of the drivetrain top layout sketch to create the block model of the bumpers.">
             <figcaption>3. Sweep the bumper profile along the edges of the drivetrain top layout sketch to create the block model of the bumpers.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s4.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s4.webp" style="width:100%" data-description="4. Optionally add a fillet on the corners. Size it according to how your team wraps the bumper pool noodles.">
             <figcaption>4. Optionally add a fillet on the corners. Size it according to how your team wraps the bumper pool noodles.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s5.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s5.webp" style="width:100%" data-description="5. Optionally model the wood for the bumpers. This can be useful for manufacturing purposes.">
             <figcaption>5. Optionally model the wood for the bumpers. This can be useful for manufacturing purposes.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s6.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s6.webp" style="width:100%" data-description="6. Create a bumper assembly in the drivetrain folder and insert all the components. Don’t forget to group all the components and mate the origin cube mate connector to the origin.">
             <figcaption>6. Create a bumper assembly in the drivetrain folder and insert all the components. Don’t forget to group all the components and mate the origin cube mate connector to the origin.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s0.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/bumpers/bumper1s0.webp" style="width:100%" data-description="7. Insert the bumper assembly into the drivetrain assembly.">
             <figcaption>7. Insert the bumper assembly into the drivetrain assembly.</figcaption>
         </figure>
     </div>

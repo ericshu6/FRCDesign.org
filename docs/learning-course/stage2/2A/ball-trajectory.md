@@ -7,7 +7,7 @@ In a ball shooter, the trajectory is primarily determined by the exit angle and 
 <!-- Rigidity is crucial for maintaining trajectory consistency. Any wobbling or flexing in the shooter structure can negatively impact accuracy, as even slight movements can alter the exit angle or velocity, leading to unpredictable shot behavior. -->
 
 <figure>
-    <img src="/img/learning-course/stage2-shooter/shot-trajectory.gif" style="width:70%; border:5px solid #ADADAD; border-radius: 2%">
+    <img src="/img/learning-course/stage2-shooter/shot-trajectory.gif" style="width:70%; border:5px solid #ADADAD; border-radius: 2%" data-description="Team 1678's 2022 shooter ball trajectory.">
     <figcaption>Team 1678's 2022 shooter ball trajectory.</figcaption>
 </figure>
 

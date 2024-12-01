@@ -5,7 +5,7 @@
 So far, you’ve done the main layout sketches and modeled the frame and bare bellypan. 
 
 <figure>
-<img src="\img\learning-course\stage1d\SwerveBase\DriveAssy.webp" style="width:60%"></center>
+<img src="\img\learning-course\stage1d\SwerveBase\DriveAssy.webp" style="width:60%" data-description="Stage 1D Swerve Drivebase"></center data-description="Stage 1D Swerve Drivebase">
 <figcaption>Stage 1D Swerve Drivebase</figcaption>
 </figure>
 
@@ -25,7 +25,7 @@ So far, you’ve done the main layout sketches and modeled the frame and bare be
 While the exact implementation for each of these details will vary based on the rest of your robot and from team to team, an example reference for Stage 1E is provided.
 
 <figure>
-    <img src="/img/learning-course/stage2-drivebase/2a-FDdt.webp" style="width:80%">
+    <img src="/img/learning-course/stage2-drivebase/2a-FDdt.webp" style="width:80%" data-description="Example of a fully detailed Stage 1E drivetrain.">
     <figcaption>Example of a fully detailed Stage 1E drivetrain.</figcaption>
 </figure>
 

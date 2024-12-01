@@ -22,49 +22,49 @@ You will utilize the [`Extrude Individual`, `Tube Converter`, and `Gusset` Featu
   <!-- Full-width images with number and caption text -->
   <div id="slide1" class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e3/e3s10.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e3/e3s10.webp" style="width:100%" data-description="0. Final assembly.">
       <figcaption>0. Final assembly.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e3/e3s1.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e3/e3s1.webp" style="width:100%" data-description="1. Start by sketching the tubes on the right plane.">
       <figcaption>1. Start by sketching the tubes on the right plane.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e3/e3s2.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e3/e3s2.webp" style="width:100%" data-description="2. Use the <code>Extrude Individual</code> Featurescript to extrude the blocks.">
       <figcaption>2. Use the <code>Extrude Individual</code> Featurescript to extrude the blocks.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e3/e3s3.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e3/e3s3.webp" style="width:100%" data-description="3. Use <code>Tube Converter</code> Featurescript to turn the blocks into 1/16" wall tubes with a 0.5" spacing pattern of 0.196" holes.">
       <figcaption>3. Use <code>Tube Converter</code> Featurescript to turn the blocks into 1/16" wall tubes with a 0.5" spacing pattern of 0.196" holes.</figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e3/e3s4.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e3/e3s4.webp" style="width:100%" data-description="4. Use the <code>Gusset</code> tool to create the top gusset by selecting the holes on the tube.">
       <figcaption>4. Use the <code>Gusset</code> tool to create the top gusset by selecting the holes on the tube. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e3/e3s5.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e3/e3s5.webp" style="width:100%" data-description="5. Use the <code>Gusset</code> tool to create the bottom gusset by selecting the holes on the tube.">
       <figcaption>5. Use the <code>Gusset</code> tool to create the bottom gusset by selecting the holes on the tube. </figcaption>
     </figure>
   </div>
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e3/e3s6.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e3/e3s6.webp" style="width:100%" data-description="6. Name the key sketches and parts. The materials will have already been set to 6061 Aluminum from the Featurescripts.">
       <figcaption>6. Name the key sketches and parts. The materials will have already been set to 6061 Aluminum from the Featurescripts.</figcaption>
     </figure>
   </div>
@@ -101,7 +101,7 @@ You will utilize the [`Extrude Individual`, `Tube Converter`, and `Gusset` Featu
 
   <div class="mySlides fade">
     <figure>
-      <img src="/img/learning-course/stage1a/exercises/e3/e3s10.webp" style="width:100%">
+      <img src="/img/learning-course/stage1a/exercises/e3/e3s10.webp" style="width:100%" data-description="10. Finished assembly.">
       <figcaption>10. Finished assembly. </figcaption>
     </figure>
   </div>

@@ -11,7 +11,7 @@ To achieve this, a ***main layout sketch*** is utilized. Sometimes these are als
 
 ???+ Example "Example Main Layout Sketch"
     <figure>
-    <img src="\img\learning-course\stage1d\exampleMasterSketch.webp" style="width:60%">
+    <img src="\img\learning-course\stage1d\exampleMasterSketch.webp" style="width:60%" data-description="Example of robot main layout sketches. Each mechanism has a number of layout sketches that capture the important details. (Photo Credit: FRC 3647)">
     <figcaption>Example of robot main layout sketches. Each mechanism has a number of layout sketches that capture the important details. (Photo Credit: FRC 3647)</figcaption>
     </figure>
 

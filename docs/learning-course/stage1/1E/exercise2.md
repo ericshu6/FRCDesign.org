@@ -16,13 +16,13 @@ In the reference design, the Power Distribution Hub (PDH), main breaker, and Rob
     <!-- Full-width images with number and caption text -->
     <div id="slide1" class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/elec/elec1s0.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/elec/elec1s0.webp" style="width:100%" data-description="0. Finished mounted electronics.">
             <figcaption>0. Finished mounted electronics.</figcaption>
         </figure>
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/elec/elec1s1.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/elec/elec1s1.webp" style="width:100%" data-description="1. Draw box outline for PDH and RoboRIO. Also add the outline and holes for the main breaker. (The `Electronic Mounting` Featurescript does not support mounting holes for the main breaker at this time unforunately).">
             <figcaption>1. Draw box outline for PDH and RoboRIO. Also add the outline and holes for the main breaker. (The `Electronic Mounting` Featurescript does not support mounting holes for the main breaker at this time unforunately).</figcaption>
         </figure>
     </div>
@@ -37,7 +37,7 @@ In the reference design, the Power Distribution Hub (PDH), main breaker, and Rob
     </div>
     <div class="mySlides fade">
         <figure>
-            <img src="/img/learning-course/stage2-drivebase/elec/elec1s0.webp" style="width:100%">
+            <img src="/img/learning-course/stage2-drivebase/elec/elec1s0.webp" style="width:100%" data-description="3. Insert the electronics from the MKCad parts library and fasten them. The Pigeon IMU can be fastened to the RoboRIO.">
             <figcaption>3. Insert the electronics from the MKCad parts library and fasten them. The Pigeon IMU can be fastened to the RoboRIO.</figcaption>
         </figure>
     </div>
@@ -60,7 +60,7 @@ Every robot is also required to have a Robot Signal Light (RSL). An easy locatio
 **Add mounting for an RSL to your Stage 1D drivetrain.** You can take inspiration from the following image. 
 
 <figure>
-    <img src="\img\learning-course\stage2-drivebase\elec\RSL.webp" style="width:80%">
+    <img src="\img\learning-course\stage2-drivebase\elec\RSL.webp" style="width:80%" data-description="RSL mount constructed out of 1/8" thick polycarbonate plate. The mounting hole for the RSL is 1” in diameter. The RSL model can be found in the MKCad App.">
     <figcaption>RSL mount constructed out of 1/8" thick polycarbonate plate. The mounting hole for the RSL is 1” in diameter. The RSL model can be found in the MKCad App.</figcaption>
 </figure>
 

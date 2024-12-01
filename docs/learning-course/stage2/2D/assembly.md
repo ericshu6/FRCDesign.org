@@ -8,7 +8,7 @@ Because this subsystem has multiple moving parts, just like the dead axle pivot 
 Create an assembly for the static parts and follow the typical process for inserting them and creating a rigid body (origin cube, group, fasten to origin). Add the rest of the parts by duplicating existing parts, MKCAD, and standard content, using replicate and patterns when you can.
 
 <figure markdown="span">
-    <img src="/img/learning-course/stage2-elevator/frameSubassembly.webp" style="width:85%">
+    <img src="/img/learning-course/stage2-elevator/frameSubassembly.webp" style="width:85%" data-description="Finished base stage assembly">
     <figcaption>Finished base stage assembly</figcaption>
 </figure>
 
@@ -17,7 +17,7 @@ Create an assembly for the static parts and follow the typical process for inser
 Do the same thing for the first stage subassembly.
 
 <figure markdown="span">
-    <img src="/img/learning-course/stage2-elevator/stage1Subassembly.webp" style="width:85%">
+    <img src="/img/learning-course/stage2-elevator/stage1Subassembly.webp" style="width:85%" data-description="Finished first stage assembly">
     <figcaption>Finished first stage assembly</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ Do the same thing for the first stage subassembly.
 And finally the carriage subassembly.
 
 <figure markdown="span">
-    <img src="/img/learning-course/stage2-elevator/carriageSubassembly.webp" style="width:75%">
+    <img src="/img/learning-course/stage2-elevator/carriageSubassembly.webp" style="width:75%" data-description="Finished carriage assembly">
     <figcaption>Finished carriage assembly</figcaption>
 </figure>
 

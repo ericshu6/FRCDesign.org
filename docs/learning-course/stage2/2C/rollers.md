@@ -17,7 +17,7 @@ The dead axle rollers used in this project use polycarbonate tube and 3D-printed
 Only 2 of the rollers are on the pivoting arm portion. The final one inside the frame perimeter is on a separate plate. This can keep the pivot for the intake arms lower, decreasing the vertical height of the intake when stowed.
 
 <figure>
-    <img src="\img\learning-course\stage2-slapdown\ball-path.webp" alt="Ball Path" width="60%" style="border:5px solid #ADADAD">
+    <img src="\img\learning-course\stage2-slapdown\ball-path.webp" alt="Ball Path" width="60%" style="border:5px solid #ADADAD" data-description="The sketched ball path influences the position of the rollers">
     <figcaption> The sketched ball path influences the position of the rollers</figcaption>
 </figure>
 

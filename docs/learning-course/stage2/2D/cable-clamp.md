@@ -5,7 +5,7 @@
 Cascade elevators function by moving a fixed length of cable from one side of a clamp to the other side of the clamp, to force the elevator up. This cable clamp is usually bolted to some form of crossmember. 
 
 <figure markdown="span">
-    <img src="/img/learning-course/stage2-elevator/cable-clamp.webp" style="width:75%">
+    <img src="/img/learning-course/stage2-elevator/cable-clamp.webp" style="width:75%" data-description="TTB Cable Clamp">
     <figcaption>TTB Cable Clamp</figcaption>
 </figure>
 
